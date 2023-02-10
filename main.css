@@ -8,12 +8,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #828282;
 }
 footer a {
-  text-decoration: none;
+  color: red;
+  font-weight: 600;
 }
 footer a:visited {
-  color: black;
+  color: inherit;
 }
 
 * {
