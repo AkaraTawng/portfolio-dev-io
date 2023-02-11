@@ -1,9 +1,18 @@
 header {
     display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: white;
+    width: 90%;
+    padding: 2%;
     img {
-        height:5rem;
-        width: 7rem;
+        height:9rem;
+        border-radius: 8px;
+        width: 12rem;
+        align-self: center;
     }
+
+   
 
 
 }
