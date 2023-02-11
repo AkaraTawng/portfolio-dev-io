@@ -18,6 +18,9 @@ footer a:visited {
   color: inherit;
 }
 
+header {
+  display: flex;
+}
 header img {
   height: 5rem;
   width: 7rem;
@@ -31,6 +34,7 @@ header img {
 
 body {
   position: relative;
+  background-color: #f2f2f2;
 }
 
 body {
