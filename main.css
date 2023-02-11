@@ -32,6 +32,17 @@ header img {
   width: 12rem;
   align-self: center;
 }
+header #name-job-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header #name-job-container h1 {
+  color: #4F4F4F;
+}
+header #name-job-container h2 {
+  color: #828282;
+}
 
 * {
   padding: 0;
