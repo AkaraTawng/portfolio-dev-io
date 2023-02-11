@@ -31,17 +31,41 @@ header img {
   border-radius: 8px;
   width: 12rem;
   align-self: center;
+  margin-bottom: 1rem;
 }
 header #name-job-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 2rem;
 }
 header #name-job-container h1 {
   color: #4F4F4F;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 header #name-job-container h2 {
   color: #828282;
+  font-size: 1rem;
+  font-weight: 400;
+}
+header #contact-info-container {
+  padding-bottom: 2rem;
+}
+header #contact-info-container iconify-icon {
+  padding-right: 0.5rem;
+}
+header #contact-info-container #email-container {
+  display: flex;
+}
+header #contact-info-container #email-container p {
+  font-size: 0.8rem;
+}
+header #contact-info-container #phone-container {
+  display: flex;
+}
+header #contact-info-container #phone-container p {
+  font-size: 0.8rem;
 }
 
 * {

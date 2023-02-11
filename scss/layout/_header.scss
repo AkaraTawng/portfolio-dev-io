@@ -10,19 +10,46 @@ header {
         border-radius: 8px;
         width: 12rem;
         align-self: center;
+        margin-bottom: 1rem;
     }
 
     #name-job-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-bottom: 2rem;
 
         h1 { 
             color: $dark-grey1;
+            font-weight: 600;
+            font-size: 1.3rem;
         }
 
         h2 {
             color: $light-grey1;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+
+    #contact-info-container {
+        padding-bottom: 2rem;
+        iconify-icon {
+                padding-right: .5rem;
+            }
+        #email-container {
+            display: flex;
+            p {
+                font-size: .8rem;
+            }
+           
+        }
+
+        #phone-container {
+            display: flex;
+            p {
+                font-size: .8rem;
+            }
         }
     }
 
