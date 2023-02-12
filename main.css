@@ -51,6 +51,7 @@ header #name-job-container h2 {
 }
 header #contact-info-container {
   padding-bottom: 2rem;
+  color: #4F4F4F;
 }
 header #contact-info-container iconify-icon {
   padding-right: 0.5rem;
