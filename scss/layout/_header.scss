@@ -4,11 +4,11 @@ header {
     margin: 0 auto;
     background-color: white;
     width: 90%;
-    padding: 2%;
+    padding: 5%;
     img {
-        height:9rem;
+        height:11rem;
         border-radius: 8px;
-        width: 12rem;
+        width: 15rem;
         align-self: center;
         margin-bottom: 1rem;
     }
@@ -36,7 +36,8 @@ header {
         padding-bottom: 2rem;
         color: $dark-grey1;
         iconify-icon {
-                padding-right: .5rem;
+                padding-right: .7rem;
+                padding-bottom: 1rem;
             }
         #email-container {
             display: flex;
@@ -52,6 +53,10 @@ header {
                 font-size: .8rem;
             }
         }
+    }
+
+    #bio-container {
+        
     }
 
 

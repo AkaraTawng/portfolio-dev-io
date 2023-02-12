@@ -24,12 +24,12 @@ header {
   margin: 0 auto;
   background-color: white;
   width: 90%;
-  padding: 2%;
+  padding: 5%;
 }
 header img {
-  height: 9rem;
+  height: 11rem;
   border-radius: 8px;
-  width: 12rem;
+  width: 15rem;
   align-self: center;
   margin-bottom: 1rem;
 }
@@ -54,7 +54,8 @@ header #contact-info-container {
   color: #4F4F4F;
 }
 header #contact-info-container iconify-icon {
-  padding-right: 0.5rem;
+  padding-right: 0.7rem;
+  padding-bottom: 1rem;
 }
 header #contact-info-container #email-container {
   display: flex;
@@ -68,7 +69,6 @@ header #contact-info-container #phone-container {
 header #contact-info-container #phone-container p {
   font-size: 0.8rem;
 }
-
 * {
   padding: 0;
   margin: 0;
