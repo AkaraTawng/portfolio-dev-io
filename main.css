@@ -25,11 +25,12 @@ header {
   background-color: white;
   width: 90%;
   padding: 5%;
+  border-radius: 15px;
 }
 header img {
-  height: 11rem;
+  height: 12rem;
   border-radius: 8px;
-  width: 15rem;
+  width: 16rem;
   align-self: center;
   margin-bottom: 1rem;
 }
@@ -50,12 +51,11 @@ header #name-job-container h2 {
   font-weight: 400;
 }
 header #contact-info-container {
-  padding-bottom: 2rem;
   color: #4F4F4F;
 }
 header #contact-info-container iconify-icon {
   padding-right: 0.7rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 header #contact-info-container #email-container {
   display: flex;
@@ -68,7 +68,14 @@ header #contact-info-container #phone-container {
 }
 header #contact-info-container #phone-container p {
   font-size: 0.8rem;
+  padding-bottom: 1.5rem;
 }
+header #bio-container p {
+  color: #828282;
+  font-size: 0.7rem;
+  padding-bottom: 0.2rem;
+}
+
 * {
   padding: 0;
   margin: 0;

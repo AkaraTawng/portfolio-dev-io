@@ -5,10 +5,11 @@ header {
     background-color: white;
     width: 90%;
     padding: 5%;
+    border-radius: 15px;
     img {
-        height:11rem;
+        height:12rem;
         border-radius: 8px;
-        width: 15rem;
+        width: 16rem;
         align-self: center;
         margin-bottom: 1rem;
     }
@@ -33,31 +34,32 @@ header {
     }
 
     #contact-info-container {
-        padding-bottom: 2rem;
         color: $dark-grey1;
         iconify-icon {
                 padding-right: .7rem;
-                padding-bottom: 1rem;
+                padding-bottom: .5rem;
             }
         #email-container {
             display: flex;
             p {
                 font-size: .8rem;
             }
-           
         }
 
         #phone-container {
             display: flex;
             p {
                 font-size: .8rem;
+                padding-bottom: 1.5rem;
             }
         }
     }
 
     #bio-container {
-        
+        p {
+            color: $light-grey1;
+            font-size: .7rem;
+            padding-bottom: .2rem;
+        }
     }
-
-
 }
