@@ -1,10 +1,7 @@
 @import '../mixins/breakpoints';
-header {
+#profile-bio {
     display: flex;
     flex-direction: column;
-    @include tablet {
-        flex-direction: row;
-    }
     margin: 0 auto;
     background-color: white;
     
@@ -29,9 +26,6 @@ header {
             color: $dark-grey1;
             font-weight: 600;
             font-size: 1.3rem;
-            @include tablet {
-                color: blue !important;
-            }
         }
 
         h2 {

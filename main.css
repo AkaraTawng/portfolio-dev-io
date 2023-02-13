@@ -18,7 +18,7 @@ footer a:visited {
   color: inherit;
 }
 
-header {
+#profile-bio {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -27,60 +27,50 @@ header {
   padding: 5%;
   border-radius: 15px;
 }
-@media screen and (min-width: 760px) {
-  header {
-    flex-direction: row;
-  }
-}
-header img {
+#profile-bio img {
   height: 12rem;
   border-radius: 8px;
   width: 16rem;
   align-self: center;
   margin-bottom: 1rem;
 }
-header #name-job-container {
+#profile-bio #name-job-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
 }
-header #name-job-container h1 {
+#profile-bio #name-job-container h1 {
   color: #4F4F4F;
   font-weight: 600;
   font-size: 1.3rem;
 }
-@media screen and (min-width: 760px) {
-  header #name-job-container h1 {
-    color: blue !important;
-  }
-}
-header #name-job-container h2 {
+#profile-bio #name-job-container h2 {
   color: #828282;
   font-size: 1rem;
   font-weight: 400;
 }
-header #contact-info-container {
+#profile-bio #contact-info-container {
   color: #4F4F4F;
 }
-header #contact-info-container iconify-icon {
+#profile-bio #contact-info-container iconify-icon {
   padding-right: 0.7rem;
   padding-bottom: 0.5rem;
 }
-header #contact-info-container #email-container {
+#profile-bio #contact-info-container #email-container {
   display: flex;
 }
-header #contact-info-container #email-container p {
+#profile-bio #contact-info-container #email-container p {
   font-size: 0.8rem;
 }
-header #contact-info-container #phone-container {
+#profile-bio #contact-info-container #phone-container {
   display: flex;
 }
-header #contact-info-container #phone-container p {
+#profile-bio #contact-info-container #phone-container p {
   font-size: 0.8rem;
   padding-bottom: 1.5rem;
 }
-header #bio-container p {
+#profile-bio #bio-container p {
   color: #828282;
   font-size: 0.7rem;
   padding-bottom: 0.2rem;
@@ -101,4 +91,86 @@ body {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 4rem;
   min-height: 100vh;
+}
+
+#skills {
+  background-color: white;
+  width: 90%;
+  padding: 5%;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+#skills li {
+  list-style: none;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: orange;
+}
+#skills .skillbar {
+  position: relative;
+  width: 50%;
+  height: 8px;
+  border: 1px solid black;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: #c4c4c4;
+  align-self: center;
+}
+#skills .skillbar span {
+  display: block;
+  height: 100%;
+  width: 80%;
+  border-radius: 10px;
+  background-color: #2F80ED;
+}
+#skills .skillbar .html {
+  width: 80%;
+  animation: html 2s ease-out;
+}
+#skills .skillbar .css {
+  width: 80%;
+  animation: css 2s ease-out;
+}
+#skills .skillbar .js {
+  width: 50%;
+  animation: js 2s ease-out;
+}
+#skills .skillbar .react {
+  width: 50%;
+  animation: react 2s ease-out;
+}
+
+@keyframes html {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes css {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 80%;
+  }
+}
+@keyframes js {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes react {
+  from {
+    width: 10%;
+  }
+  to {
+    width: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */
