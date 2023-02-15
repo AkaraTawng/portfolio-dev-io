@@ -8,3 +8,10 @@ body {
     position: relative;
     background-color: #f2f2f2;
 }
+
+.scroll-tracker {
+    height: .2rem;
+    inset: 0 0 auto;
+    background-color: $accent-blue;
+    position: fixed;
+}
