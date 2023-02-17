@@ -6,7 +6,7 @@ const scrollTrackingTimeline = new ScrollTimeline({
     //source is entire viewport 
     source: document.scrollingElement,
     //block = y scrolling / inline = x scrolling
-    orientation: 'block', 
+    orientation: "block", 
     //range. starting and ending points
     scrollOffsets: [CSS.percent(0), CSS.percent(100)]
 });
@@ -15,10 +15,10 @@ const scrollTrackingTimeline = new ScrollTimeline({
 
 scrollTracker.animate(
     {
-        transform: ['scaleX(0)', 'scaleX(1)']
+        transform: ["scaleX(0)", "scaleX(1)"],
     },
     {
         duration: 1,
-        ScrollTimeline: scrollTrackingTimeline
+        ScrollTimeline: scrollTrackingTimeline,
     }
     );

@@ -92,6 +92,7 @@ body {
   inset: 0 0 auto;
   background-color: #2F80ED;
   position: fixed;
+  transform-origin: left;
 }
 
 body {
