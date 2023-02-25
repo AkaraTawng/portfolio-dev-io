@@ -87,14 +87,6 @@ body {
   background-color: #f2f2f2;
 }
 
-.scroll-tracker {
-  height: 0.2rem;
-  inset: 0 0 auto;
-  background-color: #2F80ED;
-  position: fixed;
-  transform-origin: left;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 4rem;
@@ -107,6 +99,7 @@ body {
   padding: 5%;
   border-radius: 15px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 #skills p {
   font-size: 0.7rem;
