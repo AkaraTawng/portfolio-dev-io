@@ -7,6 +7,12 @@
     margin-top: 50px;
   #title-text-image-flex-container {
     display: flex;
+
+    h1 {
+        color: $light-grey2;
+        font-size: 1rem;
+        font-weight: 400;
+    }
   }
 
     img {

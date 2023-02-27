@@ -190,6 +190,11 @@ body {
 #blog #title-text-image-flex-container {
   display: flex;
 }
+#blog #title-text-image-flex-container h1 {
+  color: #E0E0E0;
+  font-size: 1rem;
+  font-weight: 400;
+}
 #blog img {
   height: 10rem;
   width: 10rem;
