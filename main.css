@@ -21,11 +21,6 @@ footer a:visited {
 #profile-bio {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  background-color: white;
-  width: 90%;
-  padding: 5%;
-  border-radius: 15px;
 }
 #profile-bio img {
   height: 12rem;
@@ -93,14 +88,6 @@ body {
   min-height: 100vh;
 }
 
-#skills {
-  background-color: white;
-  width: 90%;
-  padding: 5%;
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
 #skills p {
   font-size: 0.7rem;
   align-self: flex-end;
@@ -179,14 +166,6 @@ body {
     width: 50%;
   }
 }
-#blog {
-  background-color: white;
-  width: 90%;
-  padding: 5%;
-  border-radius: 15px;
-  margin: 0 auto;
-  margin-top: 50px;
-}
 #blog #title-text-image-flex-container {
   display: flex;
   margin-bottom: 2rem;
@@ -228,4 +207,21 @@ body {
 }
 #blog a :active {
   color: #2F80ED;
+}
+
+#experiences img {
+  height: 1rem;
+  width: 5rem;
+}
+#experiences .experience-flex-container {
+  display: flex;
+}
+
+.item-card {
+  background-color: white;
+  width: 90%;
+  padding: 5%;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 50px;
 }/*# sourceMappingURL=main.css.map */
