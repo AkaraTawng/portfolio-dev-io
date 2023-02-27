@@ -14,17 +14,21 @@
 
     .experience-flex-container {
         display: flex;
+        justify-content: space-around;
 
         h2 { 
         //date 
         color: $light-grey1;
         font-size: .7rem;
         font-weight: lighter;
+        margin: 0 0 0.2rem 0;
         }
 
         h1 {
         //position
-
+        color: $dark-grey2;
+        font-size: .8rem;
+        font-weight: lighter;
         }
     }
 }

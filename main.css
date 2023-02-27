@@ -221,12 +221,20 @@ body {
 }
 #experiences .experience-flex-container {
   display: flex;
+  justify-content: space-around;
 }
 #experiences .experience-flex-container h2 {
   color: #828282;
   font-size: 0.7rem;
   font-weight: lighter;
+  margin: 0 0 0.2rem 0;
 }
+#experiences .experience-flex-container h1 {
+  color: #333333;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
 .item-card {
   background-color: white;
   width: 90%;
