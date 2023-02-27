@@ -269,6 +269,16 @@ body {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+#hobbies h2 {
+  color: #333333;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+#hobbies p {
+  color: #828282;
+  font-weight: 500;
+  font-size: 0.6rem;
+}
 #hobbies img {
   height: 6rem;
   width: 100%;
@@ -278,10 +288,16 @@ body {
   -o-object-position: 20% 80%;
      object-position: 20% 80%;
 }
-#hobbies #hobby-item {
+#hobbies .hobby-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+#hobbies .hobby-item#exercise {
+  margin-bottom: 2rem;
+}
+#hobbies .hobby-item#reading {
+  margin-bottom: 2rem;
 }
 #hobbies #exerciseimagecontainer {
   width: 100%;
