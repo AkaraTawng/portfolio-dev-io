@@ -5,24 +5,31 @@
     border-radius: 15px;
     margin: 0 auto;
     margin-top: 50px;
+
   #title-text-image-flex-container {
     display: flex;
+    margin-bottom: 2rem;
 
     h1 {
         color: $light-grey2;
-        font-size: 1rem;
+        font-size: 0.6rem;
         font-weight: 400;
+        margin: 0.5rem 0 1rem 0;
     }
 
      h2 {
         color: $dark-grey2;
-        font-weight: 500 ;
+        font-weight: 500;
+        font-size: 0.8rem;
+        width: 90%;
      }
   }
 
     img {
         height: 10rem;
         width: 10rem;
+        border-radius: 5px 0 0 5px;
+        margin: 0.5rem -6.5% 0 0;
     }
 
     p {

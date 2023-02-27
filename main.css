@@ -189,17 +189,23 @@ body {
 }
 #blog #title-text-image-flex-container {
   display: flex;
+  margin-bottom: 2rem;
 }
 #blog #title-text-image-flex-container h1 {
   color: #E0E0E0;
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 400;
+  margin: 0.5rem 0 1rem 0;
 }
 #blog #title-text-image-flex-container h2 {
   color: #333333;
   font-weight: 500;
+  font-size: 0.8rem;
+  width: 90%;
 }
 #blog img {
   height: 10rem;
   width: 10rem;
+  border-radius: 5px 0 0 5px;
+  margin: 0.5rem -6.5% 0 0;
 }/*# sourceMappingURL=main.css.map */
