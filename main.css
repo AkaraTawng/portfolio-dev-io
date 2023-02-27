@@ -208,4 +208,12 @@ body {
   width: 10rem;
   border-radius: 5px 0 0 5px;
   margin: 0.5rem -6.5% 0 0;
+}
+#blog p {
+  color: #828282;
+  font-weight: 300;
+  font-size: 0.5rem;
+}
+#blog p:nth-child(2) {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */
