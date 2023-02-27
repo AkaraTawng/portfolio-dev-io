@@ -178,4 +178,19 @@ body {
   to {
     width: 50%;
   }
+}
+#blog {
+  background-color: white;
+  width: 90%;
+  padding: 5%;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#blog #title-text-image-flex-container {
+  display: flex;
+}
+#blog img {
+  height: 10rem;
+  width: 10rem;
 }/*# sourceMappingURL=main.css.map */
