@@ -1,5 +1,4 @@
 #experiences {
-
     h1 {
         color: $dark-grey1;
         font-weight: 400;
@@ -10,6 +9,7 @@
     img {
         height: 1rem;
         width: 5rem;
+        margin: 1rem 1.4rem 0 0;
     }
 
     .experience-flex-container {
@@ -28,6 +28,12 @@
         //position
         color: $dark-grey2;
         font-size: .8rem;
+        font-weight: lighter;
+        }
+
+        p {
+        color: $light-grey1;
+        font-size: .6rem;
         font-weight: lighter;
         }
     }

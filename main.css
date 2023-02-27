@@ -218,6 +218,7 @@ body {
 #experiences img {
   height: 1rem;
   width: 5rem;
+  margin: 1rem 1.4rem 0 0;
 }
 #experiences .experience-flex-container {
   display: flex;
@@ -232,6 +233,11 @@ body {
 #experiences .experience-flex-container h1 {
   color: #333333;
   font-size: 0.8rem;
+  font-weight: lighter;
+}
+#experiences .experience-flex-container p {
+  color: #828282;
+  font-size: 0.6rem;
   font-weight: lighter;
 }
 
