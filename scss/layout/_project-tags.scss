@@ -1,4 +1,10 @@
 #project-tags {
+    
+    .active {
+        background-color: $accent-blue;
+        color: white;
+    }
+    
 h1, h2, h3 {
     color: $dark-grey1;
     font-weight: 400;
@@ -44,3 +50,4 @@ h3 {
         }
     }
 }
+

@@ -304,6 +304,10 @@ body {
   width: 100%;
 }
 
+#project-tags .active {
+  background-color: #2F80ED;
+  color: white;
+}
 #project-tags h1, #project-tags h2, #project-tags h3 {
   color: #4F4F4F;
   font-weight: 400;
