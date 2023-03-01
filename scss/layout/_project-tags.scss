@@ -1,0 +1,46 @@
+#project-tags {
+h1, h2, h3 {
+    color: $dark-grey1;
+    font-weight: 400;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#technology-filter-tags-container {
+    margin-bottom: 1rem;
+}
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        button {
+            background-color: white;
+            padding: 2px 20px;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            border: solid $dark-grey1 1px;
+            &:hover {
+                background-color: $accent-blue;
+                color: white;
+            }
+        }
+    }
+}

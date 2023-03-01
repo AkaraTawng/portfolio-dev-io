@@ -302,4 +302,43 @@ body {
 }
 #hobbies #exerciseimagecontainer {
   width: 100%;
+}
+
+#project-tags h1, #project-tags h2, #project-tags h3 {
+  color: #4F4F4F;
+  font-weight: 400;
+}
+#project-tags h1 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+#project-tags h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+#project-tags h3 {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#project-tags #technology-filter-tags-container {
+  margin-bottom: 1rem;
+}
+#project-tags ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#project-tags ul button {
+  background-color: white;
+  padding: 2px 20px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: solid #4F4F4F 1px;
+}
+#project-tags ul button:hover {
+  background-color: #2F80ED;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
