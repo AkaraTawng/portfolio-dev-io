@@ -4,21 +4,33 @@ const technologyFilterAllTag = document.querySelector('#technology-all-tag');
 const typeFilterTags = document.querySelectorAll('#type-filter-tags-container ul li button');
 const typeFilterAllTag = document.querySelector('#type-all-tag');
 
-const skillBarsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        console.log(entry)
-    });
-}, {
-    // rootMargin: '400px'
-});
+/* technology data attribute array converter */
+var projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
 
-skillBars.forEach(skillBar => {
-    skillBarsObserver.observe(skillBar);
-});
+projectItemsTechnologyFilterTags.forEach(projectItem => {
+    let projectItemDataFilterTags = projectItem.getAttribute("data-technology-filter-tags").split(" ");
+
+    console.log(projectItemDataFilterTags)
+})
+
+// .getAttribute("data-technology-filter-tags").split(" ");
+
+// console.log(projectItemsTechnologyFilterTags)
+
+// const skillBarsObserver = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//         console.log(entry)
+//     });
+// }, {
+//     // rootMargin: '400px'
+// });
+
+// skillBars.forEach(skillBar => {
+//     skillBarsObserver.observe(skillBar);
+// });
 
 //add & remove active class for technology filter tags
 technologyFilterTags.forEach(technologyFilterTag => {
-    console.log(technologyFilterTag)
     technologyFilterTag.onclick = function() {
         if(technologyFilterAllTag.classList.contains('active')){
             technologyFilterAllTag.classList.remove('active')
@@ -41,7 +53,6 @@ technologyFilterTags.forEach(technologyFilterTag => {
 
 //add & remove active class for type filter tags
 typeFilterTags.forEach(typeFilterTag => {
-    console.log(typeFilterTag)
     typeFilterTag.onclick = function() {
         if(typeFilterAllTag.classList.contains('active')){
             typeFilterAllTag.classList.remove('active')
