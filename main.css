@@ -345,4 +345,10 @@ body {
 #project-tags ul button:hover {
   background-color: #2F80ED;
   color: white;
+}
+
+#projects img {
+  height: 12rem;
+  width: 16rem;
+  border-radius: 15px;
 }/*# sourceMappingURL=main.css.map */
