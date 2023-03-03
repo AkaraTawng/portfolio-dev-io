@@ -105,17 +105,46 @@
                     <li><button>Team Page</button></li>
                     <li><button>Informative</button></li>
                     <li><button>Web App</button></li>
+                    <li><button>Image Gallery</button></li>
                 </ul>
             </div>
         </section>
 
-        <div class="project-item-flex-container item-card" data-technology-filter-tags="" data-type-filter-tags=""> 
+        <div class="project-item-flex-container item-card"> 
             <img src="./img/proj1.png" alt="project one">
             <div class="project-item-text-content-container">
-                <span>#HTML #JavaScript #CSS/SCSS</span>
-                <h2>Project Name</h2>
-                <button>Demo</button>
-                <button>Code</button>
+                <span 
+                data-technology-filter-tags="HTML CSS"  
+                class="project-item-filter-tags-list technology">
+                    #HTML #JavaScript #CSS/SCSS
+                </span>
+                <span 
+                data-type-filter-tags="Image Gallery"
+                class="project-item-filter-tags-list type">
+                    #Image Gallery
+                </span>
+                <h2>Image Gallery</h2>
+                <button class="project-item-button demo">Demo</button>
+                <button class="project-item-button code">Code</button>
+            </div>
+        </div>
+        
+        <div class="project-item-flex-container item-card"> 
+            <img src="./img/proj1.png" alt="project one">
+            <div class="project-item-text-content-container">
+                <span 
+                data-technology-filter-tags="HTML CSS"  
+                class="project-item-filter-tags-list technology">
+                    #HTML #JavaScript #CSS/SCSS
+                </span>
+                <span 
+                data-type-filter-tags="Image Gallery"
+                class="project-item-filter-tags-list type">
+                    #Image Gallery
+                </span>
+                <h2>Image Gallery</h2>
+                <button class="project-item-button demo">Demo</button>
+                <button class="project-item-button code">Code</button>
             </div>
         </div>
     </section>
