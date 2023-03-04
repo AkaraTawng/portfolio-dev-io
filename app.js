@@ -3,7 +3,9 @@ const technologyFilterTags = document.querySelectorAll('#technology-filter-tags-
 const technologyFilterAllTag = document.querySelector('#technology-all-tag');
 const typeFilterTags = document.querySelectorAll('#type-filter-tags-container ul li button');
 const typeFilterAllTag = document.querySelector('#type-all-tag');
+const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
 
+ console.log(technologyFilterButtons)
 
 let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
 
