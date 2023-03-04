@@ -4,15 +4,19 @@ const technologyFilterAllTag = document.querySelector('#technology-all-tag');
 const typeFilterTags = document.querySelectorAll('#type-filter-tags-container ul li button');
 const typeFilterAllTag = document.querySelector('#type-all-tag');
 
-/* technology data attribute array converter */
-var projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
 
-projectItemsTechnologyFilterTags.forEach(projectItem => {
+let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
+
+/* technology data attribute array converter */
+
+
+const projectFilter = () => {
+    projectItemsTechnologyFilterTags.forEach(projectItem => {
     let projectItemDataFilterTags = projectItem.getAttribute("data-technology-filter-tags").split(" ");
 
     console.log(projectItemDataFilterTags)
 })
-
+}
 // .getAttribute("data-technology-filter-tags").split(" ");
 
 // console.log(projectItemsTechnologyFilterTags)
