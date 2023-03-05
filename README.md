@@ -16,7 +16,7 @@
       Site
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U">
+    <a href="">
       Challenge
     </a>
   </h3>
