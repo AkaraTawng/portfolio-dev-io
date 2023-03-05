@@ -38,8 +38,7 @@
 ### Fully Responsive UI
 ![fully responsive ui gif](.)
 
-### Image Hover Overlay
-![image hover overalay gif]()
+
 
 
 
