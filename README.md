@@ -46,7 +46,7 @@
 
 - Go to live [site](https://my-team-page-chris-cham.netlify.app/)
 - See the demo [here](https://devchallenges.io/solutions/tYfAaAPolbMB87S4dKbz)
-- This was my first time making a staggered, assymetrical layout like this. It was quite challenging, but after researching and experimenting with CSS grid I was able to implement it. 
+- Implementing the filter functionality in the project section was by far the most challenging part of this project. The behavior has a lot of complexity and required a lot of careful thought to visualize the full range of requirements and lots of patience when experimenting. Eventually, line by line, the function came together and full filter functionality was achieved.
 
 ### Built With
 
