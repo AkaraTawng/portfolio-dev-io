@@ -5,20 +5,52 @@ const typeFilterTags = document.querySelectorAll('#type-filter-tags-container ul
 const typeFilterAllTag = document.querySelector('#type-all-tag');
 const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
 
- console.log(technologyFilterButtons)
 
 let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
 
 /* technology data attribute array converter */
 
-
+ let buttonArray = [];
 const projectFilter = () => {
+   
+     /* function prints previous value on click, not current value.
+        buttonArray doesn't start with All as function is only called on click so when you click the next button it logs the value 
+     */
+    technologyFilterButtons.forEach((button, index) => {
+      
+        if(technologyFilterAllTag.classList.contains('active')){
+            buttonArray.push(button.innerHTML);
+        } 
+        else if(button.classList.contains('active')){
+            if(buttonArray.includes(button.innerHTML)){
+                return;
+            } 
+            /* add item to array when active class present */
+            buttonArray.push(button.innerHTML);
+            console.log(buttonArray)
+
+            /* remove item from array when active class not present */
+
+        }
+
+        // if(!button.classList.contains('active')){
+        //     buttonArray.splice(index, 1);
+        // }
+    })
+
     projectItemsTechnologyFilterTags.forEach(projectItem => {
     let projectItemDataFilterTags = projectItem.getAttribute("data-technology-filter-tags").split(" ");
 
-    console.log(projectItemDataFilterTags)
+    
 })
 }
+
+technologyFilterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        projectFilter();
+    })
+})
+
 // .getAttribute("data-technology-filter-tags").split(" ");
 
 // console.log(projectItemsTechnologyFilterTags)
