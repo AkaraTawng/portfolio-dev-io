@@ -347,6 +347,11 @@ body {
   color: white;
 }
 
+#projects h2 {
+  font-weight: 500;
+  color: #333333;
+  margin: 2rem 0 2rem 0;
+}
 #projects img {
   height: 12rem;
   width: 16rem;
