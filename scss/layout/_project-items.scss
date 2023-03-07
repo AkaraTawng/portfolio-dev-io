@@ -1,5 +1,9 @@
 #projects {
-
+    
+        .project-item-button {
+            transition: all .3s ease-out;
+        }
+    
     h2 {
         font-weight: 500;
         color: $dark-grey2;
@@ -27,5 +31,6 @@
         margin-top: 2rem;
         display: flex;
         justify-content: space-around;
+
     }
 }

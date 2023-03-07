@@ -1,5 +1,4 @@
 .demo {
-    color: white;
     border-radius: 10px;
     background-color: $accent-blue;
     border: none;
@@ -7,9 +6,17 @@
     width: 6rem;
     cursor: pointer;
 
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
     &:hover {
         background-color: white;
-        color: $accent-blue;
         border: 1px solid $accent-blue;
+
+         a {
+            color: $accent-blue;
+         }
     }
 }

@@ -347,6 +347,9 @@ body {
   color: white;
 }
 
+#projects .project-item-button {
+  transition: all 0.3s ease-out;
+}
 #projects h2 {
   font-weight: 500;
   color: #333333;
@@ -373,7 +376,6 @@ body {
 }
 
 .demo {
-  color: white;
   border-radius: 10px;
   background-color: #2F80ED;
   border: none;
@@ -381,14 +383,19 @@ body {
   width: 6rem;
   cursor: pointer;
 }
+.demo a {
+  color: white;
+  text-decoration: none;
+}
 .demo:hover {
   background-color: white;
-  color: #2F80ED;
   border: 1px solid #2F80ED;
+}
+.demo:hover a {
+  color: #2F80ED;
 }
 
 .code {
-  color: #2F80ED;
   border: none;
   cursor: pointer;
   border-radius: 10px;
@@ -397,8 +404,14 @@ body {
   outline: 1px solid #2F80ED;
   background-color: white;
 }
+.code a {
+  color: #2F80ED;
+  text-decoration: none;
+}
 .code:hover {
-  color: white;
   background-color: #2F80ED;
   outline: none;
+}
+.code:hover a {
+  color: white;
 }/*# sourceMappingURL=main.css.map */
