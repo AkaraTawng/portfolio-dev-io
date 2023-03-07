@@ -357,6 +357,10 @@ body {
   font-weight: 500;
   font-size: 0.8rem;
 }
+#projects .project-item-filter-tags-list {
+  color: #828282;
+  font-size: 0.7rem;
+}
 #projects img {
   height: 12rem;
   width: 16rem;
