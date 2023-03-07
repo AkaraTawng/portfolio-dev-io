@@ -352,6 +352,11 @@ body {
   color: #333333;
   margin: 2rem 0 2rem 0;
 }
+#projects .project-item-description {
+  color: #828282;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
 #projects img {
   height: 12rem;
   width: 16rem;
