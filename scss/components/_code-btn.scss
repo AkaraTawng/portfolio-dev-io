@@ -1,0 +1,16 @@
+.code {
+    color: $accent-blue;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 2rem;
+    width: 5rem;
+    outline: 1px solid $accent-blue;
+    background-color: white;
+
+    &:hover {
+        color: white;
+        background-color: $accent-blue;
+        outline: none;
+    }
+}

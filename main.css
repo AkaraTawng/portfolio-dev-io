@@ -370,4 +370,20 @@ body {
   background-color: white;
   color: #2F80ED;
   border: 1px solid #2F80ED;
+}
+
+.code {
+  color: #2F80ED;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 2rem;
+  width: 5rem;
+  outline: 1px solid #2F80ED;
+  background-color: white;
+}
+.code:hover {
+  color: white;
+  background-color: #2F80ED;
+  outline: none;
 }/*# sourceMappingURL=main.css.map */
