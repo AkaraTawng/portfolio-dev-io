@@ -352,6 +352,10 @@ body {
   width: 16rem;
   border-radius: 15px;
 }
+#projects .project-item-buttons-flex-container {
+  display: flex;
+  justify-content: space-around;
+}
 
 .demo {
   color: white;
