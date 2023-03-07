@@ -351,4 +351,19 @@ body {
   height: 12rem;
   width: 16rem;
   border-radius: 15px;
+}
+
+.demo {
+  color: white;
+  border-radius: 10px;
+  background-color: #2F80ED;
+  border: none;
+  height: 2rem;
+  width: 6rem;
+  cursor: pointer;
+}
+.demo:hover {
+  background-color: white;
+  color: #2F80ED;
+  border: 1px solid #2F80ED;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+.demo {
+    color: white;
+    border-radius: 10px;
+    background-color: $accent-blue;
+    border: none;
+    height: 2rem;
+    width: 6rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: $accent-blue;
+        border: 1px solid $accent-blue;
+    }
+}
