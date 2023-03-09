@@ -45,9 +45,6 @@ footer a:visited {
   font-size: 1rem;
   font-weight: 400;
 }
-#profile-bio #contact-info-container {
-  color: #4F4F4F;
-}
 #profile-bio #contact-info-container iconify-icon {
   padding-right: 0.7rem;
   padding-bottom: 0.5rem;
@@ -55,8 +52,9 @@ footer a:visited {
 #profile-bio #contact-info-container #email-container {
   display: flex;
 }
-#profile-bio #contact-info-container #email-container p {
+#profile-bio #contact-info-container #email-container a {
   font-size: 0.8rem;
+  color: #4F4F4F;
 }
 #profile-bio #contact-info-container #phone-container {
   display: flex;

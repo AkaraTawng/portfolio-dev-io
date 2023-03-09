@@ -35,15 +35,15 @@
     }
 
     #contact-info-container {
-        color: $dark-grey1;
         iconify-icon {
                 padding-right: .7rem;
                 padding-bottom: .5rem;
             }
         #email-container {
             display: flex;
-            p {
+            a {
                 font-size: .8rem;
+                color: $dark-grey1;
             }
         }
 
