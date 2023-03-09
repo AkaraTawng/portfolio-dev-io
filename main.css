@@ -59,7 +59,8 @@ footer a:visited {
 #profile-bio #contact-info-container #phone-container {
   display: flex;
 }
-#profile-bio #contact-info-container #phone-container p {
+#profile-bio #contact-info-container #phone-container a {
+  color: #4F4F4F;
   font-size: 0.8rem;
   padding-bottom: 1.5rem;
 }
