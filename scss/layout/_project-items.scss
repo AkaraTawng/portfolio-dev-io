@@ -1,5 +1,11 @@
 #projects {
     
+    .project-item-flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
         .project-item-button {
             transition: all .3s ease-out;
         }
