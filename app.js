@@ -18,11 +18,11 @@ let tagCounter = document.querySelector('#tag-counter');
 
  
 /* project counter */
-let projectArray = [];
+let projectsArray = [];
 
  projectItems.forEach(project => {
     // projectArray.push(project);
-    tagCounter.innerHTML = `(${projectArray.length})`;
+    tagCounter.innerHTML = `(${projectsArray.length})`;
  });
 
 
@@ -83,22 +83,22 @@ typeFilterButtons.forEach(button => {
                 projectItems.forEach(project => {
                     if(project.dataset.typeFilterTags === button.innerHTML){
                         /* add projects to array when tag clicked */
-                        projectArray.push(project.dataset.typeFilterTags);
+                        projectsArray.push(project.dataset.typeFilterTags);
 
                         /* check which items projects are in the array and set display to flex */
                         // project.style.display = "flex";
                     }
                 })
-                console.log(projectArray);
+                console.log(projectsArray);
             }
            
             else if(button.classList.contains('active') && button === event.target) {
                 /* remove project from array when tag is un-clicked - active class is removed */
                 projectItems.forEach(project => {
                     if(project.dataset.typeFilterTags === button.innerHTML){
-                        let projectToRemove = projectArray.indexOf(project.dataset.typeFilterTags)
+                        let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags)
                         if(projectToRemove !== -1) {
-                            projectArray.splice(projectToRemove, 1);
+                            projectsArray.splice(projectToRemove, 1);
                         }
                     }
                 })
@@ -114,7 +114,7 @@ typeFilterButtons.forEach(button => {
                    
                 // })
                 // projectArray.splice(button, 1);
-                console.log(projectArray)
+                console.log(projectsArray)
             }
     })
 })
