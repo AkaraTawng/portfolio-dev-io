@@ -10,6 +10,7 @@ let projectItems = document.querySelectorAll('.project-item-flex-container');
 let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
 
 let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter-tags-list.type");
+let tagCounter = document.querySelector('#tag-counter');
 
 
 
@@ -19,9 +20,10 @@ let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter
 
  projectItems.forEach(project => {
     buttonArray.push(project);
+    tagCounter.innerHTML = `(${buttonArray.length})`;
  });
 
- console.log(buttonArray.length)
+//  console.log(buttonArray.length)
 const projectFilter = () => {
     // console.log(typeFilterButtons.innerHTML)
     typeFilterButtons.forEach(button => {
