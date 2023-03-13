@@ -4,48 +4,76 @@ const technologyFilterAllTag = document.querySelector('#technology-all-tag');
 const typeFilterTags = document.querySelectorAll('#type-filter-tags-container ul li button');
 const typeFilterAllTag = document.querySelector('#type-all-tag');
 const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
+const typeFilterButtons = document.querySelectorAll('#type-filter-tags-container button');
 
-
+let projectItems = document.querySelectorAll('.project-item-flex-container');
 let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
+
+let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter-tags-list.type");
+
+
 
 /* technology data attribute array converter */
 
  let buttonArray = [];
+
+ projectItems.forEach(project => {
+    buttonArray.push(project);
+ });
+
+ console.log(buttonArray.length)
 const projectFilter = () => {
+    // console.log(typeFilterButtons.innerHTML)
+    typeFilterButtons.forEach(button => {
+        if(button.classList.contains('active')){
+            // console.log(button.innerHTML)
+        }
+    })
+    projectItemsTypeFilterTags.forEach(projectItem => {
+
+        // console.log(projectItem.dataset.typeFilterTags)
+    })
+}
    
      /* function prints previous value on click, not current value.
         buttonArray doesn't start with All as function is only called on click so when you click the next button it logs the value 
      */
-    technologyFilterButtons.forEach((button, index) => {
+    // // technologyFilterButtons.forEach((button) => {
+    //     // console.log(button)
       
-        if(technologyFilterAllTag.classList.contains('active')){
-            buttonArray.push(button.innerHTML);
-        } 
-        else if(button.classList.contains('active')){
-            if(buttonArray.includes(button.innerHTML)){
-                return;
-            } 
-            /* add item to array when active class present */
-            buttonArray.push(button.innerHTML);
-            console.log(buttonArray)
+    //     // if(technologyFilterAllTag.classList.contains('active')){
+    //     //     buttonArray.push(button.innerHTML);
+    //     //     console.log(buttonArray)
+    //     // } 
+    //     // else if(button.classList.contains('active')){
+    //     //     if(buttonArray.includes(button.innerHTML)){
+    //     //         return;
+    //     //     } 
+    //         /* add item to array when active class present */
+    //         // buttonArray.push(button.innerHTML);
+    //         // console.log(buttonArray)
 
-            /* remove item from array when active class not present */
+    //         /* remove item from array when active class not present */
 
-        }
+    //     }
 
-        // if(!button.classList.contains('active')){
-        //     buttonArray.splice(index, 1);
-        // }
-    })
+    //     // if(!button.classList.contains('active')){
+    //     //     buttonArray.splice(index, 1);
+    //     // }
+    // )};
 
-    projectItemsTechnologyFilterTags.forEach(projectItem => {
-    let projectItemDataFilterTags = projectItem.getAttribute("data-technology-filter-tags").split(" ");
+//     projectItemsTechnologyFilterTags.forEach(projectItem => {
+//     let projectItemDataFilterTags = projectItem.getAttribute("data-technology-filter-tags").split(" ");
+// })
+// }
 
-    
-})
-}
+// technologyFilterButtons.forEach(button => {
+//     button.addEventListener("click", () => {
+//         projectFilter();
+//     })
+// })
 
-technologyFilterButtons.forEach(button => {
+typeFilterButtons.forEach(button => {
     button.addEventListener("click", () => {
         projectFilter();
     })
