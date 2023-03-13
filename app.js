@@ -82,32 +82,40 @@ typeFilterButtons.forEach(button => {
             if(!button.classList.contains('active') && button === event.target) {
                 projectItems.forEach(project => {
                     if(project.dataset.typeFilterTags === button.innerHTML){
-                        project.style.display = "flex";
-                        console.log(project.dataset.typeFilterTags)
-                    } else if(project.dataset.typeFilterTags != button.innerHTML){
-                        project.style.display = "none";
-                    }
-                   
-                })
-                /* push into array */
+                        /* add projects to array when tag clicked */
+                        projectArray.push(project.dataset.typeFilterTags);
 
-                // projectArray.push(button)
-                // console.log(projectArray)
+                        /* check which items projects are in the array and set display to flex */
+                        // project.style.display = "flex";
+                    }
+                })
+                console.log(projectArray);
             }
            
-           
-            // else if(button.classList.contains('active') && button === event.target) {
-            //     /* remove from array */
-            //     projectItems.forEach(project => {
-            //         if(project.dataset.typeFilterTags === button.innerHTML){
-            //             project.style.display = "none";
-            //             console.log(project.dataset.typeFilterTags)
-            //         }
+            else if(button.classList.contains('active') && button === event.target) {
+                /* remove project from array when tag is un-clicked - active class is removed */
+                projectItems.forEach(project => {
+                    if(project.dataset.typeFilterTags === button.innerHTML){
+                        let projectToRemove = projectArray.indexOf(project.dataset.typeFilterTags)
+                        if(projectToRemove !== -1) {
+                            projectArray.splice(projectToRemove, 1);
+                        }
+                    }
+                })
+                
+               
+               
+               
+                // projectItems.forEach(project => {
+                //     if(project.dataset.typeFilterTags === button.innerHTML){
+                //         project.style.display = "none";
+                //         console.log(project.dataset.typeFilterTags)
+                //     }
                    
-            //     })
-            //     // projectArray.splice(button, 1);
-            //     // console.log(projectArray)
-            // }
+                // })
+                // projectArray.splice(button, 1);
+                console.log(projectArray)
+            }
     })
 })
 
