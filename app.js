@@ -80,16 +80,34 @@ const projectFilter = (event) => {
 typeFilterButtons.forEach(button => {
     button.addEventListener("click", (event) => {
             if(!button.classList.contains('active') && button === event.target) {
+                projectItems.forEach(project => {
+                    if(project.dataset.typeFilterTags === button.innerHTML){
+                        project.style.display = "flex";
+                        console.log(project.dataset.typeFilterTags)
+                    } else if(project.dataset.typeFilterTags != button.innerHTML){
+                        project.style.display = "none";
+                    }
+                   
+                })
                 /* push into array */
 
-                projectArray.push(button)
-                console.log(projectArray.length)
+                // projectArray.push(button)
+                // console.log(projectArray)
             }
-            else if(button.classList.contains('active') && button === event.target) {
-                /* remove from array */
-                projectArray.splice(button, 1);
-                console.log(projectArray.length)
-            }
+           
+           
+            // else if(button.classList.contains('active') && button === event.target) {
+            //     /* remove from array */
+            //     projectItems.forEach(project => {
+            //         if(project.dataset.typeFilterTags === button.innerHTML){
+            //             project.style.display = "none";
+            //             console.log(project.dataset.typeFilterTags)
+            //         }
+                   
+            //     })
+            //     // projectArray.splice(button, 1);
+            //     // console.log(projectArray)
+            // }
     })
 })
 
