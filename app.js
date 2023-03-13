@@ -1,7 +1,7 @@
 const skillBars = document.querySelectorAll('.fade-in');
 const technologyFilterTags = document.querySelectorAll('#technology-filter-tags-container ul li button');
 const technologyFilterAllTag = document.querySelector('#technology-all-tag');
-const typeFilterTags = document.querySelectorAll('#type-filter-tags-container ul li button');
+const typeFilterTags = document.querySelectorAll('#type-filter-tags-container button');
 const typeFilterAllTag = document.querySelector('#type-all-tag');
 const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
 const typeFilterButtons = document.querySelectorAll('#type-filter-tags-container button');
@@ -16,19 +16,21 @@ let tagCounter = document.querySelector('#tag-counter');
 
 /* technology data attribute array converter */
 
- let buttonArray = [];
+ 
+/* project counter */
+let projectArray = [];
 
  projectItems.forEach(project => {
-    buttonArray.push(project);
-    tagCounter.innerHTML = `(${buttonArray.length})`;
+    // projectArray.push(project);
+    tagCounter.innerHTML = `(${projectArray.length})`;
  });
 
-//  console.log(buttonArray.length)
-const projectFilter = () => {
-    // console.log(typeFilterButtons.innerHTML)
+
+
+const projectFilter = (event) => {
     typeFilterButtons.forEach(button => {
-        if(button.classList.contains('active')){
-            // console.log(button.innerHTML)
+        if(button.classList.contains('active') && button === event.target) {
+            console.log(button.innerHTML)
         }
     })
     projectItemsTypeFilterTags.forEach(projectItem => {
@@ -76,10 +78,26 @@ const projectFilter = () => {
 // })
 
 typeFilterButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        projectFilter();
+    button.addEventListener("click", (event) => {
+            if(!button.classList.contains('active') && button === event.target) {
+                /* push into array */
+
+                projectArray.push(button)
+                console.log(projectArray.length)
+            }
+            else if(button.classList.contains('active') && button === event.target) {
+                /* remove from array */
+                projectArray.splice(button, 1);
+                console.log(projectArray.length)
+            }
     })
 })
+
+// typeFilterButtons.forEach(button => {
+//     button.addEventListener("click", (event) => {
+//         projectFilter(event);
+//     })
+// })
 
 // .getAttribute("data-technology-filter-tags").split(" ");
 
