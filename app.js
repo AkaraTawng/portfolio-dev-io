@@ -1,7 +1,7 @@
 const skillBars = document.querySelectorAll('.fade-in');
 const technologyFilterTags = document.querySelectorAll('#technology-filter-tags-container ul li button');
 const technologyFilterAllTag = document.querySelector('#technology-all-tag');
-const typeFilterTags = document.querySelectorAll('#type-filter-tags-container ul li button');
+const typeFilterTags = document.querySelectorAll('#type-filter-tags-container button');
 const typeFilterAllTag = document.querySelector('#type-all-tag');
 const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
 const typeFilterButtons = document.querySelectorAll('#type-filter-tags-container button');
@@ -16,19 +16,21 @@ let tagCounter = document.querySelector('#tag-counter');
 
 /* technology data attribute array converter */
 
- let buttonArray = [];
+ 
+/* project counter */
+let projectsArray = [];
 
  projectItems.forEach(project => {
-    buttonArray.push(project);
-    tagCounter.innerHTML = `(${buttonArray.length})`;
+    // projectArray.push(project);
+    tagCounter.innerHTML = `(${projectsArray.length})`;
  });
 
-//  console.log(buttonArray.length)
-const projectFilter = () => {
-    // console.log(typeFilterButtons.innerHTML)
+
+
+const projectFilter = (event) => {
     typeFilterButtons.forEach(button => {
-        if(button.classList.contains('active')){
-            // console.log(button.innerHTML)
+        if(button.classList.contains('active') && button === event.target) {
+            console.log(button.innerHTML)
         }
     })
     projectItemsTypeFilterTags.forEach(projectItem => {
@@ -76,10 +78,52 @@ const projectFilter = () => {
 // })
 
 typeFilterButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        projectFilter();
+    button.addEventListener("click", (event) => {
+            if(!button.classList.contains('active') && button === event.target) {
+                projectItems.forEach(project => {
+                    if(project.dataset.typeFilterTags === button.innerHTML){
+                        /* add projects to array when tag clicked */
+                        projectsArray.push(project.dataset.typeFilterTags);
+
+                        /* check which items projects are in the array and set display to flex */
+                        // project.style.display = "flex";
+                    }
+                })
+                console.log(projectsArray);
+            }
+           
+            else if(button.classList.contains('active') && button === event.target) {
+                /* remove project from array when tag is un-clicked - active class is removed */
+                projectItems.forEach(project => {
+                    if(project.dataset.typeFilterTags === button.innerHTML){
+                        let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags)
+                        if(projectToRemove !== -1) {
+                            projectsArray.splice(projectToRemove, 1);
+                        }
+                    }
+                })
+                
+               
+               
+               
+                // projectItems.forEach(project => {
+                //     if(project.dataset.typeFilterTags === button.innerHTML){
+                //         project.style.display = "none";
+                //         console.log(project.dataset.typeFilterTags)
+                //     }
+                   
+                // })
+                // projectArray.splice(button, 1);
+                console.log(projectsArray)
+            }
     })
 })
+
+// typeFilterButtons.forEach(button => {
+//     button.addEventListener("click", (event) => {
+//         projectFilter(event);
+//     })
+// })
 
 // .getAttribute("data-technology-filter-tags").split(" ");
 
