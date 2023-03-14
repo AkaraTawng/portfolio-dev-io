@@ -86,7 +86,8 @@ typeFilterButtons.forEach(button => {
                         projectsArray.push(project.dataset.typeFilterTags);
 
                         /* check which items projects are in the array and set display to flex */
-                        // project.style.display = "flex";
+                        // projectsArray.forEach(e => e.style.display = 'none');
+                        project.style.display = "flex";
                     }
                 })
                 console.log(projectsArray);
@@ -99,6 +100,7 @@ typeFilterButtons.forEach(button => {
                         let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags)
                         if(projectToRemove !== -1) {
                             projectsArray.splice(projectToRemove, 1);
+                            project.style.display = 'none';
                         }
                     }
                 })
