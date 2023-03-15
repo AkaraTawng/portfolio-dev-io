@@ -1,20 +1,21 @@
 const skillBars = document.querySelectorAll('.fade-in');
 const technologyFilterTags = document.querySelectorAll('#technology-filter-tags-container ul li button');
 const technologyFilterAllTag = document.querySelector('#technology-all-tag');
+const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
+
 const typeFilterTags = document.querySelectorAll('#type-filter-tags-container button');
 const typeFilterAllTag = document.querySelector('#type-all-tag');
-const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
 const typeFilterButtons = document.querySelectorAll('#type-filter-tags-container button');
 
 let projectItems = document.querySelectorAll('.project-item-flex-container');
 let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
-
 let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter-tags-list.type");
 let tagCounter = document.querySelector('#tag-counter');
  
 /* project counter */
 let projectsArray = [];
 
+/* add click event listener to every type filter button and call showHideProjects function on click */
 typeFilterButtons.forEach(button => {
     button.addEventListener("click", (event) => {
        showHideProjects(event);
@@ -23,9 +24,15 @@ typeFilterButtons.forEach(button => {
 
 const showHideProjects = (event) => {
     typeFilterButtons.forEach(button => {
+
+        /* match the clicked button to the corresponding button in the typeFilterButtons nodelist */
         if(!button.classList.contains('active') && button === event.target){
             projectItems.forEach(project => {
+
+                /* match the project for the clicked button */
                 if(project.dataset.typeFilterTags === event.target.innerHTML) {
+
+                    /* add matching product to projectsArray */
                     projectsArray.push(project.dataset.typeFilterTags)
                     
                     /* display project when matching tag clicked */
@@ -37,6 +44,8 @@ const showHideProjects = (event) => {
         else if(button.classList.contains('active') && button === event.target) {
             projectItems.forEach(project => {
                 if(project.dataset.typeFilterTags === button.innerHTML){
+
+                    /* remove matching project from projectsArray */
                     let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags);
 
                     if(projectToRemove !== -1){
@@ -51,8 +60,6 @@ const showHideProjects = (event) => {
 
     /* update tag counter to show number of currently visible projects and set default value when no projects are visible */
     projectsArray.length < 1 ? tagCounter.innerHTML = '(0)' : tagCounter.innerHTML = `(${projectsArray.length})`
-    
-    // tagCounter.innerHTML = `(${projectsArray.length})`;
 };
 
 // typeFilterButtons.forEach(button => {
