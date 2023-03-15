@@ -26,54 +26,118 @@ let projectsArray = [];
  });
 
 typeFilterButtons.forEach(button => {
-    if(typeFilterAllTag.classList.contains('active')) { 
-        projectItems.forEach(project => {
-            project.style.display = 'flex';
-        }) 
 
-       
-        
-    }
+    // if(typeFilterAllTag.classList.contains('active')) { 
+    //     projectItems.forEach(project => {
+    //         project.style.display = 'flex';
+    //     }) 
+
+    // }
 
 
     button.addEventListener("click", (event) => {
         /* check of project (item) is in projectsArray - show if is, hide is not. Run on each button clik before adding or removing any more projects. */
         /* event.target = the clicked button */
-       
-        
-            /* add projects to array when tag clicked */
-            if(!button.classList.contains('active') && button === event.target) {
-                projectItems.forEach(project => {
-                    if(project.dataset.typeFilterTags === button.innerHTML){
-                        projectsArray.push(project.dataset.typeFilterTags);
+       showHideProjects(event);
 
-                        /* display project when matching tag clicked */
-                        project.style.display = 'flex'
-                    }
-                })
-                // console.log(projectsArray);
-            }
+            /* add projects to array when tag clicked */
+            // if(!button.classList.contains('active') && button === event.target) {
+            //     projectItems.forEach(project => {
+            //         if(project.dataset.typeFilterTags === button.innerHTML){
+            //             projectsArray.push(project.dataset.typeFilterTags);
+
+            //             /* display project when matching tag clicked */
+            //             project.style.display = 'flex'
+            //         }
+            //     })
+            // }
 
             /* remove project from array when tag is un-clicked - active class is removed */
-            else if(button.classList.contains('active') && button === event.target) {
+            // else if(button.classList.contains('active') && button === event.target) {
                
-                projectItems.forEach(project => {
-                    if(project.dataset.typeFilterTags === button.innerHTML){
-                        let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags)
-                        if(projectToRemove !== -1) {
-                            /* remove project from array when matching tag selected */
-                            projectsArray.splice(projectToRemove, 1);
+            //     projectItems.forEach(project => {
+            //         if(project.dataset.typeFilterTags === button.innerHTML){
+            //             let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags)
+            //             if(projectToRemove !== -1) {
+            //                 /* remove project from array when matching tag selected */
+            //                 projectsArray.splice(projectToRemove, 1);
 
-                            /* hide project when matching tag unselected */
-                            project.style.display = 'none'
-                        }
-                    }
-                })
-                // console.log(projectsArray);
-            }
+            //                 /* hide project when matching tag unselected */
+            //                 project.style.display = 'none'
+            //             }
+            //         }
+            //     })
+            // }
     })
 })
 
+const showHideProjects = (event) => {
+    typeFilterButtons.forEach(button => {
+        if(!button.classList.contains('active') && button === event.target){
+            projectItems.forEach(project => {
+                if(project.dataset.typeFilterTags === event.target.innerHTML) {
+                    projectsArray.push(project.dataset.typeFilterTags)
+                    
+                    /* display project when matching tag clicked */
+                    project.style.display = 'flex'  ;
+                }
+            })
+        }
+
+        else if(button.classList.contains('active') && button === event.target) {
+            projectItems.forEach(project => {
+                if(project.dataset.typeFilterTags === button.innerHTML){
+                    let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags);
+
+                    if(projectToRemove !== -1){
+                        projectsArray.splice(projectToRemove, 1);
+                        /* hide project when matching tag unselected */
+                        project.style.display = 'none';
+                    }
+                }
+            })
+        }
+    });
+
+
+    // console.log(event.target.innerHTML)
+    // typeFilterButtons.forEach(button => {
+    //     if(typeFilterAllTag.classList.contains('active')) { 
+    //         projectItems.forEach(project => {
+    //             project.style.display = 'flex';
+    //         }) 
+    
+    //     }
+    //       if(!event.target.classList.contains('active') && button === event.target) {
+    //     projectItems.forEach(project => {
+    //         if(project.dataset.typeFilterTags === event.target.innerHTML){
+    //             projectsArray.push(project.dataset.typeFilterTags);
+
+    //             /* display project when matching tag clicked */
+    //             project.style.display = 'flex'
+    //         }
+    //     })
+    // }
+
+    // else if(event.target.classList.contains('active')) {
+               
+    //     projectItems.forEach(project => {
+    //         if(project.dataset.typeFilterTags === button.innerHTML){
+    //             let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags)
+    //             if(projectToRemove !== -1) {
+    //                 /* remove project from array when matching tag selected */
+    //                 projectsArray.splice(projectToRemove, 1);
+
+    //                 /* hide project when matching tag unselected */
+    //                 project.style.display = 'none'
+    //             }
+    //         }
+    //     })
+    // }
+    // })
+  
+
+}
 
 // typeFilterButtons.forEach(button => {
 //     button.addEventListener("click", (event) => {
@@ -98,26 +162,26 @@ typeFilterButtons.forEach(button => {
 // });
 
 //add & remove active class for technology filter tags
-technologyFilterTags.forEach(technologyFilterTag => {
-    technologyFilterTag.onclick = function() {
-        if(technologyFilterAllTag.classList.contains('active')){
-            technologyFilterAllTag.classList.remove('active')
-            technologyFilterTag.classList.toggle('active')
-        }
+// technologyFilterTags.forEach(technologyFilterTag => {
+//     technologyFilterTag.onclick = function() {
+//         if(technologyFilterAllTag.classList.contains('active')){
+//             technologyFilterAllTag.classList.remove('active')
+//             technologyFilterTag.classList.toggle('active')
+//         }
            
-        else if (!technologyFilterAllTag.classList.contains('active') && technologyFilterTag.innerHTML === technologyFilterAllTag.innerHTML) {
-            technologyFilterTags.forEach(tag => {
-                tag.classList.remove('active')
-            });
+//         else if (!technologyFilterAllTag.classList.contains('active') && technologyFilterTag.innerHTML === technologyFilterAllTag.innerHTML) {
+//             technologyFilterTags.forEach(tag => {
+//                 tag.classList.remove('active')
+//             });
 
-            technologyFilterAllTag.classList.add('active');
-        }
+//             technologyFilterAllTag.classList.add('active');
+//         }
         
-        else if (!technologyFilterAllTag.classList.contains('active')) {
-            technologyFilterTag.classList.toggle('active')
-        }; 
-    };
-});
+//         else if (!technologyFilterAllTag.classList.contains('active')) {
+//             technologyFilterTag.classList.toggle('active')
+//         }; 
+//     };
+// });
 
 //add & remove active class for type filter tags
 typeFilterTags.forEach(typeFilterTag => {
@@ -140,3 +204,7 @@ typeFilterTags.forEach(typeFilterTag => {
         }; 
     };
 });
+
+
+
+
