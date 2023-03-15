@@ -251,6 +251,10 @@ body {
   color: #828282;
   font-size: 0.6rem;
   font-weight: lighter;
+  margin-left: -5.8rem;
+}
+#experiences .experience-flex-container .experience-job-description-points-container li {
+  margin-bottom: 1rem;
 }
 
 .item-card {
