@@ -347,7 +347,7 @@ body {
 }
 
 #projects .project-item-flex-container {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
