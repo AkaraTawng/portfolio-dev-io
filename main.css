@@ -247,7 +247,7 @@ body {
   font-size: 0.8rem;
   font-weight: lighter;
 }
-#experiences .experience-flex-container p {
+#experiences .experience-flex-container .experience-job-description-points-container {
   color: #828282;
   font-size: 0.6rem;
   font-weight: lighter;
