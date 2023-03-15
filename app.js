@@ -11,65 +11,15 @@ let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-
 
 let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter-tags-list.type");
 let tagCounter = document.querySelector('#tag-counter');
-
-
-
-/* technology data attribute array converter */
-
  
 /* project counter */
 let projectsArray = [];
 
- projectItems.forEach(project => {
-    // projectArray.push(project);
-    tagCounter.innerHTML = `(${projectsArray.length})`;
- });
-
 typeFilterButtons.forEach(button => {
-
-    // if(typeFilterAllTag.classList.contains('active')) { 
-    //     projectItems.forEach(project => {
-    //         project.style.display = 'flex';
-    //     }) 
-
-    // }
-
-
     button.addEventListener("click", (event) => {
-        /* check of project (item) is in projectsArray - show if is, hide is not. Run on each button clik before adding or removing any more projects. */
-        /* event.target = the clicked button */
        showHideProjects(event);
-
-            /* add projects to array when tag clicked */
-            // if(!button.classList.contains('active') && button === event.target) {
-            //     projectItems.forEach(project => {
-            //         if(project.dataset.typeFilterTags === button.innerHTML){
-            //             projectsArray.push(project.dataset.typeFilterTags);
-
-            //             /* display project when matching tag clicked */
-            //             project.style.display = 'flex'
-            //         }
-            //     })
-            // }
-
-            /* remove project from array when tag is un-clicked - active class is removed */
-            // else if(button.classList.contains('active') && button === event.target) {
-               
-            //     projectItems.forEach(project => {
-            //         if(project.dataset.typeFilterTags === button.innerHTML){
-            //             let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags)
-            //             if(projectToRemove !== -1) {
-            //                 /* remove project from array when matching tag selected */
-            //                 projectsArray.splice(projectToRemove, 1);
-
-            //                 /* hide project when matching tag unselected */
-            //                 project.style.display = 'none'
-            //             }
-            //         }
-            //     })
-            // }
-    })
-})
+    });
+});
 
 const showHideProjects = (event) => {
     typeFilterButtons.forEach(button => {
@@ -79,9 +29,9 @@ const showHideProjects = (event) => {
                     projectsArray.push(project.dataset.typeFilterTags)
                     
                     /* display project when matching tag clicked */
-                    project.style.display = 'flex'  ;
-                }
-            })
+                    project.style.display = 'flex';
+                };
+            });
         }
 
         else if(button.classList.contains('active') && button === event.target) {
@@ -93,51 +43,15 @@ const showHideProjects = (event) => {
                         projectsArray.splice(projectToRemove, 1);
                         /* hide project when matching tag unselected */
                         project.style.display = 'none';
-                    }
-                }
-            })
-        }
+                    };
+                };
+            });
+        };
     });
 
-
-    // console.log(event.target.innerHTML)
-    // typeFilterButtons.forEach(button => {
-    //     if(typeFilterAllTag.classList.contains('active')) { 
-    //         projectItems.forEach(project => {
-    //             project.style.display = 'flex';
-    //         }) 
-    
-    //     }
-    //       if(!event.target.classList.contains('active') && button === event.target) {
-    //     projectItems.forEach(project => {
-    //         if(project.dataset.typeFilterTags === event.target.innerHTML){
-    //             projectsArray.push(project.dataset.typeFilterTags);
-
-    //             /* display project when matching tag clicked */
-    //             project.style.display = 'flex'
-    //         }
-    //     })
-    // }
-
-    // else if(event.target.classList.contains('active')) {
-               
-    //     projectItems.forEach(project => {
-    //         if(project.dataset.typeFilterTags === button.innerHTML){
-    //             let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags)
-    //             if(projectToRemove !== -1) {
-    //                 /* remove project from array when matching tag selected */
-    //                 projectsArray.splice(projectToRemove, 1);
-
-    //                 /* hide project when matching tag unselected */
-    //                 project.style.display = 'none'
-    //             }
-    //         }
-    //     })
-    // }
-    // })
-  
-
-}
+    /* update tag counter to show number of currently visible projects */
+    tagCounter.innerHTML = `(${projectsArray.length})`;
+};
 
 // typeFilterButtons.forEach(button => {
 //     button.addEventListener("click", (event) => {
