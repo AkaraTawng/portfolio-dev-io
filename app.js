@@ -25,101 +25,55 @@ let projectsArray = [];
     tagCounter.innerHTML = `(${projectsArray.length})`;
  });
 
-
-
-const projectFilter = (event) => {
-    typeFilterButtons.forEach(button => {
-        if(button.classList.contains('active') && button === event.target) {
-            console.log(button.innerHTML)
-        }
-    })
-    projectItemsTypeFilterTags.forEach(projectItem => {
-
-        // console.log(projectItem.dataset.typeFilterTags)
-    })
-}
-   
-     /* function prints previous value on click, not current value.
-        buttonArray doesn't start with All as function is only called on click so when you click the next button it logs the value 
-     */
-    // // technologyFilterButtons.forEach((button) => {
-    //     // console.log(button)
-      
-    //     // if(technologyFilterAllTag.classList.contains('active')){
-    //     //     buttonArray.push(button.innerHTML);
-    //     //     console.log(buttonArray)
-    //     // } 
-    //     // else if(button.classList.contains('active')){
-    //     //     if(buttonArray.includes(button.innerHTML)){
-    //     //         return;
-    //     //     } 
-    //         /* add item to array when active class present */
-    //         // buttonArray.push(button.innerHTML);
-    //         // console.log(buttonArray)
-
-    //         /* remove item from array when active class not present */
-
-    //     }
-
-    //     // if(!button.classList.contains('active')){
-    //     //     buttonArray.splice(index, 1);
-    //     // }
-    // )};
-
-//     projectItemsTechnologyFilterTags.forEach(projectItem => {
-//     let projectItemDataFilterTags = projectItem.getAttribute("data-technology-filter-tags").split(" ");
-// })
-// }
-
-// technologyFilterButtons.forEach(button => {
-//     button.addEventListener("click", () => {
-//         projectFilter();
-//     })
-// })
-
 typeFilterButtons.forEach(button => {
+    if(typeFilterAllTag.classList.contains('active')) { 
+        projectItems.forEach(project => {
+            project.style.display = 'flex';
+        }) 
+
+       
+        
+    }
+
+
     button.addEventListener("click", (event) => {
+        /* check of project (item) is in projectsArray - show if is, hide is not. Run on each button clik before adding or removing any more projects. */
+        /* event.target = the clicked button */
+       
+        
+            /* add projects to array when tag clicked */
             if(!button.classList.contains('active') && button === event.target) {
                 projectItems.forEach(project => {
                     if(project.dataset.typeFilterTags === button.innerHTML){
-                        /* add projects to array when tag clicked */
                         projectsArray.push(project.dataset.typeFilterTags);
 
-                        /* check which items projects are in the array and set display to flex */
-                        // projectsArray.forEach(e => e.style.display = 'none');
-                        project.style.display = "flex";
+                        /* display project when matching tag clicked */
+                        project.style.display = 'flex'
                     }
                 })
-                console.log(projectsArray);
+                // console.log(projectsArray);
             }
-           
+
+            /* remove project from array when tag is un-clicked - active class is removed */
             else if(button.classList.contains('active') && button === event.target) {
-                /* remove project from array when tag is un-clicked - active class is removed */
+               
                 projectItems.forEach(project => {
                     if(project.dataset.typeFilterTags === button.innerHTML){
                         let projectToRemove = projectsArray.indexOf(project.dataset.typeFilterTags)
                         if(projectToRemove !== -1) {
+                            /* remove project from array when matching tag selected */
                             projectsArray.splice(projectToRemove, 1);
-                            project.style.display = 'none';
+
+                            /* hide project when matching tag unselected */
+                            project.style.display = 'none'
                         }
                     }
                 })
-                
-               
-               
-               
-                // projectItems.forEach(project => {
-                //     if(project.dataset.typeFilterTags === button.innerHTML){
-                //         project.style.display = "none";
-                //         console.log(project.dataset.typeFilterTags)
-                //     }
-                   
-                // })
-                // projectArray.splice(button, 1);
-                console.log(projectsArray)
+                // console.log(projectsArray);
             }
     })
 })
+
 
 // typeFilterButtons.forEach(button => {
 //     button.addEventListener("click", (event) => {
