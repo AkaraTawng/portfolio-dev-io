@@ -49,8 +49,10 @@ const showHideProjects = (event) => {
         };
     });
 
-    /* update tag counter to show number of currently visible projects */
-    tagCounter.innerHTML = `(${projectsArray.length})`;
+    /* update tag counter to show number of currently visible projects and set default value when no projects are visible */
+    projectsArray.length < 1 ? tagCounter.innerHTML = '(0)' : tagCounter.innerHTML = `(${projectsArray.length})`
+    
+    // tagCounter.innerHTML = `(${projectsArray.length})`;
 };
 
 // typeFilterButtons.forEach(button => {
