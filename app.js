@@ -46,12 +46,14 @@ if(typeFilterAllTag.classList.contains('active')){
 /* show all projects when all type tag clicked */
 typeFilterAllTag.addEventListener('click', () => {
     showAllProjects();
+    tagCounter.innerHTML = '(9)'; 
 });
 
 const showHideProjects = (event) => {
     /* when other type tag selected, and therefore all tag unselected, initially hide all projects except for project(s) matching selected tag */
     if(typeFilterAllTag.classList.contains('active')){
         hideAllProjects()
+        
     }
 
     typeFilterButtons.forEach(button => {
