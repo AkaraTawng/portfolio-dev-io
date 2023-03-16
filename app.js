@@ -15,7 +15,7 @@ let tagCounter = document.querySelector('#tag-counter');
 /* project counter */
 let projectsArray = [];
 
-/* add click event listener to every type filter button and call showHideProjects function on click */
+   /* add click event listener to every type filter button and call showHideProjects function on click */
 typeFilterButtons.forEach(button => {
     button.addEventListener("click", (event) => {
        showHideProjects(event);
@@ -27,14 +27,33 @@ typeFilterButtons.forEach(button => {
  * on click, add active to all project items
  * */ 
 const showAllProjects = () => {
+    projectItems.forEach(item => {
+        item.style.display = 'flex';
+    })
+};
 
+const hideAllProjects = () => {
+    projectItems.forEach(item => {
+        item.style.display = 'none';
+    })
 }
 
-typeFilterAllTag.addEventListener('click', (event) => {
-    showAllProjects(event);
+/* show all projects by default  on initial page load */
+if(typeFilterAllTag.classList.contains('active')){
+    showAllProjects();
+}; 
+
+/* show all projects when all type tag clicked */
+typeFilterAllTag.addEventListener('click', () => {
+    showAllProjects();
 });
 
 const showHideProjects = (event) => {
+    /* when other type tag selected, and therefore all tag unselected, initially hide all projects except for project(s) matching selected tag */
+    if(typeFilterAllTag.classList.contains('active')){
+        hideAllProjects()
+    }
+
     typeFilterButtons.forEach(button => {
 
         /* match the clicked button to the corresponding button in the typeFilterButtons nodelist */
