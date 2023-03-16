@@ -22,6 +22,18 @@ typeFilterButtons.forEach(button => {
     });
 });
 
+/** show all projects function
+ * add click event listener to type filter all tag
+ * on click, add active to all project items
+ * */ 
+const showAllProjects = () => {
+
+}
+
+typeFilterAllTag.addEventListener('click', (event) => {
+    showAllProjects(event);
+});
+
 const showHideProjects = (event) => {
     typeFilterButtons.forEach(button => {
 
