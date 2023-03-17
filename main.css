@@ -64,11 +64,17 @@ footer a:visited {
   font-size: 0.8rem;
   padding-bottom: 1.5rem;
 }
+#profile-bio #bio-container {
+  opacity: 0;
+}
 #profile-bio #bio-container p {
   color: #828282;
   font-size: 0.7rem;
   padding-bottom: 0.2rem;
   margin-top: 2rem;
+}
+#profile-bio #name-contact-container {
+  opacity: 0;
 }
 
 * {

@@ -11,7 +11,8 @@ let projectItems = document.querySelectorAll('.project-item-flex-container');
 let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
 let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter-tags-list.type");
 let tagCounter = document.querySelector('#tag-counter');
-
+const bioContainer = document.querySelector('#bio-container');
+const nameContactContainer = document.querySelector('#name-contact-container');
  
 /* project counter */
 let projectsArray = [];
@@ -120,8 +121,21 @@ typeFilterTags.forEach(typeFilterTag => {
 });
 
 
-/* scroll animations */
+/* animations */
 
+/* fade in up animation on page load */
+setTimeout(() => {
+    nameContactContainer.style.opacity = 1;
+    nameContactContainer.classList.add('animate__fadeInUp')
+}, 1000);
+
+setTimeout(() => {
+    nameContactContainer.style.opacity = 1;
+    bioContainer.classList.add('animate__fadeInUp')
+}, 1400);
+
+
+/* scroll animations */
 
 
 

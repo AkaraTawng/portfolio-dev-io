@@ -58,11 +58,16 @@
     }
 
     #bio-container {
+        opacity: 0;
         p {
             color: $light-grey1;
             font-size: .7rem;
             padding-bottom: .2rem;
             margin-top: 2rem;
         }
+    }
+
+    #name-contact-container {
+        opacity: 0;
     }
 }
