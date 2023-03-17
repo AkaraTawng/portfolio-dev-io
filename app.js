@@ -163,12 +163,13 @@ tagCounterHeaderObserver.observe(tagCounterHeader);
 const filterByHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.classList.add('animate__slideInLeft')
-        }
-    })
+            entry.target.classList.add('animate__slideInLeft');
+            filterByHeaderObserver.unobserve(entry.target);
+        };
+    });
 }, {
     threshold: 0.5
-})
+});
 
 filterByHeaderObserver.observe(filterByHeader);
 
