@@ -17,7 +17,10 @@ const nameContactContainer = document.querySelector('#name-contact-container');
 const tagCounterHeader = document.querySelector('#project-tags h1');
 
 const filterByHeader = document.querySelector('#project-tags h2');
- 
+
+const typeOfWebsiteContainer = document.querySelector('#type-filter-tags-container');
+
+
 /* project counter */
 let projectsArray = [];
 
@@ -170,8 +173,17 @@ const filterByHeaderObserver = new IntersectionObserver(entries => {
 filterByHeaderObserver.observe(filterByHeader);
 
 
+/* type of website filter tags slide in up */
 
+const typeOfWebsiteContainerObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__slideInUp')
+        }
+    })
+})
 
+typeOfWebsiteContainerObserver.observe(typeOfWebsiteContainer);
 
 
 
