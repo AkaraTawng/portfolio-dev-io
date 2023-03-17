@@ -11,6 +11,7 @@ let projectItems = document.querySelectorAll('.project-item-flex-container');
 let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
 let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter-tags-list.type");
 let tagCounter = document.querySelector('#tag-counter');
+
  
 /* project counter */
 let projectsArray = [];
@@ -96,6 +97,57 @@ const showHideProjects = (event) => {
     projectsArray.length < 1 ? tagCounter.innerHTML = '(0)' : tagCounter.innerHTML = `(${projectsArray.length})`
 };
 
+//add & remove active class for type filter tags
+typeFilterTags.forEach(typeFilterTag => {
+    typeFilterTag.onclick = function() {
+        if(typeFilterAllTag.classList.contains('active')){
+            typeFilterAllTag.classList.remove('active')
+            typeFilterTag.classList.toggle('active')
+        }
+           
+        else if (!typeFilterAllTag.classList.contains('active') && typeFilterTag.innerHTML === typeFilterAllTag.innerHTML) {
+            typeFilterTags.forEach(tag => {
+                tag.classList.remove('active')
+            });
+
+            typeFilterAllTag.classList.add('active');
+        }
+        
+        else if (!typeFilterAllTag.classList.contains('active')) {
+            typeFilterTag.classList.toggle('active')
+        }; 
+    };
+});
+
+
+/* scroll animations */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // typeFilterButtons.forEach(button => {
 //     button.addEventListener("click", (event) => {
 //         projectFilter(event);
@@ -140,27 +192,7 @@ const showHideProjects = (event) => {
 //     };
 // });
 
-//add & remove active class for type filter tags
-typeFilterTags.forEach(typeFilterTag => {
-    typeFilterTag.onclick = function() {
-        if(typeFilterAllTag.classList.contains('active')){
-            typeFilterAllTag.classList.remove('active')
-            typeFilterTag.classList.toggle('active')
-        }
-           
-        else if (!typeFilterAllTag.classList.contains('active') && typeFilterTag.innerHTML === typeFilterAllTag.innerHTML) {
-            typeFilterTags.forEach(tag => {
-                tag.classList.remove('active')
-            });
 
-            typeFilterAllTag.classList.add('active');
-        }
-        
-        else if (!typeFilterAllTag.classList.contains('active')) {
-            typeFilterTag.classList.toggle('active')
-        }; 
-    };
-});
 
 
 
