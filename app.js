@@ -13,6 +13,10 @@ let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter
 let tagCounter = document.querySelector('#tag-counter');
 const bioContainer = document.querySelector('#bio-container');
 const nameContactContainer = document.querySelector('#name-contact-container');
+
+const tagCounterHeader = document.querySelector('#project-tags h1');
+
+const filterByHeader = document.querySelector('#project-tags h2');
  
 /* project counter */
 let projectsArray = [];
@@ -136,7 +140,16 @@ setTimeout(() => {
 
 
 /* scroll animations */
+const tagCounterHeaderObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        console.log(entry.target.classList) 
+        entry.target.classList.add('animate__slideInLeft')
+    })
+}, {
+    threshold: 1
+})
 
+tagCounterHeaderObserver.observe(tagCounterHeader);
 
 
 
