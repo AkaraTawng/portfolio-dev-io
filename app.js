@@ -142,11 +142,14 @@ setTimeout(() => {
 /* scroll animations */
 const tagCounterHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        console.log(entry.target.classList) 
-        entry.target.classList.add('animate__slideInLeft')
+        if(entry.isIntersecting){
+           console.log(entry.isIntersecting) 
+        entry.target.classList.add('animate__slideInLeft') 
+        }
+            return;
     })
 }, {
-    threshold: 1
+    threshold: 0.8
 })
 
 tagCounterHeaderObserver.observe(tagCounterHeader);
