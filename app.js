@@ -20,6 +20,7 @@ const filterByHeader = document.querySelector('#project-tags h2');
 
 const typeOfWebsiteContainer = document.querySelector('#type-filter-tags-container');
 
+const evenProjectItems = document.querySelectorAll('.project-even');
 
 /* project counter */
 let projectsArray = [];
@@ -175,20 +176,31 @@ filterByHeaderObserver.observe(filterByHeader);
 
 
 /* type of website filter tags slide in up */
-
 const typeOfWebsiteContainerObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__slideInUp');
             typeOfWebsiteContainerObserver.unobserve(entry.target);
-        }
-    })
-})
+        };
+    });
+});
 
 typeOfWebsiteContainerObserver.observe(typeOfWebsiteContainer);
 
 
+/* even project items slide in left */
+const evenProjectsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__slideInLeft')
+            evenProjectsObserver.unobserve(evenProjectItems);
+        };  
+    });
+});
 
+evenProjectItems.forEach(item => {
+    evenProjectsObserver.observe(item);
+});
 
 
 
