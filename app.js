@@ -140,20 +140,34 @@ setTimeout(() => {
 
 
 /* scroll animations */
+
+/* tag counter slide in left */
 const tagCounterHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-           console.log(entry.isIntersecting) 
+        //    console.log(entry.isIntersecting) 
         entry.target.classList.add('animate__slideInLeft') 
         }
             return;
     })
 }, {
-    threshold: 0.8
-})
+    threshold: 0.5
+});
 
 tagCounterHeaderObserver.observe(tagCounterHeader);
 
+/* filter by slide in left */
+const filterByHeaderObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__slideInLeft')
+        }
+    })
+}, {
+    threshold: 0.5
+})
+
+filterByHeaderObserver.observe(filterByHeader);
 
 
 
