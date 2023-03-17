@@ -346,8 +346,8 @@ body {
   border: solid #4F4F4F 1px;
 }
 #project-tags ul button:hover {
-  background-color: #2F80ED;
-  color: white;
+  color: #2F80ED;
+  border: solid #2F80ED 1px;
 }
 
 #projects .project-item-flex-container {

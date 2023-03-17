@@ -44,8 +44,8 @@ h3 {
             cursor: pointer;
             border: solid $dark-grey1 1px;
             &:hover {
-                background-color: $accent-blue;
-                color: white;
+                color: $accent-blue;
+                border: solid $accent-blue 1px;
             }
         }
     }
