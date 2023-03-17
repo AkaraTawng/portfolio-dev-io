@@ -149,10 +149,10 @@ const tagCounterHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
         //    console.log(entry.isIntersecting) 
-        entry.target.classList.add('animate__slideInLeft') 
-        }
-            return;
-    })
+        entry.target.classList.add('animate__slideInLeft'); 
+        tagCounterHeaderObserver.unobserve(tagCounterHeader);
+        };
+    });
 }, {
     threshold: 0.5
 });
