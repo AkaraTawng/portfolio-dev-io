@@ -22,6 +22,8 @@ const typeOfWebsiteContainer = document.querySelector('#type-filter-tags-contain
 
 const evenProjectItems = document.querySelectorAll('.project-even');
 
+const oddProjectItems = document.querySelectorAll('.project-odd');
+
 /* project counter */
 let projectsArray = [];
 
@@ -193,13 +195,27 @@ const evenProjectsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__slideInLeft')
-            evenProjectsObserver.unobserve(evenProjectItems);
+            evenProjectsObserver.unobserve(entry.target);
         };  
     });
 });
 
 evenProjectItems.forEach(item => {
     evenProjectsObserver.observe(item);
+});
+
+/* odd project items slide in right */
+const oddProjectsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__slideInRight');
+        };
+        evenProjectsObserver.unobserve(entry.target);
+    });
+});
+
+oddProjectItems.forEach(item => {
+    oddProjectsObserver.observe(item);
 });
 
 
