@@ -1,6 +1,8 @@
 #project-tags {
     
-    .tag-counter-header, .filter-by-header {
+    .tag-counter-header, 
+    .filter-by-header,
+    #type-filter-tags-container {
         opacity: 0;
         transition: all 2s ease;
     }

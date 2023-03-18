@@ -183,6 +183,7 @@ const typeOfWebsiteContainerObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__slideInUp');
+            entry.target.style.opacity = 1;
             typeOfWebsiteContainerObserver.unobserve(entry.target);
         };
     });

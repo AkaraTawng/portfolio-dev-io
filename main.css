@@ -314,7 +314,9 @@ body {
   width: 100%;
 }
 
-#project-tags .tag-counter-header, #project-tags .filter-by-header {
+#project-tags .tag-counter-header,
+#project-tags .filter-by-header,
+#project-tags #type-filter-tags-container {
   opacity: 0;
   transition: all 2s ease;
 }
