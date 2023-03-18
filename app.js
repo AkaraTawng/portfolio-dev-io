@@ -167,6 +167,7 @@ const filterByHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__slideInLeft');
+            entry.target.style.opacity = 1;
             filterByHeaderObserver.unobserve(entry.target);
         };
     });

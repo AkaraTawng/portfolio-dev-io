@@ -314,8 +314,9 @@ body {
   width: 100%;
 }
 
-#project-tags .tag-counter-header {
+#project-tags .tag-counter-header, #project-tags .filter-by-header {
   opacity: 0;
+  transition: all 2s ease;
 }
 #project-tags .active {
   background-color: #2F80ED;
