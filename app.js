@@ -196,9 +196,11 @@ typeOfWebsiteContainerObserver.observe(typeOfWebsiteContainer);
 const evenProjectsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.classList.add('animate__slideInLeft')
+            entry.target.style.opacity = 1;
+            entry.target.classList.add('animate__slideInLeft');
             evenProjectsObserver.unobserve(entry.target);
         };  
+       
     });
 });
 
@@ -211,8 +213,10 @@ const oddProjectsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__slideInRight');
+            entry.target.style.opacity = 1;
+            oddProjectsObserver.unobserve(entry.target);
         };
-        evenProjectsObserver.unobserve(entry.target);
+      
     });
 });
 

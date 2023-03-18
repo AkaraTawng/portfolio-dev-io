@@ -320,6 +320,9 @@ body {
   opacity: 0;
   transition: all 2s ease;
 }
+#project-tags .project-even {
+  display: none;
+}
 #project-tags .active {
   background-color: #2F80ED;
   color: white;
@@ -362,6 +365,12 @@ body {
   color: #2F80ED;
   border: solid #2F80ED 1px;
   background-color: white;
+}
+
+.project-odd,
+.project-even {
+  opacity: 0;
+  transition: all 2s ease;
 }
 
 #projects .project-item-flex-container {

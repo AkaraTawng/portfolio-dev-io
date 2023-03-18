@@ -5,12 +5,16 @@
     #type-filter-tags-container {
         opacity: 0;
         transition: all 2s ease;
+    };
+
+    .project-even {
+        display: none;
     }
 
     .active {
         background-color: $accent-blue;
         color: white;
-    }
+    };
     
 h1, h2, h3 {
     color: $dark-grey1;
@@ -59,3 +63,8 @@ h3 {
     }
 }
 
+.project-odd,
+.project-even {
+    opacity: 0;
+    transition: all 2s ease;
+};
