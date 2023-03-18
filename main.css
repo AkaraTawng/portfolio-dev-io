@@ -314,6 +314,9 @@ body {
   width: 100%;
 }
 
+#project-tags .tag-counter-header {
+  opacity: 0;
+}
 #project-tags .active {
   background-color: #2F80ED;
   color: white;

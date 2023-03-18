@@ -151,7 +151,7 @@ setTimeout(() => {
 const tagCounterHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-        //    console.log(entry.isIntersecting) 
+        entry.target.style.opacity = 1;
         entry.target.classList.add('animate__slideInLeft'); 
         tagCounterHeaderObserver.unobserve(tagCounterHeader);
         };
