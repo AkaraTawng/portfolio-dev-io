@@ -245,7 +245,16 @@ experienceItemHeaderInfoAsiObserver.observe(experienceItemHeaderInfoAsi);
 
 
 /* asi image scroll in up */
+const asiImageObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.style.opacity = 1;
+            asiImageObserver.unobserve(asiImage);
+        };
+    });
+});
 
+asiImageObserver.observe(asiImage);
 
 
 

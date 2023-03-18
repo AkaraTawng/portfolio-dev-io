@@ -225,6 +225,8 @@ body {
   height: 1rem;
   width: 5rem;
   margin: 1rem 1.4rem 0 0;
+  opacity: 0;
+  transition: opacity 2s ease;
 }
 #experiences img#yogojo {
   height: 2.5rem;
