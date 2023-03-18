@@ -10,6 +10,7 @@
         height: 1rem;
         width: 5rem;
         margin: 1rem 1.4rem 0 0;
+        // opacity: 0;
     }
 
     img#yogojo {
@@ -23,11 +24,19 @@
         width: 5rem;
         margin: 1rem 2.3rem 0 0;
     }
+    
 
     .experience-flex-container {
         display: flex;
         justify-content: space-around;
 
+        .experience-item-header-info {
+        
+        &.asi {
+            opacity: 0;
+            transition: all 2s ease; }
+        }
+       
         &.yogojo {
             margin: 3rem 0 3rem 0;
         }
@@ -61,3 +70,4 @@
 
 
 }
+

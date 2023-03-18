@@ -24,6 +24,12 @@ const evenProjectItems = document.querySelectorAll('.project-even');
 
 const oddProjectItems = document.querySelectorAll('.project-odd');
 
+const asiImage = document.querySelector('.experience-flex-container #asi');
+
+const experienceItemHeaderInfoAsi = document.querySelector('.experience-item-header-info.asi');
+
+// console.log()
+
 /* project counter */
 let projectsArray = [];
 
@@ -224,10 +230,21 @@ oddProjectItems.forEach(item => {
     oddProjectsObserver.observe(item);
 });
 
+/* asi header info slide in up */
+const experienceItemHeaderInfoAsiObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.style.opacity = 1;
+            entry.target.classList.add('animate__slideInUp')
+            experienceItemHeaderInfoAsiObserver.unobserve(experienceItemHeaderInfoAsi);
+        };
+    });
+});
+
+experienceItemHeaderInfoAsiObserver.observe(experienceItemHeaderInfoAsi);
 
 
-
-
+/* asi image scroll in up */
 
 
 

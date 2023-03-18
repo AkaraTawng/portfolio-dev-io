@@ -240,6 +240,10 @@ body {
   display: flex;
   justify-content: space-around;
 }
+#experiences .experience-flex-container .experience-item-header-info.asi {
+  opacity: 0;
+  transition: all 2s ease;
+}
 #experiences .experience-flex-container.yogojo {
   margin: 3rem 0 3rem 0;
 }
