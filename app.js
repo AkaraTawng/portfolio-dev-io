@@ -268,7 +268,10 @@ asiImageObserver.observe(asiImage);
 const asiJobDescriptionPointsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.classList.add('animate__slideInUp')
+             entry.target.style.opacity = 1;
+            entry.target.classList.add('animate__slideInUp');
+           
+            
             asiJobDescriptionPointsObserver.unobserve(entry.target);
         };
     });
