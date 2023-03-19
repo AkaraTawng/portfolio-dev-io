@@ -264,21 +264,21 @@ asiImageObserver.observe(asiImage);
 
 
 
-/* asi job description points slide in up */
-const asiJobDescriptionPointsObserver = new IntersectionObserver(entries => {
+/* all job description points slide in up */
+const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
              entry.target.style.opacity = 1;
             entry.target.classList.add('animate__slideInUp');
            
             
-            asiJobDescriptionPointsObserver.unobserve(entry.target);
+            jobExperienceDescriptionPointsObserver.unobserve(entry.target);
         };
     });
 });
 
-asiJobDescriptionPoints.forEach(jobDescriptionPoint => {
-    asiJobDescriptionPointsObserver.observe(jobDescriptionPoint);
+jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => {
+    jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint);
 });
 
 
