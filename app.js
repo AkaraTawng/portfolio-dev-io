@@ -28,6 +28,10 @@ const asiImage = document.querySelector('.experience-flex-container #asi');
 
 const experienceItemHeaderInfoAsi = document.querySelector('.experience-item-header-info.asi');
 
+const asiJobDescriptionPoints = document.querySelectorAll('.experience-job-description-points-container.asi li');
+
+console.log(asiJobDescriptionPoints)
+
 // console.log()
 
 /* project counter */
