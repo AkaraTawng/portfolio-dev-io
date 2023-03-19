@@ -30,7 +30,9 @@ const experienceItemHeaderInfoAsi = document.querySelector('.experience-item-hea
 
 const asiJobDescriptionPoints = document.querySelectorAll('.experience-job-description-points-container.asi li');
 
-console.log(asiJobDescriptionPoints)
+// asiJobDescriptionPoints.forEach(point => {
+//     console.log(point.innerText)
+// });
 
 // console.log()
 
@@ -261,6 +263,25 @@ const asiImageObserver = new IntersectionObserver(entries => {
 asiImageObserver.observe(asiImage);
 
 
+/* make intersection observer. loop through asi job description points and check behavior */
+
+const asiJobDescriptionPointsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            console.log(entry.target.innerText)
+        };
+    });
+});
+
+asiJobDescriptionPoints.forEach(jobDescriptionPoint => {
+    asiJobDescriptionPointsObserver.observe(jobDescriptionPoint);
+});
+
+
+
+
+
+/* make intersection observer then loop through job description points? or loop through the job description points and add an intersection abserver to each one? adding an intersection observer one by one will be too inefficient. */
 
 
 
