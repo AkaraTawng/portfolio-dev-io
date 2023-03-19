@@ -28,7 +28,7 @@ const asiImage = document.querySelector('.experience-flex-container #asi');
 
 const experienceItemHeaderInfoAsi = document.querySelector('.experience-item-header-info.asi');
 
-const asiJobDescriptionPoints = document.querySelectorAll('.experience-job-description-points-container.asi li');
+const jobExperienceDescriptionPoints = document.querySelectorAll('.experience-job-description-points-container li');
 
 // asiJobDescriptionPoints.forEach(point => {
 //     console.log(point.innerText)
