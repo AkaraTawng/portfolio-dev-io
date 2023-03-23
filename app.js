@@ -34,7 +34,7 @@ const hobbyItemsImagesEven = document.querySelectorAll('.hobby-item-image-even')
 
 const hobbyItemImagesOdd = document.querySelector('.hobby-item-image-odd');
 
-const hobbyItemsTextContentEven = document.querySelector('.hobby-item-text-content-even');
+const hobbyItemsTextContentEven = document.querySelectorAll('.hobby-item-text-content-even');
 
 const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
 
@@ -333,9 +333,23 @@ hobbyItemsImagesEven.forEach(item => {
     hobbyImagesEvenObserver.observe(item);
 });
 
-/* hobby images odd intersection observer*/
+
 
 /* hobby text content even intersection observer*/
+const hobbyItemsTextContentEvenObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__slideInRight');
+        };
+    });
+});
+
+hobbyItemsTextContentEven.forEach(item => {
+    hobbyItemsTextContentEvenObserver.observe(item);
+});
+
+
+/* hobby images odd intersection observer*/
 
 /* hobby text content odd intersection observer*/
 
