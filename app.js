@@ -38,7 +38,7 @@ const hobbyItemsTextContentEven = document.querySelector('.hobby-item-text-conte
 
 const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
 
-console.log(hobbyItemsTextContentOdd)
+console.log()
 
 
 
@@ -321,10 +321,17 @@ jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => {
 
 /* hobby images even intersection observer*/
 const hobbyImagesEvenObserver = new IntersectionObserver(entries => {
-    entries.forEach(() => {
-        
-    })
-})
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__slideInLeft');
+            hobbyImagesEvenObserver.unobserve(entry.target);
+        };
+    });
+});
+
+hobbyItemsImagesEven.forEach(item => {
+    hobbyImagesEvenObserver.observe(item);
+});
 
 /* hobby images odd intersection observer*/
 
