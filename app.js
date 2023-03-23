@@ -350,6 +350,16 @@ hobbyItemsTextContentEven.forEach(item => {
 
 
 /* hobby images odd intersection observer*/
+const hobbyImagesOddObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__slideInRight')
+            hobbyImagesOddObserver.unobserve(hobbyItemImagesOdd);
+        };
+    });
+});
+
+hobbyImagesOddObserver.observe(hobbyItemImagesOdd);
 
 /* hobby text content odd intersection observer*/
 
