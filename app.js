@@ -30,6 +30,17 @@ const experienceItemHeaderInfoAsi = document.querySelector('.experience-item-hea
 
 const jobExperienceDescriptionPoints = document.querySelectorAll('.experience-job-description-points-container li');
 
+const hobbyItemsImagesEven = document.querySelectorAll('.hobby-item-image-even');
+
+const hobbyItemImagesOdd = document.querySelector('.hobby-item-image-odd');
+
+const hobbyItemsTextContentEven = document.querySelector('.hobby-item-text-content-even');
+
+const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
+
+console.log(hobbyItemsTextContentOdd)
+
+
 
 
 /* find a way to loop through hobby items node list and check index. If index is odd, add one animation. If index is even, add other animation. How to find index? How to use indexOf? Apply same concept to hobby items text content */
@@ -308,9 +319,19 @@ jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => {
 
 
 
-/* make intersection observer for hobby images
-make intersection observer for hobby items text content
-*/
+/* hobby images even intersection observer*/
+const hobbyImagesEvenObserver = new IntersectionObserver(entries => {
+    entries.forEach(() => {
+        
+    })
+})
+
+/* hobby images odd intersection observer*/
+
+/* hobby text content even intersection observer*/
+
+/* hobby text content odd intersection observer*/
+
 
 
 
