@@ -383,9 +383,12 @@ hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
 
 const blogTitleTextContentObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        console.log(entry)
-    })
-})
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__fadeInUp')
+            blogTitleTextContentObserver.unobserve(blogTitleTextContentArray);
+        };
+    });
+});
 
 blogTitleTextContentArray.forEach(item => {
     blogTitleTextContentObserver.observe(item);
