@@ -339,7 +339,7 @@ hobbyItemsImagesEven.forEach(item => {
 const hobbyItemsTextContentEvenObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.classList.add('animate__slideInRight');
+            entry.target.classList.add('animate__flipInX');
         };
     });
 });
@@ -362,7 +362,16 @@ const hobbyImagesOddObserver = new IntersectionObserver(entries => {
 hobbyImagesOddObserver.observe(hobbyItemImagesOdd);
 
 /* hobby text content odd intersection observer*/
+const hobbyItemTextContentOddObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__flipInX')
+            hobbyItemTextContentOddObserver.unobserve(hobbyItemTextContentOdd);
+        };
+    });
+});
 
+hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
 
 
 

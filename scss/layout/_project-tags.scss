@@ -37,10 +37,6 @@ h3 {
     margin-bottom: 1rem;
 }
 
-#technology-filter-tags-container {
-    margin-bottom: 1rem;
-}
-
     ul {
         list-style-type: none;
         display: flex;
@@ -55,9 +51,15 @@ h3 {
             cursor: pointer;
             border: solid $dark-grey1 1px;
             &:hover {
+                color: white;
+                background-color: $accent-blue;
+                }
+            @include laptop {
+                &:hover {
                 color: $accent-blue;
                 border: solid $accent-blue 1px;
                 background-color: white;
+                }
             }
         }
     }

@@ -352,9 +352,6 @@ body {
   text-align: center;
   margin-bottom: 1rem;
 }
-#project-tags #technology-filter-tags-container {
-  margin-bottom: 1rem;
-}
 #project-tags ul {
   list-style-type: none;
   display: flex;
@@ -370,9 +367,15 @@ body {
   border: solid #4F4F4F 1px;
 }
 #project-tags ul button:hover {
-  color: #2F80ED;
-  border: solid #2F80ED 1px;
-  background-color: white;
+  color: white;
+  background-color: #2F80ED;
+}
+@media screen and (min-width: 1280px) {
+  #project-tags ul button:hover {
+    color: #2F80ED;
+    border: solid #2F80ED 1px;
+    background-color: white;
+  }
 }
 
 .project-odd,
