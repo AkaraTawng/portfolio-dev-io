@@ -38,7 +38,9 @@ const hobbyItemsTextContentEven = document.querySelectorAll('.hobby-item-text-co
 
 const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
 
-console.log()
+const blogTitleTextContent = document.querySelector('#title-text-flex-container').children;
+
+console.log(blogTitleTextContent)
 
 
 
