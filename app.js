@@ -40,8 +40,10 @@ const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content
 
 const blogTitleTextContent = document.querySelector('#title-text-flex-container').children;
 
-console.log(blogTitleTextContent)
+/* convert blogTitleTextContent HTMLCollection to array */
+const blogTitleTextContentArray = Array.from(blogTitleTextContent);
 
+console.log()
 
 
 
@@ -377,7 +379,17 @@ hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
 
 
 
+/* blog title text content intersection observer scroll animation */
 
+const blogTitleTextContentObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        console.log(entry)
+    })
+})
+
+blogTitleTextContentArray.forEach(item => {
+    blogTitleTextContentObserver.observe(item);
+});
 
 
 
