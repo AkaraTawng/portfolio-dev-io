@@ -24,8 +24,6 @@ const evenProjectItems = document.querySelectorAll('.project-even');
 
 const oddProjectItems = document.querySelectorAll('.project-odd');
 
-const asiImage = document.querySelector('.experience-flex-container #asi');
-
 const experienceItemHeaderInfoAsi = document.querySelector('.experience-item-header-info.asi');
 
 const jobExperienceDescriptionPoints = document.querySelectorAll('.experience-job-description-points-container li');
@@ -50,7 +48,17 @@ const blogPostShortDescription = document.querySelectorAll('#blog p');
 /* convert blogPostShortDescriptions nodelist to array */
 const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
 
-console.log(blogPostShortDescriptionArray)
+const workExperienceImagesNodelist = document.querySelectorAll('.experience-flex-container img');
+
+/* convert workExperiencesImagesNodelist to array */
+const workExperienceImagesArray = Array.from(workExperienceImagesNodelist);
+
+const experienceItemHeaderInfoNodelist = document.querySelectorAll('.experience-item-header-info');
+
+/* convert experinceItemHeaderInfoNodelist to array */
+const experienceItemHeaderInfoArray = Array.from(experienceItemHeaderInfoNodelist);
+
+console.log()
 
 
 
@@ -290,18 +298,31 @@ const experienceItemHeaderInfoAsiObserver = new IntersectionObserver(entries => 
 
 experienceItemHeaderInfoAsiObserver.observe(experienceItemHeaderInfoAsi);
 
-
-/* asi image scroll in up */
-const asiImageObserver = new IntersectionObserver(entries => {
+const workExperienceImagesObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
+            entry.target.classList.add('animate__flipInX');
             entry.target.style.opacity = 1;
-            asiImageObserver.unobserve(asiImage);
+            workExperienceImagesObserver.unobserve(entry);
         };
     });
+}, {
+    threshold: 0
 });
 
-asiImageObserver.observe(asiImage);
+workExperienceImagesArray.forEach(item => {
+    workExperienceImagesObserver.observe(item);
+});
+
+
+/**
+ * get all work experience images
+ * get all work experience item header info
+ * convert to array
+ * iterate over array and apply intersection observer 
+ * apply scroll animation in intersection observer
+ */
+
 
 
 
@@ -321,14 +342,6 @@ const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries 
 jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => {
     jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint);
 });
-
-
-
-
-
-
-
-
 
 /* hobby images even intersection observer*/
 const hobbyImagesEvenObserver = new IntersectionObserver(entries => {
@@ -427,6 +440,20 @@ const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
 
 blogPostShortDescriptionArray.forEach(item => {
     blogPostShortDescriptionObserver.observe(item);
+});
+
+
+const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__fadeInUp');
+            experienceItemHeaderInfoObserver.unobserve(entry);
+        };
+    });
+});
+
+experienceItemHeaderInfoArray.forEach(item => {
+    experienceItemHeaderInfoObserver.observe(item);
 });
 
 
