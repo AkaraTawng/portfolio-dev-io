@@ -24,8 +24,6 @@ const evenProjectItems = document.querySelectorAll('.project-even');
 
 const oddProjectItems = document.querySelectorAll('.project-odd');
 
-const asiImage = document.querySelector('.experience-flex-container #asi');
-
 const experienceItemHeaderInfoAsi = document.querySelector('.experience-item-header-info.asi');
 
 const jobExperienceDescriptionPoints = document.querySelectorAll('.experience-job-description-points-container li');
@@ -295,21 +293,21 @@ const experienceItemHeaderInfoAsiObserver = new IntersectionObserver(entries => 
 
 experienceItemHeaderInfoAsiObserver.observe(experienceItemHeaderInfoAsi);
 
-
-/* asi image scroll in up */
-const asiImageObserver = new IntersectionObserver(entries => {
+const workExperienceImagesObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__flipInX')
             entry.target.style.opacity = 1;
-            asiImageObserver.unobserve(asiImage);
+            workExperienceImagesObserver.unobserve(workExperienceImagesArray);
         };
     });
 }, {
-    threshold: 1
+    threshold: 0
 });
 
-asiImageObserver.observe(asiImage);
+workExperienceImagesArray.forEach(item => {
+    workExperienceImagesObserver.observe(item);
+});
 
 
 /**
