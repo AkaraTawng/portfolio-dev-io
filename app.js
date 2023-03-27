@@ -45,7 +45,12 @@ const blogTitleTextContentArray = Array.from(blogTitleTextContent);
 
 const blogImage = document.querySelector('#blog img');
 
-console.log(blogImage)
+const blogPostShortDescription = document.querySelectorAll('#blog p');
+
+/* convert blogPostShortDescriptions nodelist to array */
+const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
+
+console.log(blogPostShortDescriptionArray)
 
 
 
@@ -411,7 +416,18 @@ const blogImageObserver = new IntersectionObserver(entries => {
 blogImageObserver.observe(blogImage);
 
 
+const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__fadeInUp')
+            blogPostShortDescriptionObserver.unobserve(blogPostShortDescriptionArray);
+        };
+    });
+});
 
+blogPostShortDescriptionArray.forEach(item => {
+    blogPostShortDescriptionObserver.observe(item);
+});
 
 
 // typeFilterButtons.forEach(button => {
