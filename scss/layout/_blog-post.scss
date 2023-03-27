@@ -30,6 +30,8 @@
         width: 10rem;
         border-radius: 5px 0 0 5px;
         margin: 0.5rem -6.5% 0 0;
+        opacity: 0;
+        transition: all .9s ease;
     }
 
     p {
