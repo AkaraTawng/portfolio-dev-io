@@ -50,7 +50,12 @@ const blogPostShortDescription = document.querySelectorAll('#blog p');
 /* convert blogPostShortDescriptions nodelist to array */
 const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
 
-console.log(blogPostShortDescriptionArray)
+const workExperienceImagesNodelist = document.querySelectorAll('.experience-flex-container img');
+
+/* convert workExperiencesImagesNodelist to array */
+const workExperienceImagesArray = Array.from(workExperienceImagesNodelist);
+
+console.log()
 
 
 
@@ -305,6 +310,16 @@ const asiImageObserver = new IntersectionObserver(entries => {
 });
 
 asiImageObserver.observe(asiImage);
+
+
+/**
+ * get all work experience images
+ * get all work experience item header info
+ * convert to array
+ * iterate over array and apply intersection observer 
+ * apply scroll animation in intersection observer
+ */
+
 
 
 
