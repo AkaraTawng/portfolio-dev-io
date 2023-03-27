@@ -14,8 +14,9 @@ footer {
 
     a {
         font-weight: 600;
+        color: $light-grey1;
         &:visited {
-            color: inherit;
+            color: $light-grey1;
         }
     }
 }

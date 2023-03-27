@@ -12,9 +12,10 @@ footer {
 }
 footer a {
   font-weight: 600;
+  color: #828282;
 }
 footer a:visited {
-  color: inherit;
+  color: #828282;
 }
 
 #profile-bio {
