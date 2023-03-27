@@ -53,7 +53,12 @@ const workExperienceImagesNodelist = document.querySelectorAll('.experience-flex
 /* convert workExperiencesImagesNodelist to array */
 const workExperienceImagesArray = Array.from(workExperienceImagesNodelist);
 
-console.log()
+const experienceItemHeaderInfoNodelist = document.querySelectorAll('.experience-item-header-info');
+
+/* convert experinceItemHeaderInfoNodelist to array */
+const experienceItemHeaderInfoArray = Array.from(experienceItemHeaderInfoNodelist);
+
+console.log(experienceItemHeaderInfoArray)
 
 
 
