@@ -58,7 +58,7 @@ const experienceItemHeaderInfoNodelist = document.querySelectorAll('.experience-
 /* convert experinceItemHeaderInfoNodelist to array */
 const experienceItemHeaderInfoArray = Array.from(experienceItemHeaderInfoNodelist);
 
-console.log(experienceItemHeaderInfoArray)
+console.log()
 
 
 
@@ -440,6 +440,17 @@ const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
 
 blogPostShortDescriptionArray.forEach(item => {
     blogPostShortDescriptionObserver.observe(item);
+});
+
+
+const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        
+    })
+})
+
+experienceItemHeaderInfoArray.forEach(item => {
+    experienceItemHeaderInfoObserver.observe(item);
 });
 
 
