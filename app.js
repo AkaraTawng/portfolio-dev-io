@@ -301,9 +301,9 @@ experienceItemHeaderInfoAsiObserver.observe(experienceItemHeaderInfoAsi);
 const workExperienceImagesObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.classList.add('animate__flipInX')
+            entry.target.classList.add('animate__flipInX');
             entry.target.style.opacity = 1;
-            workExperienceImagesObserver.unobserve(workExperienceImagesArray);
+            workExperienceImagesObserver.unobserve(entry);
         };
     });
 }, {
@@ -445,9 +445,12 @@ blogPostShortDescriptionArray.forEach(item => {
 
 const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        
-    })
-})
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__fadeInUp');
+            experienceItemHeaderInfoObserver.unobserve(entry);
+        };
+    });
+});
 
 experienceItemHeaderInfoArray.forEach(item => {
     experienceItemHeaderInfoObserver.observe(item);
