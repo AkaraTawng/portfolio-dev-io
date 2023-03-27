@@ -295,10 +295,13 @@ experienceItemHeaderInfoAsiObserver.observe(experienceItemHeaderInfoAsi);
 const asiImageObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
+            entry.target.classList.add('animate__flipInX')
             entry.target.style.opacity = 1;
             asiImageObserver.unobserve(asiImage);
         };
     });
+}, {
+    threshold: 1
 });
 
 asiImageObserver.observe(asiImage);
@@ -321,14 +324,6 @@ const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries 
 jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => {
     jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint);
 });
-
-
-
-
-
-
-
-
 
 /* hobby images even intersection observer*/
 const hobbyImagesEvenObserver = new IntersectionObserver(entries => {
