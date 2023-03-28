@@ -124,54 +124,18 @@ body {
   background-color: #2F80ED;
 }
 #skills .skillbar .html {
-  width: 80%;
-  animation: html 2s ease-out;
+  width: 10%;
 }
 #skills .skillbar .css {
-  width: 80%;
-  animation: css 2s ease-out;
+  width: 10%;
 }
 #skills .skillbar .js {
-  width: 50%;
-  animation: js 2s ease-out;
+  width: 10%;
 }
 #skills .skillbar .react {
-  width: 50%;
-  animation: react 2s ease-out;
+  width: 10%;
 }
 
-@keyframes html {
-  from {
-    width: 10%;
-  }
-  to {
-    width: 80%;
-  }
-}
-@keyframes css {
-  from {
-    width: 10%;
-  }
-  to {
-    width: 80%;
-  }
-}
-@keyframes js {
-  from {
-    width: 10%;
-  }
-  to {
-    width: 50%;
-  }
-}
-@keyframes react {
-  from {
-    width: 10%;
-  }
-  to {
-    width: 50%;
-  }
-}
 #blog #title-text-image-flex-container {
   display: flex;
   margin-bottom: 2rem;
