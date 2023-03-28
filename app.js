@@ -1,4 +1,4 @@
-const skillBars = document.querySelectorAll('.fade-in');
+// const skillBars = document.querySelectorAll('.fade-in');
 const technologyFilterTags = document.querySelectorAll('#technology-filter-tags-container ul li button');
 const technologyFilterAllTag = document.querySelector('#technology-all-tag');
 const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
@@ -57,6 +57,11 @@ const experienceItemHeaderInfoNodelist = document.querySelectorAll('.experience-
 
 /* convert experinceItemHeaderInfoNodelist to array */
 const experienceItemHeaderInfoArray = Array.from(experienceItemHeaderInfoNodelist);
+
+const skillBarsNodelist = document.querySelectorAll('.skillbars');
+
+/* convert skillsBarsNodelist to array */
+const skillBarsArray = Array.from(skillBarsNodelist);
 
 console.log()
 
@@ -457,49 +462,14 @@ experienceItemHeaderInfoArray.forEach(item => {
 });
 
 
-// typeFilterButtons.forEach(button => {
-//     button.addEventListener("click", (event) => {
-//         projectFilter(event);
-//     })
-// })
 
-// .getAttribute("data-technology-filter-tags").split(" ");
+/* skillbars intersection observer */
 
-// console.log(projectItemsTechnologyFilterTags)
-
-// const skillBarsObserver = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//         console.log(entry)
-//     });
-// }, {
-//     // rootMargin: '400px'
-// });
-
-// skillBars.forEach(skillBar => {
-//     skillBarsObserver.observe(skillBar);
-// });
-
-//add & remove active class for technology filter tags
-// technologyFilterTags.forEach(technologyFilterTag => {
-//     technologyFilterTag.onclick = function() {
-//         if(technologyFilterAllTag.classList.contains('active')){
-//             technologyFilterAllTag.classList.remove('active')
-//             technologyFilterTag.classList.toggle('active')
-//         }
-           
-//         else if (!technologyFilterAllTag.classList.contains('active') && technologyFilterTag.innerHTML === technologyFilterAllTag.innerHTML) {
-//             technologyFilterTags.forEach(tag => {
-//                 tag.classList.remove('active')
-//             });
-
-//             technologyFilterAllTag.classList.add('active');
-//         }
-        
-//         else if (!technologyFilterAllTag.classList.contains('active')) {
-//             technologyFilterTag.classList.toggle('active')
-//         }; 
-//     };
-// });
+const skillBarsObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        console.log(entry)
+    })
+})
 
 
 
