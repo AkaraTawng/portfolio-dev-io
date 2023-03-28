@@ -467,9 +467,23 @@ experienceItemHeaderInfoArray.forEach(item => {
 
 const skillBarsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        console.log(entry)
+            if(entry.isIntersecting){
+                if(entry.target.classList.contains('html')){
+                entry.target.style.width = '80%';
+            } else if(entry.target.classList.contains('css')){
+                entry.target.style.width = '80%';
+            } else if(entry.target.classList.contains('js')){
+                entry.target.style.width = '50%';
+            } else if(entry.target.classList.contains('react')){
+                entry.target.style.width = '50%';
+            }
+        }
     })
+}, {
+    threshold: 1
 })
+
+skillBarsArray.forEach(item => skillBarsObserver.observe(item));
 
 
 

@@ -123,6 +123,9 @@ body {
   border-radius: 10px;
   background-color: #2F80ED;
 }
+#skills .skillbar .skillbars {
+  transition: all 2s ease-out;
+}
 #skills .skillbar .html {
   width: 10%;
 }
