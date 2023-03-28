@@ -257,7 +257,6 @@ const typeOfWebsiteContainerObserver = new IntersectionObserver(entries => {
 
 typeOfWebsiteContainerObserver.observe(typeOfWebsiteContainer);
 
-
 /* even project items slide in left */
 const evenProjectsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -270,9 +269,7 @@ const evenProjectsObserver = new IntersectionObserver(entries => {
     });
 });
 
-evenProjectItems.forEach(item => {
-    evenProjectsObserver.observe(item);
-});
+evenProjectItems.forEach(item => evenProjectsObserver.observe(item));
 
 /* odd project items slide in right */
 const oddProjectsObserver = new IntersectionObserver(entries => {
@@ -286,9 +283,7 @@ const oddProjectsObserver = new IntersectionObserver(entries => {
     });
 });
 
-oddProjectItems.forEach(item => {
-    oddProjectsObserver.observe(item);
-});
+oddProjectItems.forEach(item => oddProjectsObserver.observe(item));
 
 /* asi header info slide in up */
 const experienceItemHeaderInfoAsiObserver = new IntersectionObserver(entries => {
@@ -315,21 +310,7 @@ const workExperienceImagesObserver = new IntersectionObserver(entries => {
     threshold: 0
 });
 
-workExperienceImagesArray.forEach(item => {
-    workExperienceImagesObserver.observe(item);
-});
-
-
-/**
- * get all work experience images
- * get all work experience item header info
- * convert to array
- * iterate over array and apply intersection observer 
- * apply scroll animation in intersection observer
- */
-
-
-
+workExperienceImagesArray.forEach(item => workExperienceImagesObserver.observe(item));
 
 /* all job description points slide in up */
 const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries => {
@@ -344,9 +325,7 @@ const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries 
     });
 });
 
-jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => {
-    jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint);
-});
+jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint));
 
 /* hobby images even intersection observer*/
 const hobbyImagesEvenObserver = new IntersectionObserver(entries => {
@@ -358,9 +337,7 @@ const hobbyImagesEvenObserver = new IntersectionObserver(entries => {
     });
 });
 
-hobbyItemsImagesEven.forEach(item => {
-    hobbyImagesEvenObserver.observe(item);
-});
+hobbyItemsImagesEven.forEach(item => hobbyImagesEvenObserver.observe(item));
 
 
 
@@ -373,9 +350,7 @@ const hobbyItemsTextContentEvenObserver = new IntersectionObserver(entries => {
     });
 });
 
-hobbyItemsTextContentEven.forEach(item => {
-    hobbyItemsTextContentEvenObserver.observe(item);
-});
+hobbyItemsTextContentEven.forEach(item => hobbyItemsTextContentEvenObserver.observe(item));
 
 
 /* hobby images odd intersection observer*/
@@ -415,9 +390,7 @@ const blogTitleTextContentObserver = new IntersectionObserver(entries => {
     });
 });
 
-blogTitleTextContentArray.forEach(item => {
-    blogTitleTextContentObserver.observe(item);
-});
+blogTitleTextContentArray.forEach(item => blogTitleTextContentObserver.observe(item));
 
 const blogImageObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -443,9 +416,7 @@ const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
     });
 });
 
-blogPostShortDescriptionArray.forEach(item => {
-    blogPostShortDescriptionObserver.observe(item);
-});
+blogPostShortDescriptionArray.forEach(item => blogPostShortDescriptionObserver.observe(item));
 
 
 const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
@@ -457,9 +428,8 @@ const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
     });
 });
 
-experienceItemHeaderInfoArray.forEach(item => {
-    experienceItemHeaderInfoObserver.observe(item);
-});
+experienceItemHeaderInfoArray.forEach(item => experienceItemHeaderInfoObserver.observe(item)
+);
 
 
 
@@ -477,11 +447,11 @@ const skillBarsObserver = new IntersectionObserver(entries => {
             } else if(entry.target.classList.contains('react')){
                 entry.target.style.width = '50%';
             }
-        }
-    })
+        };
+    });
 }, {
     threshold: 1
-})
+});
 
 skillBarsArray.forEach(item => skillBarsObserver.observe(item));
 
