@@ -425,4 +425,14 @@ body {
 }
 .code:hover a {
   color: white;
+}
+
+#mobile-nav .navigation {
+  position: relative;
+  width: 400px;
+  height: 70px;
+  background-color: #2F80ED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
