@@ -427,13 +427,65 @@ body {
   color: white;
 }
 
+#mobile-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #mobile-nav .navigation {
   position: relative;
-  width: 100%;
+  width: 400px;
   height: 70px;
   background-color: #2F80ED;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+#mobile-nav .navigation ul {
+  display: flex;
+  width: 350px;
+}
+#mobile-nav .navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+#mobile-nav .navigation ul li:hover a .icon {
+  transform: translateY(-35px);
+}
+#mobile-nav .navigation ul li:hover a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+#mobile-nav .navigation ul li a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+#mobile-nav .navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+}
+#mobile-nav .navigation ul li a .text {
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
 }/*# sourceMappingURL=main.css.map */
