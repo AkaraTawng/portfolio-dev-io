@@ -453,10 +453,10 @@ body {
   height: 70px;
   z-index: 1;
 }
-#mobile-nav .navigation ul li:hover a .icon {
+#mobile-nav .navigation ul li.active a .icon {
   transform: translateY(-35px);
 }
-#mobile-nav .navigation ul li:hover a .text {
+#mobile-nav .navigation ul li.active a .text {
   opacity: 1;
   transform: translateY(10px);
 }
