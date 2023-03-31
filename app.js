@@ -456,12 +456,15 @@ const skillBarsObserver = new IntersectionObserver(entries => {
 
 skillBarsArray.forEach(item => skillBarsObserver.observe(item));
 
-const activeLink = () => {
-    list.forEach(item => {
-        item.classList.remove('active');
-        this.classList.add('acitve');
-    });
-};
+
+function activeLink(){
+    list.forEach(item => 
+        item.classList.remove('active'));
+        this.classList.add('active');
+}
+list.forEach(item => {
+    item.addEventListener('click', activeLink);
+});
 
 
 
