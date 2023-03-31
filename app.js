@@ -63,8 +63,9 @@ const skillBarsNodelist = document.querySelectorAll('.skillbars');
 /* convert skillsBarsNodelist to array */
 const skillBarsArray = Array.from(skillBarsNodelist);
 
-console.log()
+const list = document.querySelectorAll('.list');
 
+console.log(list)
 
 
 /* find a way to loop through hobby items node list and check index. If index is odd, add one animation. If index is even, add other animation. How to find index? How to use indexOf? Apply same concept to hobby items text content */
@@ -455,7 +456,12 @@ const skillBarsObserver = new IntersectionObserver(entries => {
 
 skillBarsArray.forEach(item => skillBarsObserver.observe(item));
 
-
+const activeLink = () => {
+    list.forEach(item => {
+        item.classList.remove('active');
+        this.classList.add('acitve');
+    });
+};
 
 
 
