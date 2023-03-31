@@ -24,7 +24,7 @@
                 z-index: 1;
                 
                 &.active a .icon {
-                    transform: translateY(-35px);
+                    transform: translateY(-34px);
                     }
                 &.active a .text {
                     opacity: 1;
@@ -70,6 +70,37 @@
     }
 
     .indicator {
-        
+        position: absolute;
+        top: -50%;
+        width: 70px;
+        height: 70px;
+        background-color: $light-grey1;
+        border-radius: 50%;
+        border: 6px solid white;
+        transition: 0.5s;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -21.6px;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border-top-right-radius: 20px;
+            box-shadow: 0px -10px 0 0 white;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -21.6px;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border-top-left-radius: 20px;
+            box-shadow: 0px -10px 0 0 white;
+        }
     }
 }
