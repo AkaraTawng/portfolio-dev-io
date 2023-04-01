@@ -49,10 +49,7 @@
                         text-align: center;
                         transition: 0.5s;
                         color: white;
-
-                        
                     }
-
                     
                     .text {
                         position: absolute;
@@ -90,7 +87,7 @@
         top: -50%;
         width: 70px;
         height: 70px;
-        background-color: $light-grey1;
+        background-color: $accent-blue;
         border-radius: 50%;
         border: 6px solid white;
         transition: 0.5s;
