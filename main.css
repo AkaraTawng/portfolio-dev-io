@@ -489,6 +489,21 @@ body {
   opacity: 0;
   transform: translateY(20px);
 }
+#mobile-nav .navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(0px);
+}
+#mobile-nav .navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(70px);
+}
+#mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(140px);
+}
+#mobile-nav .navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(210px);
+}
+#mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(280px);
+}
 #mobile-nav .indicator {
   position: absolute;
   top: -50%;

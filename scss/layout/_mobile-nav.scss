@@ -65,6 +65,22 @@
                         transform: translateY(20px);
                     }
                 }
+
+                &:nth-child(1).active ~ .indicator {
+                    transform: translateX(calc(70px * 0));
+                }
+                &:nth-child(2).active ~ .indicator {
+                    transform: translateX(calc(70px * 1));
+                }
+                &:nth-child(3).active ~ .indicator {
+                    transform: translateX(calc(70px * 2));
+                }
+                &:nth-child(4).active ~ .indicator {
+                    transform: translateX(calc(70px * 3));
+                }
+                &:nth-child(5).active ~ .indicator {
+                    transform: translateX(calc(70px * 4));
+                }
             }
         }
     }

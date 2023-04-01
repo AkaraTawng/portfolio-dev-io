@@ -456,7 +456,7 @@ const skillBarsObserver = new IntersectionObserver(entries => {
 
 skillBarsArray.forEach(item => skillBarsObserver.observe(item));
 
-
+/* mobile nav active class toggle function */
 function activeLink(){
     list.forEach(item => 
         item.classList.remove('active'));
