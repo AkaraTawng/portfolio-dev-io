@@ -453,6 +453,11 @@ body {
     width: 380px;
   }
 }
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation {
+    width: 450px;
+  }
+}
 #mobile-nav .navigation ul {
   display: flex;
   width: 300px;

@@ -10,6 +10,9 @@
         @include mobile-m {
             width: 380px; 
         };
+        @include mobile-l {
+            width: 450px; 
+        };
         height: 70px;
         background-color: $accent-blue;
         display: flex;
