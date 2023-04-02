@@ -455,8 +455,13 @@ body {
 }
 #mobile-nav .navigation ul {
   display: flex;
-  width: 350px;
+  width: 300px;
   padding-left: 20px;
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul {
+    width: 380px;
+  }
 }
 #mobile-nav .navigation ul li {
   position: relative;
@@ -464,6 +469,11 @@ body {
   width: 50px;
   height: 70px;
   z-index: 1;
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul li {
+    width: 380px;
+  }
 }
 #mobile-nav .navigation ul li.active a .icon {
   transform: translateY(-40px);
