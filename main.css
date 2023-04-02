@@ -487,6 +487,11 @@ body {
 #mobile-nav .navigation ul li.active a .icon {
   transform: translateY(-40px);
 }
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li.active a .icon {
+    transform: translateY(-45px);
+  }
+}
 #mobile-nav .navigation ul li.active a .text {
   opacity: 1;
   transform: translateY(0px);
@@ -510,6 +515,11 @@ body {
   text-align: center;
   transition: 0.5s;
   color: white;
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li a .icon {
+    line-height: 90px;
+  }
 }
 @media screen and (min-width: 400px) {
   #mobile-nav .navigation ul li a .icon {
@@ -575,5 +585,11 @@ body {
 @media screen and (min-width: 400px) {
   #mobile-nav .indicator {
     left: 2%;
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .indicator {
+    width: 65px;
+    height: 65px;
   }
 }/*# sourceMappingURL=main.css.map */

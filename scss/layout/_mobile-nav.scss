@@ -40,6 +40,9 @@
                 
                 &.active a .icon {
                     transform: translateY(-40px);
+                    @include mobile-l {
+                        transform: translateY(-45px);
+                    };
                     }
                 &.active a .text {
                     opacity: 1;
@@ -61,6 +64,9 @@
                         position: relative;
                         display: block;
                         line-height: 75px;
+                        @include mobile-l {
+                            line-height: 90px;            
+                        };
                         font-size: 1em;
                         @include mobile-m {
                             font-size: 1.4em;
@@ -130,6 +136,10 @@
         };
         width: 60px;
         height: 60px;
+        @include mobile-l {
+            width: 65px;
+            height: 65px;
+        };
         background-color: $accent-blue;
         border-radius: 50%;
         border: 6px solid white;
