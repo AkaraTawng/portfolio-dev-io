@@ -4,14 +4,15 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 4rem;
+    height: 16rem;
     font-size: .6rem;
     font-size: clamp(0.6rem, 0.46rem + 0.7vw, 1.3rem);
     display: flex;
     justify-content: center;
     align-items: center;
     color: $light-grey1;
-
+    z-index: -1;
+    padding-top: 2rem;
     a {
         font-weight: 600;
         color: $light-grey1;

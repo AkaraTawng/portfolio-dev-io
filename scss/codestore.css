@@ -2,11 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
     .navigation {
-        position: fixed;
-        top: 92vh;
-        width: 300px;
+        position: relative;
+        width: 400px;
         height: 70px;
         background-color: $accent-blue;
         display: flex;
@@ -17,21 +15,20 @@
         ul {
             display: flex;
             width: 350px;
-            padding-left: 20px;
 
             li {
                 position: relative;
                 list-style: none;
-                width: 50px;
+                width: 70px;
                 height: 70px;
                 z-index: 1;
                 
                 &.active a .icon {
-                    transform: translateY(-40px);
+                    transform: translateY(-34px);
                     }
                 &.active a .text {
                     opacity: 1;
-                    transform: translateY(0px);
+                    transform: translateY(10px);
                     }
 
                 a {
@@ -43,13 +40,12 @@
                     width: 100%;
                     text-align: center;
                     font-weight: 500;
-                    font-size: .9em;
 
                     .icon {
                         position: relative;
                         display: block;
                         line-height: 75px;
-                        font-size: 1em;
+                        font-size: 1.5em;
                         text-align: center;
                         transition: 0.5s;
                         color: white;
@@ -68,19 +64,19 @@
                 }
 
                 &:nth-child(1).active ~ .indicator {
-                    transform: translateX(calc(48.5px * 0));
+                    transform: translateX(calc(70px * 0));
                 }
                 &:nth-child(2).active ~ .indicator {
-                    transform: translateX(calc(48.5px * 1));
+                    transform: translateX(calc(70px * 1));
                 }
                 &:nth-child(3).active ~ .indicator {
-                    transform: translateX(calc(49px * 2));
+                    transform: translateX(calc(70px * 2));
                 }
                 &:nth-child(4).active ~ .indicator {
-                    transform: translateX(calc(49.5px * 3));
+                    transform: translateX(calc(70px * 3));
                 }
                 &:nth-child(5).active ~ .indicator {
-                    transform: translateX(calc(49.5px * 4));
+                    transform: translateX(calc(70px * 4));
                 }
             }
         }
@@ -89,37 +85,35 @@
     .indicator {
         position: absolute;
         top: -50%;
-        left: 5.5%;
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
         background-color: $accent-blue;
         border-radius: 50%;
         border: 6px solid white;
         transition: 0.5s;
 
-        // &::before {
-        //     content: '';
-        //     position: absolute;
-        //     top: 50%;
-        //     left: -21.6px;
-        //     width: 20px;
-        //     height: 20px;
-        //     background-color: transparent;
-        //     border-top-right-radius: 20px;
-        //     box-shadow: 0px -10px 0 0 transparent;
-        // }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -21.6px;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border-top-right-radius: 20px;
+            box-shadow: 0px -10px 0 0 white;
+        }
 
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     top: 50%;
-        //     right: -21.6px;
-        //     width: 20px;
-        //     height: 20px;
-        //     background-color: transparent;
-        //     border-top-left-radius: 20px;
-        //     box-shadow: 0px -10px 0 0 transparent;
-        //     // box-shadow: 0px -10px 0 0 white;
-        // }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -21.6px;
+            width: 20px;
+            height: 20px;
+            background-color: transparent;
+            border-top-left-radius: 20px;
+            box-shadow: 0px -10px 0 0 white;
+        }
     }
 }
