@@ -433,8 +433,9 @@ body {
   align-items: center;
 }
 #mobile-nav .navigation {
-  position: relative;
-  width: 400px;
+  position: fixed;
+  top: 92vh;
+  width: 97%;
   height: 70px;
   background-color: #2F80ED;
   display: flex;
@@ -474,7 +475,7 @@ body {
   position: relative;
   display: block;
   line-height: 75px;
-  font-size: 1.5em;
+  font-size: 1em;
   text-align: center;
   transition: 0.5s;
   color: white;
@@ -523,7 +524,7 @@ body {
   height: 20px;
   background-color: transparent;
   border-top-right-radius: 20px;
-  box-shadow: 0px -10px 0 0 white;
+  box-shadow: 0px -10px 0 0 transparent;
 }
 #mobile-nav .indicator::after {
   content: "";
@@ -534,5 +535,5 @@ body {
   height: 20px;
   background-color: transparent;
   border-top-left-radius: 20px;
-  box-shadow: 0px -10px 0 0 white;
+  box-shadow: 0px -10px 0 0 transparent;
 }/*# sourceMappingURL=main.css.map */
