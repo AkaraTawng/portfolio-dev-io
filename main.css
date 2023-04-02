@@ -523,7 +523,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   #mobile-nav .navigation ul li a .icon {
-    line-height: 90px;
+    line-height: 95px;
   }
 }
 @media screen and (min-width: 400px) {
@@ -552,12 +552,22 @@ body {
     transform: translateX(76px);
   }
 }
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(75px);
+  }
+}
 #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
   transform: translateX(98px);
 }
 @media screen and (min-width: 400px) {
   #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
     transform: translateX(152px);
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(150px);
   }
 }
 #mobile-nav .navigation ul li:nth-child(4).active ~ .indicator {
@@ -568,12 +578,22 @@ body {
     transform: translateX(228px);
   }
 }
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(225px);
+  }
+}
 #mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
   transform: translateX(198px);
 }
 @media screen and (min-width: 400px) {
   #mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
-    transform: translateX(304px);
+    transform: translateX(300px);
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(302px);
   }
 }
 #mobile-nav .indicator {
@@ -594,7 +614,12 @@ body {
 }
 @media screen and (min-width: 480px) {
   #mobile-nav .indicator {
-    width: 65px;
-    height: 65px;
+    left: 8.5%;
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .indicator {
+    width: 70px;
+    height: 70px;
   }
 }/*# sourceMappingURL=main.css.map */
