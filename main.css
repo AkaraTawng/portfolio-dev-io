@@ -435,7 +435,7 @@ body {
 #mobile-nav .navigation {
   position: fixed;
   top: 92vh;
-  width: 97%;
+  width: 300px;
   height: 70px;
   background-color: #2F80ED;
   display: flex;
@@ -446,20 +446,21 @@ body {
 #mobile-nav .navigation ul {
   display: flex;
   width: 350px;
+  padding-left: 20px;
 }
 #mobile-nav .navigation ul li {
   position: relative;
   list-style: none;
-  width: 70px;
+  width: 50px;
   height: 70px;
   z-index: 1;
 }
 #mobile-nav .navigation ul li.active a .icon {
-  transform: translateY(-34px);
+  transform: translateY(-40px);
 }
 #mobile-nav .navigation ul li.active a .text {
   opacity: 1;
-  transform: translateY(10px);
+  transform: translateY(0px);
 }
 #mobile-nav .navigation ul li a {
   position: relative;
@@ -470,6 +471,7 @@ body {
   width: 100%;
   text-align: center;
   font-weight: 500;
+  font-size: 0.9em;
 }
 #mobile-nav .navigation ul li a .icon {
   position: relative;
@@ -494,46 +496,25 @@ body {
   transform: translateX(0px);
 }
 #mobile-nav .navigation ul li:nth-child(2).active ~ .indicator {
-  transform: translateX(70px);
+  transform: translateX(48.5px);
 }
 #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
-  transform: translateX(140px);
+  transform: translateX(98px);
 }
 #mobile-nav .navigation ul li:nth-child(4).active ~ .indicator {
-  transform: translateX(210px);
+  transform: translateX(148.5px);
 }
 #mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
-  transform: translateX(280px);
+  transform: translateX(198px);
 }
 #mobile-nav .indicator {
   position: absolute;
   top: -50%;
-  width: 70px;
-  height: 70px;
+  left: 5.5%;
+  width: 60px;
+  height: 60px;
   background-color: #2F80ED;
   border-radius: 50%;
   border: 6px solid white;
   transition: 0.5s;
-}
-#mobile-nav .indicator::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -21.6px;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border-top-right-radius: 20px;
-  box-shadow: 0px -10px 0 0 transparent;
-}
-#mobile-nav .indicator::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -21.6px;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border-top-left-radius: 20px;
-  box-shadow: 0px -10px 0 0 transparent;
 }/*# sourceMappingURL=main.css.map */
