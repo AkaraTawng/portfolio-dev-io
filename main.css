@@ -31,6 +31,12 @@ footer a:visited {
   align-self: center;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 400px) {
+  #profile-bio img {
+    height: 15rem;
+    width: 20rem;
+  }
+}
 #profile-bio #name-job-container {
   display: flex;
   flex-direction: column;

@@ -13,6 +13,10 @@
         width: 16rem;
         align-self: center;
         margin-bottom: 1rem;
+        @include mobile-m{
+            height: 15rem;
+            width: 20rem;
+        }
     }
 
     #name-job-container {
