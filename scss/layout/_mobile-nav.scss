@@ -7,6 +7,9 @@
         position: fixed;
         top: 92vh;
         width: 300px;
+        @include mobile-m {
+            width: 380px; 
+        };
         height: 70px;
         background-color: $accent-blue;
         display: flex;

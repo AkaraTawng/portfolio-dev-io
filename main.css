@@ -448,6 +448,11 @@ body {
   align-items: center;
   border-radius: 10px;
 }
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation {
+    width: 380px;
+  }
+}
 #mobile-nav .navigation ul {
   display: flex;
   width: 350px;
