@@ -24,6 +24,9 @@
                 width: 380px; 
             };
             padding-left: 20px;
+            @include mobile-m {
+                padding-left: 0px; 
+            };
 
             li {
                 position: relative;

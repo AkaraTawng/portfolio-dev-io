@@ -463,6 +463,11 @@ body {
     width: 380px;
   }
 }
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul {
+    padding-left: 0px;
+  }
+}
 #mobile-nav .navigation ul li {
   position: relative;
   list-style: none;
