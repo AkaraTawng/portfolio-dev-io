@@ -37,6 +37,12 @@ footer a:visited {
     width: 20rem;
   }
 }
+@media screen and (min-width: 480px) {
+  #profile-bio img {
+    height: 18rem;
+    width: 24rem;
+  }
+}
 #profile-bio #name-job-container {
   display: flex;
   flex-direction: column;
