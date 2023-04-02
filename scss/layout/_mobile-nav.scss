@@ -53,6 +53,9 @@
                         display: block;
                         line-height: 75px;
                         font-size: 1em;
+                        @include mobile-m {
+                            font-size: 1.4em;
+                        };
                         text-align: center;
                         transition: 0.5s;
                         color: white;
