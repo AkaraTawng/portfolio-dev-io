@@ -65,32 +65,6 @@ const skillBarsArray = Array.from(skillBarsNodelist);
 
 const list = document.querySelectorAll('.list');
 
-console.log(list)
-
-
-/* find a way to loop through hobby items node list and check index. If index is odd, add one animation. If index is even, add other animation. How to find index? How to use indexOf? Apply same concept to hobby items text content */
-// console.log(hobbyItemsImages)
-
-/* find index of hobby item images in nodelist */
-// hobbyItemsImages.forEach((item, index) => {
-//     /* even */
-//     if(index % 2 === 0) {
-//         console.log(item, index, 'even')
-//     } else {
-//         console.log(item, index, 'odd')
-//     }
-// })
-
-// hobbyItemsImages.forEach(item => {
-//     console.log(item);
-// })
-
-// asiJobDescriptionPoints.forEach(point => {
-//     console.log(point.innerText)
-// });
-
-// console.log()
-
 /* project counter */
 let projectsArray = [];
 
@@ -465,6 +439,11 @@ function activeLink(){
 list.forEach(item => {
     item.addEventListener('click', activeLink);
 });
+
+
+
+
+
 
 
 
