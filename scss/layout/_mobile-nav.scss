@@ -85,17 +85,37 @@
                 &:nth-child(1).active ~ .indicator {
                     transform: translateX(calc(48.5px * 0));
                 }
+
+                /* projects */
                 &:nth-child(2).active ~ .indicator {
                     transform: translateX(calc(48.5px * 1));
+                    @include mobile-m {
+                        transform: translateX(calc(76px * 1));
+                    };
                 }
+
+                /* experience */
                 &:nth-child(3).active ~ .indicator {
                     transform: translateX(calc(49px * 2));
+                    @include mobile-m {
+                        transform: translateX(calc(76px * 2));
+                    };
                 }
+
+                /* hobbies */
                 &:nth-child(4).active ~ .indicator {
                     transform: translateX(calc(49.5px * 3));
+                    @include mobile-m {
+                        transform: translateX(calc(76px * 3));
+                    };
                 }
+
+                /* blog */
                 &:nth-child(5).active ~ .indicator {
                     transform: translateX(calc(49.5px * 4));
+                    @include mobile-m {
+                        transform: translateX(calc(76px * 4));
+                    };
                 }
             }
         }
@@ -105,6 +125,9 @@
         position: absolute;
         top: -50%;
         left: 5.5%;
+        @include mobile-m {
+            left: 2% 
+        };
         width: 60px;
         height: 60px;
         background-color: $accent-blue;
