@@ -21,6 +21,10 @@
             height: 18rem;
             width: 24rem;
         }
+        @include tablet{
+            height: 25rem;
+            width: 38rem;
+        }
     }
 
     #name-job-container {
