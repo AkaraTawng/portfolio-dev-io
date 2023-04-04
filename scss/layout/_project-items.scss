@@ -31,6 +31,10 @@
         height: 12rem;
         width: 16rem;
         border-radius: 15px;
+        @include mobile-m{
+            height: 16rem;
+            width: 20rem;
+        }
     }
 
     .project-item-buttons-flex-container {
