@@ -401,6 +401,12 @@ body {
   width: 16rem;
   border-radius: 15px;
 }
+@media screen and (min-width: 400px) {
+  #projects img {
+    height: 16rem;
+    width: 20rem;
+  }
+}
 #projects .project-item-buttons-flex-container {
   margin-top: 2rem;
   display: flex;
