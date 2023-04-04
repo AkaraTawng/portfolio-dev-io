@@ -132,7 +132,7 @@
                 &:nth-child(5).active ~ .indicator {
                     transform: translateX(calc(49.5px * 4));
                     @include mobile-m {
-                        transform: translateX(calc(75px * 4));
+                        transform: translateX(calc(75.6px * 4));
                     };
                     @include mobile-l {
                         transform: translateX(calc(75.5px * 4));
