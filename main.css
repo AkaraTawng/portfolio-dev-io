@@ -615,7 +615,7 @@ body {
 }
 @media screen and (min-width: 400px) {
   #mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
-    transform: translateX(300px);
+    transform: translateX(302.4px);
   }
 }
 @media screen and (min-width: 480px) {
