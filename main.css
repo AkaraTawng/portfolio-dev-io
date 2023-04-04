@@ -297,6 +297,11 @@ body {
   -o-object-position: 20% 80%;
      object-position: 20% 80%;
 }
+@media screen and (min-width: 400px) {
+  #hobbies img {
+    height: 8rem;
+  }
+}
 #hobbies .hobby-item {
   display: flex;
   flex-direction: column;

@@ -27,6 +27,9 @@
         border-radius: 10px;
         object-fit: cover; 
         object-position: 20% 80%;
+        @include mobile-m {
+            height: 8rem;
+        }
     }
 
     .hobby-item {
