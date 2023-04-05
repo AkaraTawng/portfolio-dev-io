@@ -413,6 +413,12 @@ body {
     width: 20rem;
   }
 }
+@media screen and (min-width: 480px) {
+  #projects img {
+    height: 16rem;
+    width: 24.2rem;
+  }
+}
 #projects .project-item-buttons-flex-container {
   margin-top: 2rem;
   display: flex;

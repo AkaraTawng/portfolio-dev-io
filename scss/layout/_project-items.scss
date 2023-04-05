@@ -35,6 +35,10 @@
             height: 16rem;
             width: 20rem;
         }
+        @include mobile-l{
+            height: 16rem;
+            width: 24.2rem;
+        }
     }
 
     .project-item-buttons-flex-container {
