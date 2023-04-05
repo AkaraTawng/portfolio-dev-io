@@ -1,13 +1,25 @@
 body {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
+    @include laptop {
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "prof skill"
+    
+    ;
     #profile-bio {
         grid-area: prof;
     }
 
-    #projects {
+    #skills {
+        grid-area: skill;
+    }
+
+    #project-items {
         grid-area: proj;
+    }
+   
+    #project-tags {
+        grid-area: projtag;
     }
 
     #experiences {
@@ -17,6 +29,6 @@ body {
     #hobbies {
         grid-area: hob;
     }
-
-
+    }
+    
 }

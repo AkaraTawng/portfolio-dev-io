@@ -679,19 +679,28 @@ body {
   }
 }
 
-body {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-body #profile-bio {
-  grid-area: prof;
-}
-body #projects {
-  grid-area: proj;
-}
-body #experiences {
-  grid-area: exp;
-}
-body #hobbies {
-  grid-area: hob;
+@media screen and (min-width: 1280px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "prof skill";
+  }
+  body #profile-bio {
+    grid-area: prof;
+  }
+  body #skills {
+    grid-area: skill;
+  }
+  body #project-items {
+    grid-area: proj;
+  }
+  body #project-tags {
+    grid-area: projtag;
+  }
+  body #experiences {
+    grid-area: exp;
+  }
+  body #hobbies {
+    grid-area: hob;
+  }
 }/*# sourceMappingURL=main.css.map */
