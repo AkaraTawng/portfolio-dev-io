@@ -16,514 +16,515 @@
     <title>Chris' Portfolio Page</title>
 </head>
 <body>
-    <div class="grid-container">
+    <!-- <div class="grid-container"> -->
 
-    <!-- profile  -->
-    <header>
-        <section id="profile-bio" class="item-card"> <!-- profile content -->
-            <img id="profile-picture" class="animate__animated animate__backInDown" src="./img/siantawng.jpg" alt="picture of man standing in window">
-            <div id="name-contact-container"        class="animate__animated">
-                <div id="name-job-container">
-                    <h1>Chris Chamberlain</h1>
-                    <h2>Front-end Developer</h2>
-                </div>
-
-                <div id="contact-info-container">
-                    <div id="email-container">
-                        <iconify-icon icon="mdi:email"></iconify-icon>
-                        <p><a href="mailto:c.r.chamberlain1997@gmail.com">c.r.chamberlain1997@gmail.com</a></p>
+        <!-- profile  -->
+        <header>
+            <section id="profile-bio" class="item-card"> <!-- profile content -->
+                <img id="profile-picture" class="animate__animated animate__backInDown" src="./img/siantawng.jpg" alt="picture of man standing in window">
+                <div id="name-contact-container"        class="animate__animated">
+                    <div id="name-job-container">
+                        <h1>Chris Chamberlain</h1>
+                        <h2>Front-end Developer</h2>
                     </div>
 
-                    <div id="phone-container">
-                        <iconify-icon icon="ic:baseline-local-phone"></iconify-icon>
-                        <p><a href="tel:85602093400436">(+856) 020-934-00436</a></p>
+                    <div id="contact-info-container">
+                        <div id="email-container">
+                            <iconify-icon icon="mdi:email"></iconify-icon>
+                            <p><a href="mailto:c.r.chamberlain1997@gmail.com">c.r.chamberlain1997@gmail.com</a></p>
+                        </div>
+
+                        <div id="phone-container">
+                            <iconify-icon icon="ic:baseline-local-phone"></iconify-icon>
+                            <p><a href="tel:85602093400436">(+856) 020-934-00436</a></p>
+                        </div>
+                    </div>
+                    </div>
+                    <div id="bio-container" class="animate__animated">
+                        <p>I’m a quality-focused frontend web developer with 2-years development and design experience with a well-rounded skillset in the core frontend technologies and a passion for transforming designs and prototypes into fully-functioning, interactive, engaging, fluidly-responsive websites.</p>
                     </div>
                 </div>
+            </section>
+            
+            <section id="skills" class="item-card">
+                <h1>FRONT END</h1>
+                <ul>
+                    <li class="fade-in">
+                        <p class="heading">HTML</p>
+                        <div class="skillbar">
+                            <span class="html skillbars"></span>
+                        </div>
+                    </li>
+                
+                    <li class="fade-in">
+                        <p class="heading">CSS</p>
+                        <div class="skillbar">
+                            <span class="css skillbars"></span>
+                        </div>
+                    </li>
+                
+                    <li class="fade-in">
+                        <p class="heading">JS</p>
+                        <div class="skillbar">
+                            <span class="js skillbars"></span>
+                        </div>
+                    </li>
+                
+                    <li class="fade-in">
+                        <p class="heading">React.JS</p>
+                        <div class="skillbar">
+                            <span class="react skillbars"></span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </header>
+
+        <main>
+        <!-- skills  -->
+
+        <!-- projects  -->
+        <section id="projects">
+            <section id="project-tags" class="item-card">
+                <h1 class="animate__animated tag-counter-header">Projects <span id="tag-counter"></span></h1>
+                <h2 class="animate__animated filter-by-header">Filter by:</h2>
+                <div id="type-filter-tags-container" class="animate__animated">
+                    <h3>Type of Website</h2>
+                    <ul>
+                        <li><button id="type-all-tag" class="active">All</button></li>
+                        <li><button>Landing Page</button></li>
+                        <li><button>E-Commerce</button></li>
+                        <li><button>Team Page</button></li>
+                        <li><button>Tribute Page</button></li>
+                        <li><button>Web App</button></li>
+                        <li><button>Image Gallery</button></li>
+                        <li><button>Portfolio</button></li>
+                        <li><button>Blog Post</button></li>
+                        <li><button>Homepage</button></li>
+                    </ul>
                 </div>
-                <div id="bio-container" class="animate__animated">
-                    <p>I’m a quality-focused frontend web developer with 2-years development and design experience with a well-rounded skillset in the core frontend technologies and a passion for transforming designs and prototypes into fully-functioning, interactive, engaging, fluidly-responsive websites.</p>
+            </section>
+
+            <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Image Gallery"> 
+                <img src="./img/proj1.png" alt="project one">
+                <div class="project-item-text-content-container">
+                    <span 
+                    data-technology-filter-tags="HTML CSS SCSS JavaScript"  
+                    class="project-item-filter-tags-list technology">
+                        #HTML #JavaScript #CSS/SCSS
+                    </span>
+                    <br>
+                    <span 
+                    
+                    class="project-item-filter-tags-list type">
+                        #Image Gallery
+                    </span>
+                    <h2>Image Gallery</h2>
+                    <p class="project-item-description">
+                        Built with HTML and SCSS, I utilized CSS grid to create a fluidly responsive image gallery. Page features includes a descriptive image overlay to help users understand what the different images represent.
+                    </p>
+                    <div class="project-item-buttons-flex-container">
+                        <button class="project-item-button demo"><a target="_blank" href="https://my-image-gallery-dev-io.netlify.app/">Demo</a></button>
+                        <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/my-gallery-dev-io">Code</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item-flex-container item-card project-even animate__animated" data-type-filter-tags="Blog Post"> 
+                <img src="./img/project-item-recipe-blog-post.png" alt="project one">
+                <div class="project-item-text-content-container">
+                    <span 
+                    data-technology-filter-tags="HTML CSS JavaScript"  
+                    class="project-item-filter-tags-list technology">
+                        #HTML #JavaScript #CSS/SCSS
+                    </span>
+                    <br>
+                    <span
+                    
+                    class="project-item-filter-tags-list type">
+                        #Blog Post
+                    </span>
+                    <h2>Recipe Blog Post</h2>
+                    <p class="project-item-description">
+                        I used HTML and SCSS to create a recipe blog post page. The UI is responsive across all screen sizes. Page features includes custom check boxes for the ingredients section to help users keep track of their progess while baking.
+                    </p>
+                    <div class="project-item-buttons-flex-container">
+                        <button class="project-item-button demo"><a target="_blank" href="https://recipe-blog-challenge-dev-io.netlify.app/">Demo</a></button>
+                        <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/recipe-blog-challenge-dev-io">Code</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Team Page"> 
+                <img src="./img/project-item-team-page.png" alt="project one">
+                <div class="project-item-text-content-container">
+                    <span 
+                    data-technology-filter-tags="HTML CSS"  
+                    class="project-item-filter-tags-list technology">
+                        #HTML #CSS/SCSS
+                    </span>
+                    <br>
+                    <span
+                
+                    class="project-item-filter-tags-list type">
+                        #Team Page
+                    </span>
+                    <h2>Team Page</h2>
+                    <p class="project-item-description">
+                        I used HTML and SCSS to create a company team page. Page features includes an image hover layover with a link to learn more about each team member.
+                    </p>
+                    <div class="project-item-buttons-flex-container">
+                        <button class="project-item-button demo"><a target="_blank" href="https://my-team-page-chris-cham.netlify.app/">Demo</a></button>
+                        <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/my-team-page-devio">Code</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item-flex-container item-card project-even animate__animated" data-type-filter-tags="E-Commerce"> 
+                <img src="./img/project-item-checkout-page.png" alt="project one">
+                <div class="project-item-text-content-container">
+                    <span 
+                    data-technology-filter-tags="HTML CSS JavaScript"  
+                    class="project-item-filter-tags-list technology">
+                        #HTML #CSS/SCSS #JavaScript
+                    </span>
+                    <br>
+                    <span
+                    
+                    class="project-item-filter-tags-list type">
+                        #E-Commerce
+                    </span>
+                    <h2>Checkout Page</h2>
+                    <p class="project-item-description">
+                        I used HTML, SCSS, and JavsScript to create an e-commerce checkout page. Page features include dynamic basket total, adjust basket item quantities, empty basket messages, and conditional free-shipping message (when shipping cost is $500 or more).
+                    </p>
+                    <div class="project-item-buttons-flex-container">
+                        <button class="project-item-button demo"><a target="_blank" href="https://checkout-page-chris-chamberlain-devio.netlify.app/">Demo</a></button>
+                        <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/checkout-page-dev-io">Code</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Homepage"> 
+                <img src="./img/project-item-edie-homepage.png" alt="project one">
+                <div class="project-item-text-content-container">
+                    <span 
+                    data-technology-filter-tags="HTML CSS JavaScript"  
+                    class="project-item-filter-tags-list technology">
+                        #HTML #CSS/SCSS #JavaScript
+                    </span>
+                    <br>
+                    <span
+                    
+                    class="project-item-filter-tags-list type">
+                        #Homepage
+                    </span>
+                    <h2>Edie Homepage</h2>
+                    <p class="project-item-description">
+                        I used HTML, SCSS, and JavsScript to create a company homepage. Page features include extensive scroll animations implemented with the JavaScript Intersection Observer API. 
+                    </p>
+                    <div class="project-item-buttons-flex-container">
+                        <button class="project-item-button demo"><a target="_blank" href="https://eddie-homepage.netlify.app/">Demo</a></button>
+                        <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/eddie-homepage-devio">Code</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item-flex-container item-card project-even animate__animated" data-type-filter-tags="Web App"> 
+                <img src="./img/project-item-calculator-web-app.png" alt="project one">
+                <div class="project-item-text-content-container">
+                    <span 
+                    data-technology-filter-tags="HTML CSS JavaScript"  
+                    class="project-item-filter-tags-list technology">
+                        #HTML #CSS/SCSS #JavaScript
+                    </span>
+                    <br>
+                    <span
+                    
+                    class="project-item-filter-tags-list type">
+                        #Web App
+                    </span>
+                    <h2>Caclulator</h2>
+                    <p class="project-item-description">
+                        I used HTML, SCSS, and JavsScript to create a calculator app. App features include light / dark theme, full calculator functionality, and unique destroy / resurrect math button. 
+                    </p>
+                    <div class="project-item-buttons-flex-container">
+                        <button class="project-item-button demo"><a target="_blank" href="https://c-c-calculator.netlify.app/">Demo</a></button>
+                        <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/Calculator">Code</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Landing Page"> 
+                <img src="./img/project-item-interior-design-consultant.png" alt="interior design consultant business landing page">
+                <div class="project-item-text-content-container">
+                    <span 
+                    data-technology-filter-tags="HTML CSS"  
+                    class="project-item-filter-tags-list technology">
+                        #HTML #CSS/SCSS
+                    </span>
+                    <br>
+                    <span
+                    
+                    class="project-item-filter-tags-list type">
+                        #Landing Page
+                    </span>
+                    <h2>Interior Design Consultant Landing Page</h2>
+                    <p class="project-item-description">
+                        I used HTML and SCSS to create a interior design business landing page. Page features include animations and hover effects.
+                    </p>
+                    <div class="project-item-buttons-flex-container">
+                        <button class="project-item-button demo"><a target="_blank" href="https://interior-design-devio-chrischam.netlify.app/">Demo</a></button>
+                        <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/interior-design-consultant-devio">Code</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item-flex-container item-card project-even animate__animated" data-type-filter-tags="Tribute Page"> 
+                <img src="./img/project-item-tribute-page.png" alt="interior design consultant business landing page">
+                <div class="project-item-text-content-container">
+                    <span 
+                    data-technology-filter-tags="HTML CSS JavaScript"  
+                    class="project-item-filter-tags-list technology">
+                        #HTML #CSS #JavaScript
+                    </span>
+                    <br>
+                    <span
+                    
+                    class="project-item-filter-tags-list type">
+                        #Tribute Page
+                    </span>
+                    <h2>Henri Mouhot Tribute Page</h2>
+                    <p class="project-item-description">
+                        I used HTML, css, and JavaScript to create tribute page to the pioneering explorer of Southeast Asia - Henri Mouhout. Page features include a custom mobile menu button and interactive image galleries with a hover descriptive text image overlay.
+                    </p>
+                    <div class="project-item-buttons-flex-container">
+                        <button class="project-item-button demo"><a target="_blank" href="https://henri-mouhot-tribute-page.netlify.app/">Demo</a></button>
+                        <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/tribute-page">Code</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Portfolio"> 
+                <img src="./img/project-item-old-portfolio.png" alt="chris chamberlain's old create react app portfolio site">
+                <div class="project-item-text-content-container">
+                    <span 
+                    data-technology-filter-tags="React"  
+                    class="project-item-filter-tags-list technology">
+                        #React
+                    </span>
+                    <br>
+                    <span
+                
+                    class="project-item-filter-tags-list type">
+                        #Portfolio
+                    </span>
+                    <h2>My Old Portfolio</h2>
+                    <p class="project-item-description">
+                        I used Create React App to build my own multi-page portfolio site. Page features include light & dark theme, entrance & exit page transition animations, informative hover tooltips on skills icons, contact page, projects gallery, and external links to my resume and different social media platforms. 
+                    </p>
+                    <div class="project-item-buttons-flex-container">
+                        <button class="project-item-button demo"><a target="_blank" href="https://christopher-chamberlain.netlify.app/contact">Demo</a></button>
+                        <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/portfolio-mobilefirst">Code</a></button>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- experience -->
+        <section id="experiences" class="item-card">
+            <h1>Experience</h1>  
+            <div class="experience-flex-container">
+                
+                <img id="asi" src="./img/asilogo.jpg" alt="art sphere incorporated company logo" class="animate__animated">
+                <div id="date-position-description-flex-container asi">
+                    <div class="experience-item-header-info asi animate__animated">
+                        <h2>Feb 2023 - Present</h2>
+                        <h2>United States, Remote</h2>
+                        <h1>Front-end Developer</h1>
+                    </div>
+                        <ul class="experience-job-description-points-container asi">
+                            <li class="animate__animated">
+                                Developed features and maintained website as part of a
+                                development team under the direction of UX manager and
+                                company directors to enhance user experience.
+                            </li>
+                            <li  class="animate__animated">
+                                Worked in collaborative environment to liase with UI designers,
+                                other developers, and company directors to strategize and plan
+                                site design and implementation.
+                            </li>
+                            <li class="animate__animated">
+                                Made contributions to and developed company style guide while
+                                maintaining brand consistency.
+                            </li>
+                            <li class="animate__animated">
+                                Analyzed existing webpages and documented and fixed UI bugs.
+                            </li>
+                            <li class="animate__animated">
+                                Wrote custom CSS and HTML to enhance site features.
+                            </li>
+                            <li class="animate__animated">
+                                Develop new and update existing webpages to optimize SEO.
+                            </li>
+                        </ul>
+                </div>
+            </div>
         
-        <section id="skills" class="item-card">
-            <h1>FRONT END</h1>
-            <ul>
-                <li class="fade-in">
-                    <p class="heading">HTML</p>
-                    <div class="skillbar">
-                        <span class="html skillbars"></span>
+            <div class="experience-flex-container yogojo">
+                <img id="yogojo" src="./img/yogojologo2.png" alt="yogojo company logo" class="animate__animated">
+                <div id="date-position-description-flex-container">
+                    <div class="experience-item-header-info animate__animated">
+                        <h2>Feb 2023 - Present</h2>
+                        <h2>United Kingdom, Remote</h2>
+                        <h1>Front-end Developer</h1>
                     </div>
-                </li>
-               
-                <li class="fade-in">
-                    <p class="heading">CSS</p>
-                    <div class="skillbar">
-                        <span class="css skillbars"></span>
+                <ul class="experience-job-description-points-container">
+                    <li class="animate__animated">
+                        Worked in a team of developers and designers to rebuild
+                        existing website to optimize performance and SEO.
+                    </li>
+                    <li class="animate__animated">
+                        Built webpages using custom fields and dynamic content.
+                    </li>
+                    <li class="animate__animated">
+                        Enhanced site features using custom CSS. 
+                    </li>
+                    <li class="animate__animated">
+                        Created non-technical documentation of operations and
+                        workflow for non-technical members to function with minimum
+                        difficulty.
+                    </li>
+                </ul>
+                </div>
+            </div>
+            
+            <div class="experience-flex-container cambly">
+                <img id="cambly" src="./img/camblylogo.png" alt="cambly company logo" class="animate__animated">
+                <div  id="date-position-description-flex-container">
+                    <div class="experience-item-header-info animate__animated">
+                        <h2>Jun 2021 - Present</h2>
+                        <h2>United States, Remote</h2>
+                        <h1>ESL Teacher</h1>   
                     </div>
-                </li>
-               
-                <li class="fade-in">
-                    <p class="heading">JS</p>
-                    <div class="skillbar">
-                        <span class="js skillbars"></span>
-                    </div>
-                </li>
-              
-                <li class="fade-in">
-                    <p class="heading">React.JS</p>
-                    <div class="skillbar">
-                        <span class="react skillbars"></span>
-                    </div>
-                </li>
-            </ul>
+                <ul class="experience-job-description-points-container">
+                    <li class="animate__animated">
+                        Help students communicate more effectively in English.    
+                    </li>
+                    <li class="animate__animated">
+                        Teach students learning strategies to improve their language skills.
+                    </li>
+                    <li class="animate__animated">
+                        Assess students' English levels, identify weak points and strong points, provide individualized feedback to help them focus their learning.
+                    </li>
+                </ul>
+                </div>
+            </div>
         </section>
-    </header>
 
-    <main>
-    <!-- skills  -->
+        <!-- hobbies -->
+        <section id="hobbies" class="item-card" >
+            <h1>Hobbies</h1>
 
-    <!-- projects  -->
-    <section id="projects">
-        <section id="project-tags" class="item-card">
-            <h1 class="animate__animated tag-counter-header">Projects <span id="tag-counter"></span></h1>
-            <h2 class="animate__animated filter-by-header">Filter by:</h2>
-            <div id="type-filter-tags-container" class="animate__animated">
-                <h3>Type of Website</h2>
+            <div class="hobby-item" id="exercise">
+                <img class="animate__animated hobby-item-image-even" src="./img/hobbyexercise3.jpg" alt="man riding a bike">
+                <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-even">
+                    <h2>Excercise</h2>
+                    <p>A healthy body is a reflection of a healthy mind.</p>
+                </div>
+            </div>
+
+            <div class="hobby-item" id="reading">
+                    <img class="animate__animated hobby-item-image-odd" src="./img/hobbyreading.jpg" alt="girl looking at books on a bookshelf">
+                    <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-odd">
+                        <h2>Reading</h2>
+                        <p id="reading">
+                            A great book should leave you with many experiences, and slightly exhausted at the end. You live several lives while reading.
+                        </p>
+                    </div>
+            </div>
+
+            <div class="hobby-item">
+                <img class="animate__animated hobby-item-image-even" src="./img/hobbycoding.jpg" alt="a computer on a desk with code on the screen">
+                <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-even">
+                    <h2>Coding</h2>
+                    <p>Software and cathedrals are much the same — first we build them, then we pray.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- blog -->  
+        <section id="blog" class="item-card">
+            <div id="title-text-image-flex-container">
+                <div id="title-text-flex-container" class="animate__animated">
+                    <h1 class="animate__animated">Blog</h1>
+                    <h2 class="animate__animated">How to organize your CSS</h2>
+                </div>
+                <img src="./img/organizecss.jpg" alt="computer on desk" class="animate__animated">
+            </div>
+
+            <p class="animate__animated">
+                In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.  
+            </p>
+            <p class="animate__animated">    
+                Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
+            </p>
+
+            <a href="#">dev.to</a>
+
+        </section>
+   
+
+        <section id="mobile-nav">
+            <div class="navigation">
                 <ul>
-                    <li><button id="type-all-tag" class="active">All</button></li>
-                    <li><button>Landing Page</button></li>
-                    <li><button>E-Commerce</button></li>
-                    <li><button>Team Page</button></li>
-                    <li><button>Tribute Page</button></li>
-                    <li><button>Web App</button></li>
-                    <li><button>Image Gallery</button></li>
-                    <li><button>Portfolio</button></li>
-                    <li><button>Blog Post</button></li>
-                    <li><button>Homepage</button></li>
+                    <li class="list active">
+                        <a href="#profile-bio">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#projects">
+                            <span class="icon">
+                                <ion-icon name="construct-outline"></ion-icon>
+                            </span>
+                            <span class="text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#experiences">
+                            <span class="icon">
+                                <ion-icon name="earth-outline"></ion-icon>
+                            </span>
+                            <span class="text">Experiences</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#hobbies">
+                            <span class="icon">
+                                <ion-icon name="accessibility-outline"></ion-icon>
+                            </span>
+                            <span class="text">Hobbies</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a href="#blog">
+                            <span class="icon">
+                                <ion-icon name="chatbox-outline"></ion-icon>
+                            </span>
+                            <span class="text">Blog</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
                 </ul>
             </div>
         </section>
+        </main>
 
-        <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Image Gallery"> 
-            <img src="./img/proj1.png" alt="project one">
-            <div class="project-item-text-content-container">
-                <span 
-                data-technology-filter-tags="HTML CSS SCSS JavaScript"  
-                class="project-item-filter-tags-list technology">
-                    #HTML #JavaScript #CSS/SCSS
-                </span>
-                <br>
-                <span 
-                
-                class="project-item-filter-tags-list type">
-                    #Image Gallery
-                </span>
-                <h2>Image Gallery</h2>
-                <p class="project-item-description">
-                    Built with HTML and SCSS, I utilized CSS grid to create a fluidly responsive image gallery. Page features includes a descriptive image overlay to help users understand what the different images represent.
-                </p>
-                <div class="project-item-buttons-flex-container">
-                    <button class="project-item-button demo"><a target="_blank" href="https://my-image-gallery-dev-io.netlify.app/">Demo</a></button>
-                    <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/my-gallery-dev-io">Code</a></button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project-item-flex-container item-card project-even animate__animated" data-type-filter-tags="Blog Post"> 
-            <img src="./img/project-item-recipe-blog-post.png" alt="project one">
-            <div class="project-item-text-content-container">
-                <span 
-                data-technology-filter-tags="HTML CSS JavaScript"  
-                class="project-item-filter-tags-list technology">
-                    #HTML #JavaScript #CSS/SCSS
-                </span>
-                <br>
-                <span
-                
-                class="project-item-filter-tags-list type">
-                    #Blog Post
-                </span>
-                <h2>Recipe Blog Post</h2>
-                <p class="project-item-description">
-                    I used HTML and SCSS to create a recipe blog post page. The UI is responsive across all screen sizes. Page features includes custom check boxes for the ingredients section to help users keep track of their progess while baking.
-                </p>
-                <div class="project-item-buttons-flex-container">
-                    <button class="project-item-button demo"><a target="_blank" href="https://recipe-blog-challenge-dev-io.netlify.app/">Demo</a></button>
-                    <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/recipe-blog-challenge-dev-io">Code</a></button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Team Page"> 
-            <img src="./img/project-item-team-page.png" alt="project one">
-            <div class="project-item-text-content-container">
-                <span 
-                data-technology-filter-tags="HTML CSS"  
-                class="project-item-filter-tags-list technology">
-                    #HTML #CSS/SCSS
-                </span>
-                <br>
-                <span
-              
-                class="project-item-filter-tags-list type">
-                    #Team Page
-                </span>
-                <h2>Team Page</h2>
-                <p class="project-item-description">
-                    I used HTML and SCSS to create a company team page. Page features includes an image hover layover with a link to learn more about each team member.
-                </p>
-                <div class="project-item-buttons-flex-container">
-                    <button class="project-item-button demo"><a target="_blank" href="https://my-team-page-chris-cham.netlify.app/">Demo</a></button>
-                    <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/my-team-page-devio">Code</a></button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project-item-flex-container item-card project-even animate__animated" data-type-filter-tags="E-Commerce"> 
-            <img src="./img/project-item-checkout-page.png" alt="project one">
-            <div class="project-item-text-content-container">
-                <span 
-                data-technology-filter-tags="HTML CSS JavaScript"  
-                class="project-item-filter-tags-list technology">
-                    #HTML #CSS/SCSS #JavaScript
-                </span>
-                <br>
-                <span
-                
-                class="project-item-filter-tags-list type">
-                    #E-Commerce
-                </span>
-                <h2>Checkout Page</h2>
-                <p class="project-item-description">
-                    I used HTML, SCSS, and JavsScript to create an e-commerce checkout page. Page features include dynamic basket total, adjust basket item quantities, empty basket messages, and conditional free-shipping message (when shipping cost is $500 or more).
-                </p>
-                <div class="project-item-buttons-flex-container">
-                    <button class="project-item-button demo"><a target="_blank" href="https://checkout-page-chris-chamberlain-devio.netlify.app/">Demo</a></button>
-                    <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/checkout-page-dev-io">Code</a></button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Homepage"> 
-            <img src="./img/project-item-edie-homepage.png" alt="project one">
-            <div class="project-item-text-content-container">
-                <span 
-                data-technology-filter-tags="HTML CSS JavaScript"  
-                class="project-item-filter-tags-list technology">
-                    #HTML #CSS/SCSS #JavaScript
-                </span>
-                <br>
-                <span
-                
-                class="project-item-filter-tags-list type">
-                    #Homepage
-                </span>
-                <h2>Edie Homepage</h2>
-                <p class="project-item-description">
-                    I used HTML, SCSS, and JavsScript to create a company homepage. Page features include extensive scroll animations implemented with the JavaScript Intersection Observer API. 
-                </p>
-                <div class="project-item-buttons-flex-container">
-                    <button class="project-item-button demo"><a target="_blank" href="https://eddie-homepage.netlify.app/">Demo</a></button>
-                    <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/eddie-homepage-devio">Code</a></button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project-item-flex-container item-card project-even animate__animated" data-type-filter-tags="Web App"> 
-            <img src="./img/project-item-calculator-web-app.png" alt="project one">
-            <div class="project-item-text-content-container">
-                <span 
-                data-technology-filter-tags="HTML CSS JavaScript"  
-                class="project-item-filter-tags-list technology">
-                    #HTML #CSS/SCSS #JavaScript
-                </span>
-                <br>
-                <span
-                
-                class="project-item-filter-tags-list type">
-                    #Web App
-                </span>
-                <h2>Caclulator</h2>
-                <p class="project-item-description">
-                    I used HTML, SCSS, and JavsScript to create a calculator app. App features include light / dark theme, full calculator functionality, and unique destroy / resurrect math button. 
-                </p>
-                <div class="project-item-buttons-flex-container">
-                    <button class="project-item-button demo"><a target="_blank" href="https://c-c-calculator.netlify.app/">Demo</a></button>
-                    <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/Calculator">Code</a></button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Landing Page"> 
-            <img src="./img/project-item-interior-design-consultant.png" alt="interior design consultant business landing page">
-            <div class="project-item-text-content-container">
-                <span 
-                data-technology-filter-tags="HTML CSS"  
-                class="project-item-filter-tags-list technology">
-                    #HTML #CSS/SCSS
-                </span>
-                <br>
-                <span
-                
-                class="project-item-filter-tags-list type">
-                    #Landing Page
-                </span>
-                <h2>Interior Design Consultant Landing Page</h2>
-                <p class="project-item-description">
-                    I used HTML and SCSS to create a interior design business landing page. Page features include animations and hover effects.
-                </p>
-                <div class="project-item-buttons-flex-container">
-                    <button class="project-item-button demo"><a target="_blank" href="https://interior-design-devio-chrischam.netlify.app/">Demo</a></button>
-                    <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/interior-design-consultant-devio">Code</a></button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project-item-flex-container item-card project-even animate__animated" data-type-filter-tags="Tribute Page"> 
-            <img src="./img/project-item-tribute-page.png" alt="interior design consultant business landing page">
-            <div class="project-item-text-content-container">
-                <span 
-                data-technology-filter-tags="HTML CSS JavaScript"  
-                class="project-item-filter-tags-list technology">
-                    #HTML #CSS #JavaScript
-                </span>
-                <br>
-                <span
-                
-                class="project-item-filter-tags-list type">
-                    #Tribute Page
-                </span>
-                <h2>Henri Mouhot Tribute Page</h2>
-                <p class="project-item-description">
-                    I used HTML, css, and JavaScript to create tribute page to the pioneering explorer of Southeast Asia - Henri Mouhout. Page features include a custom mobile menu button and interactive image galleries with a hover descriptive text image overlay.
-                </p>
-                <div class="project-item-buttons-flex-container">
-                    <button class="project-item-button demo"><a target="_blank" href="https://henri-mouhot-tribute-page.netlify.app/">Demo</a></button>
-                    <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/tribute-page">Code</a></button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Portfolio"> 
-            <img src="./img/project-item-old-portfolio.png" alt="chris chamberlain's old create react app portfolio site">
-            <div class="project-item-text-content-container">
-                <span 
-                data-technology-filter-tags="React"  
-                class="project-item-filter-tags-list technology">
-                    #React
-                </span>
-                <br>
-                <span
-               
-                class="project-item-filter-tags-list type">
-                    #Portfolio
-                </span>
-                <h2>My Old Portfolio</h2>
-                <p class="project-item-description">
-                    I used Create React App to build my own multi-page portfolio site. Page features include light & dark theme, entrance & exit page transition animations, informative hover tooltips on skills icons, contact page, projects gallery, and external links to my resume and different social media platforms. 
-                </p>
-                <div class="project-item-buttons-flex-container">
-                    <button class="project-item-button demo"><a target="_blank" href="https://christopher-chamberlain.netlify.app/contact">Demo</a></button>
-                    <button class="project-item-button code"><a target="_blank" href="https://github.com/AkaraTawng/portfolio-mobilefirst">Code</a></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- experience -->
-    <section id="experiences" class="item-card">
-        <h1>Experience</h1>  
-        <div class="experience-flex-container">
-            
-            <img id="asi" src="./img/asilogo.jpg" alt="art sphere incorporated company logo" class="animate__animated">
-            <div id="date-position-description-flex-container asi">
-                <div class="experience-item-header-info asi animate__animated">
-                    <h2>Feb 2023 - Present</h2>
-                    <h2>United States, Remote</h2>
-                    <h1>Front-end Developer</h1>
-                </div>
-                    <ul class="experience-job-description-points-container asi">
-                        <li class="animate__animated">
-                            Developed features and maintained website as part of a
-                            development team under the direction of UX manager and
-                            company directors to enhance user experience.
-                        </li>
-                        <li  class="animate__animated">
-                            Worked in collaborative environment to liase with UI designers,
-                            other developers, and company directors to strategize and plan
-                            site design and implementation.
-                        </li>
-                        <li class="animate__animated">
-                            Made contributions to and developed company style guide while
-                            maintaining brand consistency.
-                        </li>
-                        <li class="animate__animated">
-                            Analyzed existing webpages and documented and fixed UI bugs.
-                        </li>
-                        <li class="animate__animated">
-                            Wrote custom CSS and HTML to enhance site features.
-                        </li>
-                        <li class="animate__animated">
-                            Develop new and update existing webpages to optimize SEO.
-                        </li>
-                    </ul>
-            </div>
-        </div>
-     
-        <div class="experience-flex-container yogojo">
-            <img id="yogojo" src="./img/yogojologo2.png" alt="yogojo company logo" class="animate__animated">
-            <div id="date-position-description-flex-container">
-                <div class="experience-item-header-info animate__animated">
-                    <h2>Feb 2023 - Present</h2>
-                    <h2>United Kingdom, Remote</h2>
-                    <h1>Front-end Developer</h1>
-                </div>
-            <ul class="experience-job-description-points-container">
-                <li class="animate__animated">
-                    Worked in a team of developers and designers to rebuild
-                    existing website to optimize performance and SEO.
-                </li>
-                <li class="animate__animated">
-                    Built webpages using custom fields and dynamic content.
-                </li>
-                <li class="animate__animated">
-                    Enhanced site features using custom CSS. 
-                </li>
-                <li class="animate__animated">
-                    Created non-technical documentation of operations and
-                    workflow for non-technical members to function with minimum
-                    difficulty.
-                </li>
-            </ul>
-            </div>
-        </div>
-        
-        <div class="experience-flex-container cambly">
-            <img id="cambly" src="./img/camblylogo.png" alt="cambly company logo" class="animate__animated">
-            <div  id="date-position-description-flex-container">
-                <div class="experience-item-header-info animate__animated">
-                    <h2>Jun 2021 - Present</h2>
-                    <h2>United States, Remote</h2>
-                    <h1>ESL Teacher</h1>   
-                </div>
-            <ul class="experience-job-description-points-container">
-                <li class="animate__animated">
-                    Help students communicate more effectively in English.    
-                </li>
-                <li class="animate__animated">
-                    Teach students learning strategies to improve their language skills.
-                </li>
-                <li class="animate__animated">
-                    Assess students' English levels, identify weak points and strong points, provide individualized feedback to help them focus their learning.
-                </li>
-            </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- hobbies -->
-    <section id="hobbies" class="item-card" >
-         <h1>Hobbies</h1>
-
-         <div class="hobby-item" id="exercise">
-            <img class="animate__animated hobby-item-image-even" src="./img/hobbyexercise3.jpg" alt="man riding a bike">
-            <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-even">
-                <h2>Excercise</h2>
-                <p>A healthy body is a reflection of a healthy mind.</p>
-            </div>
-         </div>
-
-         <div class="hobby-item" id="reading">
-                <img class="animate__animated hobby-item-image-odd" src="./img/hobbyreading.jpg" alt="girl looking at books on a bookshelf">
-                <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-odd">
-                    <h2>Reading</h2>
-                    <p id="reading">
-                        A great book should leave you with many experiences, and slightly exhausted at the end. You live several lives while reading.
-                    </p>
-                </div>
-         </div>
-
-         <div class="hobby-item">
-            <img class="animate__animated hobby-item-image-even" src="./img/hobbycoding.jpg" alt="a computer on a desk with code on the screen">
-            <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-even">
-                <h2>Coding</h2>
-                <p>Software and cathedrals are much the same — first we build them, then we pray.</p>
-            </div>
-         </div>
-    </section>
-
-    <!-- blog -->  
-    <section id="blog" class="item-card">
-        <div id="title-text-image-flex-container">
-            <div id="title-text-flex-container" class="animate__animated">
-                <h1 class="animate__animated">Blog</h1>
-                <h2 class="animate__animated">How to organize your CSS</h2>
-            </div>
-            <img src="./img/organizecss.jpg" alt="computer on desk" class="animate__animated">
-        </div>
-
-        <p class="animate__animated">
-            In this article I tell the story about Proin eu justo sit amet lacus bibendum tincidunt. Vivamus non volutpat nisl, a luctus mi.  
-        </p>
-        <p class="animate__animated">    
-            Donec aliquam est dui, vel vestibulum diam sollicitudin id. Quisque feugiat malesuada molestie.
-        </p>
-
-        <a href="#">dev.to</a>
-
-    </section>
-
-    <section id="mobile-nav">
-        <div class="navigation">
-            <ul>
-                <li class="list active">
-                    <a href="#profile-bio">
-                        <span class="icon">
-                             <ion-icon name="home-outline"></ion-icon>
-                        </span>
-                        <span class="text">Home</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#projects">
-                        <span class="icon">
-                            <ion-icon name="construct-outline"></ion-icon>
-                        </span>
-                        <span class="text">Projects</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#experiences">
-                        <span class="icon">
-                            <ion-icon name="earth-outline"></ion-icon>
-                        </span>
-                        <span class="text">Experiences</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#hobbies">
-                        <span class="icon">
-                            <ion-icon name="accessibility-outline"></ion-icon>
-                        </span>
-                        <span class="text">Hobbies</span>
-                    </a>
-                </li>
-                <li class="list">
-                    <a href="#blog">
-                        <span class="icon">
-                            <ion-icon name="chatbox-outline"></ion-icon>
-                        </span>
-                        <span class="text">Blog</span>
-                    </a>
-                </li>
-                <div class="indicator"></div>
-            </ul>
-        </div>
-    </section>
-    </main>
-
-</div>
+    
 <footer>
     <p>created by <a target="__blank" href="https://github.com/AkaraTawng">Christopher Chamberlain</a> - devChallenges.io</p>
 </footer>
