@@ -682,4 +682,16 @@ body {
 body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+body #profile-bio {
+  grid-area: prof;
+}
+body #projects {
+  grid-area: proj;
+}
+body #experiences {
+  grid-area: exp;
+}
+body #hobbies {
+  grid-area: hob;
 }/*# sourceMappingURL=main.css.map */

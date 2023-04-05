@@ -1,4 +1,22 @@
 body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    #profile-bio {
+        grid-area: prof;
+    }
+
+    #projects {
+        grid-area: proj;
+    }
+
+    #experiences {
+        grid-area: exp;
+    }
+
+    #hobbies {
+        grid-area: hob;
+    }
+
+
 }
