@@ -165,6 +165,7 @@ body {
 #blog #title-text-image-flex-container {
   display: flex;
   margin-bottom: 2rem;
+  justify-content: space-between;
 }
 #blog #title-text-image-flex-container h1 {
   color: #E0E0E0;
