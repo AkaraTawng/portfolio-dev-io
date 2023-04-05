@@ -271,6 +271,11 @@ body {
   margin: 0 auto;
   margin-top: 50px;
 }
+@media screen and (min-width: 760px) {
+  .item-card {
+    width: 85%;
+  }
+}
 
 #hobbies h1 {
   color: #4F4F4F;
@@ -417,6 +422,12 @@ body {
   #projects img {
     height: 16rem;
     width: 24.2rem;
+  }
+}
+@media screen and (min-width: 760px) {
+  #projects img {
+    height: 23rem;
+    width: 35rem;
   }
 }
 #projects .project-item-buttons-flex-container {

@@ -39,6 +39,10 @@
             height: 16rem;
             width: 24.2rem;
         }
+        @include tablet{
+            height: 23rem;
+            width: 35rem;
+        }
     }
 
     .project-item-buttons-flex-container {
