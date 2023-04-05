@@ -60,10 +60,20 @@ footer a:visited {
   font-weight: 600;
   font-size: 1.3rem;
 }
+@media screen and (min-width: 760px) {
+  #profile-bio #name-job-container h1 {
+    font-size: 2rem;
+  }
+}
 #profile-bio #name-job-container h2 {
   color: #828282;
   font-size: 1rem;
   font-weight: 400;
+}
+@media screen and (min-width: 760px) {
+  #profile-bio #name-job-container h2 {
+    font-size: 1.4rem;
+  }
 }
 #profile-bio #contact-info-container iconify-icon {
   padding-right: 0.7rem;
