@@ -20,11 +20,28 @@ footer a:visited {
   color: #828282;
 }
 
-#profile-bio {
+@media screen and (min-width: 1280px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "pb sk" "pb exp";
+  }
+  header #profile-bio {
+    grid-area: pb;
+  }
+  header #skills {
+    grid-area: sk;
+  }
+  header #experiences {
+    grid-area: exp;
+  }
+}
+header #profile-bio {
   display: flex;
   flex-direction: column;
 }
-#profile-bio img {
+header #profile-bio img {
   height: 12rem;
   border-radius: 8px;
   width: 16rem;
@@ -32,78 +49,78 @@ footer a:visited {
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 400px) {
-  #profile-bio img {
+  header #profile-bio img {
     height: 15rem;
     width: 20rem;
   }
 }
 @media screen and (min-width: 480px) {
-  #profile-bio img {
+  header #profile-bio img {
     height: 18rem;
     width: 24rem;
   }
 }
 @media screen and (min-width: 760px) {
-  #profile-bio img {
+  header #profile-bio img {
     height: 25rem;
     width: 38rem;
   }
 }
-#profile-bio #name-job-container {
+header #profile-bio #name-job-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
 }
-#profile-bio #name-job-container h1 {
+header #profile-bio #name-job-container h1 {
   color: #4F4F4F;
   font-weight: 600;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 760px) {
-  #profile-bio #name-job-container h1 {
+  header #profile-bio #name-job-container h1 {
     font-size: 2rem;
   }
 }
-#profile-bio #name-job-container h2 {
+header #profile-bio #name-job-container h2 {
   color: #828282;
   font-size: 1rem;
   font-weight: 400;
 }
 @media screen and (min-width: 760px) {
-  #profile-bio #name-job-container h2 {
+  header #profile-bio #name-job-container h2 {
     font-size: 1.4rem;
   }
 }
-#profile-bio #contact-info-container iconify-icon {
+header #profile-bio #contact-info-container iconify-icon {
   padding-right: 0.7rem;
   padding-bottom: 0.5rem;
 }
-#profile-bio #contact-info-container #email-container {
+header #profile-bio #contact-info-container #email-container {
   display: flex;
 }
-#profile-bio #contact-info-container #email-container a {
+header #profile-bio #contact-info-container #email-container a {
   font-size: 0.8rem;
   color: #4F4F4F;
 }
-#profile-bio #contact-info-container #phone-container {
+header #profile-bio #contact-info-container #phone-container {
   display: flex;
 }
-#profile-bio #contact-info-container #phone-container a {
+header #profile-bio #contact-info-container #phone-container a {
   color: #4F4F4F;
   font-size: 0.8rem;
   padding-bottom: 1.5rem;
 }
-#profile-bio #bio-container {
+header #profile-bio #bio-container {
   opacity: 0;
 }
-#profile-bio #bio-container p {
+header #profile-bio #bio-container p {
   color: #828282;
   font-size: 0.7rem;
   padding-bottom: 0.2rem;
   margin-top: 2rem;
 }
-#profile-bio #name-contact-container {
+header #profile-bio #name-contact-container {
   opacity: 0;
 }
 
@@ -124,6 +141,9 @@ body {
   min-height: 100vh;
 }
 
+#skills {
+  height: 18rem;
+}
 #skills p {
   font-size: 0.7rem;
   align-self: flex-end;
@@ -218,6 +238,14 @@ body {
   color: #2F80ED;
 }
 
+#experiences .laptop {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  #experiences .laptop {
+    display: block;
+  }
+}
 #experiences h1 {
   color: #4F4F4F;
   font-weight: 400;
@@ -395,52 +423,58 @@ body {
   transition: all 2s ease;
 }
 
-#projects .project-item-flex-container {
+.project-item-flex-container {
   display: none;
   flex-direction: column;
   align-items: center;
 }
-#projects .project-item-button {
+
+.project-item-button {
   transition: all 0.3s ease-out;
 }
-#projects h2 {
+
+h2 {
   font-weight: 500;
   color: #333333;
   margin: 2rem 0 2rem 0;
 }
-#projects .project-item-description {
+
+.project-item-description {
   color: #828282;
   font-weight: 500;
   font-size: 0.8rem;
 }
-#projects .project-item-filter-tags-list {
+
+.project-item-filter-tags-list {
   color: #828282;
   font-size: 0.7rem;
 }
-#projects img {
+
+img {
   height: 12rem;
   width: 16rem;
   border-radius: 15px;
 }
 @media screen and (min-width: 400px) {
-  #projects img {
+  img {
     height: 16rem;
     width: 20rem;
   }
 }
 @media screen and (min-width: 480px) {
-  #projects img {
+  img {
     height: 16rem;
     width: 24.2rem;
   }
 }
 @media screen and (min-width: 760px) {
-  #projects img {
+  img {
     height: 23rem;
     width: 35rem;
   }
 }
-#projects .project-item-buttons-flex-container {
+
+.project-item-buttons-flex-container {
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
@@ -676,31 +710,5 @@ body {
   #mobile-nav .indicator {
     width: 70px;
     height: 70px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "prof skill";
-  }
-  body #profile-bio {
-    grid-area: prof;
-  }
-  body #skills {
-    grid-area: skill;
-  }
-  body #project-items {
-    grid-area: proj;
-  }
-  body #project-tags {
-    grid-area: projtag;
-  }
-  body #experiences {
-    grid-area: exp;
-  }
-  body #hobbies {
-    grid-area: hob;
   }
 }/*# sourceMappingURL=main.css.map */

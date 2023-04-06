@@ -1,4 +1,11 @@
 #experiences {
+
+    .laptop {
+        display: none;
+        @include laptop {
+            display: block;
+        }
+    }
     h1 {
         color: $dark-grey1;
         font-weight: 400;
