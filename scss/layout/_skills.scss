@@ -1,4 +1,8 @@
 #skills {
+
+    h1{
+        font-weight: 500;
+    }
     height: 18rem;
     @include laptop {
         height: 19rem;

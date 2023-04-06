@@ -177,6 +177,9 @@ body {
 #skills {
   height: 18rem;
 }
+#skills h1 {
+  font-weight: 500;
+}
 @media screen and (min-width: 1280px) {
   #skills {
     height: 19rem;
