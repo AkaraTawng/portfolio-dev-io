@@ -10,7 +10,10 @@
         color: $dark-grey1;
         font-weight: 400;
         font-size: 1rem;
-        margin: 0 0 1.5rem 0;
+        margin: 0 0 .5rem 0;
+        @include laptop {
+            font-size: 1.5rem;    
+        }
     }
 
     img#asi {
@@ -46,7 +49,7 @@
 
         @include mobile-m{
             margin-left: 2rem;
-            }
+            }       
         }
        
         &.yogojo {
@@ -58,7 +61,11 @@
         color: $light-grey1;
         font-size: .7rem;
         font-weight: lighter;
-        margin: 0 0 0.2rem 0;
+        margin: 0 0 0 0;
+
+        &:nth-child(odd) {
+            margin-bottom: 1.5rem;
+        }
         }
 
         h1 {

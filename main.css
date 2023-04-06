@@ -299,7 +299,12 @@ body {
   color: #4F4F4F;
   font-weight: 400;
   font-size: 1rem;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0.5rem 0;
+}
+@media screen and (min-width: 1280px) {
+  #experiences h1 {
+    font-size: 1.5rem;
+  }
 }
 #experiences img#asi {
   height: 1rem;
@@ -331,7 +336,10 @@ body {
   color: #828282;
   font-size: 0.7rem;
   font-weight: lighter;
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 0 0;
+}
+#experiences .experience-flex-container h2:nth-child(odd) {
+  margin-bottom: 1.5rem;
 }
 #experiences .experience-flex-container h1 {
   color: #333333;
