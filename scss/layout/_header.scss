@@ -44,6 +44,10 @@ header {
                 height: 25rem;
                 width: 38rem;
             }
+            @include laptop {
+                height: 23rem;
+                width: 29.5rem;
+            }
         }
 
         #name-job-container {

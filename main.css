@@ -66,6 +66,12 @@ header #profile-bio img {
     width: 38rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  header #profile-bio img {
+    height: 23rem;
+    width: 29.5rem;
+  }
+}
 header #profile-bio #name-job-container {
   display: flex;
   flex-direction: column;
