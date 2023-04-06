@@ -177,6 +177,11 @@ body {
 #skills {
   height: 18rem;
 }
+@media screen and (min-width: 1280px) {
+  #skills {
+    height: 19rem;
+  }
+}
 #skills p {
   font-size: 0.7rem;
   align-self: flex-end;
