@@ -338,6 +338,11 @@ body {
   font-weight: lighter;
   margin: 0 0 0 0;
 }
+@media screen and (min-width: 1280px) {
+  #experiences .experience-flex-container h2 {
+    font-size: 0.9rem;
+  }
+}
 #experiences .experience-flex-container h2:nth-child(odd) {
   margin-bottom: 1.5rem;
 }
@@ -346,11 +351,21 @@ body {
   font-size: 0.8rem;
   font-weight: lighter;
 }
+@media screen and (min-width: 1280px) {
+  #experiences .experience-flex-container h1 {
+    font-size: 1.1rem;
+  }
+}
 #experiences .experience-flex-container .experience-job-description-points-container {
   color: #828282;
   font-size: 0.6rem;
   font-weight: lighter;
   margin-left: -5.8rem;
+}
+@media screen and (min-width: 1280px) {
+  #experiences .experience-flex-container .experience-job-description-points-container {
+    font-size: 0.9rem;
+  }
 }
 #experiences .experience-flex-container .experience-job-description-points-container li {
   margin-bottom: 1rem;

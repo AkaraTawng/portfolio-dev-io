@@ -62,6 +62,9 @@
         font-size: .7rem;
         font-weight: lighter;
         margin: 0 0 0 0;
+        @include laptop {
+            font-size: .9rem;
+        }
 
         &:nth-child(odd) {
             margin-bottom: 1.5rem;
@@ -73,6 +76,9 @@
         color: $dark-grey2;
         font-size: .8rem;
         font-weight: lighter;
+        @include laptop {
+            font-size: 1.1rem;
+        }
         }
 
         .experience-job-description-points-container {
@@ -80,6 +86,9 @@
             font-size: .6rem;
             font-weight: lighter;
             margin-left: -5.8rem;
+            @include laptop {
+                font-size:  .9rem;
+            }
 
             li {
                 margin-bottom: 1rem;
