@@ -181,6 +181,11 @@ body {
   font-size: 0.7rem;
   align-self: flex-end;
 }
+@media screen and (min-width: 1280px) {
+  #skills p {
+    font-size: 1rem;
+  }
+}
 #skills li {
   list-style: none;
   position: relative;
@@ -198,6 +203,12 @@ body {
   border-radius: 10px;
   background-color: #c4c4c4;
   align-self: center;
+}
+@media screen and (min-width: 1280px) {
+  #skills .skillbar {
+    width: 70%;
+    right: 1rem;
+  }
 }
 #skills .skillbar span {
   display: block;
