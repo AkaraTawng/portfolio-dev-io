@@ -22,24 +22,37 @@
         margin: 1rem 1.4rem 0 0;
         opacity: 0;
         transition: opacity 2s ease;
+        @include laptop {
+            height: 2rem;
+            width: 7.5rem;
+        }
     }
 
     img#yogojo {
         height: 2.5rem;
         width: 2rem;
         margin: 1rem 4.3rem 0 0;
+        @include laptop {
+            height: 3rem;
+            width: 3.6rem;
+        }
     }
 
     img#cambly {
         height: 2rem;
         width: 5rem;
         margin: 1rem 2.3rem 0 0;
+        @include laptop {
+            height: 3rem;
+            width: 6rem;
+        }
     }
     
 
     .experience-flex-container {
         display: flex;
         justify-content: space-around;
+        margin-bottom: 2rem;
 
         .experience-item-header-info {
         
@@ -94,6 +107,9 @@
                 margin-bottom: 1rem;
                 opacity: 0;
                 transition: opacity 2s ease;
+                @include laptop {
+                    
+                }
             }
         }
     }

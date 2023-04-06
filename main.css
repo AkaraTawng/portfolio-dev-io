@@ -316,19 +316,38 @@ body {
   opacity: 0;
   transition: opacity 2s ease;
 }
+@media screen and (min-width: 1280px) {
+  #experiences img#asi {
+    height: 2rem;
+    width: 7.5rem;
+  }
+}
 #experiences img#yogojo {
   height: 2.5rem;
   width: 2rem;
   margin: 1rem 4.3rem 0 0;
+}
+@media screen and (min-width: 1280px) {
+  #experiences img#yogojo {
+    height: 3rem;
+    width: 3.6rem;
+  }
 }
 #experiences img#cambly {
   height: 2rem;
   width: 5rem;
   margin: 1rem 2.3rem 0 0;
 }
+@media screen and (min-width: 1280px) {
+  #experiences img#cambly {
+    height: 3rem;
+    width: 6rem;
+  }
+}
 #experiences .experience-flex-container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 400px) {
   #experiences .experience-flex-container .experience-item-header-info {
@@ -375,7 +394,6 @@ body {
   opacity: 0;
   transition: opacity 2s ease;
 }
-
 .item-card {
   background-color: white;
   width: 90%;
