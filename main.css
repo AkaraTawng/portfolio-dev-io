@@ -88,6 +88,11 @@ header #profile-bio #name-job-container h1 {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  header #profile-bio #name-job-container h1 {
+    margin-bottom: -1rem;
+  }
+}
 header #profile-bio #name-job-container h2 {
   color: #828282;
   font-size: 1rem;
@@ -105,9 +110,20 @@ header #profile-bio #contact-info-container iconify-icon {
 header #profile-bio #contact-info-container #email-container {
   display: flex;
 }
+@media screen and (min-width: 1280px) {
+  header #profile-bio #contact-info-container #email-container {
+    padding-bottom: 1rem;
+  }
+}
 header #profile-bio #contact-info-container #email-container a {
   font-size: 0.8rem;
   color: #4F4F4F;
+  text-decoration: underline;
+}
+@media screen and (min-width: 1280px) {
+  header #profile-bio #contact-info-container #email-container a {
+    font-size: 1rem;
+  }
 }
 header #profile-bio #contact-info-container #phone-container {
   display: flex;
@@ -117,6 +133,11 @@ header #profile-bio #contact-info-container #phone-container a {
   font-size: 0.8rem;
   padding-bottom: 1.5rem;
 }
+@media screen and (min-width: 1280px) {
+  header #profile-bio #contact-info-container #phone-container a {
+    font-size: 1rem;
+  }
+}
 header #profile-bio #bio-container {
   opacity: 0;
 }
@@ -125,6 +146,12 @@ header #profile-bio #bio-container p {
   font-size: 0.7rem;
   padding-bottom: 0.2rem;
   margin-top: 2rem;
+}
+@media screen and (min-width: 1280px) {
+  header #profile-bio #bio-container p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
 }
 header #profile-bio #name-contact-container {
   opacity: 0;
