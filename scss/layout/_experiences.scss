@@ -56,19 +56,11 @@
 
         .experience-item-header-info {
         
-        // &.asi {
-        //     opacity: 0;
-        //     transition: all 2s ease; }
-
         @include mobile-m{
             margin-left: 2rem;
             }       
         }
-       
-        &.yogojo {
-            // margin: 3rem 0 3rem 0;
-        }
-
+      
         h2 { 
         //date 
         color: $light-grey1;

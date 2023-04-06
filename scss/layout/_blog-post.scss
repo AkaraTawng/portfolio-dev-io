@@ -1,6 +1,13 @@
 #blog {
     margin-bottom: 5rem;
 
+    .laptop {
+        display: none;
+        @include laptop {
+            display: block;
+        }
+    }
+
   #title-text-image-flex-container {
     display: flex;
     margin-bottom: 2rem;

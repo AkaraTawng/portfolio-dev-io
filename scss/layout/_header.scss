@@ -4,23 +4,38 @@ header {
     @include laptop {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:  
-        'pb sk'
-        'pb exp'
-        ;
+        grid-template-rows: repeat(4, 1fr);
+        // grid-template-areas:  
+        // 'pb sk'
+        // 'pb exp'
+        // ;
 
         #profile-bio {
             grid-area: pb;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
         }
 
         #skills {
             grid-area: sk;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
         }
 
         #experiences {
             grid-area: exp;
+            grid-column: 2 / 3;
+            grid-row: -4 / -3;
         }
+
+        #blog {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        // #blog {
+        //     grid-area: bl;
+        // }
     }
     #profile-bio {
         display: flex;
