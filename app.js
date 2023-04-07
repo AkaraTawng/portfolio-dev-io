@@ -41,7 +41,7 @@ const blogTitleTextContent = document.querySelector('#title-text-flex-container'
 /* convert blogTitleTextContent HTMLCollection to array */
 const blogTitleTextContentArray = Array.from(blogTitleTextContent);
 
-const blogImage = document.querySelector('#blog img');
+const blogImage = document.querySelectorAll('.blog img');
 
 const blogPostShortDescription = document.querySelectorAll('#blog p');
 
@@ -379,7 +379,10 @@ const blogImageObserver = new IntersectionObserver(entries => {
     threshold: 0.5
 });
 
-blogImageObserver.observe(blogImage);
+blogImage.forEach(item => {
+    blogImageObserver.observe(item);
+});
+
 
 
 const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
