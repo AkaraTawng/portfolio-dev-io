@@ -244,37 +244,38 @@ body {
     margin-bottom: 0;
   }
 }
+
 @media screen and (min-width: 1280px) {
-  #blog.small-screen {
+  #blog.small-screen, #blog-lg-screen.small-screen {
     display: none;
   }
 }
-#blog.large-screen {
+#blog.large-screen, #blog-lg-screen.large-screen {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  #blog.large-screen {
+  #blog.large-screen, #blog-lg-screen.large-screen {
     display: block;
   }
 }
-#blog #title-text-image-flex-container {
+#blog #title-text-image-flex-container, #blog-lg-screen #title-text-image-flex-container {
   display: flex;
   margin-bottom: 2rem;
   justify-content: space-between;
 }
-#blog #title-text-image-flex-container h1 {
+#blog #title-text-image-flex-container h1, #blog-lg-screen #title-text-image-flex-container h1 {
   color: #E0E0E0;
   font-size: 0.6rem;
   font-weight: 400;
   margin: 0.5rem 0 1rem 0;
 }
-#blog #title-text-image-flex-container h2 {
+#blog #title-text-image-flex-container h2, #blog-lg-screen #title-text-image-flex-container h2 {
   color: #333333;
   font-weight: 500;
   font-size: 0.8rem;
   width: 90%;
 }
-#blog img {
+#blog img, #blog-lg-screen img {
   height: 10rem;
   width: 10rem;
   border-radius: 5px 0 0 5px;
@@ -282,24 +283,24 @@ body {
   opacity: 0;
   transition: all 0.9s ease;
 }
-#blog p {
+#blog p, #blog-lg-screen p {
   color: #828282;
   font-weight: 300;
   font-size: 0.5rem;
 }
-#blog p:nth-child(2) {
+#blog p:nth-child(2), #blog-lg-screen p:nth-child(2) {
   margin-bottom: 1rem;
 }
-#blog p:nth-child(3) {
+#blog p:nth-child(3), #blog-lg-screen p:nth-child(3) {
   margin-bottom: 1.5rem;
 }
-#blog a {
+#blog a, #blog-lg-screen a {
   text-decoration: none;
   font-size: 0.5rem;
   color: #2F80ED;
   cursor: pointer;
 }
-#blog a :active {
+#blog a :active, #blog-lg-screen a :active {
   color: #2F80ED;
 }
 

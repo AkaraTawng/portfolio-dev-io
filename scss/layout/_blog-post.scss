@@ -3,7 +3,9 @@
     @include laptop {
         margin-bottom: 0;
     }
-    
+}
+
+#blog, #blog-lg-screen {
     &.small-screen {
         @include laptop {
             display: none;
