@@ -1,18 +1,19 @@
 #blog {
-    // margin-bottom: 5rem;
-    .small-screen {
+    margin-bottom: 5rem;
+    @include laptop {
+        margin-bottom: 0;
+    }
+    
+    &.small-screen {
         @include laptop {
-        display: none;
+            display: none;
+        }
     }
-    }
-   
 
-    .large-screen{
+    &.large-screen{
         display: none;
         @include laptop {
-            // display: grid;
-            grid-column: 1;
-            grid-row: 1;
+            display: block;
         }
     }
 

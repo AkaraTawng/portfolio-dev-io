@@ -236,18 +236,25 @@ body {
   width: 10%;
 }
 
+#blog {
+  margin-bottom: 5rem;
+}
 @media screen and (min-width: 1280px) {
-  #blog .small-screen {
+  #blog {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #blog.small-screen {
     display: none;
   }
 }
-#blog .large-screen {
+#blog.large-screen {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  #blog .large-screen {
-    grid-column: 1;
-    grid-row: 1;
+  #blog.large-screen {
+    display: block;
   }
 }
 #blog #title-text-image-flex-container {
