@@ -8,7 +8,8 @@
     
     .navigation {
         position: fixed;
-        top: 92vh;
+        // top: 92vh;
+        top: 95.3vh;
         width: 300px;
         @include mobile-m {
             width: 380px; 
