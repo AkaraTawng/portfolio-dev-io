@@ -24,26 +24,12 @@ footer a:visited {
   header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
   }
-  header #profile-bio {
-    grid-area: pb;
-    grid-column: 1/2;
-    grid-row: 1/2;
+  header #skills-experience-container {
+    display: grid;
   }
-  header #skills {
-    grid-area: sk;
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  header #experiences {
-    grid-area: exp;
-    grid-column: 2/3;
-    grid-row: -4/-3;
-  }
-  header #blog {
-    grid-column: 1/2;
-    grid-row: 2/3;
+  header #profile-bio-blog-container {
+    display: grid;
   }
 }
 header #profile-bio {
@@ -158,7 +144,7 @@ header #profile-bio #bio-container p {
 }
 @media screen and (min-width: 1280px) {
   header #profile-bio #bio-container p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2rem;
   }
 }
@@ -250,15 +236,18 @@ body {
   width: 10%;
 }
 
-#blog {
-  margin-bottom: 5rem;
+@media screen and (min-width: 1280px) {
+  #blog .small-screen {
+    display: none;
+  }
 }
-#blog .laptop {
+#blog .large-screen {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  #blog .laptop {
-    display: block;
+  #blog .large-screen {
+    grid-column: 1;
+    grid-row: 1;
   }
 }
 #blog #title-text-image-flex-container {
@@ -336,7 +325,7 @@ body {
 @media screen and (min-width: 1280px) {
   #experiences img#asi {
     height: 2rem;
-    width: 7.5rem;
+    width: 8rem;
   }
 }
 #experiences img#yogojo {

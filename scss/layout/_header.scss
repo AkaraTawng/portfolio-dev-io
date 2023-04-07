@@ -4,39 +4,16 @@ header {
     @include laptop {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        // grid-template-areas:  
-        // 'pb sk'
-        // 'pb exp'
-        // ;
 
-        #profile-bio {
-            grid-area: pb;
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
+        #skills-experience-container {
+         display: grid;
         }
 
-        #skills {
-            grid-area: sk;
-            grid-column: 2 / 3;
-            grid-row: 1 / 2;
+        #profile-bio-blog-container {
+            display: grid;
         }
-
-        #experiences {
-            grid-area: exp;
-            grid-column: 2 / 3;
-            grid-row: -4 / -3;
-        }
-
-        #blog {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-
-        // #blog {
-        //     grid-area: bl;
-        // }
     }
+
     #profile-bio {
         display: flex;
         flex-direction: column;
@@ -135,7 +112,7 @@ header {
                 padding-bottom: .2rem;
                 margin-top: 2rem;
                 @include laptop {
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                     line-height: 2rem;
                 }
             }
