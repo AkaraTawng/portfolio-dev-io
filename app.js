@@ -43,7 +43,7 @@ const blogTitleTextContentArray = Array.from(blogTitleTextContent);
 
 const blogImage = document.querySelectorAll('.blog img');
 
-const blogPostShortDescription = document.querySelectorAll('#blog p');
+const blogPostShortDescription = document.querySelectorAll('.blog p');
 
 /* convert blogPostShortDescriptions nodelist to array */
 const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
