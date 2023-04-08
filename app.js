@@ -36,10 +36,12 @@ const hobbyItemsTextContentEven = document.querySelectorAll('.hobby-item-text-co
 
 const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
 
-const blogTitleTextContent = document.querySelector('#title-text-flex-container').children;
+const blogTitleTextContentSmallScreen = document.querySelector('.title-text-flex-container.small-screen').children;
 
 /* convert blogTitleTextContent HTMLCollection to array */
-const blogTitleTextContentArray = Array.from(blogTitleTextContent);
+const blogTitleTextContentSmallScreenArray = Array.from(blogTitleTextContentSmallScreen);
+
+// console.log(blogTitleTextContentSmallScreenArray);
 
 const blogImage = document.querySelectorAll('.blog img');
 
@@ -356,16 +358,17 @@ hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
 
 /* blog title text content intersection observer scroll animation */
 
-const blogTitleTextContentObserver = new IntersectionObserver(entries => {
+const blogTitleTextContentSmallScreenObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.classList.add('animate__fadeInUp')
-            blogTitleTextContentObserver.unobserve(blogTitleTextContentArray);
+            entry.target.classList.add('animate__fadeInUp');//blogTitleTextContentObserver.unobserve(entry);
         };
+        
     });
+    
 });
 
-blogTitleTextContentArray.forEach(item => blogTitleTextContentObserver.observe(item));
+blogTitleTextContentSmallScreenArray.forEach(item => blogTitleTextContentSmallScreenObserver.observe(item));
 
 const blogImageObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
