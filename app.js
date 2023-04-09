@@ -41,7 +41,11 @@ const blogTitleTextContentSmallScreen = document.querySelector('.title-text-flex
 /* convert blogTitleTextContent HTMLCollection to array */
 const blogTitleTextContentSmallScreenArray = Array.from(blogTitleTextContentSmallScreen);
 
-// console.log(blogTitleTextContentSmallScreenArray);
+const blogTitleTextContentLargeScreen = document.querySelector('#title-text-flex-container.lg-screen').children;
+
+const blogTitleTextContentLargeScreenArray = Array.from(blogTitleTextContentLargeScreen);
+
+// console.log(blogLgTitleArray)
 
 const blogImage = document.querySelectorAll('.blog img');
 
@@ -369,6 +373,19 @@ const blogTitleTextContentSmallScreenObserver = new IntersectionObserver(entries
 });
 
 blogTitleTextContentSmallScreenArray.forEach(item => blogTitleTextContentSmallScreenObserver.observe(item));
+
+const blogTitleTextContentLargeScreenObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__fadeInUp');
+            blogTitleTextContentLargeScreenObserver.unobserve(entry.target);
+        }
+    })
+})
+
+blogTitleTextContentLargeScreenArray.forEach(item => {
+    blogTitleTextContentLargeScreenObserver.observe(item);
+});
 
 const blogImageObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
