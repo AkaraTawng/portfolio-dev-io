@@ -284,7 +284,7 @@ const workExperienceImagesObserver = new IntersectionObserver(entries => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__flipInX');
             entry.target.style.opacity = 1;
-            workExperienceImagesObserver.unobserve(entry);
+            workExperienceImagesObserver.unobserve(entry.target);
         };
     });
 }, {
@@ -421,7 +421,7 @@ const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__fadeInUp');
-            experienceItemHeaderInfoObserver.unobserve(entry);
+            experienceItemHeaderInfoObserver.unobserve(entry.target);
         };
     });
 });
