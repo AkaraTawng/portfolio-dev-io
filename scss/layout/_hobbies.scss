@@ -1,5 +1,28 @@
-#hobbies {
+.project-filter-hobbies-grid-container {
+    .hobbies-lg-screen{
+        display: none;
+    }
+    
+    @include laptop {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;  
 
+        .hobbies-lg-screen {
+            display: grid;
+        }
+    }
+   
+  
+}
+
+#hobbies {
+ 
+    @include laptop {
+        display: grid;
+        grid-column: 1 / 3;
+    }
+    
     h1 {
         color: $dark-grey1;
         font-weight: 500;

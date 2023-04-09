@@ -1,5 +1,11 @@
 #project-tags {
     
+    @include laptop {
+        display: grid;
+        grid-column: 3 / 4;
+        
+    }
+
     .tag-counter-header, 
     .filter-by-header,
     #type-filter-tags-container {

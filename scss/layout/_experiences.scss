@@ -1,6 +1,6 @@
 #experiences {
 
-    .laptop {
+    &.laptop {
         display: none;
         @include laptop {
             display: block;

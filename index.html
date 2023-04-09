@@ -200,25 +200,58 @@
         <main>
         <!-- projects  -->
         <!-- <section id="projects"> -->
-            <section id="project-tags" class="item-card">
-                <h1 class="animate__animated tag-counter-header">Projects <span id="tag-counter"></span></h1>
-                <h2 class="animate__animated filter-by-header">Filter by:</h2>
-                <div id="type-filter-tags-container" class="animate__animated">
-                    <h3>Type of Website</h2>
-                    <ul>
-                        <li><button id="type-all-tag" class="active">All</button></li>
-                        <li><button>Landing Page</button></li>
-                        <li><button>E-Commerce</button></li>
-                        <li><button>Team Page</button></li>
-                        <li><button>Tribute Page</button></li>
-                        <li><button>Web App</button></li>
-                        <li><button>Image Gallery</button></li>
-                        <li><button>Portfolio</button></li>
-                        <li><button>Blog Post</button></li>
-                        <li><button>Homepage</button></li>
-                    </ul>
-                </div>
-            </section>
+            <div class="project-filter-hobbies-grid-container">
+                <section id="hobbies" class="item-card hobbies-lg-screen" >
+                    <h1>Hobbies</h1>
+        
+                    <div class="hobby-item" id="exercise">
+                        <img class="animate__animated hobby-item-image-even" src="./img/hobbyexercise3.jpg" alt="man riding a bike">
+                        <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-even">
+                            <h2>Excercise</h2>
+                            <p>A healthy body is a reflection of a healthy mind.</p>
+                        </div>
+                    </div>
+        
+                    <div class="hobby-item" id="reading">
+                            <img class="animate__animated hobby-item-image-odd" src="./img/hobbyreading.jpg" alt="girl looking at books on a bookshelf">
+                            <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-odd">
+                                <h2>Reading</h2>
+                                <p id="reading">
+                                    A great book should leave you with many experiences, and slightly exhausted at the end. You live several lives while reading.
+                                </p>
+                            </div>
+                    </div>
+        
+                    <div class="hobby-item">
+                        <img class="animate__animated hobby-item-image-even" src="./img/hobbycoding.jpg" alt="a computer on a desk with code on the screen">
+                        <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-even">
+                            <h2>Coding</h2>
+                            <p>Software and cathedrals are much the same — first we build them, then we pray.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="project-tags" class="item-card">
+                    <h1 class="animate__animated tag-counter-header">Projects <span id="tag-counter"></span></h1>
+                    <h2 class="animate__animated filter-by-header">Filter by:</h2>
+                    <div id="type-filter-tags-container" class="animate__animated">
+                        <h3>Type of Website</h2>
+                        <ul>
+                            <li><button id="type-all-tag" class="active">All</button></li>
+                            <li><button>Landing Page</button></li>
+                            <li><button>E-Commerce</button></li>
+                            <li><button>Team Page</button></li>
+                            <li><button>Tribute Page</button></li>
+                            <li><button>Web App</button></li>
+                            <li><button>Image Gallery</button></li>
+                            <li><button>Portfolio</button></li>
+                            <li><button>Blog Post</button></li>
+                            <li><button>Homepage</button></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+           
 
             <section id="project-items">
                 <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Image Gallery"> 
