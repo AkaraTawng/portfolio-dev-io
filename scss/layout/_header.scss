@@ -17,6 +17,7 @@ header {
     #profile-bio {
         display: flex;
         flex-direction: column;
+        
        
         img {
             height:12rem;
@@ -106,11 +107,21 @@ header {
 
         #bio-container {
             opacity: 0;
+            .bio-span {
+                color: $accent-blue;
+                font-weight: 500;
+                font-size: .8rem;
+                text-shadow: 4px 2px 4px rgb(169, 231, 255);
+                @include laptop {
+                    font-size: 1.1rem;
+                }
+            }
             p {
                 color: $light-grey1;
                 font-size: .7rem;
                 padding-bottom: .2rem;
                 margin-top: 2rem;
+                line-height: 1.2rem;
                 @include laptop {
                     font-size: 1rem;
                     line-height: 2rem;

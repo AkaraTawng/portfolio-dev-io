@@ -136,11 +136,23 @@ header #profile-bio #contact-info-container #phone-container a {
 header #profile-bio #bio-container {
   opacity: 0;
 }
+header #profile-bio #bio-container .bio-span {
+  color: #2F80ED;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-shadow: 4px 2px 4px rgb(169, 231, 255);
+}
+@media screen and (min-width: 1280px) {
+  header #profile-bio #bio-container .bio-span {
+    font-size: 1.1rem;
+  }
+}
 header #profile-bio #bio-container p {
   color: #828282;
   font-size: 0.7rem;
   padding-bottom: 0.2rem;
   margin-top: 2rem;
+  line-height: 1.2rem;
 }
 @media screen and (min-width: 1280px) {
   header #profile-bio #bio-container p {
