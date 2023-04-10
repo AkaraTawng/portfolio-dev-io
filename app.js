@@ -502,18 +502,6 @@ const skillBarsObserver = new IntersectionObserver(entries => {
         } else {
               if(entry.isIntersecting){
                 if(entry.target.classList.contains('html')){
-<<<<<<< Updated upstream
-                entry.target.style.width = '80%';
-            } else if(entry.target.classList.contains('css')){
-                entry.target.style.width = '80%';
-            } else if(entry.target.classList.contains('js')){
-                entry.target.style.width = '50%';
-            } else if(entry.target.classList.contains('react')){
-                entry.target.style.width = '50%';
-            }
-        }
-    })
-=======
                     entry.target.style.width = '80%';
                 } else if(entry.target.classList.contains('css')){
                     entry.target.style.width = '80%';
@@ -526,7 +514,6 @@ const skillBarsObserver = new IntersectionObserver(entries => {
         }
           
     });
->>>>>>> Stashed changes
 }, {
     threshold: 1
 })
