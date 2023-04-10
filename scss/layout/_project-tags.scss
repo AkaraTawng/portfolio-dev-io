@@ -57,11 +57,21 @@ h3 {
         flex-wrap: wrap;
         justify-content: space-around;
 
+        @include laptop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         button {
             background-color: white;
             padding: 2px 20px;
+            padding: 2px 0px;
             border-radius: 10px;
             margin-bottom: 1rem;
+            width: 7rem;
+            @include laptop {
+                width: 8rem;
+            }
             cursor: pointer;
             border: solid $dark-grey1 1px;
             &:hover {

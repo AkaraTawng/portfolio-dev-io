@@ -614,13 +614,26 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media screen and (min-width: 1280px) {
+  #project-tags ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 #project-tags ul button {
   background-color: white;
   padding: 2px 20px;
+  padding: 2px 0px;
   border-radius: 10px;
   margin-bottom: 1rem;
+  width: 7rem;
   cursor: pointer;
   border: solid #4F4F4F 1px;
+}
+@media screen and (min-width: 1280px) {
+  #project-tags ul button {
+    width: 8rem;
+  }
 }
 #project-tags ul button:hover {
   color: white;
