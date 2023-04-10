@@ -2,13 +2,15 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 4rem;
+  height: 16rem;
   font-size: 0.6rem;
   font-size: clamp(0.6rem, 0.46rem + 0.7vw, 1.3rem);
   display: flex;
   justify-content: center;
   align-items: center;
   color: #828282;
+  z-index: -1;
+  padding-top: 2rem;
 }
 footer a {
   font-weight: 600;
@@ -18,62 +20,147 @@ footer a:visited {
   color: #828282;
 }
 
-#profile-bio {
+@media screen and (min-width: 1280px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  header #skills-experience-container {
+    display: grid;
+  }
+  header #profile-bio-blog-container {
+    display: grid;
+  }
+}
+header #profile-bio {
   display: flex;
   flex-direction: column;
 }
-#profile-bio img {
+header #profile-bio img {
   height: 12rem;
   border-radius: 8px;
   width: 16rem;
   align-self: center;
   margin-bottom: 1rem;
 }
-#profile-bio #name-job-container {
+@media screen and (min-width: 400px) {
+  header #profile-bio img {
+    height: 15rem;
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  header #profile-bio img {
+    height: 18rem;
+    width: 24rem;
+  }
+}
+@media screen and (min-width: 760px) {
+  header #profile-bio img {
+    height: 25rem;
+    width: 38rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header #profile-bio img {
+    height: 23rem;
+    width: 29.5rem;
+  }
+}
+header #profile-bio #name-job-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 2rem;
 }
-#profile-bio #name-job-container h1 {
+header #profile-bio #name-job-container h1 {
   color: #4F4F4F;
   font-weight: 600;
   font-size: 1.3rem;
 }
-#profile-bio #name-job-container h2 {
+@media screen and (min-width: 760px) {
+  header #profile-bio #name-job-container h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header #profile-bio #name-job-container h1 {
+    margin-bottom: -1rem;
+  }
+}
+header #profile-bio #name-job-container h2 {
   color: #828282;
   font-size: 1rem;
   font-weight: 400;
 }
-#profile-bio #contact-info-container iconify-icon {
+@media screen and (min-width: 760px) {
+  header #profile-bio #name-job-container h2 {
+    font-size: 1.4rem;
+  }
+}
+header #profile-bio #contact-info-container iconify-icon {
   padding-right: 0.7rem;
   padding-bottom: 0.5rem;
 }
-#profile-bio #contact-info-container #email-container {
+header #profile-bio #contact-info-container #email-container {
   display: flex;
 }
-#profile-bio #contact-info-container #email-container a {
+@media screen and (min-width: 1280px) {
+  header #profile-bio #contact-info-container #email-container {
+    padding-bottom: 1rem;
+  }
+}
+header #profile-bio #contact-info-container #email-container a {
   font-size: 0.8rem;
   color: #4F4F4F;
+  text-decoration: underline;
 }
-#profile-bio #contact-info-container #phone-container {
+@media screen and (min-width: 1280px) {
+  header #profile-bio #contact-info-container #email-container a {
+    font-size: 1rem;
+  }
+}
+header #profile-bio #contact-info-container #phone-container {
   display: flex;
 }
-#profile-bio #contact-info-container #phone-container a {
+header #profile-bio #contact-info-container #phone-container a {
   color: #4F4F4F;
   font-size: 0.8rem;
   padding-bottom: 1.5rem;
 }
-#profile-bio #bio-container {
+@media screen and (min-width: 1280px) {
+  header #profile-bio #contact-info-container #phone-container a {
+    font-size: 1rem;
+  }
+}
+header #profile-bio #bio-container {
   opacity: 0;
 }
-#profile-bio #bio-container p {
+header #profile-bio #bio-container .bio-span {
+  color: #2F80ED;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-shadow: 4px 2px 4px rgb(169, 231, 255);
+}
+@media screen and (min-width: 1280px) {
+  header #profile-bio #bio-container .bio-span {
+    font-size: 1.1rem;
+  }
+}
+header #profile-bio #bio-container p {
   color: #828282;
   font-size: 0.7rem;
   padding-bottom: 0.2rem;
   margin-top: 2rem;
+  line-height: 1.2rem;
 }
-#profile-bio #name-contact-container {
+@media screen and (min-width: 1280px) {
+  header #profile-bio #bio-container p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+header #profile-bio #name-contact-container {
   opacity: 0;
 }
 
@@ -94,9 +181,25 @@ body {
   min-height: 100vh;
 }
 
+#skills {
+  height: 18rem;
+}
+#skills h1 {
+  font-weight: 500;
+}
+@media screen and (min-width: 1280px) {
+  #skills {
+    height: 19rem;
+  }
+}
 #skills p {
   font-size: 0.7rem;
   align-self: flex-end;
+}
+@media screen and (min-width: 1280px) {
+  #skills p {
+    font-size: 1rem;
+  }
 }
 #skills li {
   list-style: none;
@@ -115,6 +218,12 @@ body {
   border-radius: 10px;
   background-color: #c4c4c4;
   align-self: center;
+}
+@media screen and (min-width: 1280px) {
+  #skills .skillbar {
+    width: 70%;
+    right: 1rem;
+  }
 }
 #skills .skillbar span {
   display: block;
@@ -139,23 +248,56 @@ body {
   width: 0%;
 }
 
-#blog #title-text-image-flex-container {
+#blog {
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 1280px) {
+  #blog {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #blog.small-screen, #blog-lg-screen.small-screen {
+    display: none;
+  }
+}
+#blog.large-screen, #blog-lg-screen.large-screen {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  #blog.large-screen, #blog-lg-screen.large-screen {
+    display: block;
+  }
+}
+#blog #title-text-image-flex-container, #blog-lg-screen #title-text-image-flex-container {
   display: flex;
   margin-bottom: 2rem;
+  justify-content: space-between;
 }
-#blog #title-text-image-flex-container h1 {
+#blog #title-text-image-flex-container h1, #blog-lg-screen #title-text-image-flex-container h1 {
   color: #E0E0E0;
   font-size: 0.6rem;
   font-weight: 400;
   margin: 0.5rem 0 1rem 0;
 }
-#blog #title-text-image-flex-container h2 {
+@media screen and (min-width: 1280px) {
+  #blog #title-text-image-flex-container h1, #blog-lg-screen #title-text-image-flex-container h1 {
+    font-size: 1rem;
+  }
+}
+#blog #title-text-image-flex-container h2, #blog-lg-screen #title-text-image-flex-container h2 {
   color: #333333;
   font-weight: 500;
   font-size: 0.8rem;
   width: 90%;
 }
-#blog img {
+@media screen and (min-width: 1280px) {
+  #blog #title-text-image-flex-container h2, #blog-lg-screen #title-text-image-flex-container h2 {
+    font-size: 1.2rem;
+  }
+}
+#blog img, #blog-lg-screen img {
   height: 10rem;
   width: 10rem;
   border-radius: 5px 0 0 5px;
@@ -163,32 +305,77 @@ body {
   opacity: 0;
   transition: all 0.9s ease;
 }
-#blog p {
+@media screen and (min-width: 1280px) {
+  #blog img, #blog-lg-screen img {
+    margin-bottom: 4rem;
+    height: 15rem;
+    width: 15rem;
+  }
+}
+#blog p, #blog-lg-screen p {
   color: #828282;
   font-weight: 300;
   font-size: 0.5rem;
 }
-#blog p:nth-child(2) {
+@media screen and (min-width: 1280px) {
+  #blog p, #blog-lg-screen p {
+    font-size: 0.9rem;
+  }
+}
+#blog p:nth-child(2), #blog-lg-screen p:nth-child(2) {
   margin-bottom: 1rem;
 }
-#blog p:nth-child(3) {
+@media screen and (min-width: 1280px) {
+  #blog p:nth-child(2), #blog-lg-screen p:nth-child(2) {
+    margin-bottom: 1.5rem;
+  }
+}
+#blog p:nth-child(3), #blog-lg-screen p:nth-child(3) {
   margin-bottom: 1.5rem;
 }
-#blog a {
+@media screen and (min-width: 1280px) {
+  #blog p:nth-child(3), #blog-lg-screen p:nth-child(3) {
+    margin-bottom: 2rem;
+  }
+}
+#blog a, #blog-lg-screen a {
   text-decoration: none;
   font-size: 0.5rem;
   color: #2F80ED;
   cursor: pointer;
 }
-#blog a :active {
+@media screen and (min-width: 1280px) {
+  #blog a, #blog-lg-screen a {
+    font-size: 0.7rem;
+  }
+}
+#blog a :active, #blog-lg-screen a :active {
   color: #2F80ED;
 }
 
+@media screen and (min-width: 1280px) {
+  #experiences {
+    display: none;
+  }
+}
+#experiences.laptop {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  #experiences.laptop {
+    display: block;
+  }
+}
 #experiences h1 {
   color: #4F4F4F;
   font-weight: 400;
   font-size: 1rem;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 0.5rem 0;
+}
+@media screen and (min-width: 1280px) {
+  #experiences h1 {
+    font-size: 1.5rem;
+  }
 }
 #experiences img#asi {
   height: 1rem;
@@ -197,37 +384,68 @@ body {
   opacity: 0;
   transition: opacity 2s ease;
 }
+@media screen and (min-width: 1280px) {
+  #experiences img#asi {
+    height: 2rem;
+    width: 10rem;
+  }
+}
 #experiences img#yogojo {
   height: 2.5rem;
   width: 2rem;
   margin: 1rem 4.3rem 0 0;
+}
+@media screen and (min-width: 1280px) {
+  #experiences img#yogojo {
+    height: 4.3rem;
+    width: 3.6rem;
+    padding: 0 0 1rem 0;
+  }
 }
 #experiences img#cambly {
   height: 2rem;
   width: 5rem;
   margin: 1rem 2.3rem 0 0;
 }
+@media screen and (min-width: 1280px) {
+  #experiences img#cambly {
+    height: 3rem;
+    width: 6rem;
+  }
+}
 #experiences .experience-flex-container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
-#experiences .experience-flex-container .experience-item-header-info.asi {
-  opacity: 0;
-  transition: all 2s ease;
-}
-#experiences .experience-flex-container.yogojo {
-  margin: 3rem 0 3rem 0;
+@media screen and (min-width: 400px) {
+  #experiences .experience-flex-container .experience-item-header-info {
+    margin-left: 2rem;
+  }
 }
 #experiences .experience-flex-container h2 {
   color: #828282;
   font-size: 0.7rem;
   font-weight: lighter;
-  margin: 0 0 0.2rem 0;
+  margin: 0 0 0 0;
+}
+@media screen and (min-width: 1280px) {
+  #experiences .experience-flex-container h2 {
+    font-size: 0.9rem;
+  }
+}
+#experiences .experience-flex-container h2:nth-child(odd) {
+  margin-bottom: 1.5rem;
 }
 #experiences .experience-flex-container h1 {
   color: #333333;
   font-size: 0.8rem;
   font-weight: lighter;
+}
+@media screen and (min-width: 1280px) {
+  #experiences .experience-flex-container h1 {
+    font-size: 1.1rem;
+  }
 }
 #experiences .experience-flex-container .experience-job-description-points-container {
   color: #828282;
@@ -235,12 +453,16 @@ body {
   font-weight: lighter;
   margin-left: -5.8rem;
 }
+@media screen and (min-width: 1280px) {
+  #experiences .experience-flex-container .experience-job-description-points-container {
+    font-size: 0.9rem;
+  }
+}
 #experiences .experience-flex-container .experience-job-description-points-container li {
   margin-bottom: 1rem;
   opacity: 0;
   transition: opacity 2s ease;
 }
-
 .item-card {
   background-color: white;
   width: 90%;
@@ -249,12 +471,42 @@ body {
   margin: 0 auto;
   margin-top: 50px;
 }
+@media screen and (min-width: 760px) {
+  .item-card {
+    width: 85%;
+  }
+}
 
+.project-filter-hobbies-grid-container .hobbies-lg-screen {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .project-filter-hobbies-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .project-filter-hobbies-grid-container #hobbies.hobbies-lg-screen {
+    display: grid;
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #hobbies {
+    display: none;
+  }
+}
 #hobbies h1 {
   color: #4F4F4F;
   font-weight: 500;
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 1280px) {
+  #hobbies h1 {
+    font-size: 1.3rem;
+  }
 }
 #hobbies h2 {
   color: #333333;
@@ -262,10 +514,20 @@ body {
   font-weight: 500;
   margin: 0.6rem 0 0.6rem 0;
 }
+@media screen and (min-width: 1280px) {
+  #hobbies h2 {
+    font-size: 1.1rem;
+  }
+}
 #hobbies p {
   color: #828282;
   font-weight: 500;
   font-size: 0.6rem;
+}
+@media screen and (min-width: 1280px) {
+  #hobbies p {
+    font-size: 0.9rem;
+  }
 }
 #hobbies img {
   height: 6rem;
@@ -275,6 +537,16 @@ body {
      object-fit: cover;
   -o-object-position: 20% 80%;
      object-position: 20% 80%;
+}
+@media screen and (min-width: 400px) {
+  #hobbies img {
+    height: 8rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #hobbies img {
+    height: 13rem;
+  }
 }
 #hobbies .hobby-item {
   display: flex;
@@ -291,6 +563,12 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 1280px) {
+  #project-tags {
+    display: grid;
+    grid-column: 3/4;
+  }
+}
 #project-tags .tag-counter-header,
 #project-tags .filter-by-header,
 #project-tags #type-filter-tags-container {
@@ -312,14 +590,29 @@ body {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
+@media screen and (min-width: 1280px) {
+  #project-tags h1 {
+    font-size: 1.2rem;
+  }
+}
 #project-tags h2 {
   margin-bottom: 1rem;
   font-size: 1rem;
+}
+@media screen and (min-width: 1280px) {
+  #project-tags h2 {
+    font-size: 1.2rem;
+  }
 }
 #project-tags h3 {
   font-size: 0.9rem;
   text-align: center;
   margin-bottom: 1rem;
+}
+@media screen and (min-width: 1280px) {
+  #project-tags h3 {
+    font-size: 1.2rem;
+  }
 }
 #project-tags ul {
   list-style-type: none;
@@ -327,13 +620,26 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media screen and (min-width: 1280px) {
+  #project-tags ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 #project-tags ul button {
   background-color: white;
   padding: 2px 20px;
+  padding: 2px 0px;
   border-radius: 10px;
   margin-bottom: 1rem;
+  width: 7rem;
   cursor: pointer;
   border: solid #4F4F4F 1px;
+}
+@media screen and (min-width: 1280px) {
+  #project-tags ul button {
+    width: 8rem;
+  }
 }
 #project-tags ul button:hover {
   color: white;
@@ -353,37 +659,74 @@ body {
   transition: all 2s ease;
 }
 
-#projects .project-item-flex-container {
+.project-item-flex-container {
   display: none;
   flex-direction: column;
   align-items: center;
 }
-#projects .project-item-button {
+
+.project-item-button {
   transition: all 0.3s ease-out;
 }
-#projects h2 {
+
+h2 {
   font-weight: 500;
   color: #333333;
   margin: 2rem 0 2rem 0;
 }
-#projects .project-item-description {
+
+.project-item-description {
   color: #828282;
   font-weight: 500;
   font-size: 0.8rem;
 }
-#projects .project-item-filter-tags-list {
+
+.project-item-filter-tags-list {
   color: #828282;
   font-size: 0.7rem;
 }
-#projects img {
+
+img {
   height: 12rem;
   width: 16rem;
   border-radius: 15px;
 }
-#projects .project-item-buttons-flex-container {
+@media screen and (min-width: 400px) {
+  img {
+    height: 16rem;
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 480px) {
+  img {
+    height: 16rem;
+    width: 24.2rem;
+  }
+}
+@media screen and (min-width: 760px) {
+  img {
+    height: 23rem;
+    width: 35rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  img {
+    height: 23rem;
+    width: 30rem;
+  }
+}
+
+.project-item-buttons-flex-container {
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 1280px) {
+  #project-items {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .demo {
@@ -425,4 +768,201 @@ body {
 }
 .code:hover a {
   color: white;
+}
+
+#mobile-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1280px) {
+  #mobile-nav {
+    display: none;
+  }
+}
+#mobile-nav .navigation {
+  position: fixed;
+  top: 93.3vh;
+  width: 300px;
+  height: 70px;
+  background-color: #2F80ED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation {
+    width: 380px;
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation {
+    width: 450px;
+  }
+}
+#mobile-nav .navigation ul {
+  display: flex;
+  width: 300px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul {
+    width: 380px;
+  }
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul {
+    padding-left: 0px;
+  }
+}
+#mobile-nav .navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 50px;
+  height: 70px;
+  z-index: 1;
+  /* projects */
+  /* experience */
+  /* hobbies */
+  /* blog */
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul li {
+    width: 380px;
+  }
+}
+#mobile-nav .navigation ul li.active a .icon {
+  transform: translateY(-40px);
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li.active a .icon {
+    transform: translateY(-45px);
+  }
+}
+#mobile-nav .navigation ul li.active a .text {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#mobile-nav .navigation ul li a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+#mobile-nav .navigation ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1em;
+  text-align: center;
+  transition: 0.5s;
+  color: white;
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li a .icon {
+    line-height: 95px;
+  }
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul li a .icon {
+    font-size: 1.4em;
+  }
+}
+#mobile-nav .navigation ul li a .text {
+  position: absolute;
+  color: white;
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+#mobile-nav .navigation ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(0px);
+}
+#mobile-nav .navigation ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(48.5px);
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(76px);
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(75px);
+  }
+}
+#mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(98px);
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(152px);
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(150px);
+  }
+}
+#mobile-nav .navigation ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(148.5px);
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(228px);
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li:nth-child(4).active ~ .indicator {
+    transform: translateX(225px);
+  }
+}
+#mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(198px);
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(302.4px);
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
+    transform: translateX(302px);
+  }
+}
+#mobile-nav .indicator {
+  position: absolute;
+  top: -50%;
+  left: 5.5%;
+  width: 60px;
+  height: 60px;
+  background-color: #2F80ED;
+  border-radius: 50%;
+  border: 6px solid white;
+  transition: 0.5s;
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .indicator {
+    left: 2%;
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .indicator {
+    left: 8.5%;
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .indicator {
+    width: 70px;
+    height: 70px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,14 +1,19 @@
 #skills {
-    // background-color: white;
-    // width: 90%;
-    // padding: 5%;
-    // border-radius: 15px;
-    // margin: 0 auto;
-    // margin-top: 30rem;
+
+    h1{
+        font-weight: 500;
+    }
+    height: 18rem;
+    @include laptop {
+        height: 19rem;
+    }
 
     p { 
         font-size: .7rem;
         align-self: flex-end;    
+        @include laptop {
+            font-size: 1rem;
+        }
 }
     li {
         list-style: none;
@@ -28,10 +33,13 @@
         border-radius: 10px;
         background-color: $light-grey3;
         align-self: center;
+        @include laptop {
+            width: 70%;
+            right: 1rem;
+        }
         
         span {
             display: block;
-            // position: relative;
             height: 100%;
             width: 80%;
             border-radius: 10px;
@@ -58,43 +66,4 @@
             width: 0%;
         }
     }
-
-   
-
 }
-
-// @keyframes html{
-//     from{
-//         width: 10%;
-//     }
-//     to{
-//         width: 80%;
-//     }
-// }
-
-// @keyframes css{
-//     from{
-//         width: 10%;
-//     }
-//     to{
-//         width: 80%;
-//     }
-// }
-
-// @keyframes js{
-//     from{
-//         width: 10%;
-//     }
-//     to{
-//         width: 50%;
-//     }
-// }
-
-// @keyframes react{
-//     from{
-//         width: 10%;
-//     }
-//     to{
-//         width: 50%;
-//     }
-// }

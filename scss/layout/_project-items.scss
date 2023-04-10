@@ -1,4 +1,4 @@
-#projects {
+
     
     .project-item-flex-container {
         display: none;
@@ -31,6 +31,22 @@
         height: 12rem;
         width: 16rem;
         border-radius: 15px;
+        @include mobile-m{
+            height: 16rem;
+            width: 20rem;
+        }
+        @include mobile-l{
+            height: 16rem;
+            width: 24.2rem;
+        }
+        @include tablet{
+            height: 23rem;
+            width: 35rem;
+        }
+        @include laptop {
+            height: 23rem;
+            width: 30rem;
+        }
     }
 
     .project-item-buttons-flex-container {
@@ -39,4 +55,10 @@
         justify-content: space-around;
 
     }
-}
+
+    #project-items {
+        @include laptop {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }

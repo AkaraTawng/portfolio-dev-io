@@ -36,14 +36,20 @@ const hobbyItemsTextContentEven = document.querySelectorAll('.hobby-item-text-co
 
 const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
 
-const blogTitleTextContent = document.querySelector('#title-text-flex-container').children;
+const blogTitleTextContentSmallScreen = document.querySelector('.title-text-flex-container.small-screen').children;
 
 /* convert blogTitleTextContent HTMLCollection to array */
-const blogTitleTextContentArray = Array.from(blogTitleTextContent);
+const blogTitleTextContentSmallScreenArray = Array.from(blogTitleTextContentSmallScreen);
 
-const blogImage = document.querySelector('#blog img');
+const blogTitleTextContentLargeScreen = document.querySelector('#title-text-flex-container.lg-screen').children;
 
-const blogPostShortDescription = document.querySelectorAll('#blog p');
+const blogTitleTextContentLargeScreenArray = Array.from(blogTitleTextContentLargeScreen);
+
+// console.log(blogLgTitleArray)
+
+const blogImage = document.querySelectorAll('.blog img');
+
+const blogPostShortDescription = document.querySelectorAll('.blog p');
 
 /* convert blogPostShortDescriptions nodelist to array */
 const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
@@ -63,32 +69,7 @@ const skillBarsNodelist = document.querySelectorAll('.skillbars');
 /* convert skillsBarsNodelist to array */
 const skillBarsArray = Array.from(skillBarsNodelist);
 
-console.log()
-
-
-
-/* find a way to loop through hobby items node list and check index. If index is odd, add one animation. If index is even, add other animation. How to find index? How to use indexOf? Apply same concept to hobby items text content */
-// console.log(hobbyItemsImages)
-
-/* find index of hobby item images in nodelist */
-// hobbyItemsImages.forEach((item, index) => {
-//     /* even */
-//     if(index % 2 === 0) {
-//         console.log(item, index, 'even')
-//     } else {
-//         console.log(item, index, 'odd')
-//     }
-// })
-
-// hobbyItemsImages.forEach(item => {
-//     console.log(item);
-// })
-
-// asiJobDescriptionPoints.forEach(point => {
-//     console.log(point.innerText)
-// });
-
-// console.log()
+const list = document.querySelectorAll('.list');
 
 /* project counter */
 let projectsArray = [];
@@ -257,7 +238,6 @@ const typeOfWebsiteContainerObserver = new IntersectionObserver(entries => {
 
 typeOfWebsiteContainerObserver.observe(typeOfWebsiteContainer);
 
-
 /* even project items slide in left */
 const evenProjectsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -270,9 +250,7 @@ const evenProjectsObserver = new IntersectionObserver(entries => {
     });
 });
 
-evenProjectItems.forEach(item => {
-    evenProjectsObserver.observe(item);
-});
+evenProjectItems.forEach(item => evenProjectsObserver.observe(item));
 
 /* odd project items slide in right */
 const oddProjectsObserver = new IntersectionObserver(entries => {
@@ -286,9 +264,7 @@ const oddProjectsObserver = new IntersectionObserver(entries => {
     });
 });
 
-oddProjectItems.forEach(item => {
-    oddProjectsObserver.observe(item);
-});
+oddProjectItems.forEach(item => oddProjectsObserver.observe(item));
 
 /* asi header info slide in up */
 const experienceItemHeaderInfoAsiObserver = new IntersectionObserver(entries => {
@@ -308,28 +284,14 @@ const workExperienceImagesObserver = new IntersectionObserver(entries => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__flipInX');
             entry.target.style.opacity = 1;
-            workExperienceImagesObserver.unobserve(entry);
+            workExperienceImagesObserver.unobserve(entry.target);
         };
     });
 }, {
     threshold: 0
 });
 
-workExperienceImagesArray.forEach(item => {
-    workExperienceImagesObserver.observe(item);
-});
-
-
-/**
- * get all work experience images
- * get all work experience item header info
- * convert to array
- * iterate over array and apply intersection observer 
- * apply scroll animation in intersection observer
- */
-
-
-
+workExperienceImagesArray.forEach(item => workExperienceImagesObserver.observe(item));
 
 /* all job description points slide in up */
 const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries => {
@@ -344,9 +306,7 @@ const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries 
     });
 });
 
-jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => {
-    jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint);
-});
+jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint));
 
 /* hobby images even intersection observer*/
 const hobbyImagesEvenObserver = new IntersectionObserver(entries => {
@@ -358,9 +318,7 @@ const hobbyImagesEvenObserver = new IntersectionObserver(entries => {
     });
 });
 
-hobbyItemsImagesEven.forEach(item => {
-    hobbyImagesEvenObserver.observe(item);
-});
+hobbyItemsImagesEven.forEach(item => hobbyImagesEvenObserver.observe(item));
 
 
 
@@ -373,9 +331,7 @@ const hobbyItemsTextContentEvenObserver = new IntersectionObserver(entries => {
     });
 });
 
-hobbyItemsTextContentEven.forEach(item => {
-    hobbyItemsTextContentEvenObserver.observe(item);
-});
+hobbyItemsTextContentEven.forEach(item => hobbyItemsTextContentEvenObserver.observe(item));
 
 
 /* hobby images odd intersection observer*/
@@ -406,17 +362,29 @@ hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
 
 /* blog title text content intersection observer scroll animation */
 
-const blogTitleTextContentObserver = new IntersectionObserver(entries => {
+const blogTitleTextContentSmallScreenObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.classList.add('animate__fadeInUp')
-            blogTitleTextContentObserver.unobserve(blogTitleTextContentArray);
+            entry.target.classList.add('animate__fadeInUp');//blogTitleTextContentObserver.unobserve(entry);
         };
+        
     });
+    
 });
 
-blogTitleTextContentArray.forEach(item => {
-    blogTitleTextContentObserver.observe(item);
+blogTitleTextContentSmallScreenArray.forEach(item => blogTitleTextContentSmallScreenObserver.observe(item));
+
+const blogTitleTextContentLargeScreenObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__fadeInUp');
+            blogTitleTextContentLargeScreenObserver.unobserve(entry.target);
+        }
+    })
+})
+
+blogTitleTextContentLargeScreenArray.forEach(item => {
+    blogTitleTextContentLargeScreenObserver.observe(item);
 });
 
 const blogImageObserver = new IntersectionObserver(entries => {
@@ -431,7 +399,10 @@ const blogImageObserver = new IntersectionObserver(entries => {
     threshold: 0.5
 });
 
-blogImageObserver.observe(blogImage);
+blogImage.forEach(item => {
+    blogImageObserver.observe(item);
+});
+
 
 
 const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
@@ -443,23 +414,20 @@ const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
     });
 });
 
-blogPostShortDescriptionArray.forEach(item => {
-    blogPostShortDescriptionObserver.observe(item);
-});
+blogPostShortDescriptionArray.forEach(item => blogPostShortDescriptionObserver.observe(item));
 
 
 const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__fadeInUp');
-            experienceItemHeaderInfoObserver.unobserve(entry);
+            experienceItemHeaderInfoObserver.unobserve(entry.target);
         };
     });
 });
 
-experienceItemHeaderInfoArray.forEach(item => {
-    experienceItemHeaderInfoObserver.observe(item);
-});
+experienceItemHeaderInfoArray.forEach(item => experienceItemHeaderInfoObserver.observe(item)
+);
 
 
 
@@ -516,9 +484,22 @@ const skillBarsObserver = new IntersectionObserver(entries => {
     });
 }, {
     threshold: 1
-})
+});
 
 skillBarsArray.forEach(item => skillBarsObserver.observe(item));
+
+/* mobile nav active class toggle function */
+function activeLink(){
+    list.forEach(item => 
+        item.classList.remove('active'));
+        this.classList.add('active');
+}
+list.forEach(item => {
+    item.addEventListener('click', activeLink);
+});
+
+
+
 
 
 

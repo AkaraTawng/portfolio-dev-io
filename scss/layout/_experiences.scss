@@ -1,9 +1,21 @@
 #experiences {
+    @include laptop {
+        display: none;
+    }
+    &.laptop {
+        display: none;
+        @include laptop {
+            display: block;
+        }
+    }
     h1 {
         color: $dark-grey1;
         font-weight: 400;
         font-size: 1rem;
-        margin: 0 0 1.5rem 0;
+        margin: 0 0 .5rem 0;
+        @include laptop {
+            font-size: 1.5rem;    
+        }
     }
 
     img#asi {
@@ -12,42 +24,59 @@
         margin: 1rem 1.4rem 0 0;
         opacity: 0;
         transition: opacity 2s ease;
+        @include laptop {
+            height: 2rem;
+            width: 10rem;
+        }
     }
 
     img#yogojo {
         height: 2.5rem;
         width: 2rem;
         margin: 1rem 4.3rem 0 0;
+        @include laptop {
+            height: 4.3rem;
+            width: 3.6rem;
+            padding: 0 0 1rem 0;
+        }
     }
 
     img#cambly {
         height: 2rem;
         width: 5rem;
         margin: 1rem 2.3rem 0 0;
+        @include laptop {
+            height: 3rem;
+            width: 6rem;
+        }
     }
     
 
     .experience-flex-container {
         display: flex;
         justify-content: space-around;
+        margin-bottom: 2rem;
 
         .experience-item-header-info {
         
-        &.asi {
-            opacity: 0;
-            transition: all 2s ease; }
+        @include mobile-m{
+            margin-left: 2rem;
+            }       
         }
-       
-        &.yogojo {
-            margin: 3rem 0 3rem 0;
-        }
-
+      
         h2 { 
         //date 
         color: $light-grey1;
         font-size: .7rem;
         font-weight: lighter;
-        margin: 0 0 0.2rem 0;
+        margin: 0 0 0 0;
+        @include laptop {
+            font-size: .9rem;
+        }
+
+        &:nth-child(odd) {
+            margin-bottom: 1.5rem;
+        }
         }
 
         h1 {
@@ -55,6 +84,9 @@
         color: $dark-grey2;
         font-size: .8rem;
         font-weight: lighter;
+        @include laptop {
+            font-size: 1.1rem;
+        }
         }
 
         .experience-job-description-points-container {
@@ -62,11 +94,17 @@
             font-size: .6rem;
             font-weight: lighter;
             margin-left: -5.8rem;
+            @include laptop {
+                font-size:  .9rem;
+            }
 
             li {
                 margin-bottom: 1rem;
                 opacity: 0;
                 transition: opacity 2s ease;
+                @include laptop {
+                    
+                }
             }
         }
     }

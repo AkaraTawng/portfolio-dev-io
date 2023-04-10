@@ -1,5 +1,10 @@
 #project-tags {
     
+    @include laptop {
+        display: grid;
+        grid-column: 3 / 4;
+    }
+
     .tag-counter-header, 
     .filter-by-header,
     #type-filter-tags-container {
@@ -24,17 +29,26 @@ h1, h2, h3 {
 h1 {
     margin-bottom: 1rem;
     font-size: 1rem;
+    @include laptop {
+        font-size: 1.2rem;   
+    }
 }
 
 h2 {
     margin-bottom: 1rem;
     font-size: 1rem;
+    @include laptop {
+        font-size: 1.2rem;   
+    }
 }
 
 h3 {
     font-size: 0.9rem;
     text-align: center;
     margin-bottom: 1rem;
+    @include laptop {
+        font-size: 1.2rem;   
+    }
 }
 
     ul {
@@ -43,11 +57,21 @@ h3 {
         flex-wrap: wrap;
         justify-content: space-around;
 
+        @include laptop {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         button {
             background-color: white;
             padding: 2px 20px;
+            padding: 2px 0px;
             border-radius: 10px;
             margin-bottom: 1rem;
+            width: 7rem;
+            @include laptop {
+                width: 8rem;
+            }
             cursor: pointer;
             border: solid $dark-grey1 1px;
             &:hover {
