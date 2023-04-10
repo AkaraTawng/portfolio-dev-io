@@ -1,5 +1,7 @@
 #experiences {
-
+    @include laptop {
+        display: none;
+    }
     &.laptop {
         display: none;
         @include laptop {

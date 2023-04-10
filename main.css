@@ -353,6 +353,11 @@ body {
   color: #2F80ED;
 }
 
+@media screen and (min-width: 1280px) {
+  #experiences {
+    display: none;
+  }
+}
 #experiences.laptop {
   display: none;
 }
