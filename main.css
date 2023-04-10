@@ -12,6 +12,13 @@ footer {
   z-index: -1;
   padding-top: 2rem;
 }
+@media screen and (min-width: 1280px) {
+  footer {
+    position: relative;
+    margin-top: 5rem;
+    height: 0rem;
+  }
+}
 footer a {
   font-weight: 600;
   color: #828282;
