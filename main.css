@@ -704,6 +704,12 @@ img {
     width: 35rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  img {
+    height: 23rem;
+    width: 30rem;
+  }
+}
 
 .project-item-buttons-flex-container {
   margin-top: 2rem;

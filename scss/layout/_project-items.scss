@@ -43,6 +43,10 @@
             height: 23rem;
             width: 35rem;
         }
+        @include laptop {
+            height: 23rem;
+            width: 30rem;
+        }
     }
 
     .project-item-buttons-flex-container {
