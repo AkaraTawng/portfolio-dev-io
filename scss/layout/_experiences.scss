@@ -24,7 +24,7 @@
         transition: opacity 2s ease;
         @include laptop {
             height: 2rem;
-            width: 8rem;
+            width: 10rem;
         }
     }
 
@@ -35,6 +35,9 @@
         @include laptop {
             height: 3rem;
             width: 3.6rem;
+            height: 4rem;
+            width: 3.6rem;
+            padding: 0 0 1rem 0;
         }
     }
 
