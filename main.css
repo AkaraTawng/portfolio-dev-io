@@ -459,6 +459,21 @@ body {
   }
 }
 
+.project-filter-hobbies-grid-container .hobbies-lg-screen {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .project-filter-hobbies-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .project-filter-hobbies-grid-container #hobbies.hobbies-lg-screen {
+    display: grid;
+    grid-column: 1/3;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   #hobbies {
     display: none;
@@ -470,16 +485,31 @@ body {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 1280px) {
+  #hobbies h1 {
+    font-size: 1.3rem;
+  }
+}
 #hobbies h2 {
   color: #333333;
   font-size: 0.8rem;
   font-weight: 500;
   margin: 0.6rem 0 0.6rem 0;
 }
+@media screen and (min-width: 1280px) {
+  #hobbies h2 {
+    font-size: 1.1rem;
+  }
+}
 #hobbies p {
   color: #828282;
   font-weight: 500;
   font-size: 0.6rem;
+}
+@media screen and (min-width: 1280px) {
+  #hobbies p {
+    font-size: 0.9rem;
+  }
 }
 #hobbies img {
   height: 6rem;
@@ -513,21 +543,6 @@ body {
 }
 #hobbies #exerciseimagecontainer {
   width: 100%;
-}
-
-.project-filter-hobbies-grid-container .hobbies-lg-screen {
-  display: none;
-}
-@media screen and (min-width: 1280px) {
-  .project-filter-hobbies-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-  }
-  .project-filter-hobbies-grid-container #hobbies.hobbies-lg-screen {
-    display: grid;
-    grid-column: 1/3;
-  }
 }
 
 @media screen and (min-width: 1280px) {
