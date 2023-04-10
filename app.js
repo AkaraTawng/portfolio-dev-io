@@ -71,6 +71,8 @@ const skillBarsArray = Array.from(skillBarsNodelist);
 
 const list = document.querySelectorAll('.list');
 
+const screenWidth = document.documentElement.clientWidth;
+
 /* project counter */
 let projectsArray = [];
 
@@ -453,7 +455,7 @@ experienceItemHeaderInfoArray.forEach(item => experienceItemHeaderInfoObserver.o
 
 const skillBarsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if(window.matchMedia("(max-width: 1280px)").matches) {
+        if(screenWidth >= 1280) {
             setTimeout(() => {
                 if(entry.isIntersecting){
                     if(entry.target.classList.contains('html')){
