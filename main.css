@@ -127,16 +127,16 @@ body {
   transition: all 2s ease-out;
 }
 #skills .skillbar .html {
-  width: 10%;
+  width: 0%;
 }
 #skills .skillbar .css {
-  width: 10%;
+  width: 0%;
 }
 #skills .skillbar .js {
-  width: 10%;
+  width: 0%;
 }
 #skills .skillbar .react {
-  width: 10%;
+  width: 0%;
 }
 
 #blog #title-text-image-flex-container {

@@ -465,10 +465,44 @@ experienceItemHeaderInfoArray.forEach(item => {
 
 /* skillbars intersection observer */
 
+// const skillBarsObserver = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//             if(entry.isIntersecting){
+//                 if(entry.target.classList.contains('html')){
+//                 entry.target.style.width = '80%';
+//             } else if(entry.target.classList.contains('css')){
+//                 entry.target.style.width = '80%';
+//             } else if(entry.target.classList.contains('js')){
+//                 entry.target.style.width = '50%';
+//             } else if(entry.target.classList.contains('react')){
+//                 entry.target.style.width = '50%';
+//             }
+//         };
+//     });
+// }, {
+//     threshold: 1
+// });
+
 const skillBarsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-            if(entry.isIntersecting){
+        if(window.matchMedia("(max-width: 1280px)").matches) {
+            setTimeout(() => {
+                if(entry.isIntersecting){
+                    if(entry.target.classList.contains('html')){
+                        entry.target.style.width = '80%';
+                    } else if(entry.target.classList.contains('css')){
+                        entry.target.style.width = '80%';
+                    } else if(entry.target.classList.contains('js')){
+                        entry.target.style.width = '50%';
+                    } else if(entry.target.classList.contains('react')){
+                        entry.target.style.width = '50%';
+                    }
+                };
+            }, 500) 
+        } else {
+              if(entry.isIntersecting){
                 if(entry.target.classList.contains('html')){
+<<<<<<< Updated upstream
                 entry.target.style.width = '80%';
             } else if(entry.target.classList.contains('css')){
                 entry.target.style.width = '80%';
@@ -479,6 +513,20 @@ const skillBarsObserver = new IntersectionObserver(entries => {
             }
         }
     })
+=======
+                    entry.target.style.width = '80%';
+                } else if(entry.target.classList.contains('css')){
+                    entry.target.style.width = '80%';
+                } else if(entry.target.classList.contains('js')){
+                    entry.target.style.width = '50%';
+                } else if(entry.target.classList.contains('react')){
+                    entry.target.style.width = '50%';
+                }
+            };
+        }
+          
+    });
+>>>>>>> Stashed changes
 }, {
     threshold: 1
 })
