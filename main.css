@@ -473,6 +473,11 @@ body {
     height: 8rem;
   }
 }
+@media screen and (min-width: 1280px) {
+  #hobbies img {
+    height: 13rem;
+  }
+}
 #hobbies .hobby-item {
   display: flex;
   flex-direction: column;

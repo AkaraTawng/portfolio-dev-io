@@ -53,6 +53,9 @@
         @include mobile-m {
             height: 8rem;
         }
+        @include laptop {
+            height: 13rem;
+        }
     }
 
     .hobby-item {
