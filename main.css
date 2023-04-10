@@ -392,9 +392,7 @@ body {
 }
 @media screen and (min-width: 1280px) {
   #experiences img#yogojo {
-    height: 3rem;
-    width: 3.6rem;
-    height: 4rem;
+    height: 4.3rem;
     width: 3.6rem;
     padding: 0 0 1rem 0;
   }
