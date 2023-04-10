@@ -3,7 +3,6 @@
     @include laptop {
         display: grid;
         grid-column: 3 / 4;
-        
     }
 
     .tag-counter-header, 
@@ -30,17 +29,26 @@ h1, h2, h3 {
 h1 {
     margin-bottom: 1rem;
     font-size: 1rem;
+    @include laptop {
+        font-size: 1.2rem;   
+    }
 }
 
 h2 {
     margin-bottom: 1rem;
     font-size: 1rem;
+    @include laptop {
+        font-size: 1.2rem;   
+    }
 }
 
 h3 {
     font-size: 0.9rem;
     text-align: center;
     margin-bottom: 1rem;
+    @include laptop {
+        font-size: 1.2rem;   
+    }
 }
 
     ul {
