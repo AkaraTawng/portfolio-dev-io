@@ -971,9 +971,24 @@ body {
   margin-bottom: 4rem;
   padding: 1rem 1rem;
 }
+.testimonials .nav-dots-container {
+  text-align: center;
+}
+.testimonials .nav-dots-container button {
+  transition: background 0.3s ease;
+  background: #828282;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  border: none;
+}
+.testimonials .nav-dots-container button:hover {
+  cursor: pointer;
+  background-color: #4F4F4F;
+}
 .testimonials .testimonial-card {
   width: 100%;
-  height: 80%;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
