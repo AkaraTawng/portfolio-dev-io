@@ -1,5 +1,4 @@
-
-    
+#project-items {
     .project-item-flex-container {
         display: none;
         flex-direction: column;
@@ -62,3 +61,4 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
+}

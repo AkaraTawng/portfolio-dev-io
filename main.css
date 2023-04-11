@@ -666,71 +666,64 @@ body {
   transition: all 2s ease;
 }
 
-.project-item-flex-container {
+#project-items .project-item-flex-container {
   display: none;
   flex-direction: column;
   align-items: center;
 }
-
-.project-item-button {
+#project-items .project-item-button {
   transition: all 0.3s ease-out;
 }
-
-h2 {
+#project-items h2 {
   font-weight: 500;
   color: #333333;
   margin: 2rem 0 2rem 0;
 }
-
-.project-item-description {
+#project-items .project-item-description {
   color: #828282;
   font-weight: 500;
   font-size: 0.8rem;
 }
-
-.project-item-filter-tags-list {
+#project-items .project-item-filter-tags-list {
   color: #828282;
   font-size: 0.7rem;
 }
-
-img {
+#project-items img {
   height: 12rem;
   width: 16rem;
   border-radius: 15px;
 }
 @media screen and (min-width: 400px) {
-  img {
+  #project-items img {
     height: 16rem;
     width: 20rem;
   }
 }
 @media screen and (min-width: 480px) {
-  img {
+  #project-items img {
     height: 16rem;
     width: 24.2rem;
   }
 }
 @media screen and (min-width: 760px) {
-  img {
+  #project-items img {
     height: 23rem;
     width: 35rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  img {
+  #project-items img {
     height: 23rem;
     width: 30rem;
   }
 }
-
-.project-item-buttons-flex-container {
+#project-items .project-item-buttons-flex-container {
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
 }
-
 @media screen and (min-width: 1280px) {
-  #project-items {
+  #project-items #project-items {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -980,15 +973,41 @@ img {
   align-items: center;
   flex-direction: column;
 }
+.testimonials .testimonial-card img {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .testimonials .testimonial-card h1 {
   margin-top: 1rem;
   color: #333333;
+  font-size: 1.8rem;
 }
 .testimonials .testimonial-card h2 {
+  color: #4F4F4F;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+.testimonials .testimonial-card h3 {
   color: #2F80ED;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.testimonials .testimonial-card hr {
+  margin: 2rem 0 1rem 0;
+  display: block;
+  height: 1px;
+  width: 70%;
+  background-color: #4F4F4F;
+  border: none;
+  border-radius: 10px;
 }
 .testimonials .testimonial-card p {
   color: #828282;
+  margin-top: 1rem;
+  line-height: 1.5rem;
 }
 .testimonials .testimonial-card .social-icon {
   margin-top: 1rem;
