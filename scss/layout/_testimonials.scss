@@ -9,6 +9,29 @@ padding: 1rem 1rem;
         align-items: center;
         flex-direction: column;
         border: 4px solid $accent-blue;
+        border-radius: 25px;
+        position: relative;
+        z-index: 2;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top:-5px;
+            background-color: #ffffff;
+            height: 45px;
+            width: 70px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -5px;
+            bottom:-5px;
+            background-color: #ffffff;
+            height: 45px;
+            width: 70px;
+        }
 
         .testimonial-image-description-container {
             display: flex;
@@ -58,10 +81,11 @@ padding: 1rem 1rem;
 
         p {
             color: $light-grey1;
-            margin-top: 1rem;
+            margin-top: 3rem;
             line-height: 1.5rem;
             font-size: .5rem;
             padding: 0 1rem;
+            text-align: center;
         }
 
         .social-icon {
