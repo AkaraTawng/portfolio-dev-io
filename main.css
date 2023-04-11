@@ -972,4 +972,11 @@ img {
     width: 70px;
     height: 70px;
   }
+}
+
+.testimonials .testimonial-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
