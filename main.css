@@ -969,12 +969,16 @@ body {
 
 .testimonials {
   margin-bottom: 4rem;
+  padding: 1rem 1rem;
 }
 .testimonials .testimonial-card {
+  width: 100%;
+  height: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 4px solid #2F80ED;
 }
 .testimonials .testimonial-card .testimonial-image-description-container {
   display: flex;
