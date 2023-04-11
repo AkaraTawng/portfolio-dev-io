@@ -979,4 +979,19 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.testimonials .testimonial-card h1 {
+  margin-top: 1rem;
+  color: #333333;
+}
+.testimonials .testimonial-card h2 {
+  color: #2F80ED;
+}
+.testimonials .testimonial-card p {
+  color: #828282;
+}
+.testimonials .testimonial-card .social-icon {
+  margin-top: 1rem;
+  color: #2F80ED;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */
