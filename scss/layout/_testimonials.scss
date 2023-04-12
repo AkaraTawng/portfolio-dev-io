@@ -7,17 +7,16 @@ height: 100%;
     text-align: center;
     margin: 2rem 0;
     button {
-    background-color: $light-grey1 !important;
+    background-color: $accent-blue !important;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     margin: 0 5px;
     &:hover {
-        background-color: $dark-grey1 !important;
+        background-color: lighten($accent-blue, 20%) !important;
+        }
     }
-}
 } 
-
 
 .testimonials-outer-container {
     h1 {

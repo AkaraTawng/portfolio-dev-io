@@ -977,14 +977,14 @@ body {
   margin: 2rem 0;
 }
 .testimonials .owl-dots button {
-  background-color: #828282 !important;
+  background-color: #2F80ED !important;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   margin: 0 5px;
 }
 .testimonials .owl-dots button:hover {
-  background-color: #4F4F4F !important;
+  background-color: #8db9f5 !important;
 }
 .testimonials .testimonials-outer-container h1 {
   color: #333333;
