@@ -7,13 +7,13 @@ height: 100%;
     text-align: center;
     margin: 2rem 0;
     button {
-    background-color: $accent-blue !important;
+    background-color: lighten($accent-blue, 20%) !important;;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     margin: 0 5px;
     &:hover {
-        background-color: lighten($accent-blue, 20%) !important;
+        background: $accent-blue !important;
         }
     }
 } 
@@ -41,14 +41,17 @@ height: 100%;
         &::before {
             content: '\f10d';
             position: absolute;
-            left: -5px;
-            top:-5px;
+            left: -4px;
+            // top:-5px;
+            top:-25px;
             background-color: #ffffff;
-            height: 45px;
+            // height: 45px;
+            height: 65px;
             width: 70px;
             font-family: FontAwesome;
             color: $accent-blue;
-            font-size: 3rem;
+            // font-size: 3rem;
+            font-size: 3.5rem;
         }
 
         &::after {
@@ -125,7 +128,6 @@ height: 100%;
             font-size: 1.5rem;
         }
     }
-  
 }
 // .testimonials {
 
