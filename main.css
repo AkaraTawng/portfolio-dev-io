@@ -90,11 +90,6 @@ header #profile-bio #name-job-container h1 {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 1280px) {
-  header #profile-bio #name-job-container h1 {
-    margin-bottom: -1rem;
-  }
-}
 header #profile-bio #name-job-container h2 {
   color: #828282;
   font-size: 1rem;
@@ -977,14 +972,14 @@ body {
   margin: 2rem 0;
 }
 .testimonials .owl-dots button {
-  background-color: #2F80ED !important;
+  background-color: #8db9f5 !important;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   margin: 0 5px;
 }
 .testimonials .owl-dots button:hover {
-  background-color: #8db9f5 !important;
+  background: #2F80ED !important;
 }
 .testimonials .testimonials-outer-container h1 {
   color: #333333;
@@ -1006,14 +1001,14 @@ body {
 .testimonials .testimonial-card::before {
   content: "\f10d";
   position: absolute;
-  left: -5px;
-  top: -5px;
+  left: -4px;
+  top: -25px;
   background-color: #ffffff;
-  height: 45px;
+  height: 65px;
   width: 70px;
   font-family: FontAwesome;
   color: #2F80ED;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .testimonials .testimonial-card::after {
   content: "\f10e";
