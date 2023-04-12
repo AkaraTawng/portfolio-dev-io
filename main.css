@@ -970,9 +970,15 @@ body {
 .testimonials {
   margin-bottom: 4rem;
   padding: 1rem 1rem;
+  height: 100%;
+}
+.testimonials .testimonials-outer-container h1 {
+  color: #333333;
+  font-weight: 400;
 }
 .testimonials .nav-dots-container {
   text-align: center;
+  margin: 2rem 0;
 }
 .testimonials .nav-dots-container button {
   transition: background 0.3s ease;
@@ -988,7 +994,7 @@ body {
 }
 .testimonials .testimonial-card {
   width: 100%;
-  height: 60%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -997,6 +1003,7 @@ body {
   border-radius: 25px;
   position: relative;
   z-index: 2;
+  margin-top: 3rem;
 }
 .testimonials .testimonial-card::before {
   content: "";
