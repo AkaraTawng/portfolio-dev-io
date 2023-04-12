@@ -981,6 +981,9 @@ body {
 .testimonials .owl-dots button:hover {
   background: #2F80ED !important;
 }
+.testimonials .owl-dots button.active {
+  background-color: #2F80ED !important;
+}
 .testimonials .testimonials-outer-container h1 {
   color: #333333;
   font-weight: 400;
