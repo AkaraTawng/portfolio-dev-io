@@ -1004,22 +1004,28 @@ body {
   margin-top: 3rem;
 }
 .testimonials .testimonial-card::before {
-  content: "";
+  content: "\f10d";
   position: absolute;
   left: -5px;
   top: -5px;
   background-color: #ffffff;
   height: 45px;
   width: 70px;
+  font-family: FontAwesome;
+  color: #2F80ED;
+  font-size: 3rem;
 }
 .testimonials .testimonial-card::after {
-  content: "";
+  content: "\f10e";
+  font-family: FontAwesome;
   position: absolute;
   right: -5px;
   bottom: -5px;
   background-color: #ffffff;
   height: 45px;
   width: 70px;
+  color: #2F80ED;
+  font-size: 3rem;
 }
 .testimonials .testimonial-card .testimonial-image-description-container {
   display: flex;
