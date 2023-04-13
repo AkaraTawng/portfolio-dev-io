@@ -206,7 +206,7 @@ const tagCounterHeaderObserver = new IntersectionObserver(entries => {
         };
     });
 }, {
-    threshold: 0.5
+    threshold: 1
 });
 
 tagCounterHeaderObserver.observe(tagCounterHeader);
@@ -221,7 +221,8 @@ const filterByHeaderObserver = new IntersectionObserver(entries => {
         };
     });
 }, {
-    threshold: 0.5
+    threshold: 1,
+    rootMargin: "-100px"
 });
 
 filterByHeaderObserver.observe(filterByHeader);
@@ -236,6 +237,9 @@ const typeOfWebsiteContainerObserver = new IntersectionObserver(entries => {
             typeOfWebsiteContainerObserver.unobserve(entry.target);
         };
     });
+}, {
+    threshold: 0.5, 
+    // rootMargin: '100px'
 });
 
 typeOfWebsiteContainerObserver.observe(typeOfWebsiteContainer);
@@ -251,7 +255,7 @@ const evenProjectsObserver = new IntersectionObserver(entries => {
        
     });
 }, {
-    threshold: 0.3
+    threshold: 1
 });
 
 evenProjectItems.forEach(item => evenProjectsObserver.observe(item));
