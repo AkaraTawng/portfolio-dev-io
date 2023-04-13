@@ -206,7 +206,8 @@ const tagCounterHeaderObserver = new IntersectionObserver(entries => {
         };
     });
 }, {
-    threshold: 1
+    threshold: 1,
+    rootMargin: '32px'
 });
 
 tagCounterHeaderObserver.observe(tagCounterHeader);
@@ -222,7 +223,7 @@ const filterByHeaderObserver = new IntersectionObserver(entries => {
     });
 }, {
     threshold: 1,
-    rootMargin: "-100px"
+    rootMargin: '32px'
 });
 
 filterByHeaderObserver.observe(filterByHeader);
@@ -255,7 +256,7 @@ const evenProjectsObserver = new IntersectionObserver(entries => {
        
     });
 }, {
-    threshold: 1
+    threshold: 0.3
 });
 
 evenProjectItems.forEach(item => evenProjectsObserver.observe(item));
@@ -533,7 +534,18 @@ $(document).ready(function(){
     })
 })
 
+/* show mobile nave when page scrolled down */
 
+window.onscroll = function(){
+    scroll();
+};
 
+function scroll() {
+    if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.querySelector('#mobile-nav').style.opacity = 1;
+    } else {
+        document.querySelector('#mobile-nav').style.opacity = 0;
+    }
+}
 
 
