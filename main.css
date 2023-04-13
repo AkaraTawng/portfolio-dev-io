@@ -140,9 +140,8 @@ header #profile-bio #bio-container {
 }
 header #profile-bio #bio-container .bio-span {
   color: #2F80ED;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.8rem;
-  text-shadow: 4px 2px 4px rgb(169, 231, 255);
 }
 @media screen and (min-width: 1280px) {
   header #profile-bio #bio-container .bio-span {

@@ -109,9 +109,8 @@ header {
             opacity: 0;
             .bio-span {
                 color: $accent-blue;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: .8rem;
-                text-shadow: 4px 2px 4px rgb(169, 231, 255);
                 @include laptop {
                     font-size: 1.1rem;
                 }
