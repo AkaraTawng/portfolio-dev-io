@@ -250,6 +250,8 @@ const evenProjectsObserver = new IntersectionObserver(entries => {
         };  
        
     });
+}, {
+    threshold: 0.3
 });
 
 evenProjectItems.forEach(item => evenProjectsObserver.observe(item));
@@ -264,6 +266,8 @@ const oddProjectsObserver = new IntersectionObserver(entries => {
         };
       
     });
+}, {
+    threshold: 0.3
 });
 
 oddProjectItems.forEach(item => oddProjectsObserver.observe(item));
