@@ -222,8 +222,7 @@ const filterByHeaderObserver = new IntersectionObserver(entries => {
         };
     });
 }, {
-    threshold: 1,
-    rootMargin: '32px'
+    threshold: 1
 });
 
 filterByHeaderObserver.observe(filterByHeader);
@@ -240,7 +239,7 @@ const typeOfWebsiteContainerObserver = new IntersectionObserver(entries => {
     });
 }, {
     threshold: 0.5, 
-    // rootMargin: '100px'
+    rootMargin: '100px'
 });
 
 typeOfWebsiteContainerObserver.observe(typeOfWebsiteContainer);
@@ -299,7 +298,8 @@ const workExperienceImagesObserver = new IntersectionObserver(entries => {
         };
     });
 }, {
-    threshold: 0
+    threshold: 1, 
+    rootMargin: '50px'
 });
 
 workExperienceImagesArray.forEach(item => workExperienceImagesObserver.observe(item));
