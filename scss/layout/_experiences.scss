@@ -1,4 +1,15 @@
 #experiences {
+
+    img{
+        transition: all .3s ease !important;
+        &:hover {
+            
+            // filter: drop-shadow(2px 2px 2px rgb(202, 202, 202));
+            // transition: all .3s ease !important;+
+            scale: 1.2;
+        }
+     } 
+
     @include laptop {
         display: none;
     }
@@ -23,7 +34,7 @@
         width: 5rem;
         margin: 1rem 1.4rem 0 0;
         opacity: 0;
-        transition: opacity 2s ease;
+        // transition: transform 2s ease;
         @include laptop {
             height: 2rem;
             width: 10rem;
@@ -49,8 +60,9 @@
             height: 3rem;
             width: 6rem;
         }
+
+       
     }
-    
 
     .experience-flex-container {
         display: flex;
@@ -94,6 +106,12 @@
             font-size: .6rem;
             font-weight: lighter;
             margin-left: -5.8rem;
+
+            &:hover {
+                transition: all .4s;
+                font-weight: 600;
+                scale: 1.1;
+            }
             @include laptop {
                 font-size:  .9rem;
             }
