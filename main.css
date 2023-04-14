@@ -355,10 +355,11 @@ body {
 }
 
 #experiences img {
-  transition: all 0.3s ease !important;
+  transition: all 0.3s ease;
 }
 #experiences img:hover {
   scale: 1.2;
+  cursor: pointer;
 }
 @media screen and (min-width: 1280px) {
   #experiences {
@@ -460,9 +461,7 @@ body {
   margin-left: -5.8rem;
 }
 #experiences .experience-flex-container .experience-job-description-points-container:hover {
-  transition: all 0.4s;
-  font-weight: 600;
-  scale: 1.1;
+  cursor: pointer;
 }
 @media screen and (min-width: 1280px) {
   #experiences .experience-flex-container .experience-job-description-points-container {
@@ -472,7 +471,7 @@ body {
 #experiences .experience-flex-container .experience-job-description-points-container li {
   margin-bottom: 1rem;
   opacity: 0;
-  transition: opacity 2s ease;
+  transition: font-size, font-weight, 0.3s;
 }
 .item-card {
   background-color: white;

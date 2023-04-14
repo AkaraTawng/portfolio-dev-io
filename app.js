@@ -319,6 +319,22 @@ const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries 
 
 jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint));
 
+/* job experience points hover effect */
+
+jobExperienceDescriptionPoints.forEach(item => {
+    item.addEventListener('mouseover', (e) => {
+        e.target.style.fontSize  = '.7rem';
+        e.target.style.fontWeight = 600;
+    });
+});
+
+jobExperienceDescriptionPoints.forEach(item => {
+    item.addEventListener('mouseout', (e) => {
+        e.target.style.fontSize  = '.6rem';
+        e.target.style.fontWeight = 400;
+    });
+});
+
 /* hobby images even intersection observer*/
 const hobbyImagesEvenObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
