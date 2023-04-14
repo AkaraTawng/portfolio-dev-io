@@ -435,6 +435,10 @@ body {
   font-size: 0.7rem;
   font-weight: lighter;
   margin: 0 0 0 0;
+  transition: scale 0.3s;
+}
+#experiences .experience-flex-container h2:hover {
+  scale: 1.2;
 }
 @media screen and (min-width: 1280px) {
   #experiences .experience-flex-container h2 {
@@ -448,6 +452,10 @@ body {
   color: #333333;
   font-size: 0.8rem;
   font-weight: lighter;
+  transition: scale 0.3s;
+}
+#experiences .experience-flex-container h1:hover {
+  scale: 1.2;
 }
 @media screen and (min-width: 1280px) {
   #experiences .experience-flex-container h1 {

@@ -550,7 +550,7 @@ $(document).ready(function(){
     })
 })
 
-/* show mobile nave when page scrolled down */
+/* show mobile nav when page scrolled down */
 
 window.onscroll = function(){
     scroll();

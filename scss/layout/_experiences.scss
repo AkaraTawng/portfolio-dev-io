@@ -80,6 +80,10 @@
         font-size: .7rem;
         font-weight: lighter;
         margin: 0 0 0 0;
+        transition: scale .3s;
+        &:hover {
+            scale: 1.2;
+        }
         @include laptop {
             font-size: .9rem;
         }
@@ -94,6 +98,10 @@
         color: $dark-grey2;
         font-size: .8rem;
         font-weight: lighter;
+        transition: scale .3s;
+        &:hover {
+            scale: 1.2;
+        }
         @include laptop {
             font-size: 1.1rem;
         }
