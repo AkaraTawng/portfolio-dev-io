@@ -386,7 +386,6 @@ const hobbyItemTextContentOddObserver = new IntersectionObserver(entries => {
 hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
 
 
-
 /* blog title text content intersection observer scroll animation */
 
 const blogTitleTextContentSmallScreenObserver = new IntersectionObserver(entries => {
@@ -563,5 +562,7 @@ function scroll() {
         document.querySelector('#mobile-nav').style.opacity = 0;
     }
 }
+
+
 
 

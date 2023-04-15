@@ -547,7 +547,13 @@ body {
     font-size: 0.9rem;
   }
 }
-#hobbies img {
+#hobbies .hobbies-img-wrapper {
+  height: 6rem;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#hobbies .hobbies-img-wrapper img {
   height: 6rem;
   width: 100%;
   border-radius: 10px;
@@ -555,14 +561,18 @@ body {
      object-fit: cover;
   -o-object-position: 20% 80%;
      object-position: 20% 80%;
+  transition: all 0.3s;
+}
+#hobbies .hobbies-img-wrapper img:hover {
+  scale: 1.2;
 }
 @media screen and (min-width: 400px) {
-  #hobbies img {
+  #hobbies .hobbies-img-wrapper img {
     height: 8rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #hobbies img {
+  #hobbies .hobbies-img-wrapper img {
     height: 13rem;
   }
 }

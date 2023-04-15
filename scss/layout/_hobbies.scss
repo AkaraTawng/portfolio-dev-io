@@ -51,12 +51,21 @@
         }
     }
 
-    img {
+    .hobbies-img-wrapper {
+        height: 6rem;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+           img {
         height: 6rem;
         width: 100%;
         border-radius: 10px;
         object-fit: cover; 
         object-position: 20% 80%;
+        transition: all .3s;
+       &:hover {
+        scale: 1.2;
+       }
         @include mobile-m {
             height: 8rem;
         }
@@ -64,6 +73,8 @@
             height: 13rem;
         }
     }
+    }
+ 
 
     .hobby-item {
         display: flex;
