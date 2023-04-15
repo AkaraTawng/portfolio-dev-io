@@ -1107,5 +1107,10 @@ body {
 .testimonials .testimonial-card .social-icon {
   margin-top: 1rem;
   color: #2F80ED;
+  color: #8db9f5;
   font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.testimonials .testimonial-card .social-icon:hover {
+  color: #2F80ED;
 }/*# sourceMappingURL=main.css.map */

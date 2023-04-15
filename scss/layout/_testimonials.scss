@@ -139,7 +139,12 @@ margin-top: -6rem;
         .social-icon {
             margin-top: 1rem;
             color: $accent-blue;
+            color: lighten($accent-blue, 20%);
             font-size: 1.5rem;
+            transition: all .3s;
+            &:hover {
+                color: $accent-blue;
+            }
         }
     }
 }
