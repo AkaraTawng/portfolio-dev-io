@@ -574,6 +574,13 @@ body {
 @media screen and (min-width: 1280px) {
   #hobbies .hobbies-img-wrapper img {
     height: 13rem;
+    width: 19%;
+  }
+  #hobbies .hobbies-img-wrapper img .hobbies-img-wrapper {
+    height: 15rem;
+  }
+  #hobbies .hobbies-img-wrapper img img {
+    width: 10% !important;
   }
 }
 #hobbies .hobby-item {

@@ -71,6 +71,17 @@
         }
         @include laptop {
             height: 13rem;
+            width: 19%;
+            
+            
+            .hobbies-img-wrapper {
+                height: 15rem;
+                // width: 19%;
+            }
+
+            img {
+               width: 10% !important;
+            }
         }
     }
     }
