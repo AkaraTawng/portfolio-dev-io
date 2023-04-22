@@ -964,8 +964,8 @@ body {
 
 .testimonials {
   margin-bottom: 4rem;
-  padding: 1rem 1rem;
   height: 100%;
+  width: 100%;
 }
 .testimonials .owl-dots {
   text-align: center;
@@ -980,12 +980,9 @@ body {
 }
 .testimonials .owl-dots button:hover {
   background: #2F80ED !important;
-<<<<<<< HEAD
 }
 .testimonials .owl-dots button.active {
   background-color: #2F80ED !important;
-=======
->>>>>>> 4a16305664acd02c304fc1ed95de15d547a57ede
 }
 .testimonials .testimonials-outer-container h1 {
   color: #333333;
