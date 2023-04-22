@@ -10,7 +10,7 @@ footer {
   align-items: center;
   color: #828282;
   z-index: -1;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 @media screen and (min-width: 1280px) {
   footer {
@@ -769,6 +769,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 @media screen and (min-width: 1280px) {
   #mobile-nav {
