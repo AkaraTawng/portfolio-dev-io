@@ -10,7 +10,7 @@ footer {
   align-items: center;
   color: #828282;
   z-index: -1;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 @media screen and (min-width: 1280px) {
   footer {
@@ -802,8 +802,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
   transition: opacity 0.3s ease;
+  margin-top: 5rem;
 }
 @media screen and (min-width: 1280px) {
   #mobile-nav {
@@ -1000,9 +1000,9 @@ body {
 
 .testimonials {
   margin-bottom: 4rem;
-  padding: 1rem 1rem;
   height: 100%;
   margin-top: -6rem;
+  width: 100%;
 }
 .testimonials .owl-dots {
   text-align: center;
