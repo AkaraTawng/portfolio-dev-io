@@ -78,10 +78,11 @@
                         line-height: 75px;
                         @include mobile-l {
                             line-height: 95px;            
+                            // line-height: 88px;            
                         };
                         font-size: 1em;
-                        @include mobile-m {
-                            // font-size: 1em;
+                        @include mobile-l {
+                            font-size: 1.2em;
                         };
                         text-align: center;
                         transition: 0.5s;
@@ -111,7 +112,7 @@
                         transform: translateX(calc(62px * 1));
                     };
                     @include mobile-l {
-                        transform: translateX(calc(75px * 1));
+                        transform: translateX(calc(62px * 1));
                     };
                 }
 
@@ -122,7 +123,7 @@
                         transform: translateX(calc(62px * 2));
                     };
                     @include mobile-l {
-                        transform: translateX(calc(75px * 2));
+                        transform: translateX(calc(63px * 2));
                     };
                 }
 
@@ -133,7 +134,7 @@
                         transform: translateX(calc(63px * 3));
                     };
                     @include mobile-l {
-                        transform: translateX(calc(75px * 3));
+                        transform: translateX(calc(63px * 3));
                     };
                 }
 
@@ -144,7 +145,7 @@
                         transform: translateX(calc(63px * 4));
                     };
                     @include mobile-l {
-                        transform: translateX(calc(75.5px * 4));
+                        transform: translateX(calc(63px * 4));
                     };
                 }
              
@@ -155,7 +156,7 @@
                         transform: translateX(calc(78.5px * 4));
                     };
                     @include mobile-l {
-                        transform: translateX(calc(75.5px * 4));
+                        transform: translateX(calc(79px * 4));
                     };
                 }
             }
@@ -170,7 +171,7 @@
             left: 0.8% 
         };
         @include mobile-l {
-           left: 8.5% 
+           left: 7.2% 
         };
         width: 60px;
         height: 60px;

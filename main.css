@@ -900,6 +900,11 @@ body {
     line-height: 95px;
   }
 }
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li a .icon {
+    font-size: 1.2em;
+  }
+}
 #mobile-nav .navigation ul li a .text {
   position: absolute;
   color: white;
@@ -923,7 +928,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   #mobile-nav .navigation ul li:nth-child(2).active ~ .indicator {
-    transform: translateX(75px);
+    transform: translateX(62px);
   }
 }
 #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
@@ -936,7 +941,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
-    transform: translateX(150px);
+    transform: translateX(126px);
   }
 }
 #mobile-nav .navigation ul li:nth-child(4).active ~ .indicator {
@@ -949,7 +954,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   #mobile-nav .navigation ul li:nth-child(4).active ~ .indicator {
-    transform: translateX(225px);
+    transform: translateX(189px);
   }
 }
 #mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
@@ -962,7 +967,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   #mobile-nav .navigation ul li:nth-child(5).active ~ .indicator {
-    transform: translateX(302px);
+    transform: translateX(252px);
   }
 }
 #mobile-nav .navigation ul li:nth-child(6).active ~ .indicator {
@@ -975,7 +980,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   #mobile-nav .navigation ul li:nth-child(6).active ~ .indicator {
-    transform: translateX(302px);
+    transform: translateX(316px);
   }
 }
 #mobile-nav .indicator {
@@ -996,7 +1001,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   #mobile-nav .indicator {
-    left: 8.5%;
+    left: 7.2%;
   }
 }
 @media screen and (min-width: 480px) {
