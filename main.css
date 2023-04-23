@@ -814,7 +814,7 @@ body {
   position: fixed;
   z-index: 3;
   top: 93.3vh;
-  width: 300px;
+  width: 315px;
   height: 70px;
   background-color: #2F80ED;
   display: flex;
@@ -835,7 +835,6 @@ body {
 #mobile-nav .navigation ul {
   display: flex;
   width: 300px;
-  padding-left: 20px;
 }
 @media screen and (min-width: 400px) {
   #mobile-nav .navigation ul {
@@ -857,6 +856,7 @@ body {
   /* experience */
   /* hobbies */
   /* blog */
+  /* reviews */
 }
 @media screen and (min-width: 400px) {
   #mobile-nav .navigation ul li {
@@ -932,7 +932,7 @@ body {
   }
 }
 #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
-  transform: translateX(98px);
+  transform: translateX(99px);
 }
 @media screen and (min-width: 400px) {
   #mobile-nav .navigation ul li:nth-child(3).active ~ .indicator {
@@ -970,10 +970,23 @@ body {
     transform: translateX(302px);
   }
 }
+#mobile-nav .navigation ul li:nth-child(6).active ~ .indicator {
+  transform: translateX(247.5px);
+}
+@media screen and (min-width: 400px) {
+  #mobile-nav .navigation ul li:nth-child(6).active ~ .indicator {
+    transform: translateX(302.4px);
+  }
+}
+@media screen and (min-width: 480px) {
+  #mobile-nav .navigation ul li:nth-child(6).active ~ .indicator {
+    transform: translateX(302px);
+  }
+}
 #mobile-nav .indicator {
   position: absolute;
   top: -50%;
-  left: 5.5%;
+  left: 1%;
   width: 60px;
   height: 60px;
   background-color: #2F80ED;
