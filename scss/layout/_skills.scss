@@ -4,8 +4,8 @@
         font-weight: 500;
     }
     height: 18rem;
-    @include laptop {
-        height: 19rem;
+    @include mobile-m {
+        height: 20rem;
     }
 
     p { 
