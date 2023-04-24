@@ -197,6 +197,11 @@ body {
   font-size: 0.7rem;
   align-self: flex-end;
 }
+@media screen and (min-width: 760px) {
+  #skills p {
+    font-size: 0.85rem;
+  }
+}
 @media screen and (min-width: 1280px) {
   #skills p {
     font-size: 1rem;
