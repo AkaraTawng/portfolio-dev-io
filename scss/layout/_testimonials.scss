@@ -114,24 +114,40 @@ width: 100%;
             object-fit: cover;
             margin-right: 1rem;
             margin-top: .9rem;
+            @include laptop{
+                width: 4rem !important;
+                height: 4rem;
+            }
         }
 
+        /* name */
         h1 {
             margin-top: 1rem;
             color: $dark-grey2;
-            font-size:1rem;
+            font-size: 1rem;
+            @include laptop{
+                font-size: 1.1rem;
+            }
         }
 
+        /* company */
         h2 {
             color: $dark-grey1;
             margin-top: .3rem;
             font-size: .5rem;
+            @include laptop {
+                font-size: .7rem;
+            }
         }
 
+        /* job title */
         h3 {
             color: $accent-blue;
             margin-top: .3rem;
             font-size: .8rem;
+            @include laptop{
+                font-size: .9rem;
+            }
         }
 
        hr {
@@ -151,6 +167,9 @@ width: 100%;
             font-size: .5rem;
             padding: 0 1rem;
             text-align: center;
+            @include laptop{
+                font-size: .9rem;
+            }
         }
 
         .social-icon {
