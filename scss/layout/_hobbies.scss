@@ -53,10 +53,21 @@
     }
 
     .hobbies-img-wrapper {
+        // background-color: orange;
         height: 6rem;
         width: 100%;
         border-radius: 10px;
         overflow: hidden;
+        @include mobile-l{
+            height: 9rem;
+        }
+        @include tablet{
+            height: 13rem;
+        }
+        @include laptop{
+            height: 11rem;
+            width: 37rem;
+        }
            img {
         height: 6rem;
         width: 100%;
@@ -64,29 +75,26 @@
         object-fit: cover; 
         object-position: 20% 80%;
         transition: all .3s;
-       &:hover {
-        scale: 1.2;
-       }
+        display: block;
+        &:hover {
+            scale: 1.05;
+        }
         @include mobile-m {
-            height: 8rem;
-        }
+                height: 9rem;
+            }
+        @include tablet {
+                height: 13rem;
+            }
         @include laptop {
-            height: 13rem;
-            width: 19%;
-            
-            
-            .hobbies-img-wrapper {
-                height: 15rem;
-                // width: 19%;
-            }
+                height: 13rem;
+                width: 100%;
 
-            img {
-               width: 10% !important;
+                &:hover {
+                    scale: 1.04;
+                }
             }
         }
     }
-    }
- 
 
     .hobby-item {
         display: flex;

@@ -554,6 +554,22 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
+@media screen and (min-width: 480px) {
+  #hobbies .hobbies-img-wrapper {
+    height: 9rem;
+  }
+}
+@media screen and (min-width: 760px) {
+  #hobbies .hobbies-img-wrapper {
+    height: 13rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #hobbies .hobbies-img-wrapper {
+    height: 11rem;
+    width: 37rem;
+  }
+}
 #hobbies .hobbies-img-wrapper img {
   height: 6rem;
   width: 100%;
@@ -563,25 +579,28 @@ body {
   -o-object-position: 20% 80%;
      object-position: 20% 80%;
   transition: all 0.3s;
+  display: block;
 }
 #hobbies .hobbies-img-wrapper img:hover {
-  scale: 1.2;
+  scale: 1.05;
 }
 @media screen and (min-width: 400px) {
   #hobbies .hobbies-img-wrapper img {
-    height: 8rem;
+    height: 9rem;
+  }
+}
+@media screen and (min-width: 760px) {
+  #hobbies .hobbies-img-wrapper img {
+    height: 13rem;
   }
 }
 @media screen and (min-width: 1280px) {
   #hobbies .hobbies-img-wrapper img {
     height: 13rem;
-    width: 19%;
+    width: 100%;
   }
-  #hobbies .hobbies-img-wrapper img .hobbies-img-wrapper {
-    height: 15rem;
-  }
-  #hobbies .hobbies-img-wrapper img img {
-    width: 10% !important;
+  #hobbies .hobbies-img-wrapper img:hover {
+    scale: 1.04;
   }
 }
 #hobbies .hobby-item {
