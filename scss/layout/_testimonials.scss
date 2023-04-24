@@ -1,18 +1,17 @@
 .testimonials {
 
 @include laptop{
-    // display: none;
-    // display: grid;
-    // grid-column: 2 / 3;
+    display: none;
 }
 
 
 
 &.lg-screen{
-    // display: block;
-    // grid-template-columns: 1 / 2;
+    display: none;
+    @include laptop {
+        display: block;
+    }
     padding-top: 6rem;
-
 }
 
 margin-bottom: 4rem;

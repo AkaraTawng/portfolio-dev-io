@@ -1042,8 +1042,19 @@ body {
   margin-top: -6rem;
   width: 100%;
 }
+@media screen and (min-width: 1280px) {
+  .testimonials {
+    display: none;
+  }
+}
 .testimonials.lg-screen {
+  display: none;
   padding-top: 6rem;
+}
+@media screen and (min-width: 1280px) {
+  .testimonials.lg-screen {
+    display: block;
+  }
 }
 .testimonials .owl-dots {
   text-align: center;
