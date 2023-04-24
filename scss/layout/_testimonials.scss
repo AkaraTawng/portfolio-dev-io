@@ -185,10 +185,13 @@ width: 100%;
     }
 }
 
-.filter-testimonials{
+@include laptop {
+    .filter-testimonials{
     // grid-template-columns: 2 / 3;
     width: 35rem;
+    }
 }
+
 
 
 // .testimonials {

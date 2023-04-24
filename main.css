@@ -1192,6 +1192,8 @@ body {
   color: #2F80ED;
 }
 
-.filter-testimonials {
-  width: 35rem;
+@media screen and (min-width: 1280px) {
+  .filter-testimonials {
+    width: 35rem;
+  }
 }/*# sourceMappingURL=main.css.map */
