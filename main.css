@@ -1054,6 +1054,9 @@ body {
   z-index: 2;
   z-index: 0;
   margin-top: 3rem;
+  /* name */
+  /* company */
+  /* job title */
 }
 .testimonials .testimonial-card::before {
   content: "\f10d";
@@ -1096,20 +1099,41 @@ body {
   margin-right: 1rem;
   margin-top: 0.9rem;
 }
+@media screen and (min-width: 1280px) {
+  .testimonials .testimonial-card img {
+    width: 4rem !important;
+    height: 4rem;
+  }
+}
 .testimonials .testimonial-card h1 {
   margin-top: 1rem;
   color: #333333;
   font-size: 1rem;
+}
+@media screen and (min-width: 1280px) {
+  .testimonials .testimonial-card h1 {
+    font-size: 1.1rem;
+  }
 }
 .testimonials .testimonial-card h2 {
   color: #4F4F4F;
   margin-top: 0.3rem;
   font-size: 0.5rem;
 }
+@media screen and (min-width: 1280px) {
+  .testimonials .testimonial-card h2 {
+    font-size: 0.7rem;
+  }
+}
 .testimonials .testimonial-card h3 {
   color: #2F80ED;
   margin-top: 0.3rem;
   font-size: 0.8rem;
+}
+@media screen and (min-width: 1280px) {
+  .testimonials .testimonial-card h3 {
+    font-size: 0.9rem;
+  }
 }
 .testimonials .testimonial-card hr {
   margin: 2rem 0 1rem 0;
@@ -1127,6 +1151,11 @@ body {
   font-size: 0.5rem;
   padding: 0 1rem;
   text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .testimonials .testimonial-card p {
+    font-size: 0.9rem;
+  }
 }
 .testimonials .testimonial-card .social-icon {
   margin-top: 1rem;
