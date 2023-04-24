@@ -534,7 +534,7 @@ $(document).ready(function(){
         margin:10,
         nav:false,
         dots:true,
-        autoplay:true,
+        autoplay:false,
         responsive:{
             0:{
                 items:1
@@ -542,8 +542,8 @@ $(document).ready(function(){
             600:{
                 items:1
             },
-            1000:{
-                items:2
+            1280:{
+                items:1
             }
         }
     })

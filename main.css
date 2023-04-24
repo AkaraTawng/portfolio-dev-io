@@ -502,12 +502,12 @@ body {
 @media screen and (min-width: 1280px) {
   .project-filter-hobbies-grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .project-filter-hobbies-grid-container #hobbies.hobbies-lg-screen {
-    display: grid;
-    grid-column: 1/3;
+    display: block;
+    width: 41.5rem;
+    margin-left: 3.2rem;
   }
 }
 
@@ -601,8 +601,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   #project-tags {
-    display: grid;
-    grid-column: 3/4;
+    display: block;
   }
 }
 #project-tags .tag-counter-header,
@@ -1019,6 +1018,9 @@ body {
   margin-top: -6rem;
   width: 100%;
 }
+.testimonials.lg-screen {
+  padding-top: 6rem;
+}
 .testimonials .owl-dots {
   text-align: center;
   margin: 2rem 0;
@@ -1135,4 +1137,8 @@ body {
 }
 .testimonials .testimonial-card .social-icon:hover {
   color: #2F80ED;
+}
+
+.filter-testimonials {
+  width: 35rem;
 }/*# sourceMappingURL=main.css.map */

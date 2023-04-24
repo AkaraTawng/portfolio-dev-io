@@ -6,12 +6,14 @@
     
     @include laptop {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;  
+        grid-template-columns: repeat(2, 1fr);
+    
 
         #hobbies.hobbies-lg-screen {
-            display: grid;
-            grid-column: 1 / 3;
+            display: block;
+            // grid-template-columns: 1 / 3;
+            width: 41.5rem;
+            margin-left: 3.2rem;
         }
     }
 }

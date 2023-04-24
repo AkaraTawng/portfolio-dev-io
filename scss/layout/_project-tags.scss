@@ -1,8 +1,8 @@
 #project-tags {
     
     @include laptop {
-        display: grid;
-        grid-column: 3 / 4;
+        display: block;
+        // grid-column: 2 / 3;
     }
 
     .tag-counter-header, 
