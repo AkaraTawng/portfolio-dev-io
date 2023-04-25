@@ -35,7 +35,7 @@ header {
             }
             @include tablet{
                 height: 25rem;
-                width: 38rem;
+                width: 35.5rem;
             }
             @include laptop {
                 height: 23rem;
@@ -55,9 +55,9 @@ header {
                 font-size: 1.3rem;
                 @include tablet {
                     font-size: 2rem;
+                    margin-bottom: .5rem;
                 }
                 @include laptop {
-                    margin-bottom: .5rem;
                 }
             }
 

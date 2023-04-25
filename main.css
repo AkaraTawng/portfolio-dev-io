@@ -67,7 +67,7 @@ header #profile-bio img {
 @media screen and (min-width: 760px) {
   header #profile-bio img {
     height: 25rem;
-    width: 38rem;
+    width: 35.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -90,10 +90,6 @@ header #profile-bio #name-job-container h1 {
 @media screen and (min-width: 760px) {
   header #profile-bio #name-job-container h1 {
     font-size: 2rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header #profile-bio #name-job-container h1 {
     margin-bottom: 0.5rem;
   }
 }
