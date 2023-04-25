@@ -11,6 +11,9 @@
     p { 
         font-size: .7rem;
         align-self: flex-end;    
+        @include tablet {
+            font-size: .85rem;
+        }
         @include laptop {
             font-size: 1rem;
         }

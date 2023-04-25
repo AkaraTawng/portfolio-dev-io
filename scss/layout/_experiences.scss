@@ -23,9 +23,12 @@
         font-size: 1rem;
         margin: 0 0 .5rem 0;
         margin: 0 0 1.5rem 0;
-        @include laptop {
-            font-size: 1.5rem;    
+        @include tablet {
+            font-size: 1.5rem;
         }
+        // @include laptop {
+        //     font-size: 1.5rem;    
+        // }
     }
 
     img#asi {
@@ -76,14 +79,17 @@
         }
       
         h2 { 
-        //date 
+        //date & location
         color: $light-grey1;
         font-size: .7rem;
         font-weight: lighter;
         margin: 0 0 0 0;
         transition: scale .3s;
         &:hover {
-            scale: 1.2;
+            scale: 1.05;
+        }
+        @include tablet {
+            font-size: .8rem;
         }
         @include laptop {
             font-size: .9rem;
@@ -101,7 +107,10 @@
         font-weight: lighter;
         transition: scale .3s;
         &:hover {
-            scale: 1.2;
+            scale: 1.05;
+        }
+        @include tablet {
+            font-size: .9rem;
         }
         @include laptop {
             font-size: 1.1rem;
@@ -116,6 +125,9 @@
 
             &:hover {
                 cursor: pointer;
+            }
+            @include tablet {
+                font-size: .8rem;
             }
             @include laptop {
                 font-size:  .9rem;
