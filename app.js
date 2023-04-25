@@ -320,18 +320,33 @@ const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries 
 jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint));
 
 /* job experience points hover effect */
-
 jobExperienceDescriptionPoints.forEach(item => {
     item.addEventListener('mouseover', (e) => {
-        e.target.style.fontSize  = '.7rem';
-        e.target.style.fontWeight = 600;
+        if(screenWidth >= 760 && screenWidth < 1280){
+            e.target.style.fontSize  = '.9rem';
+            e.target.style.fontWeight = 600;
+        }  else if(screenWidth >= 1270){
+            e.target.style.fontSize  = '1rem';
+            e.target.style.fontWeight = 600;
+        } else {
+            e.target.style.fontSize  = '.7rem';
+            e.target.style.fontWeight = 600;
+        }
     });
 });
 
 jobExperienceDescriptionPoints.forEach(item => {
     item.addEventListener('mouseout', (e) => {
-        e.target.style.fontSize  = '.6rem';
-        e.target.style.fontWeight = 400;
+        if(screenWidth >= 760 && screenWidth < 1280){
+            e.target.style.fontSize  = '.8rem';
+            e.target.style.fontWeight = 400;
+        } else if(screenWidth >= 1280){
+            e.target.style.fontSize  = '.9rem';
+            e.target.style.fontWeight = 400;
+        } else {
+            e.target.style.fontSize  = '.6rem';
+            e.target.style.fontWeight = 400;
+        }
     });
 });
 

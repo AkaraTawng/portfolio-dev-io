@@ -386,7 +386,7 @@ body {
   margin: 0 0 0.5rem 0;
   margin: 0 0 1.5rem 0;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 760px) {
   #experiences h1 {
     font-size: 1.5rem;
   }
@@ -444,7 +444,12 @@ body {
   transition: scale 0.3s;
 }
 #experiences .experience-flex-container h2:hover {
-  scale: 1.2;
+  scale: 1.05;
+}
+@media screen and (min-width: 760px) {
+  #experiences .experience-flex-container h2 {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   #experiences .experience-flex-container h2 {
@@ -461,7 +466,12 @@ body {
   transition: scale 0.3s;
 }
 #experiences .experience-flex-container h1:hover {
-  scale: 1.2;
+  scale: 1.05;
+}
+@media screen and (min-width: 760px) {
+  #experiences .experience-flex-container h1 {
+    font-size: 0.9rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   #experiences .experience-flex-container h1 {
@@ -476,6 +486,11 @@ body {
 }
 #experiences .experience-flex-container .experience-job-description-points-container:hover {
   cursor: pointer;
+}
+@media screen and (min-width: 760px) {
+  #experiences .experience-flex-container .experience-job-description-points-container {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   #experiences .experience-flex-container .experience-job-description-points-container {
