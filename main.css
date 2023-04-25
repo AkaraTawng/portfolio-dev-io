@@ -744,6 +744,7 @@ body {
 @media screen and (min-width: 1280px) {
   #project-tags ul {
     display: grid;
+    text-align: center;
     grid-template-columns: repeat(2, 1fr);
   }
 }
