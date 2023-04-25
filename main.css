@@ -49,6 +49,8 @@ header #profile-bio img {
   width: 16rem;
   align-self: center;
   margin-bottom: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 400px) {
   header #profile-bio img {
@@ -88,6 +90,11 @@ header #profile-bio #name-job-container h1 {
 @media screen and (min-width: 760px) {
   header #profile-bio #name-job-container h1 {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header #profile-bio #name-job-container h1 {
+    margin-bottom: 0.5rem;
   }
 }
 header #profile-bio #name-job-container h2 {

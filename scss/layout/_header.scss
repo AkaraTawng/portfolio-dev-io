@@ -17,14 +17,14 @@ header {
     #profile-bio {
         display: flex;
         flex-direction: column;
-        
        
         img {
             height:12rem;
             border-radius: 8px;
             width: 16rem;
             align-self: center;
-            margin-bottom: 1rem;
+            margin-bottom: 1rem; 
+            object-fit: cover;
             @include mobile-m{
                 height: 15rem;
                 width: 20rem;
@@ -57,7 +57,7 @@ header {
                     font-size: 2rem;
                 }
                 @include laptop {
-                    // margin-bottom: -1rem;
+                    margin-bottom: .5rem;
                 }
             }
 
