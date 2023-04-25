@@ -294,6 +294,11 @@ body {
   font-weight: 400;
   margin: 0.5rem 0 1rem 0;
 }
+@media screen and (min-width: 760px) {
+  #blog #title-text-image-flex-container h1, #blog-lg-screen #title-text-image-flex-container h1 {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (min-width: 1280px) {
   #blog #title-text-image-flex-container h1, #blog-lg-screen #title-text-image-flex-container h1 {
     font-size: 1rem;
@@ -304,6 +309,11 @@ body {
   font-weight: 500;
   font-size: 0.8rem;
   width: 90%;
+}
+@media screen and (min-width: 760px) {
+  #blog #title-text-image-flex-container h2, #blog-lg-screen #title-text-image-flex-container h2 {
+    font-size: 0.9rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   #blog #title-text-image-flex-container h2, #blog-lg-screen #title-text-image-flex-container h2 {
@@ -318,17 +328,26 @@ body {
   opacity: 0;
   transition: all 0.9s ease;
 }
+@media screen and (min-width: 760px) {
+  #blog img, #blog-lg-screen img {
+    height: 15rem;
+    width: 15rem;
+  }
+}
 @media screen and (min-width: 1280px) {
   #blog img, #blog-lg-screen img {
     margin-bottom: 4rem;
-    height: 15rem;
-    width: 15rem;
   }
 }
 #blog p, #blog-lg-screen p {
   color: #828282;
   font-weight: 300;
   font-size: 0.5rem;
+}
+@media screen and (min-width: 760px) {
+  #blog p, #blog-lg-screen p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   #blog p, #blog-lg-screen p {
@@ -357,7 +376,7 @@ body {
   color: #2F80ED;
   cursor: pointer;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 760px) {
   #blog a, #blog-lg-screen a {
     font-size: 0.7rem;
   }

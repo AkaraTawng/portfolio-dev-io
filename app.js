@@ -356,18 +356,15 @@ jobExperienceDescriptionPoints.forEach(item => {
         if(screenWidth >= 320 && screenWidth <= 759){
             e.target.style.fontSize  = '.7rem';
             e.target.style.fontWeight = 600;
-            e.target.style.color = 'orange';
 
         } else if(screenWidth >= 760 && screenWidth <= 1279) {
              e.target.style.fontSize  = '.9rem';
             e.target.style.fontWeight = 600;
-            e.target.style.color = 'purple';
         }  else {
             e.target.style.fontSize  = '1rem';
             e.target.style.fontWeight = 600;
-
-            e.target.style.color = 'green';
         }; 
+        e.target.style.color = "#2F80ED"
     });
 });
 

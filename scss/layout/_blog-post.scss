@@ -29,6 +29,9 @@
         font-size: 0.6rem;
         font-weight: 400;
         margin: 0.5rem 0 1rem 0;
+        @include tablet {
+            font-size: 1.5rem;
+        }
         @include laptop {
             font-size: 1rem;
         }
@@ -39,6 +42,9 @@
         font-weight: 500;
         font-size: 0.8rem;
         width: 90%;
+        @include tablet {
+            font-size: .9rem;
+        }
         @include laptop {
             font-size: 1.2rem;
         }
@@ -52,17 +58,22 @@
         margin: 0.5rem -6.5% 0 0;
         opacity: 0;
         transition: all .9s ease;
-        @include laptop {
-            margin-bottom: 4rem;
+        @include tablet {
             height: 15rem;
             width: 15rem;
+        }
+        @include laptop {
+            margin-bottom: 4rem;
         }
     }
 
     p {
         color: $light-grey1;
         font-weight: 300;
-        font-size: 0.5rem;
+        font-size: .5rem;
+        @include tablet {
+            font-size: .8rem;
+        }
         @include laptop {
             font-size: .9rem;
         }
@@ -85,7 +96,7 @@
     a { 
         text-decoration: none;
         font-size: 0.5rem;
-        @include laptop {
+        @include tablet {
             font-size: .7rem;
         }
         color: $accent-blue;
