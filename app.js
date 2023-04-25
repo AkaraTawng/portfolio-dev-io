@@ -216,12 +216,11 @@ const tagCounterHeaderObserver = new IntersectionObserver(entries => {
             if(screenWidth >= 1280) {
                 entry.target.style.opacity = 1;
                 entry.target.classList.add('animate__slideInRight'); 
-                tagCounterHeaderObserver.unobserve(tagCounterHeader);
             } else {
                 entry.target.style.opacity = 1;
                 entry.target.classList.add('animate__slideInLeft'); 
-                tagCounterHeaderObserver.unobserve(tagCounterHeader);
             }
+             tagCounterHeaderObserver.unobserve(tagCounterHeader);
         }
     });
 }, {
@@ -235,8 +234,13 @@ tagCounterHeaderObserver.observe(tagCounterHeader);
 const filterByHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.classList.add('animate__slideInLeft');
-            entry.target.style.opacity = 1;
+            if(screenWidth >= 1280){
+                entry.target.classList.add('animate__slideInRight');
+                entry.target.style.opacity = 1;
+            } else {
+                entry.target.classList.add('animate__slideInLeft');
+                entry.target.style.opacity = 1;
+            }
             filterByHeaderObserver.unobserve(entry.target);
         };
     });
