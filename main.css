@@ -542,6 +542,11 @@ body {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+@media screen and (min-width: 760px) {
+  #hobbies h1 {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (min-width: 1280px) {
   #hobbies h1 {
     font-size: 1.3rem;
@@ -553,6 +558,11 @@ body {
   font-weight: 500;
   margin: 0.6rem 0 0.6rem 0;
 }
+@media screen and (min-width: 760px) {
+  #hobbies h2 {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 1280px) {
   #hobbies h2 {
     font-size: 1.1rem;
@@ -562,6 +572,11 @@ body {
   color: #828282;
   font-weight: 500;
   font-size: 0.6rem;
+}
+@media screen and (min-width: 760px) {
+  #hobbies p {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   #hobbies p {
@@ -631,8 +646,18 @@ body {
 #hobbies .hobby-item#exercise {
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 760px) {
+  #hobbies .hobby-item#exercise {
+    margin-bottom: 3.5rem;
+  }
+}
 #hobbies .hobby-item#reading {
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 760px) {
+  #hobbies .hobby-item#reading {
+    margin-bottom: 3.5rem;
+  }
 }
 #hobbies #exerciseimagecontainer {
   width: 100%;

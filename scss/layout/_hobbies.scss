@@ -28,6 +28,9 @@
         font-weight: 500;
         font-size: 1rem;
         margin-bottom: 1rem;
+        @include tablet {
+            font-size: 1.5rem;
+        }
         @include laptop {
             font-size: 1.3rem;
         }
@@ -38,6 +41,9 @@
         font-size: .8rem;
         font-weight: 500;
         margin: .6rem 0 .6rem 0;
+        @include tablet {
+            font-size: 1rem;
+        }
         @include laptop {
             font-size: 1.1rem;
         }
@@ -47,6 +53,9 @@
         color: $light-grey1;
         font-weight: 500;
         font-size: .6rem;
+        @include tablet {
+            font-size: .8rem;
+        }
         @include laptop {
             font-size: .9rem;
         }
@@ -103,10 +112,16 @@
 
         &#exercise {
             margin-bottom: 2rem;
+            @include tablet {
+                margin-bottom: 3.5rem;
+            }
         }
         
         &#reading {
             margin-bottom: 2rem;
+            @include tablet {
+                margin-bottom: 3.5rem;
+            }
         }
        
     }
