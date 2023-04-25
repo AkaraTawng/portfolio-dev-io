@@ -59,7 +59,7 @@
     
 #project-items {
         @include laptop {
-            display: grid !important;
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
     }
