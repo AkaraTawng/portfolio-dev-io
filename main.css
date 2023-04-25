@@ -837,8 +837,9 @@ body {
   display: flex;
   justify-content: space-around;
 }
+
 @media screen and (min-width: 1280px) {
-  #project-items #project-items {
+  #project-items {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
   }

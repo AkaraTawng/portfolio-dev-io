@@ -55,10 +55,11 @@
 
     }
 
-    #project-items {
+}
+    
+#project-items {
         @include laptop {
             display: grid !important;
             grid-template-columns: repeat(2, 1fr);
         }
     }
-}
