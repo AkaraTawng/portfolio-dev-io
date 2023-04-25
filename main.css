@@ -1020,6 +1020,7 @@ body {
 }
 .testimonials.lg-screen {
   padding-top: 6rem;
+  height: auto;
 }
 .testimonials .owl-dots {
   text-align: center;
