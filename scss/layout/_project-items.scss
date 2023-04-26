@@ -3,7 +3,9 @@
         display: none;
         flex-direction: column;
         align-items: center;
-        width: 92%;
+        @include laptop {
+            width: 92%;
+        }
     }
     
 
