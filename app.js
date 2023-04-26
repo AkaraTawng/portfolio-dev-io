@@ -268,14 +268,31 @@ const typeOfWebsiteContainerObserver = new IntersectionObserver(entries => {
 typeOfWebsiteContainerObserver.observe(typeOfWebsiteContainer);
 
 /* even project items slide in left */
+// const evenProjectsObserver = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting){
+//             entry.target.style.opacity = 1;
+//             entry.target.classList.add('animate__slideInLeft');
+//             evenProjectsObserver.unobserve(entry.target);
+//         };  
+       
+//     });
+// }, {
+//     threshold: 0.3
+// });
+
 const evenProjectsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.style.opacity = 1;
-            entry.target.classList.add('animate__slideInLeft');
+            if(screenWidth < 1280){
+                entry.target.style.opacity = 1;
+                entry.target.classList.add('animate__slideInLeft');
+            } else {
+                entry.target.style.opacity = 1;
+                entry.target.classList.add('animate__bounceInUp');
+            }
             evenProjectsObserver.unobserve(entry.target);
         };  
-       
     });
 }, {
     threshold: 0.3
