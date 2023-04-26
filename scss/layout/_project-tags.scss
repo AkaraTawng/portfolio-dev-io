@@ -2,7 +2,7 @@
     
     @include laptop {
         display: block;
-        // grid-column: 2 / 3;
+        margin-top: -1rem;
     }
 
     .tag-counter-header, 

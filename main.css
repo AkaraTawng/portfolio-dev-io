@@ -625,7 +625,11 @@ body {
 @media screen and (min-width: 1280px) {
   #hobbies .hobbies-img-wrapper {
     height: 11rem;
-    width: 37rem;
+  }
+}
+@media screen and (min-width: 1530px) {
+  #hobbies .hobbies-img-wrapper {
+    height: 15rem;
   }
 }
 #hobbies .hobbies-img-wrapper img {
@@ -661,6 +665,11 @@ body {
     scale: 1.04;
   }
 }
+@media screen and (min-width: 1530px) {
+  #hobbies .hobbies-img-wrapper img {
+    height: 16rem;
+  }
+}
 #hobbies .hobby-item {
   display: flex;
   flex-direction: column;
@@ -689,6 +698,7 @@ body {
 @media screen and (min-width: 1280px) {
   #project-tags {
     display: block;
+    margin-top: -1rem;
   }
 }
 #project-tags .tag-counter-header,
