@@ -267,20 +267,7 @@ const typeOfWebsiteContainerObserver = new IntersectionObserver(entries => {
 
 typeOfWebsiteContainerObserver.observe(typeOfWebsiteContainer);
 
-/* even project items slide in left */
-// const evenProjectsObserver = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting){
-//             entry.target.style.opacity = 1;
-//             entry.target.classList.add('animate__slideInLeft');
-//             evenProjectsObserver.unobserve(entry.target);
-//         };  
-       
-//     });
-// }, {
-//     threshold: 0.3
-// });
-
+/* even project items scroll animations*/
 const evenProjectsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -300,15 +287,19 @@ const evenProjectsObserver = new IntersectionObserver(entries => {
 
 evenProjectItems.forEach(item => evenProjectsObserver.observe(item));
 
-/* odd project items slide in right */
+/* odd project items scroll animations */
 const oddProjectsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-            entry.target.classList.add('animate__slideInRight');
-            entry.target.style.opacity = 1;
+            if(screenWidth < 1280){
+                entry.target.classList.add('animate__slideInRight');
+                entry.target.style.opacity = 1;
+            } else {
+                entry.target.classList.add('animate__bounceInUp');
+                entry.target.style.opacity = 1;
+            }
             oddProjectsObserver.unobserve(entry.target);
         };
-      
     });
 }, {
     threshold: 0.3
