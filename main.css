@@ -1121,7 +1121,7 @@ body {
     display: block;
     padding-top: 6rem;
     height: auto;
-    width: 105%;
+    width: 100%;
   }
 }
 .testimonials .owl-dots {
@@ -1273,7 +1273,7 @@ body {
 
 @media screen and (min-width: 1280px) {
   .filter-testimonials {
-    width: 98%;
+    width: 104%;
     overflow: hidden;
   }
 }/*# sourceMappingURL=main.css.map */
