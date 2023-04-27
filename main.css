@@ -940,6 +940,7 @@ body {
 @media screen and (min-width: 400px) {
   #mobile-nav .navigation {
     width: 380px;
+    top: 94.7vh;
   }
 }
 @media screen and (min-width: 480px) {
@@ -951,7 +952,7 @@ body {
   #mobile-nav .navigation {
     width: 600px;
     height: 85px;
-    top: 91.7vh;
+    top: 93.7vh;
   }
 }
 #mobile-nav .navigation ul {
