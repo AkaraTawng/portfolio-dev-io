@@ -1321,6 +1321,11 @@ body {
   padding: 0 1rem;
   text-align: center;
 }
+@media screen and (min-width: 760px) {
+  .testimonials .testimonial-card p {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 1280px) {
   .testimonials .testimonial-card p {
     font-size: 0.9rem;
