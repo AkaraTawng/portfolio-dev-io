@@ -64,6 +64,10 @@ const experienceItemHeaderInfoNodelist = document.querySelectorAll('.experience-
 /* convert experinceItemHeaderInfoNodelist to array */
 const experienceItemHeaderInfoArray = Array.from(experienceItemHeaderInfoNodelist);
 
+const testimonialsCarousel = document.querySelectorAll('.carousel-container');
+
+const testimonialsHeader = document.querySelectorAll('.testimonials h1');
+
 const skillBarsNodelist = document.querySelectorAll('.skillbars');
 
 /* convert skillsBarsNodelist to array */
@@ -350,37 +354,6 @@ const jobExperienceDescriptionPointsObserver = new IntersectionObserver(entries 
 
 jobExperienceDescriptionPoints.forEach(jobDescriptionPoint => jobExperienceDescriptionPointsObserver.observe(jobDescriptionPoint));
 
-/* job experience points hover effect */
-// jobExperienceDescriptionPoints.forEach(item => {
-//     item.addEventListener('mouseover', (e) => {
-//         if(screenWidth >= 760 && screenWidth < 1280){
-//             e.target.style.fontSize  = '.9rem';
-//             e.target.style.fontWeight = 600;
-//         }  else if(screenWidth >= 1270){
-//             e.target.style.fontSize  = '1rem';
-//             e.target.style.fontWeight = 600;
-//         } else {
-//             e.target.style.fontSize  = '.7rem';
-//             e.target.style.fontWeight = 600;
-//         }
-//     });
-// });
-
-// jobExperienceDescriptionPoints.forEach(item => {
-//     item.addEventListener('mouseout', (e) => {
-//         if(screenWidth >= 760 && screenWidth < 1280){
-//             e.target.style.fontSize  = '.8rem';
-//             e.target.style.fontWeight = 400;
-//         } else if(screenWidth >= 1280){
-//             e.target.style.fontSize  = '.9rem';
-//             e.target.style.fontWeight = 400;
-//         } else {
-//             e.target.style.fontSize  = '.6rem';
-//             e.target.style.fontWeight = 400;
-//         }
-//     });
-// });
-
 jobExperienceDescriptionPoints.forEach(item => {
     item.addEventListener('mouseover', (e) => {
 
@@ -537,27 +510,33 @@ const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
 experienceItemHeaderInfoArray.forEach(item => experienceItemHeaderInfoObserver.observe(item)
 );
 
+/* testimonials intersection oberserver */
 
+const testimonialsCarouselObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('animate__bounceInUp');
+        }
+    })
+})
+testimonialsCarousel.forEach(item => {
+    testimonialsCarouselObserver.observe(item);
+})
 
-/* skillbars intersection observer */
+const testimonialsHeaderObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+              entry.target.classList.add('animate__slideInLeft')
+        }
+    })
+}, {
+    threshold: 1,
+    rootMargin: "50%",
+})
 
-// const skillBarsObserver = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//             if(entry.isIntersecting){
-//                 if(entry.target.classList.contains('html')){
-//                 entry.target.style.width = '80%';
-//             } else if(entry.target.classList.contains('css')){
-//                 entry.target.style.width = '80%';
-//             } else if(entry.target.classList.contains('js')){
-//                 entry.target.style.width = '50%';
-//             } else if(entry.target.classList.contains('react')){
-//                 entry.target.style.width = '50%';
-//             }
-//         };
-//     });
-// }, {
-//     threshold: 1
-// });
+testimonialsHeader.forEach(item => {
+    testimonialsHeaderObserver.observe(item)
+})
 
 const skillBarsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
