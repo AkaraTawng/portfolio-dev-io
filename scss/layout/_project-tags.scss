@@ -3,6 +3,7 @@
     @include laptop {
         display: block;
         margin-top: -1rem;
+        height: 30rem;
     }
 
     .tag-counter-header, 
@@ -31,6 +32,9 @@ h1 {
     font-size: 1rem;
     @include laptop {
         font-size: 1.2rem;   
+    }
+    @include desktop-m {
+        margin-top: 2rem;
     }
 }
 

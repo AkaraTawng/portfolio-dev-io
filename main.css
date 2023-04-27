@@ -575,6 +575,11 @@ body {
     font-size: 1.3rem;
   }
 }
+@media screen and (min-width: 1530px) {
+  #hobbies h1 {
+    font-size: 1.5rem;
+  }
+}
 #hobbies h2 {
   color: #333333;
   font-size: 0.8rem;
@@ -699,6 +704,7 @@ body {
   #project-tags {
     display: block;
     margin-top: -1rem;
+    height: 30rem;
   }
 }
 #project-tags .tag-counter-header,
@@ -725,6 +731,11 @@ body {
 @media screen and (min-width: 1280px) {
   #project-tags h1 {
     font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1530px) {
+  #project-tags h1 {
+    margin-top: 2rem;
   }
 }
 #project-tags h2 {
@@ -1219,6 +1230,16 @@ body {
   opacity: 0;
   transition: all 0.5s;
 }
+@media screen and (min-width: 1530px) {
+  .testimonials .testimonials-outer-container h1 {
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 1530px) {
+  .testimonials .testimonials-outer-container {
+    height: 45rem;
+  }
+}
 .testimonials .testimonial-card {
   width: 100%;
   display: flex;
@@ -1234,6 +1255,11 @@ body {
   /* name */
   /* company */
   /* job title */
+}
+@media screen and (min-width: 1530px) {
+  .testimonials .testimonial-card {
+    height: 26rem;
+  }
 }
 .testimonials .testimonial-card::before {
   content: "\f10d";

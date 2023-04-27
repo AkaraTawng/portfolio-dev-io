@@ -33,6 +33,9 @@
         @include laptop {
             font-size: 1.3rem;
         }
+        @include desktop-m {
+            font-size: 1.5rem;
+        }
     }
 
     h2 {
