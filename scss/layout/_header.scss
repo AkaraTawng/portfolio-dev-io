@@ -19,28 +19,30 @@ header {
         flex-direction: column;
        
         img {
-            height:12rem;
+            // height:12rem;
             border-radius: 8px;
-            width: 16rem;
+            // width: 16rem;
+            height: 90%;
+            width: 98%;
             align-self: center;
             margin-bottom: 1rem; 
             object-fit: cover;
-            @include mobile-m{
-                height: 15rem;
-                width: 20rem;
-            }
-            @include mobile-l{
-                height: 18rem;
-                width: 24rem;
-            }
-            @include tablet{
-                height: 25rem;
-                width: 35.5rem;
-            }
-            @include laptop {
-                height: 23rem;
-                width: 29.5rem;
-            }
+            // @include mobile-m{
+            //     height: 15rem;
+            //     width: 20rem;
+            // }
+            // @include mobile-l{
+            //     height: 18rem;
+            //     width: 24rem;
+            // }
+            // @include tablet{
+            //     height: 25rem;
+            //     width: 35.5rem;
+            // }
+            // @include laptop {
+            //     height: 23rem;
+            //     width: 29.5rem;
+            // }
         }
 
         #name-job-container {

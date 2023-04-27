@@ -44,37 +44,13 @@ header #profile-bio {
   flex-direction: column;
 }
 header #profile-bio img {
-  height: 12rem;
   border-radius: 8px;
-  width: 16rem;
+  height: 90%;
+  width: 98%;
   align-self: center;
   margin-bottom: 1rem;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media screen and (min-width: 400px) {
-  header #profile-bio img {
-    height: 15rem;
-    width: 20rem;
-  }
-}
-@media screen and (min-width: 480px) {
-  header #profile-bio img {
-    height: 18rem;
-    width: 24rem;
-  }
-}
-@media screen and (min-width: 760px) {
-  header #profile-bio img {
-    height: 25rem;
-    width: 35.5rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header #profile-bio img {
-    height: 23rem;
-    width: 29.5rem;
-  }
 }
 header #profile-bio #name-job-container {
   display: flex;
