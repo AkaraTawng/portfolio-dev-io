@@ -2,9 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // opacity: 0;
     transition: opacity .3s ease;
-    margin-top: 5rem;
+    margin-top: 7rem;
+    @include tablet {
+        margin-top: 9rem;
+    }
     @include laptop {
         display: none;
     }
