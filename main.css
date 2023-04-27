@@ -35,8 +35,21 @@ footer a:visited {
   header #skills-experience-container {
     display: grid;
   }
+}
+@media screen and (min-width: 1280px) and (min-width: 1280px) {
+  header #skills-experience-container {
+    width: 104%;
+  }
+}
+@media screen and (min-width: 1280px) {
   header #profile-bio-blog-container {
     display: grid;
+  }
+}
+@media screen and (min-width: 1280px) and (min-width: 1280px) {
+  header #profile-bio-blog-container {
+    width: 114.5%;
+    margin-left: -4.6%;
   }
 }
 header #profile-bio {

@@ -7,10 +7,17 @@ header {
 
         #skills-experience-container {
          display: grid;
+         @include laptop {
+            width: 104%;
+            }
         }
 
         #profile-bio-blog-container {
             display: grid;
+            @include laptop {
+                width: 114.5%;
+                margin-left: -4.6%;
+            }
         }
     }
 
