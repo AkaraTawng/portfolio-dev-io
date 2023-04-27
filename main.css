@@ -1174,6 +1174,12 @@ body {
   margin-top: -6rem;
   width: 100%;
 }
+.testimonials .carousel-container {
+  opacity: 0;
+}
+.testimonials .carousel-container.animate__animated.animate__bounceInUp {
+  --animate-duration: 1.8s;
+}
 @media screen and (min-width: 1280px) {
   .testimonials {
     display: none;
@@ -1210,6 +1216,8 @@ body {
 .testimonials .testimonials-outer-container h1 {
   color: #333333;
   font-weight: 400;
+  opacity: 0;
+  transition: all 0.5s;
 }
 .testimonials .testimonial-card {
   width: 100%;

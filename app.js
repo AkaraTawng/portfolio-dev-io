@@ -516,8 +516,12 @@ const testimonialsCarouselObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('animate__bounceInUp');
+            entry.target.style.opacity = 1;
+            testimonialsCarouselObserver.unobserve(testimonialsCarousel)
         }
     })
+}, {
+    threshold: 0.05
 })
 testimonialsCarousel.forEach(item => {
     testimonialsCarouselObserver.observe(item);
@@ -526,12 +530,18 @@ testimonialsCarousel.forEach(item => {
 const testimonialsHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-              entry.target.classList.add('animate__slideInLeft')
+            if(screenWidth < 1280) {
+                entry.target.classList.add('animate__slideInLeft');
+                entry.target.style.opacity = 1;
+            } else {
+                 entry.target.classList.add('animate__slideInRight');
+                 entry.target.style.opacity = 1;
+            }
+             testimonialsHeaderObserver.unobserve(testimonialsHeader)
         }
     })
 }, {
     threshold: 1,
-    rootMargin: "50%",
 })
 
 testimonialsHeader.forEach(item => {
@@ -567,7 +577,6 @@ const skillBarsObserver = new IntersectionObserver(entries => {
                 }
             };
         }
-          
     });
 }, {
     threshold: 1

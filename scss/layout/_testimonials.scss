@@ -1,4 +1,13 @@
+
+
 .testimonials {
+
+    .carousel-container {
+        opacity: 0;
+        &.animate__animated.animate__bounceInUp {
+            --animate-duration: 1.8s;
+        }
+    }
 
 @include laptop{
     display: none;
@@ -43,6 +52,8 @@ width: 100%;
     h1 {
         color: $dark-grey2;
         font-weight: 400;
+        opacity: 0;
+        transition: all .5s;
     }
 }
 
