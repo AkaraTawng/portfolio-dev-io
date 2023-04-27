@@ -21,6 +21,11 @@
         @include mobile-l {
             width: 450px; 
         };
+        @include tablet {
+            width: 600px;
+            height: 85px;
+            top: 91.7vh;
+        }
         height: 70px;
         background-color: $accent-blue;
         display: flex;
@@ -34,10 +39,11 @@
             // padding-left: 20px;
             @include mobile-m {
                 width: 380px; 
+                padding-left: 0px; 
             };
            
-            @include mobile-m {
-                padding-left: 0px; 
+            @include tablet {
+               width: 550px;
             };
 
             li {
@@ -84,6 +90,11 @@
                         @include mobile-l {
                             font-size: 1.2em;
                         };
+                        @include tablet {
+                            font-size: 1.5rem;
+                            line-height: 86px;
+                            margin-bottom: 1rem;
+                        }
                         text-align: center;
                         transition: 0.5s;
                         color: white;
@@ -98,6 +109,9 @@
                         transition: 0.5s;
                         opacity: 0;
                         transform: translateY(20px);
+                        @include tablet {
+                            font-size: .85rem;
+                        }
                     }
                 }
 
@@ -114,6 +128,9 @@
                     @include mobile-l {
                         transform: translateX(calc(62px * 1));
                     };
+                    @include tablet {
+                        transform: translateX(calc(91.2px * 1));
+                    };
                 }
 
                 /* experience */
@@ -124,6 +141,9 @@
                     };
                     @include mobile-l {
                         transform: translateX(calc(63px * 2));
+                    };
+                    @include tablet {
+                        transform: translateX(calc(91px * 2));
                     };
                 }
 
@@ -136,6 +156,9 @@
                     @include mobile-l {
                         transform: translateX(calc(63px * 3));
                     };
+                    @include tablet {
+                        transform: translateX(calc(91px * 3));
+                    };
                 }
 
                 /* blog */
@@ -147,16 +170,22 @@
                     @include mobile-l {
                         transform: translateX(calc(63px * 4));
                     };
+                    @include tablet {
+                        transform: translateX(calc(91.5px * 4));
+                    };
                 }
              
                 /* reviews */
                 &:nth-child(6).active ~ .indicator {
                     transform: translateX(calc(49.5px * 5));
                     @include mobile-m {
-                        transform: translateX(calc(78.5px * 4));
+                        transform: translateX(calc(63px * 5));
                     };
                     @include mobile-l {
-                        transform: translateX(calc(79px * 4));
+                        transform: translateX(calc(63px * 5));
+                    };
+                    @include tablet {
+                        transform: translateX(calc(91.5px * 5));
                     };
                 }
             }
@@ -173,11 +202,17 @@
         @include mobile-l {
            left: 7.2% 
         };
+        
         width: 60px;
         height: 60px;
         @include mobile-l {
             width: 70px;
             height: 70px;
+        };
+        @include tablet {
+           left: 4.8%; 
+           width: 85px;
+           height: 85px;
         };
         background-color: $accent-blue;
         border-radius: 50%;
