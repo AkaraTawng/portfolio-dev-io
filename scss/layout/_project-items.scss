@@ -31,25 +31,29 @@
     }
 
     img { 
-        height: 12rem;
-        width: 16rem;
+        // height: 12rem;
+        // width: 16rem;
+
+        height: 90%;
+        width: 98%;
         border-radius: 15px;
-        @include mobile-m{
-            height: 16rem;
-            width: 20rem;
-        }
-        @include mobile-l{
-            height: 16rem;
-            width: 24.2rem;
-        }
-        @include tablet{
-            height: 23rem;
-            width: 35rem;
-        }
-        @include laptop {
-            height: 23rem;
-            width: 30rem;
-        }
+        // @include mobile-m{
+        //     height: 16rem;
+        //     width: 20rem;
+        // }
+        // @include mobile-l{
+        //     height: 16rem;
+        //     width: 24.2rem;
+        // }
+        // @include tablet{
+        //     height: 23rem;
+        //     width: 35rem;
+        // }
+        // @include laptop {
+        //     height: 23rem;
+        //     width: 30rem;
+        //     // width: 95%;
+        // }
     }
 
     .project-item-buttons-flex-container {

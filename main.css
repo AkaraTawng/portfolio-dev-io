@@ -831,33 +831,9 @@ body {
   font-size: 0.7rem;
 }
 #project-items img {
-  height: 12rem;
-  width: 16rem;
+  height: 90%;
+  width: 98%;
   border-radius: 15px;
-}
-@media screen and (min-width: 400px) {
-  #project-items img {
-    height: 16rem;
-    width: 20rem;
-  }
-}
-@media screen and (min-width: 480px) {
-  #project-items img {
-    height: 16rem;
-    width: 24.2rem;
-  }
-}
-@media screen and (min-width: 760px) {
-  #project-items img {
-    height: 23rem;
-    width: 35rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  #project-items img {
-    height: 23rem;
-    width: 30rem;
-  }
 }
 #project-items .project-item-buttons-flex-container {
   margin-top: 2rem;
