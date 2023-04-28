@@ -70,12 +70,24 @@ const testimonialsHeader = document.querySelectorAll('.testimonials h1');
 
 const skillBarsNodelist = document.querySelectorAll('.skillbars');
 
+const headerHighlights = document.querySelectorAll('.bio-span');
+
 /* convert skillsBarsNodelist to array */
 const skillBarsArray = Array.from(skillBarsNodelist);
 
 const list = document.querySelectorAll('.list');
 
 const screenWidth = document.documentElement.clientWidth;
+
+/* header highlights animation */
+
+headerHighlights.forEach((highlight) => { 
+    setTimeout(() => {
+        highlight.classList.add('animate__pulse');
+        highlight.style.color = "#2f80ed";
+        highlight.style.fontWeight = 600;
+    }, 3000);
+});
 
 /* project counter */
 let projectsArray = [];

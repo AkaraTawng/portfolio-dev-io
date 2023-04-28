@@ -138,9 +138,11 @@ header #profile-bio #bio-container {
   opacity: 0;
 }
 header #profile-bio #bio-container .bio-span {
-  color: #2F80ED;
-  font-weight: 600;
+  color: #828282;
+  font-weight: 400;
   font-size: 0.8rem;
+  display: inline-block;
+  transition: all 1s;
 }
 @media screen and (min-width: 1280px) {
   header #profile-bio #bio-container .bio-span {
@@ -235,7 +237,7 @@ body {
   height: 100%;
   width: 80%;
   border-radius: 10px;
-  background-color: #2F80ED;
+  background-color: #2f80ed;
 }
 #skills .skillbar .skillbars {
   transition: all 2s ease-out;
@@ -365,7 +367,7 @@ body {
 #blog a, #blog-lg-screen a {
   text-decoration: none;
   font-size: 0.5rem;
-  color: #2F80ED;
+  color: #2f80ed;
   cursor: pointer;
 }
 @media screen and (min-width: 760px) {
@@ -374,7 +376,7 @@ body {
   }
 }
 #blog a :active, #blog-lg-screen a :active {
-  color: #2F80ED;
+  color: #2f80ed;
 }
 
 #experiences img {
@@ -713,7 +715,7 @@ body {
   display: none;
 }
 #project-tags .active {
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   color: white;
 }
 #project-tags h1, #project-tags h2, #project-tags h3 {
@@ -783,12 +785,12 @@ body {
 }
 #project-tags ul button:hover {
   color: white;
-  background-color: #2F80ED;
+  background-color: #2f80ed;
 }
 @media screen and (min-width: 1280px) {
   #project-tags ul button:hover {
-    color: #2F80ED;
-    border: solid #2F80ED 1px;
+    color: #2f80ed;
+    border: solid #2f80ed 1px;
     background-color: white;
   }
 }
@@ -846,7 +848,7 @@ body {
 
 .demo {
   border-radius: 10px;
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   border: none;
   height: 2rem;
   width: 6rem;
@@ -858,10 +860,10 @@ body {
 }
 .demo:hover {
   background-color: white;
-  border: 1px solid #2F80ED;
+  border: 1px solid #2f80ed;
 }
 .demo:hover a {
-  color: #2F80ED;
+  color: #2f80ed;
 }
 
 .code {
@@ -870,15 +872,15 @@ body {
   border-radius: 10px;
   height: 2rem;
   width: 5rem;
-  outline: 1px solid #2F80ED;
+  outline: 1px solid #2f80ed;
   background-color: white;
 }
 .code a {
-  color: #2F80ED;
+  color: #2f80ed;
   text-decoration: none;
 }
 .code:hover {
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   outline: none;
 }
 .code:hover a {
@@ -908,7 +910,7 @@ body {
   top: 94.8vh;
   width: 315px;
   height: 70px;
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1127,7 +1129,7 @@ body {
   left: 1%;
   width: 60px;
   height: 60px;
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   border-radius: 50%;
   border: 6px solid white;
   transition: 0.5s;
@@ -1197,10 +1199,10 @@ body {
   margin: 0 5px;
 }
 .testimonials .owl-dots button:hover {
-  background: #2F80ED !important;
+  background: #2f80ed !important;
 }
 .testimonials .owl-dots button.active {
-  background-color: #2F80ED !important;
+  background-color: #2f80ed !important;
 }
 .testimonials .testimonials-outer-container h1 {
   color: #333333;
@@ -1224,7 +1226,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 4px solid #2F80ED;
+  border: 4px solid #2f80ed;
   border-radius: 25px;
   position: relative;
   z-index: 2;
@@ -1248,7 +1250,7 @@ body {
   height: 65px;
   width: 70px;
   font-family: FontAwesome;
-  color: #2F80ED;
+  color: #2f80ed;
   font-size: 3.5rem;
 }
 .testimonials .testimonial-card::after {
@@ -1261,7 +1263,7 @@ body {
   background-color: #ffffff;
   height: 63px;
   width: 70px;
-  color: #2F80ED;
+  color: #2f80ed;
   font-size: 3.5rem;
 }
 .testimonials .testimonial-card .testimonial-image-description-container {
@@ -1307,7 +1309,7 @@ body {
   }
 }
 .testimonials .testimonial-card h3 {
-  color: #2F80ED;
+  color: #2f80ed;
   margin-top: 0.3rem;
   font-size: 0.8rem;
 }
@@ -1345,13 +1347,13 @@ body {
 }
 .testimonials .testimonial-card .social-icon {
   margin-top: 1rem;
-  color: #2F80ED;
+  color: #2f80ed;
   color: #8db9f5;
   font-size: 1.5rem;
   transition: all 0.3s;
 }
 .testimonials .testimonial-card .social-icon:hover {
-  color: #2F80ED;
+  color: #2f80ed;
 }
 
 @media screen and (min-width: 1280px) {
