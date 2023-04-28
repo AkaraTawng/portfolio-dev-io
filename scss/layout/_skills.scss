@@ -2,10 +2,13 @@
 
     h1{
         font-weight: 500;
+        @include desktop-m {
+            margin-top: 2rem;
+        }
     }
     height: 18rem;
     @include mobile-m {
-        height: 20rem;
+        height: 90%;
     }
 
     p { 
