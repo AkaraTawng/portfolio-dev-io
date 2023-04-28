@@ -384,27 +384,27 @@ body {
   color: #2f80ed;
 }
 
-#experiences img {
+#experiences img, #experiences-lg-screen img {
   transition: all 0.3s ease;
 }
-#experiences img:hover {
+#experiences img:hover, #experiences-lg-screen img:hover {
   scale: 1.2;
   cursor: pointer;
 }
 @media screen and (min-width: 1280px) {
-  #experiences {
+  #experiences, #experiences-lg-screen {
     display: none;
   }
 }
-#experiences.laptop {
+#experiences.laptop, #experiences-lg-screen.laptop {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  #experiences.laptop {
+  #experiences.laptop, #experiences-lg-screen.laptop {
     display: block;
   }
 }
-#experiences h1 {
+#experiences h1, #experiences-lg-screen h1 {
   color: #4F4F4F;
   font-weight: 400;
   font-size: 1rem;
@@ -412,117 +412,117 @@ body {
   margin: 0 0 1.5rem 0;
 }
 @media screen and (min-width: 760px) {
-  #experiences h1 {
+  #experiences h1, #experiences-lg-screen h1 {
     font-size: 1.5rem;
   }
 }
-#experiences img#asi {
+#experiences img#asi, #experiences-lg-screen img#asi {
   height: 1rem;
   width: 5rem;
   margin: 1rem 1.4rem 0 0;
   opacity: 0;
 }
 @media screen and (min-width: 1280px) {
-  #experiences img#asi {
+  #experiences img#asi, #experiences-lg-screen img#asi {
     height: 2rem;
     width: 10rem;
   }
 }
-#experiences img#yogojo {
+#experiences img#yogojo, #experiences-lg-screen img#yogojo {
   height: 2.5rem;
   width: 2rem;
   margin: 1rem 4.3rem 0 0;
 }
 @media screen and (min-width: 1280px) {
-  #experiences img#yogojo {
+  #experiences img#yogojo, #experiences-lg-screen img#yogojo {
     height: 4.3rem;
     width: 3.6rem;
     padding: 0 0 1rem 0;
   }
 }
-#experiences img#cambly {
+#experiences img#cambly, #experiences-lg-screen img#cambly {
   height: 2rem;
   width: 5rem;
   margin: 1rem 2.3rem 0 0;
 }
 @media screen and (min-width: 1280px) {
-  #experiences img#cambly {
+  #experiences img#cambly, #experiences-lg-screen img#cambly {
     height: 3rem;
     width: 6rem;
   }
 }
-#experiences .experience-flex-container {
+#experiences .experience-flex-container, #experiences-lg-screen .experience-flex-container {
   display: flex;
   justify-content: space-around;
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 400px) {
-  #experiences .experience-flex-container .experience-item-header-info {
+  #experiences .experience-flex-container .experience-item-header-info, #experiences-lg-screen .experience-flex-container .experience-item-header-info {
     margin-left: 2rem;
   }
 }
-#experiences .experience-flex-container h2 {
+#experiences .experience-flex-container h2, #experiences-lg-screen .experience-flex-container h2 {
   color: #828282;
   font-size: 0.7rem;
   font-weight: lighter;
   margin: 0 0 0 0;
   transition: scale 0.3s;
 }
-#experiences .experience-flex-container h2:hover {
+#experiences .experience-flex-container h2:hover, #experiences-lg-screen .experience-flex-container h2:hover {
   scale: 1.05;
 }
 @media screen and (min-width: 760px) {
-  #experiences .experience-flex-container h2 {
+  #experiences .experience-flex-container h2, #experiences-lg-screen .experience-flex-container h2 {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #experiences .experience-flex-container h2 {
+  #experiences .experience-flex-container h2, #experiences-lg-screen .experience-flex-container h2 {
     font-size: 0.9rem;
   }
 }
-#experiences .experience-flex-container h2:nth-child(odd) {
+#experiences .experience-flex-container h2:nth-child(odd), #experiences-lg-screen .experience-flex-container h2:nth-child(odd) {
   margin-bottom: 1.5rem;
 }
-#experiences .experience-flex-container h1 {
+#experiences .experience-flex-container h1, #experiences-lg-screen .experience-flex-container h1 {
   color: #333333;
   font-size: 0.8rem;
   font-weight: lighter;
   transition: scale 0.3s;
 }
-#experiences .experience-flex-container h1:hover {
+#experiences .experience-flex-container h1:hover, #experiences-lg-screen .experience-flex-container h1:hover {
   scale: 1.05;
 }
 @media screen and (min-width: 760px) {
-  #experiences .experience-flex-container h1 {
+  #experiences .experience-flex-container h1, #experiences-lg-screen .experience-flex-container h1 {
     font-size: 0.9rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #experiences .experience-flex-container h1 {
+  #experiences .experience-flex-container h1, #experiences-lg-screen .experience-flex-container h1 {
     font-size: 1.1rem;
   }
 }
-#experiences .experience-flex-container .experience-job-description-points-container {
+#experiences .experience-flex-container .experience-job-description-points-container, #experiences-lg-screen .experience-flex-container .experience-job-description-points-container {
   color: #828282;
   font-size: 0.6rem;
   font-weight: lighter;
   margin-left: -5.8rem;
 }
-#experiences .experience-flex-container .experience-job-description-points-container:hover {
+#experiences .experience-flex-container .experience-job-description-points-container:hover, #experiences-lg-screen .experience-flex-container .experience-job-description-points-container:hover {
   cursor: pointer;
 }
 @media screen and (min-width: 760px) {
-  #experiences .experience-flex-container .experience-job-description-points-container {
+  #experiences .experience-flex-container .experience-job-description-points-container, #experiences-lg-screen .experience-flex-container .experience-job-description-points-container {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #experiences .experience-flex-container .experience-job-description-points-container {
+  #experiences .experience-flex-container .experience-job-description-points-container, #experiences-lg-screen .experience-flex-container .experience-job-description-points-container {
     font-size: 0.9rem;
   }
 }
-#experiences .experience-flex-container .experience-job-description-points-container li {
+#experiences .experience-flex-container .experience-job-description-points-container li, #experiences-lg-screen .experience-flex-container .experience-job-description-points-container li {
   margin-bottom: 1rem;
   opacity: 0;
   transition: font-size, font-weight, 0.3s;
@@ -549,7 +549,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .project-filter-hobbies-grid-container #hobbies.hobbies-lg-screen {
+  .project-filter-hobbies-grid-container #hobbies-lg-screen.hobbies-lg-screen {
     display: block;
     width: 98%;
     margin-left: 3.2rem;
@@ -558,89 +558,89 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-  #hobbies {
+  #hobbies, #hobbies-lg-screen {
     display: none;
   }
 }
-#hobbies h1 {
+#hobbies h1, #hobbies-lg-screen h1 {
   color: #4F4F4F;
   font-weight: 500;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 760px) {
-  #hobbies h1 {
+  #hobbies h1, #hobbies-lg-screen h1 {
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #hobbies h1 {
+  #hobbies h1, #hobbies-lg-screen h1 {
     font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 1530px) {
-  #hobbies h1 {
+  #hobbies h1, #hobbies-lg-screen h1 {
     font-size: 1.5rem;
   }
 }
-#hobbies h2 {
+#hobbies h2, #hobbies-lg-screen h2 {
   color: #333333;
   font-size: 0.8rem;
   font-weight: 500;
   margin: 0.6rem 0 0.6rem 0;
 }
 @media screen and (min-width: 760px) {
-  #hobbies h2 {
+  #hobbies h2, #hobbies-lg-screen h2 {
     font-size: 1rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #hobbies h2 {
+  #hobbies h2, #hobbies-lg-screen h2 {
     font-size: 1.1rem;
   }
 }
-#hobbies p {
+#hobbies p, #hobbies-lg-screen p {
   color: #828282;
   font-weight: 500;
   font-size: 0.6rem;
 }
 @media screen and (min-width: 760px) {
-  #hobbies p {
+  #hobbies p, #hobbies-lg-screen p {
     font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #hobbies p {
+  #hobbies p, #hobbies-lg-screen p {
     font-size: 0.9rem;
   }
 }
-#hobbies .hobbies-img-wrapper {
+#hobbies .hobbies-img-wrapper, #hobbies-lg-screen .hobbies-img-wrapper {
   height: 6rem;
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
 }
 @media screen and (min-width: 480px) {
-  #hobbies .hobbies-img-wrapper {
+  #hobbies .hobbies-img-wrapper, #hobbies-lg-screen .hobbies-img-wrapper {
     height: 9rem;
   }
 }
 @media screen and (min-width: 760px) {
-  #hobbies .hobbies-img-wrapper {
+  #hobbies .hobbies-img-wrapper, #hobbies-lg-screen .hobbies-img-wrapper {
     height: 13rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #hobbies .hobbies-img-wrapper {
+  #hobbies .hobbies-img-wrapper, #hobbies-lg-screen .hobbies-img-wrapper {
     height: 11rem;
   }
 }
 @media screen and (min-width: 1530px) {
-  #hobbies .hobbies-img-wrapper {
+  #hobbies .hobbies-img-wrapper, #hobbies-lg-screen .hobbies-img-wrapper {
     height: 15rem;
   }
 }
-#hobbies .hobbies-img-wrapper img {
+#hobbies .hobbies-img-wrapper img, #hobbies-lg-screen .hobbies-img-wrapper img {
   height: 6rem;
   width: 100%;
   border-radius: 10px;
@@ -651,55 +651,55 @@ body {
   transition: all 0.3s;
   display: block;
 }
-#hobbies .hobbies-img-wrapper img:hover {
+#hobbies .hobbies-img-wrapper img:hover, #hobbies-lg-screen .hobbies-img-wrapper img:hover {
   scale: 1.05;
 }
 @media screen and (min-width: 400px) {
-  #hobbies .hobbies-img-wrapper img {
+  #hobbies .hobbies-img-wrapper img, #hobbies-lg-screen .hobbies-img-wrapper img {
     height: 9rem;
   }
 }
 @media screen and (min-width: 760px) {
-  #hobbies .hobbies-img-wrapper img {
+  #hobbies .hobbies-img-wrapper img, #hobbies-lg-screen .hobbies-img-wrapper img {
     height: 13rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  #hobbies .hobbies-img-wrapper img {
+  #hobbies .hobbies-img-wrapper img, #hobbies-lg-screen .hobbies-img-wrapper img {
     height: 13rem;
     width: 100%;
   }
-  #hobbies .hobbies-img-wrapper img:hover {
+  #hobbies .hobbies-img-wrapper img:hover, #hobbies-lg-screen .hobbies-img-wrapper img:hover {
     scale: 1.04;
   }
 }
 @media screen and (min-width: 1530px) {
-  #hobbies .hobbies-img-wrapper img {
+  #hobbies .hobbies-img-wrapper img, #hobbies-lg-screen .hobbies-img-wrapper img {
     height: 16rem;
   }
 }
-#hobbies .hobby-item {
+#hobbies .hobby-item, #hobbies-lg-screen .hobby-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-#hobbies .hobby-item#exercise {
+#hobbies .hobby-item#exercise, #hobbies-lg-screen .hobby-item#exercise {
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 760px) {
-  #hobbies .hobby-item#exercise {
+  #hobbies .hobby-item#exercise, #hobbies-lg-screen .hobby-item#exercise {
     margin-bottom: 3.5rem;
   }
 }
-#hobbies .hobby-item#reading {
+#hobbies .hobby-item#reading, #hobbies-lg-screen .hobby-item#reading {
   margin-bottom: 2rem;
 }
 @media screen and (min-width: 760px) {
-  #hobbies .hobby-item#reading {
+  #hobbies .hobby-item#reading, #hobbies-lg-screen .hobby-item#reading {
     margin-bottom: 3.5rem;
   }
 }
-#hobbies #exerciseimagecontainer {
+#hobbies #exerciseimagecontainer, #hobbies-lg-screen #exerciseimagecontainer {
   width: 100%;
 }
 
