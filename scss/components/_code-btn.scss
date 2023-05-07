@@ -6,18 +6,15 @@
     width: 5rem;
     outline: 1px solid $accent-blue;
     background-color: white;
+    color: $accent-blue;
 
     a {
-        color: $accent-blue;
         text-decoration: none;
     }
 
     &:hover {
         background-color: $accent-blue;
         outline: none;
-        a {
-            color: white;
-        }
+        color: white;
     }
-
 }
