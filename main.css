@@ -913,6 +913,7 @@ body {
   position: fixed;
   z-index: 3;
   top: 94.8vh;
+  top: 93vh;
   width: 315px;
   height: 70px;
   background-color: #2f80ed;
