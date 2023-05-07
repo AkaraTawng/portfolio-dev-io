@@ -5,18 +5,15 @@
     height: 2rem;
     width: 6rem;
     cursor: pointer;
+    color: white;
 
     a {
-        color: white;
         text-decoration: none;
     }
 
     &:hover {
         background-color: white;
         border: 1px solid $accent-blue;
-
-         a {
-            color: $accent-blue;
-         }
+        color: $accent-blue;
     }
 }

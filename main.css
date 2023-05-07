@@ -857,16 +857,14 @@ body {
   height: 2rem;
   width: 6rem;
   cursor: pointer;
+  color: white;
 }
 .demo a {
-  color: white;
   text-decoration: none;
 }
 .demo:hover {
   background-color: white;
   border: 1px solid #2f80ed;
-}
-.demo:hover a {
   color: #2f80ed;
 }
 
