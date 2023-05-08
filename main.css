@@ -920,6 +920,7 @@ body {
   #mobile-nav .navigation {
     width: 380px;
     top: 94.7vh;
+    top: 91vh;
   }
 }
 @media screen and (min-width: 480px) {
