@@ -13,7 +13,6 @@ footer {
     justify-content: center;
     align-items: center;
     color: $light-grey1;
-    z-index: -1;
     padding-top: 1rem;
     @include tablet {
        bottom: 2.5rem;
@@ -25,11 +24,15 @@ footer {
         bottom: 0;
     }
     
-    a {
-        font-weight: 600;
-        color: $light-grey1;
+    
+        a {
+             font-weight: 600;
+             cursor: pointer;
+       
         &:visited {
             color: $light-grey1;
+        } 
         }
-    }
+      
+    
 }
