@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="">
+    <a href="https://devchallenges.io/solutions/ozsuKnqYpfyzsD24cy7Z">
       Demo
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://chris-chamberlain-portfolio.netlify.app/">
       Site
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt">
       Challenge
     </a>
   </h3>
