@@ -32,9 +32,9 @@
                <!-- profile content -->
                 <section id="profile-bio" class="item-card"> 
                     <picture>
-                        <source type="avif" srcset="./img/siangtawng2.avif"/>
-                        <source type="" srcset="./img/siangtawng2.webp"/>
-                        <img id="profile-picture" class="animate__animated animate__backInDown" src="./img/siangtawng2.jpg" alt="picture of man standing in window">
+                        <source type="image/avif" srcset="./img/siangtawng2.avif" />
+                        <source type="image/webp" srcset="./img/siangtawng2.webp"/>
+                        <img id="profile-picture" class="animate__animated animate__backInDown" src="./img/siangtawng2.jpg" alt="picture of man standing in window" decoding="async">
                     </picture>
                     <div id="name-contact-container" class="animate__animated">
                         <div id="name-job-container">
@@ -67,7 +67,13 @@
                             <h1 class="animate__animated">Blog</h1>
                             <h2 class="animate__animated">How to organize your CSS</h2>
                         </div>
-                        <img src="./img/organizecss.jpg" alt="computer on desk" class="animate__animated">
+                        <!-- <img src="./img/organizecss.jpg" alt="computer on desk" class="animate__animated"> -->
+
+                        <picture>
+                            <source type="img/avif" srcset=".img/organizecss.avif">
+                            <source type="img/webp" srcset=".img/organizecss.webp">
+                            <img src="./img/organizecss.jpg" alt="computer on desk" class="animate__animated" decoding="async">
+                        </picture>
                     </div>
         
                     <p class="animate__animated">
@@ -121,6 +127,12 @@
                     <div class="experience-flex-container">
                         
                         <img id="asi" src="./img/asilogo.jpg" alt="art sphere incorporated company logo" class="animate__animated">
+                        <picture>
+                            <source type="img/avif" srcset="">
+                            <source type="img/avif" srcset="">
+                            <img id="asi" src="./img/asilogo.jpg" alt="art sphere incorporated company logo" class="animate__animated">
+                        </picture>
+
                         <div id="date-position-description-flex-container asi">
                             <div class="experience-item-header-info asi animate__animated">  
                                 <h1>Front-end Developer</h1>
