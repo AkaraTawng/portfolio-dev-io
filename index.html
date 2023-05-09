@@ -204,7 +204,14 @@
                     </div>
                     
                     <div class="experience-flex-container cambly">
-                        <img id="cambly" src="./img/camblylogo.png" alt="cambly company logo" class="animate__animated">
+                        <!-- <img id="cambly" src="./img/camblylogo.png" alt="cambly company logo" class="animate__animated"> -->
+
+                        <picture>
+                            <source type="img/avif" srcset="./img/camblylogo.avif">
+                            <source type="img/webp" srcset="./img/camblylogo.webp">
+                            <img id="cambly" src="./img/camblylogo.png" alt="cambly company logo" class="animate__animated" decoding="async" loading="lazy">
+                        </picture>
+
                         <div  id="date-position-description-flex-container">
                             <div class="experience-item-header-info animate__animated">
                                 <h1>ESL Teacher</h1>   
