@@ -280,7 +280,16 @@
                     </div>
         
                     <div class="hobby-item">
-                        <div class="hobbies-img-wrapper"> <img class="animate__animated hobby-item-image-even" src="./img/hobbycoding.jpg" alt="a computer on a desk with code on the screen"></div>
+                        <div class="hobbies-img-wrapper"> 
+                            <!-- <img class="animate__animated hobby-item-image-even" src="./img/hobbycoding.jpg" alt="a computer on a desk with code on the screen"> -->
+
+                            <picture>
+                                <source type="img/avif" srcset="./img/hobbycoding.avif">
+                                <source type="img/webp" srcset="./img/hobbycoding.webp">
+                                <img class="animate__animated hobby-item-image-even" src="./img/hobbycoding.jpg" alt="a computer on a desk with code on the screen" decoding="async" loading="lazy">
+                            </picture>
+                        
+                        </div>
                        
                         <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-even">
                             <h2>Coding</h2>
