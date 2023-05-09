@@ -617,7 +617,14 @@
                 </div>
                 
                 <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Portfolio"> 
-                    <img src="./img/project-item-old-portfolio.png" alt="chris chamberlain's old create react app portfolio site">
+                    <!-- <img src="./img/project-item-old-portfolio.png" alt="chris chamberlain's old create react app portfolio site shown in mobile and desktop versions"> -->
+
+                    <picture>
+                        <source type="img/avif" srcset="./img/project-item-old-portfolio.avif">
+                        <source type="img/webp" srcset="./img/project-item-old-portfolio.webp">
+                        <img src="./img/project-item-old-portfolio.png" alt="chris chamberlain's old create react app portfolio site shown in mobile and desktop versions">
+                    </picture>
+
                     <div class="project-item-text-content-container">
                         <span 
                         data-technology-filter-tags="React"  
