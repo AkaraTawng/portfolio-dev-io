@@ -704,8 +704,15 @@
         <section id="experiences" class="item-card">
             <h1>Experience</h1>  
             <div class="experience-flex-container">
-                <a href="https://artsphere.org/" target="_blank"><img id="asi" src="./img/asilogo.jpg" alt="art sphere incorporated company logo" class="animate__animated"></a>
+                <!-- <a href="https://artsphere.org/" target="_blank"><img id="asi" src="./img/asilogo.jpg" alt="art sphere incorporated company logo" class="animate__animated"></a> -->
                 
+                <picture>
+                    <source type="img/avif" srcset="./img/asilogo.avif">
+                    <source type="img/webp" srcset="./img/asilogo.webp">
+                    <a href="https://artsphere.org/" target="_blank"> 
+                        <img id="asi" src="./img/asilogo.jpg" alt="art sphere incorporated company logo" class="animate__animated" decoding="async">
+                    </a>
+                </picture>
                 <div id="date-position-description-flex-container asi">
                     <div class="experience-item-header-info asi animate__animated">
                         <h2>Feb 2023 - Present</h2>
