@@ -362,7 +362,14 @@
         
             <section id="project-items">
                 <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Image Gallery"> 
-                    <img src="./img/proj1.png" alt="project one">
+                    <!-- <img src="./img/project-item-image-gallery.png" alt="project one"> -->
+
+                    <picture>
+                        <source type="img/avif" srcset="./img/project-item-image-gallery.avif">
+                        <source type="img/webp" srcset="./img/project-item-image-gallery.webp">
+                        <img src="./img/project-item-image-gallery.png" alt="project one" decoding="async" loading="lazy">
+                    </picture>
+
                     <div class="project-item-text-content-container">
                         <span 
                         data-technology-filter-tags="HTML CSS SCSS JavaScript"  
