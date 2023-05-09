@@ -748,7 +748,16 @@
             </div>
         
             <div class="experience-flex-container yogojo">
-                <a href="https://yogojofoundation.com/" target="_blank"><img id="yogojo" src="./img/yogojologo2.png" alt="yogojo company logo" class="animate__animated"></a>
+                <!-- <a href="https://yogojofoundation.com/" target="_blank"><img id="yogojo" src="./img/yogojologo2.png" alt="yogojo company logo" class="animate__animated"></a> -->
+
+                <picture>
+                    <source type="image/avif" srcset="./img/yogojologo2.avif">
+                    <source type="image/webp" srcset="./img/yogojologo2.webp">
+                    <a href="https://yogojofoundation.com/" target="_blank">
+                        <img id="yogojo" src="./img/yogojologo2.png" alt="yogojo company logo" class="animate__animated" decoding="async" loading="lazy">
+                    </a>
+                </picture>
+                
                 <div id="date-position-description-flex-container">
                     <div class="experience-item-header-info animate__animated">
                         <h2>Feb 2023 - Present</h2>
