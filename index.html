@@ -399,7 +399,7 @@
                     <picture>
                         <source type="img/avif" srcset="./img/project-item-recipe-blog-post.avif">
                         <source type="img/webp" srcset="./img/project-item-recipe-blog-post.webp">
-                        <img src="./img/project-item-recipe-blog-post.png" alt="recipe blog post shown on mobile and desktop versions">
+                        <img src="./img/project-item-recipe-blog-post.png" alt="recipe blog post shown on mobile and desktop versions" decoding="async" loading="lazy">
                     </picture>
 
                     <div class="project-item-text-content-container">
@@ -426,7 +426,14 @@
                 </div>
                 
                 <div class="project-item-flex-container item-card project-odd animate__animated" data-type-filter-tags="Team Page"> 
-                    <img src="./img/project-item-team-page.png" alt="project one">
+                    <!-- <img src="./img/project-item-team-page.png" alt="team page shown on mobile and deskto versions"> -->
+
+                    <picture>
+                        <source type="img/avif" srcset="./img/project-item-team-page.avif">
+                        <source type="img/webp" srcset="./img/project-item-team-page.webp">
+                        <img src="./img/project-item-team-page.png" alt="team page shown on mobile and deskto versions" decoding="async" loading="lazy">
+                    </picture>
+
                     <div class="project-item-text-content-container">
                         <span 
                         data-technology-filter-tags="HTML CSS"  
