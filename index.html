@@ -841,7 +841,14 @@
 
             <div class="hobby-item" id="reading">
                 <div class="hobbies-img-wrapper">
-                    <img class="animate__animated hobby-item-image-odd" src="./img/hobbyreading.jpg" alt="girl looking at books on a bookshelf"> 
+                    <!-- <img class="animate__animated hobby-item-image-odd" src="./img/hobbyreading.jpg" alt="girl looking at books on a bookshelf">  -->
+
+                    <picture>
+                        <source type="img/avif" srcset="./img/hobbyreading.avif">
+                        <source type="img/webp" srcset="./img/hobbyreading.webp">
+                        <img class="animate__animated hobby-item-image-odd" src="./img/hobbyreading.jpg" alt="girl looking at books on a bookshelf" decoding="async" loading="lazy">
+                    </picture>
+                    
                 </div>
                    
                     <div class="hobby-item-title-description-container animate__animated hobby-item-text-content-odd">
