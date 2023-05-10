@@ -898,18 +898,6 @@
             <a href="#">dev.to</a>
 
         </section>
-
-        <!-- <section class="testimonials">
-           <div class="testimonial-card item-card">
-            <img src="./img/testimonial-1.jpg" alt="">
-            <h1>Steve Bezos</h1>
-            <h2>Art Sphere Inc.</h2>
-            <h3>Creative Director</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, sequi culpa, perspiciatis vitae in nam quia neque ex dolores nostrum dolorem ipsum amet laboriosam quam quod excepturi odit, possimus esse.</p>
-            <a class="social-icon" href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-           </div>
-        </section> -->
        
         <section class="testimonials">
            
@@ -920,7 +908,14 @@
                         <p>Christopher is a talented web developer and designer and dedicated volunteer with ASI. He organizes ideas and information with the user in mind with an international flare and awareness for good design. He is creative and works well as a team leader sharing his experience and knowledge with others. </p>
                         <hr>
                         <div class="testimonial-image-description-container">
-                            <img src="./img/testimonial-Kristin-Groenveld.jpeg" alt="close-up headshot selfie of woman">
+                            <!-- <img src="./img/testimonial-Kristin-Groenveld.jpeg" alt="close-up headshot selfie of woman"> -->
+                            
+                            <picture>
+                                <source type="img/avif" srcset="./img/testimonial-Kristin-Groenveld.avif">
+                                <source type="img/webp" srcset="./img/testimonial-Kristin-Groenveld.webp">
+                                <img src="./img/testimonial-Kristin-Groenveld.jpeg" alt="close-up headshot selfie of woman" decoding="async" loading="lazy">
+                            </picture>
+                            
                             <div class="testimonial-description-container">
                                 <h1>Kristin Groenveld</h1>
                                 <h2>Art Sphere Inc.</h2>
