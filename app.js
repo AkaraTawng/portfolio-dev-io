@@ -81,13 +81,13 @@ const screenWidth = document.documentElement.clientWidth;
 
 /* header highlights animation */
 
-headerHighlights.forEach((highlight) => { 
-    setTimeout(() => {
-        highlight.classList.add('animate__pulse');
-        highlight.style.color = "#2f80ed";
-        highlight.style.fontWeight = 600;
-    }, 3000);
-});
+// headerHighlights.forEach((highlight) => { 
+//     setTimeout(() => {
+//         highlight.classList.add('animate__pulse');
+//         highlight.style.color = "#2f80ed";
+//         highlight.style.fontWeight = 600;
+//     }, 3000);
+// });
 
 /* project counter */
 let projectsArray = [];
@@ -208,23 +208,6 @@ setTimeout(() => {
     nameContactContainer.style.opacity = 1;
     bioContainer.classList.add('animate__fadeInUp')
 }, 1400);
-
-
-/* scroll animations */
-
-/* tag counter slide in left */
-// const tagCounterHeaderObserver = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting){
-//         entry.target.style.opacity = 1;
-//         entry.target.classList.add('animate__slideInLeft'); 
-//         tagCounterHeaderObserver.unobserve(tagCounterHeader);
-//         };
-//     });
-// }, {
-//     threshold: 1,
-//     rootMargin: '32px'
-// });
 
 const tagCounterHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -454,7 +437,6 @@ hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
 
 
 /* blog title text content intersection observer scroll animation */
-
 const blogTitleTextContentSmallScreenObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -497,7 +479,6 @@ blogImage.forEach(item => {
 });
 
 
-
 const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -523,7 +504,6 @@ experienceItemHeaderInfoArray.forEach(item => experienceItemHeaderInfoObserver.o
 );
 
 /* testimonials intersection oberserver */
-
 const testimonialsCarouselObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -607,9 +587,7 @@ list.forEach(item => {
 });
 
 
-
 /* owl carousel */
-
 $(document).ready(function(){
     $('.carousel-container').owlCarousel({
         loop:true,
@@ -632,7 +610,6 @@ $(document).ready(function(){
 })
 
 /* show mobile nav when page scrolled down */
-
 window.onscroll = function(){
     scroll();
 };
