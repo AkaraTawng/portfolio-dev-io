@@ -98,17 +98,7 @@ header {
 
         #bio-container {
             opacity: 0;
-            .bio-span {
-                // color: $accent-blue;
-                color: $light-grey1;
-                font-weight: 400;
-                font-size: .8rem;
-                display: inline-block;
-                transition: all 1s;
-                @include laptop {
-                    font-size: 1.1rem;
-                }
-            }
+          
             p {
                 color: $light-grey1;
                 font-size: .7rem;
@@ -124,6 +114,22 @@ header {
 
         #name-contact-container {
             opacity: 0;
+        }
+    }
+
+    #social-links-container {
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+        margin: 2rem 0 0 0;
+        a {
+            color: $dark-grey1;
+            font-size: 1.5rem; 
+
+            &:hover {
+                color: lighten($dark-grey1, 10%);
+                transform: scale(1.05);
+            }
         }
     }
 }

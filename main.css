@@ -135,18 +135,6 @@ header #profile-bio #contact-info-container #phone-container a {
 header #profile-bio #bio-container {
   opacity: 0;
 }
-header #profile-bio #bio-container .bio-span {
-  color: #828282;
-  font-weight: 400;
-  font-size: 0.8rem;
-  display: inline-block;
-  transition: all 1s;
-}
-@media screen and (min-width: 1280px) {
-  header #profile-bio #bio-container .bio-span {
-    font-size: 1.1rem;
-  }
-}
 header #profile-bio #bio-container p {
   color: #828282;
   font-size: 0.7rem;
@@ -162,6 +150,20 @@ header #profile-bio #bio-container p {
 }
 header #profile-bio #name-contact-container {
   opacity: 0;
+}
+header #social-links-container {
+  display: flex;
+  justify-content: space-between;
+  width: 10%;
+  margin: 2rem 0 0 0;
+}
+header #social-links-container a {
+  color: #4F4F4F;
+  font-size: 1.5rem;
+}
+header #social-links-container a:hover {
+  color: dimgray;
+  transform: scale(1.05);
 }
 
 * {
