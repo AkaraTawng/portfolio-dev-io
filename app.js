@@ -36,23 +36,23 @@ const hobbyItemsTextContentEven = document.querySelectorAll('.hobby-item-text-co
 
 const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
 
-const blogTitleTextContentSmallScreen = document.querySelector('.title-text-flex-container.small-screen').children;
+// const blogTitleTextContentSmallScreen = document.querySelector('.title-text-flex-container.small-screen').children;
 
-/* convert blogTitleTextContent HTMLCollection to array */
-const blogTitleTextContentSmallScreenArray = Array.from(blogTitleTextContentSmallScreen);
+// /* convert blogTitleTextContent HTMLCollection to array */
+// const blogTitleTextContentSmallScreenArray = Array.from(blogTitleTextContentSmallScreen);
 
-const blogTitleTextContentLargeScreen = document.querySelector('#title-text-flex-container.lg-screen').children;
+// const blogTitleTextContentLargeScreen = document.querySelector('#title-text-flex-container.lg-screen').children;
 
-const blogTitleTextContentLargeScreenArray = Array.from(blogTitleTextContentLargeScreen);
+// const blogTitleTextContentLargeScreenArray = Array.from(blogTitleTextContentLargeScreen);
 
-// console.log(blogLgTitleArray)
+// // console.log(blogLgTitleArray)
 
-const blogImage = document.querySelectorAll('.blog img');
+// const blogImage = document.querySelectorAll('.blog img');
 
-const blogPostShortDescription = document.querySelectorAll('.blog p');
+// const blogPostShortDescription = document.querySelectorAll('.blog p');
 
-/* convert blogPostShortDescriptions nodelist to array */
-const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
+// /* convert blogPostShortDescriptions nodelist to array */
+// const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
 
 const workExperienceImagesNodelist = document.querySelectorAll('.experience-flex-container img');
 
@@ -435,58 +435,58 @@ hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
 
 
 /* blog title text content intersection observer scroll animation */
-const blogTitleTextContentSmallScreenObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('animate__fadeInUp');//blogTitleTextContentObserver.unobserve(entry);
-        };
+// const blogTitleTextContentSmallScreenObserver = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting){
+//             entry.target.classList.add('animate__fadeInUp');//blogTitleTextContentObserver.unobserve(entry);
+//         };
         
-    });
+//     });
     
-});
+// });
 
-blogTitleTextContentSmallScreenArray.forEach(item => blogTitleTextContentSmallScreenObserver.observe(item));
+// blogTitleTextContentSmallScreenArray.forEach(item => blogTitleTextContentSmallScreenObserver.observe(item));
 
-const blogTitleTextContentLargeScreenObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('animate__fadeInUp');
-            blogTitleTextContentLargeScreenObserver.unobserve(entry.target);
-        }
-    })
-})
+// const blogTitleTextContentLargeScreenObserver = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting){
+//             entry.target.classList.add('animate__fadeInUp');
+//             blogTitleTextContentLargeScreenObserver.unobserve(entry.target);
+//         }
+//     })
+// })
 
-blogTitleTextContentLargeScreenArray.forEach(item => {
-    blogTitleTextContentLargeScreenObserver.observe(item);
-});
+// blogTitleTextContentLargeScreenArray.forEach(item => {
+//     blogTitleTextContentLargeScreenObserver.observe(item);
+// });
 
-const blogImageObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('animate__flipInY');
-            entry.target.style.opacity = 1;
-            blogImageObserver.unobserve(blogImage);
-        };
-    });
-}, {
-    threshold: 0.5
-});
+// const blogImageObserver = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting){
+//             entry.target.classList.add('animate__flipInY');
+//             entry.target.style.opacity = 1;
+//             blogImageObserver.unobserve(blogImage);
+//         };
+//     });
+// }, {
+//     threshold: 0.5
+// });
 
-blogImage.forEach(item => {
-    blogImageObserver.observe(item);
-});
+// blogImage.forEach(item => {
+//     blogImageObserver.observe(item);
+// });
 
 
-const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('animate__fadeInUp')
-            blogPostShortDescriptionObserver.unobserve(blogPostShortDescriptionArray);
-        };
-    });
-});
+// const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting){
+//             entry.target.classList.add('animate__fadeInUp')
+//             blogPostShortDescriptionObserver.unobserve(blogPostShortDescriptionArray);
+//         };
+//     });
+// });
 
-blogPostShortDescriptionArray.forEach(item => blogPostShortDescriptionObserver.observe(item));
+// blogPostShortDescriptionArray.forEach(item => blogPostShortDescriptionObserver.observe(item));
 
 
 const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
@@ -620,15 +620,21 @@ function scroll() {
     }
 }
 
-
-
+const quotesContainer = document.querySelector('#quotes');
 $.ajax({
     method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/quotes?category',
+    url: 'https://api.api-ninjas.com/v1/quotes?category=happiness',
     headers: { 'X-Api-Key': 'ZfbIMrJw+PzBWtEP4PEODg==AgbCsJCapOOD8PMZ'},
     contentType: 'application/json',
-    success: function(result) {
-        console.log(result);
+    success: function(results) {
+        // console.log(result);
+        results.forEach(result => {
+           quotesContainer.innerHTML += `
+            <h1>Quote of the Day</h1>
+            <p id="quote-text">${result.quote}</p>
+            <p id="author"> - ${result.author}</p>
+           `;
+        });
     },
     error: function ajaxError(jqXHR) {
         console.error('Error: ', jqXHR.responseText);
