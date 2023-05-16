@@ -624,34 +624,43 @@ function scroll() {
 
 
 /* call once a week - change value of randomCategory */
-let category; 
+
 const randomCategory = () => {
-    // let currentDate = new Date();
-    // let currentDay = currentDate.getDay();
-    // if(currentDay === 7){
-        
+    // let newRandomCategory = ''; 
+    // let previousRandomCategory = newRandomCategory;   
+    // let currentDay = new Date().getDay();
+
+    // if(newRandomCategory === ''){
+    //     newRandomCategory = (categories[Math.floor(Math.random() * categeories.length)]);
+    // } 
+    // else if (newRandomCategory !== ''){
+    //     previousRandomCategory = newRandomCategory;
     // }
-    // console.log(currentDay)
-    category = (categories[Math.floor(Math.random() * categeories.length)])
-    return category;
- 
+    // console.log(newRandomCategory)
+
+    // console.log(previousRandomCategory)
+    
+    
+    // if(currentDay === 7){
+    //     return newRandomCategory = (categories[Math.floor(Math.random() * categeories.length)]);
+    // } 
+    // return previousRandomCategory;
 }
-randomCategory();
 
 
 const quotesContainer = document.querySelector('#quotes');
 
+let category = (categories[Math.floor(Math.random() * categeories.length)]);
 /* call every time page is reloaded */
 const displayQuote = () => {
-console.log(category)
-
+    // console.log(c)
     $.ajax({
     method: 'GET',
     url: `https://api.api-ninjas.com/v1/quotes?category=${category}`,
     headers: { 'X-Api-Key': 'ZfbIMrJw+PzBWtEP4PEODg==AgbCsJCapOOD8PMZ'},
     contentType: 'application/json',
     success: function(results) {
-        console.log(results);
+        // console.log(results);
         results.forEach(result => {
            quotesContainer.innerHTML += `
             <h1>Quote of the Day</h1>
@@ -665,6 +674,6 @@ console.log(category)
     }
 });
 }
-displayQuote(randomCategory);
+displayQuote();
 
 
