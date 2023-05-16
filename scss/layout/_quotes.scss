@@ -1,0 +1,21 @@
+#quotes {
+
+    margin-bottom: 5rem;
+    h1 {
+        color: $dark-grey1;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    p {
+        color: $light-grey1;
+        
+        &#quote-text {
+            margin: 2rem 0;
+        }
+
+        &#author {
+            text-align: center;
+        }
+    }
+}

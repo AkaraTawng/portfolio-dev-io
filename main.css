@@ -1369,4 +1369,21 @@ body {
     width: 104%;
     overflow: hidden;
   }
+}
+#quotes {
+  margin-bottom: 5rem;
+}
+#quotes h1 {
+  color: #4F4F4F;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+#quotes p {
+  color: #828282;
+}
+#quotes p#quote-text {
+  margin: 2rem 0;
+}
+#quotes p#author {
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

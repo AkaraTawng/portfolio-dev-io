@@ -632,7 +632,7 @@ $.ajax({
            quotesContainer.innerHTML += `
             <h1>Quote of the Day</h1>
             <p id="quote-text">${result.quote}</p>
-            <p id="author"> - ${result.author}</p>
+            <p id="author"> - ${result.author} - </p>
            `;
         });
     },
