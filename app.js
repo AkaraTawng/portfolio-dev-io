@@ -1,4 +1,5 @@
 // const skillBars = document.querySelectorAll('.fade-in');
+import categeories from './quoteCategories.js';
 const technologyFilterTags = document.querySelectorAll('#technology-filter-tags-container ul li button');
 const technologyFilterAllTag = document.querySelector('#technology-all-tag');
 const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
@@ -620,6 +621,8 @@ function scroll() {
     }
 }
 
+
+
 const quotesContainer = document.querySelector('#quotes');
 $.ajax({
     method: 'GET',
@@ -627,7 +630,7 @@ $.ajax({
     headers: { 'X-Api-Key': 'ZfbIMrJw+PzBWtEP4PEODg==AgbCsJCapOOD8PMZ'},
     contentType: 'application/json',
     success: function(results) {
-        // console.log(result);
+        console.log(results);
         results.forEach(result => {
            quotesContainer.innerHTML += `
             <h1>Quote of the Day</h1>
