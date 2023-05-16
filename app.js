@@ -1,4 +1,5 @@
 // const skillBars = document.querySelectorAll('.fade-in');
+import categories from './quoteCategories.js';
 import categeories from './quoteCategories.js';
 const technologyFilterTags = document.querySelectorAll('#technology-filter-tags-container ul li button');
 const technologyFilterAllTag = document.querySelector('#technology-all-tag');
@@ -622,11 +623,31 @@ function scroll() {
 }
 
 
+/* call once a week - change value of randomCategory */
+let category; 
+const randomCategory = () => {
+    // let currentDate = new Date();
+    // let currentDay = currentDate.getDay();
+    // if(currentDay === 7){
+        
+    // }
+    // console.log(currentDay)
+    category = (categories[Math.floor(Math.random() * categeories.length)])
+    return category;
+ 
+}
+randomCategory();
+
 
 const quotesContainer = document.querySelector('#quotes');
-$.ajax({
+
+/* call every time page is reloaded */
+const displayQuote = () => {
+console.log(category)
+
+    $.ajax({
     method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/quotes?category=happiness',
+    url: `https://api.api-ninjas.com/v1/quotes?category=${category}`,
     headers: { 'X-Api-Key': 'ZfbIMrJw+PzBWtEP4PEODg==AgbCsJCapOOD8PMZ'},
     contentType: 'application/json',
     success: function(results) {
@@ -643,4 +664,7 @@ $.ajax({
         console.error('Error: ', jqXHR.responseText);
     }
 });
+}
+displayQuote(randomCategory);
+
 

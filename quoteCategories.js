@@ -57,7 +57,6 @@ const categories = [
     "men",
     "money",
     "morning",
-    "movies",
     "success",
 ];
 
