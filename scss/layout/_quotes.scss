@@ -1,17 +1,30 @@
 #quotes {
-
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 3rem 2rem;
+height: 91%;
     margin-bottom: 5rem;
+    @include tablet {
+        padding: 4rem;
+    }
     h1 {
         color: $dark-grey1;
         font-weight: 500;
         font-size: 1.2rem;
+        align-self: center;
+        @include tablet {
+            font-size: 1.5rem;
+            align-self: center;
+        }
     }
 
     p {
         color: $light-grey1;
         
         &#quote-text {
-            margin: 2rem 0;
+            margin: 4rem 0;
+            line-height: 2rem;
         }
 
         &#author {
