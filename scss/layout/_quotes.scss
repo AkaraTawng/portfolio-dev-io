@@ -5,9 +5,17 @@
     padding: 3rem 2rem;
     height: 91%;
     margin-bottom: 5rem;
-   
+   &.quote-lg-screen {
+    display: none;
+   }
     @include tablet {
         padding: 4rem;
+    }
+    @include laptop {
+        display: none;
+        &.quote-lg-screen {
+            display: flex;
+        }
     }
   
     h1 {

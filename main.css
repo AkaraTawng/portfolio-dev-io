@@ -1376,9 +1376,20 @@ body {
   height: 91%;
   margin-bottom: 5rem;
 }
+#quotes.quote-lg-screen {
+  display: none;
+}
 @media screen and (min-width: 760px) {
   #quotes {
     padding: 4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #quotes {
+    display: none;
+  }
+  #quotes.quote-lg-screen {
+    display: flex;
   }
 }
 #quotes h1 {
