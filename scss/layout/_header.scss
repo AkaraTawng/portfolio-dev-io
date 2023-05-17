@@ -120,10 +120,8 @@ header {
     #social-links-container {
         display: flex;
         justify-content: space-between;
-        width: 23%;
-        @include tablet {
-            width: 10%;
-        }
+        width: 40%;
+        width: 8rem;
         margin: 2rem 0 0 0;
         a {
             color: $dark-grey1;

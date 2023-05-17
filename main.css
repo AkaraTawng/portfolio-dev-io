@@ -154,13 +154,9 @@ header #profile-bio #name-contact-container {
 header #social-links-container {
   display: flex;
   justify-content: space-between;
-  width: 23%;
+  width: 40%;
+  width: 8rem;
   margin: 2rem 0 0 0;
-}
-@media screen and (min-width: 760px) {
-  header #social-links-container {
-    width: 10%;
-  }
 }
 header #social-links-container a {
   color: #4F4F4F;
@@ -1371,18 +1367,36 @@ body {
   }
 }
 #quotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 2rem;
+  height: 91%;
   margin-bottom: 5rem;
+}
+@media screen and (min-width: 760px) {
+  #quotes {
+    padding: 4rem;
+  }
 }
 #quotes h1 {
   color: #4F4F4F;
   font-weight: 500;
   font-size: 1.2rem;
+  align-self: center;
+}
+@media screen and (min-width: 760px) {
+  #quotes h1 {
+    font-size: 1.5rem;
+    align-self: center;
+  }
 }
 #quotes p {
   color: #828282;
 }
 #quotes p#quote-text {
-  margin: 2rem 0;
+  margin: 4rem 0;
+  line-height: 2rem;
 }
 #quotes p#author {
   text-align: center;
