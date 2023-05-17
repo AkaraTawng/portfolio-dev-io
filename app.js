@@ -94,7 +94,7 @@ let projectsArray = [];
 
    /* add click event listener to every type filter button and call showHideProjects function on click */
 typeFilterButtons.forEach(button => {
-    button.addEventListener("click", (event) => {
+    button.addEventListener("mousedown", (event) => {
        showHideProjects(event);
     });
 });
@@ -121,7 +121,7 @@ if(typeFilterAllTag.classList.contains('active')){
 }; 
 
 /* show all projects when all type tag clicked */
-typeFilterAllTag.addEventListener('click', () => {
+typeFilterAllTag.addEventListener('mousedown', () => {
     showAllProjects();
 
     /* display tag counter as 9 when all tag clicked */
@@ -174,8 +174,29 @@ const showHideProjects = (event) => {
 };
 
 //add & remove active class for type filter tags
+// typeFilterTags.forEach(typeFilterTag => {
+//     typeFilterTag.onclick = function() {
+//         if(typeFilterAllTag.classList.contains('active')){
+//             typeFilterAllTag.classList.remove('active')
+//             typeFilterTag.classList.toggle('active')
+//         }
+           
+//         else if (!typeFilterAllTag.classList.contains('active') && typeFilterTag.innerHTML === typeFilterAllTag.innerHTML) {
+//             typeFilterTags.forEach(tag => {
+//                 tag.classList.remove('active')
+//             });
+
+//             typeFilterAllTag.classList.add('active');
+//         }
+        
+//         else if (!typeFilterAllTag.classList.contains('active')) {
+//             typeFilterTag.classList.toggle('active')
+//         }; 
+//     };
+// });
+
 typeFilterTags.forEach(typeFilterTag => {
-    typeFilterTag.onclick = function() {
+    typeFilterTag.onmousedown = function() {
         if(typeFilterAllTag.classList.contains('active')){
             typeFilterAllTag.classList.remove('active')
             typeFilterTag.classList.toggle('active')
@@ -434,61 +455,6 @@ const hobbyItemTextContentOddObserver = new IntersectionObserver(entries => {
 });
 
 hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
-
-
-/* blog title text content intersection observer scroll animation */
-// const blogTitleTextContentSmallScreenObserver = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting){
-//             entry.target.classList.add('animate__fadeInUp');//blogTitleTextContentObserver.unobserve(entry);
-//         };
-        
-//     });
-    
-// });
-
-// blogTitleTextContentSmallScreenArray.forEach(item => blogTitleTextContentSmallScreenObserver.observe(item));
-
-// const blogTitleTextContentLargeScreenObserver = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting){
-//             entry.target.classList.add('animate__fadeInUp');
-//             blogTitleTextContentLargeScreenObserver.unobserve(entry.target);
-//         }
-//     })
-// })
-
-// blogTitleTextContentLargeScreenArray.forEach(item => {
-//     blogTitleTextContentLargeScreenObserver.observe(item);
-// });
-
-// const blogImageObserver = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting){
-//             entry.target.classList.add('animate__flipInY');
-//             entry.target.style.opacity = 1;
-//             blogImageObserver.unobserve(blogImage);
-//         };
-//     });
-// }, {
-//     threshold: 0.5
-// });
-
-// blogImage.forEach(item => {
-//     blogImageObserver.observe(item);
-// });
-
-
-// const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting){
-//             entry.target.classList.add('animate__fadeInUp')
-//             blogPostShortDescriptionObserver.unobserve(blogPostShortDescriptionArray);
-//         };
-//     });
-// });
-
-// blogPostShortDescriptionArray.forEach(item => blogPostShortDescriptionObserver.observe(item));
 
 
 const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
