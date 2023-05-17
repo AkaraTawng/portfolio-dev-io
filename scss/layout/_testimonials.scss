@@ -9,6 +9,10 @@
         }
     }
 
+@include tablet {
+    padding-bottom: 6rem;
+}
+
 @include laptop{
     display: none;
 }
@@ -20,10 +24,8 @@
         padding-top: 6rem;
         height: auto;
         width: 100%;
+        padding-bottom: 0rem;
     }
-    // @include desktop-m {
-    //     height: 45rem;
-    // }
 }
 
 margin-bottom: 4rem;
