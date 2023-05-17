@@ -1395,6 +1395,7 @@ body {
 }
 #quotes p {
   color: #828282;
+  text-align: center;
 }
 #quotes p#quote-text {
   margin: 4rem 0;
