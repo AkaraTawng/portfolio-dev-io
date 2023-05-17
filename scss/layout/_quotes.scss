@@ -1,13 +1,15 @@
 #quotes {
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 3rem 2rem;
-height: 91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem;
+    height: 91%;
     margin-bottom: 5rem;
+   
     @include tablet {
         padding: 4rem;
     }
+  
     h1 {
         color: $dark-grey1;
         font-weight: 500;

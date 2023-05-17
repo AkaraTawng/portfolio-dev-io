@@ -648,7 +648,7 @@ const randomCategory = () => {
 }
 
 
-const quotesContainer = document.querySelector('#quotes');
+const quotesContainers = document.querySelectorAll('#quotes');
 
 let category = (categories[Math.floor(Math.random() * categeories.length)]);
 /* call every time page is reloaded */
@@ -660,13 +660,14 @@ const displayQuote = () => {
     headers: { 'X-Api-Key': 'ZfbIMrJw+PzBWtEP4PEODg==AgbCsJCapOOD8PMZ'},
     contentType: 'application/json',
     success: function(results) {
-        // console.log(results);
         results.forEach(result => {
-           quotesContainer.innerHTML += `
-            <h1>Quote of the Day</h1>
-            <p id="quote-text">${result.quote}</p>
-            <p id="author"> - ${result.author} - </p>
-           `;
+            quotesContainers.forEach(quoteContainer => {
+                quoteContainer.innerHTML += `
+                <h1>Quote of the Day</h1>
+                <p id="quote-text">${result.quote}</p>
+                <p id="author"> - ${result.author} - </p>
+            `;
+            })
         });
     },
     error: function ajaxError(jqXHR) {
