@@ -41,7 +41,7 @@
 ![fully responsive ui gif](./gifs/readme-scroll-animations.gif)
 
 ## Custom built filter for projects
-![fully responsive ui gif](./gifs/readme-project-filter.mp4)
+![fully responsive ui gif](./gifs/readme-project-filter.gif)
 
 ## Automatic testimonial slider implemented with JQuery's Owl Carousel
 ![fully responsive ui gif](./gifs/readme-testimonials.gif)
