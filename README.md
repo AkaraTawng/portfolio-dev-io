@@ -38,6 +38,7 @@
 ![fully responsive ui gif](./img/readme-quote-feature.png)
 
 ## scroll animations implemented with JavaScript's Intersection Observer API
+![fully responsive ui gif](./gifs/readme-scroll-animations.mp4)
 ## Custom build filter for projects
 ## Automatic testimonial slider implemented with JQuery's Owl Slider 
 
