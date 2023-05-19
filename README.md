@@ -56,6 +56,7 @@
 - SCSS
 - JavaScript
 - JQuery
+- API Ninja
 
 
 ## Features
