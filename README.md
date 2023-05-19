@@ -8,10 +8,6 @@
 
 <div align="center">
   <h3>
-    <a href="https://devchallenges.io/solutions/ozsuKnqYpfyzsD24cy7Z">
-      Demo
-    </a>
-    <span> | </span>
     <a href="https://chris-chamberlain-portfolio.netlify.app/">
       Site
     </a>
@@ -41,12 +37,12 @@
 
 
 
+- Quote of the day feature via integration of apininja's quote api 
+- scroll animations implemented with JavaScript's Intersection Observer API
+- Custom build filter for projects
+- Automatic testimonial slider implemented with JQuery's Owl Slider 
 
-
-
-- Go to live [site](https://my-team-page-chris-cham.netlify.app/)
-- See the demo [here](https://devchallenges.io/solutions/tYfAaAPolbMB87S4dKbz)
-- Implementing the filter functionality in the project section was by far the most challenging part of this project. The behavior has a lot of complexity and required a lot of careful thought to visualize the full range of requirements and lots of patience when experimenting. Eventually, line by line, the function came together and full filter functionality was achieved.
+- Go to live [site](https://chris-chamberlain-portfolio.netlify.app/)
 
 ### Built With
 
