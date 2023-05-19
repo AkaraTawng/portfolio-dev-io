@@ -52,7 +52,7 @@ I developed this portfolio page as a submission to a [DevChallenges](https://dev
 ## Quote of the day feature via integration of API Ninja's quote API 
 ![fully responsive ui gif](./img/readme-quote-feature.png)
 
-## scroll animations implemented with JavaScript's Intersection Observer API
+## Scroll animations implemented with JavaScript's Intersection Observer API
 ![fully responsive ui gif](./gifs/readme-scroll-animations.gif)
 
 ## Custom built filter for projects
