@@ -40,7 +40,7 @@
 ## scroll animations implemented with JavaScript's Intersection Observer API
 ![fully responsive ui gif](./gifs/readme-scroll-animations.gif)
 
-## Custom build filter for projects
+## Custom built filter for projects
 ![fully responsive ui gif](./gifs/readme-project-filter.mp4)
 
 ## Automatic testimonial slider implemented with JQuery's Owl Carousel
@@ -54,6 +54,7 @@
 
 - HTML
 - SCSS
+- JavaScript
 
 
 ## Features
