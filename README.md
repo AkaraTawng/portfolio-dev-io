@@ -32,22 +32,19 @@
 ## Overview
 
 ### Fully Responsive UI
-![fully responsive ui gif](./gifs/giftest.gif)
+![fully responsive ui gif](./gifs/readme-responsive-ui.gif)
 
 ## Quote of the day feature via integration of API Ninja's quote API 
 ![fully responsive ui gif](./img/readme-quote-feature.png)
 
 ## scroll animations implemented with JavaScript's Intersection Observer API
-![fully responsive ui gif](./gifs/readme-scroll-animations.mp4)
+![fully responsive ui gif](./gifs/readme-scroll-animations.gif)
 
 ## Custom build filter for projects
 ![fully responsive ui gif](./gifs/readme-project-filter.mp4)
 
-## test 
-![fully responsive ui gif](./gifs/)
-
 ## Automatic testimonial slider implemented with JQuery's Owl Carousel
-![fully responsive ui gif](./gifs/readme-testimonials.mp4)
+![fully responsive ui gif](./gifs/readme-testimonials.gif)
 
 - Go to live [site](https://chris-chamberlain-portfolio.netlify.app/)
 
