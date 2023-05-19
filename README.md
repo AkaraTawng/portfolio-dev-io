@@ -39,8 +39,11 @@
 
 ## scroll animations implemented with JavaScript's Intersection Observer API
 ![fully responsive ui gif](./gifs/readme-scroll-animations.mp4)
+
 ## Custom build filter for projects
-## Automatic testimonial slider implemented with JQuery's Owl Slider 
+
+## Automatic testimonial slider implemented with JQuery's Owl Carousel
+![fully responsive ui gif](./gifs/readme-testimonials.mp4)
 
 - Go to live [site](https://chris-chamberlain-portfolio.netlify.app/)
 
