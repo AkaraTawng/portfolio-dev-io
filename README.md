@@ -32,7 +32,7 @@
 ## Overview
 
 ### Fully Responsive UI
-![fully responsive ui gif](./gifs/readme-responsive-ui.mp4)
+![fully responsive ui gif](./gifs/giftest.gif)
 
 ## Quote of the day feature via integration of API Ninja's quote API 
 ![fully responsive ui gif](./img/readme-quote-feature.png)
