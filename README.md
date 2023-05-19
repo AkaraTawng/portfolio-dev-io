@@ -30,8 +30,23 @@
 <!-- OVERVIEW -->
 
 ## Overview
+I developed this portfolio page as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories and replicate the provided Figma design. I then customised it to fit my own needs.
 
-### Fully Responsive UI
+
+### Built With
+
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
+
+- HTML
+- SCSS
+- JavaScript
+- JQuery
+- API Ninja
+
+
+## Features
+
+## Fully Responsive UI
 ![fully responsive ui gif](./gifs/readme-responsive-ui.gif)
 
 ## Quote of the day feature via integration of API Ninja's quote API 
@@ -47,24 +62,6 @@
 ![fully responsive ui gif](./gifs/readme-testimonials.gif)
 
 - Go to live [site](https://chris-chamberlain-portfolio.netlify.app/)
-
-### Built With
-
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- HTML
-- SCSS
-- JavaScript
-- JQuery
-- API Ninja
-
-
-## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
-I developed this team page as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories and replicate the provided Figma design.
-
 
 ## How To Use
 
