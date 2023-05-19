@@ -32,7 +32,7 @@
 ## Overview
 
 ### Fully Responsive UI
-![fully responsive ui gif](.)
+![fully responsive ui gif](./gifs/readme-responsive-ui.mp4)
 
 
 
