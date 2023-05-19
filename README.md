@@ -55,6 +55,7 @@
 - HTML
 - SCSS
 - JavaScript
+- JQuery
 
 
 ## Features
