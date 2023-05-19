@@ -721,10 +721,6 @@ body {
 #project-tags .project-even {
   display: none;
 }
-#project-tags .active {
-  background-color: #2f80ed;
-  color: white;
-}
 #project-tags h1, #project-tags h2, #project-tags h3 {
   color: #4F4F4F;
   font-weight: 400;
@@ -800,6 +796,10 @@ body {
     border: solid #2f80ed 1px;
     background-color: white;
   }
+}
+#project-tags .active {
+  background-color: #2f80ed;
+  color: white;
 }
 
 .project-odd,

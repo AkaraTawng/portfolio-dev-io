@@ -94,7 +94,7 @@ let projectsArray = [];
 
    /* add click event listener to every type filter button and call showHideProjects function on click */
 typeFilterButtons.forEach(button => {
-    button.addEventListener("touchstart", (event) => {
+    button.addEventListener("pointerdown", (event) => {
        showHideProjects(event);
     });
 });
@@ -121,7 +121,7 @@ if(typeFilterAllTag.classList.contains('active')){
 }; 
 
 /* show all projects when all type tag clicked */
-typeFilterAllTag.addEventListener('touchstart', () => {
+typeFilterAllTag.addEventListener('pointerdown', () => {
     showAllProjects();
 
     /* display tag counter as 9 when all tag clicked */
@@ -196,7 +196,7 @@ const showHideProjects = (event) => {
 // });
 
 typeFilterTags.forEach(typeFilterTag => {
-    typeFilterTag.ontouchstart = function() {
+    typeFilterTag.onpointerup = function() {
         if(typeFilterAllTag.classList.contains('active')){
             typeFilterAllTag.classList.remove('active')
             typeFilterTag.classList.toggle('active')
