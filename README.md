@@ -59,7 +59,7 @@ I developed this portfolio page as a submission to a [DevChallenges](https://dev
 ![fully responsive ui gif](./gifs/readme-project-filter.gif)
 
 ## Automatic testimonial slider implemented with JQuery's Owl Carousel
-![fully responsive ui gif](./gifs/readme-testimonials.gif)
+![fully responsive ui gif](./gifs/readme-testimonials-slider.gif)
 
 - Go to live [site](https://chris-chamberlain-portfolio.netlify.app/)
 
