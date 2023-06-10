@@ -157,7 +157,7 @@ header #social-links-container {
   justify-content: space-between;
   width: 40%;
   width: 8rem;
-  margin: 2rem 0 0 0;
+  margin: 4rem 0 0 0;
 }
 header #social-links-container .tooltip-container {
   position: relative;
@@ -165,8 +165,11 @@ header #social-links-container .tooltip-container {
 header #social-links-container .tooltip-container .tooltip-text {
   position: absolute;
   visibility: hidden;
-  bottom: -1rem;
-  left: -1rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 15px;
+  border: solid 1px #2f80ed;
+  top: -3rem;
+  left: -1.7rem;
 }
 header #social-links-container .tooltip-container:hover .tooltip-text {
   visibility: visible;
