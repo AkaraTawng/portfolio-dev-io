@@ -123,6 +123,29 @@ header {
         width: 40%;
         width: 8rem;
         margin: 2rem 0 0 0;
+        
+        
+        .tooltip-container {
+            position: relative;
+           
+            .tooltip-text {
+                position: absolute;
+                visibility: hidden;
+                bottom: -1rem;
+                left: -1rem;
+            }
+        
+            &:hover .tooltip-text {
+                // color: blue;
+                visibility: visible;
+            }
+
+        
+        }
+
+       
+
+       
         a {
             color: $dark-grey1;
             font-size: 1.5rem; 
@@ -133,4 +156,11 @@ header {
             }
         }
     }
-}
+
+   
+
+    }
+
+
+      
+

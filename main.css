@@ -159,6 +159,18 @@ header #social-links-container {
   width: 8rem;
   margin: 2rem 0 0 0;
 }
+header #social-links-container .tooltip-container {
+  position: relative;
+}
+header #social-links-container .tooltip-container .tooltip-text {
+  position: absolute;
+  visibility: hidden;
+  bottom: -1rem;
+  left: -1rem;
+}
+header #social-links-container .tooltip-container:hover .tooltip-text {
+  visibility: visible;
+}
 header #social-links-container a {
   color: #4F4F4F;
   font-size: 1.5rem;
