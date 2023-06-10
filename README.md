@@ -30,23 +30,8 @@
 <!-- OVERVIEW -->
 
 ## Overview
+I developed this portfolio page as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories and replicate the provided Figma design. I then customised it to fit my own needs.
 
-### Fully Responsive UI
-![fully responsive ui gif](./gifs/readme-responsive-ui.gif)
-
-## Quote of the day feature via integration of API Ninja's quote API 
-![fully responsive ui gif](./img/readme-quote-feature.png)
-
-## scroll animations implemented with JavaScript's Intersection Observer API
-![fully responsive ui gif](./gifs/readme-scroll-animations.gif)
-
-## Custom built filter for projects
-![fully responsive ui gif](./gifs/readme-project-filter.mp4)
-
-## Automatic testimonial slider implemented with JQuery's Owl Carousel
-![fully responsive ui gif](./gifs/readme-testimonials.gif)
-
-- Go to live [site](https://chris-chamberlain-portfolio.netlify.app/)
 
 ### Built With
 
@@ -55,14 +40,28 @@
 - HTML
 - SCSS
 - JavaScript
+- JQuery
+- API Ninja
 
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+## Fully Responsive UI
+![fully responsive ui gif](./gifs/readme-responsive-ui.gif)
 
-I developed this team page as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories and replicate the provided Figma design.
+## Quote of the day feature via integration of API Ninja's quote API 
+![fully responsive ui gif](./img/readme-quote-feature.png)
 
+## Scroll animations implemented with JavaScript's Intersection Observer API
+![fully responsive ui gif](./gifs/readme-scroll-animations.gif)
+
+## Custom built filter for projects
+![fully responsive ui gif](./gifs/readme-project-filter.gif)
+
+## Automatic testimonial slider implemented with JQuery's Owl Carousel
+![fully responsive ui gif](./gifs/readme-testimonials-slider.gif)
+
+- Go to live [site](https://chris-chamberlain-portfolio.netlify.app/)
 
 ## How To Use
 
@@ -80,7 +79,7 @@ $ npm start
 ```
 ## Contact
 
-- [Website](https://christopher-chamberlain.netlify.app/)
+- [Website](https://chris-chamberlain-portfolio.netlify.app/)
 - [GitHub](https://github.com/AkaraTawng)
 - [Twitter](https://twitter.com/chris_tawan)
 - [LinkedIn](https://www.linkedin.com/in/christopher-chamberlain-023507205/)

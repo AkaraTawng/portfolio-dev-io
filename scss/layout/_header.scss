@@ -122,7 +122,33 @@ header {
         justify-content: space-between;
         width: 40%;
         width: 8rem;
-        margin: 2rem 0 0 0;
+        margin: 4rem 0 0 0;
+        
+        
+        .tooltip-container {
+            position: relative;
+           
+            .tooltip-text {
+                position: absolute;
+                visibility: hidden;
+                padding: .5rem .7rem;
+                border-radius: 15px;
+                border: solid 1px $accent-blue;
+                top: -3rem;
+                left: -1.7rem;
+            }
+        
+            &:hover .tooltip-text {
+                // color: blue;
+                visibility: visible;
+            }
+
+        
+        }
+
+       
+
+       
         a {
             color: $dark-grey1;
             font-size: 1.5rem; 
@@ -133,4 +159,11 @@ header {
             }
         }
     }
-}
+
+   
+
+    }
+
+
+      
+
