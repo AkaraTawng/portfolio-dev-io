@@ -1,13 +1,17 @@
 
 
 .testimonials {
-
+    padding-bottom: 4rem;
     .carousel-container {
         opacity: 0;
         &.animate__animated.animate__bounceInUp {
             --animate-duration: 1.8s;
         }
     }
+
+@include tablet {
+    padding-bottom: 6rem;
+}
 
 @include laptop{
     display: none;
@@ -20,10 +24,8 @@
         padding-top: 6rem;
         height: auto;
         width: 100%;
+        padding-bottom: 0rem;
     }
-    // @include desktop-m {
-    //     height: 45rem;
-    // }
 }
 
 margin-bottom: 4rem;

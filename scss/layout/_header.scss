@@ -26,30 +26,12 @@ header {
         flex-direction: column;
        
         img {
-            // height:12rem;
             border-radius: 8px;
-            // width: 16rem;
             height: 90%;
             width: 98%;
             align-self: center;
             margin-bottom: 1rem; 
             object-fit: cover;
-            // @include mobile-m{
-            //     height: 15rem;
-            //     width: 20rem;
-            // }
-            // @include mobile-l{
-            //     height: 18rem;
-            //     width: 24rem;
-            // }
-            // @include tablet{
-            //     height: 25rem;
-            //     width: 35.5rem;
-            // }
-            // @include laptop {
-            //     height: 23rem;
-            //     width: 29.5rem;
-            // }
         }
 
         #name-job-container {
@@ -116,17 +98,7 @@ header {
 
         #bio-container {
             opacity: 0;
-            .bio-span {
-                // color: $accent-blue;
-                color: $light-grey1;
-                font-weight: 400;
-                font-size: .8rem;
-                display: inline-block;
-                transition: all 1s;
-                @include laptop {
-                    font-size: 1.1rem;
-                }
-            }
+          
             p {
                 color: $light-grey1;
                 font-size: .7rem;
@@ -144,4 +116,54 @@ header {
             opacity: 0;
         }
     }
-}
+
+    #social-links-container {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+        width: 8rem;
+        margin: 4rem 0 0 0;
+        
+        
+        .tooltip-container {
+            position: relative;
+           
+            .tooltip-text {
+                position: absolute;
+                visibility: hidden;
+                padding: .5rem .7rem;
+                border-radius: 15px;
+                border: solid 1px $accent-blue;
+                top: -3rem;
+                left: -1.7rem;
+            }
+        
+            &:hover .tooltip-text {
+                // color: blue;
+                visibility: visible;
+            }
+
+        
+        }
+
+       
+
+       
+        a {
+            color: $dark-grey1;
+            font-size: 1.5rem; 
+
+            &:hover {
+                color: lighten($dark-grey1, 10%);
+                transform: scale(1.05);
+            }
+        }
+    }
+
+   
+
+    }
+
+
+      
+

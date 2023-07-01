@@ -17,10 +17,10 @@
         display: none;
     }
 
-    .active {
-        background-color: $accent-blue;
-        color: white;
-    };
+    // .active {
+    //     background-color: $accent-blue;
+    //     color: white;
+    // };
     
 h1, h2, h3 {
     color: $dark-grey1;
@@ -92,6 +92,10 @@ h3 {
             }
         }
     }
+    .active {
+        background-color: $accent-blue;
+        color: white;
+    };
 }
 
 .project-odd,

@@ -8,15 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="">
-      Demo
-    </a>
-    <span> | </span>
-    <a href="">
+    <a href="https://chris-chamberlain-portfolio.netlify.app/">
       Site
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt">
       Challenge
     </a>
   </h3>
@@ -34,19 +30,8 @@
 <!-- OVERVIEW -->
 
 ## Overview
+I developed this portfolio page as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories and replicate the provided Figma design. I then customised it to fit my own needs.
 
-### Fully Responsive UI
-![fully responsive ui gif](.)
-
-
-
-
-
-
-
-- Go to live [site](https://my-team-page-chris-cham.netlify.app/)
-- See the demo [here](https://devchallenges.io/solutions/tYfAaAPolbMB87S4dKbz)
-- Implementing the filter functionality in the project section was by far the most challenging part of this project. The behavior has a lot of complexity and required a lot of careful thought to visualize the full range of requirements and lots of patience when experimenting. Eventually, line by line, the function came together and full filter functionality was achieved.
 
 ### Built With
 
@@ -54,14 +39,29 @@
 
 - HTML
 - SCSS
+- JavaScript
+- JQuery
+- API Ninja
 
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+## Fully Responsive UI
+![fully responsive ui gif](./gifs/readme-responsive-ui.gif)
 
-I developed this team page as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories and replicate the provided Figma design.
+## Quote of the day feature via integration of API Ninja's quote API 
+![fully responsive ui gif](./img/readme-quote-feature.png)
 
+## Scroll animations implemented with JavaScript's Intersection Observer API
+![fully responsive ui gif](./gifs/readme-scroll-animations.gif)
+
+## Custom built filter for projects
+![fully responsive ui gif](./gifs/readme-project-filter.gif)
+
+## Automatic testimonial slider implemented with JQuery's Owl Carousel
+![fully responsive ui gif](./gifs/readme-testimonials-slider.gif)
+
+- Go to live [site](https://chris-chamberlain-portfolio.netlify.app/)
 
 ## How To Use
 
@@ -79,7 +79,7 @@ $ npm start
 ```
 ## Contact
 
-- [Website](https://christopher-chamberlain.netlify.app/)
+- [Website](https://chris-chamberlain-portfolio.netlify.app/)
 - [GitHub](https://github.com/AkaraTawng)
 - [Twitter](https://twitter.com/chris_tawan)
 - [LinkedIn](https://www.linkedin.com/in/christopher-chamberlain-023507205/)

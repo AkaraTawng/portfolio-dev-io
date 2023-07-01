@@ -1,4 +1,6 @@
 // const skillBars = document.querySelectorAll('.fade-in');
+import categories from './quoteCategories.js';
+import categeories from './quoteCategories.js';
 const technologyFilterTags = document.querySelectorAll('#technology-filter-tags-container ul li button');
 const technologyFilterAllTag = document.querySelector('#technology-all-tag');
 const technologyFilterButtons = document.querySelectorAll('#technology-filter-tags-container button');
@@ -36,23 +38,23 @@ const hobbyItemsTextContentEven = document.querySelectorAll('.hobby-item-text-co
 
 const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
 
-const blogTitleTextContentSmallScreen = document.querySelector('.title-text-flex-container.small-screen').children;
+// const blogTitleTextContentSmallScreen = document.querySelector('.title-text-flex-container.small-screen').children;
 
-/* convert blogTitleTextContent HTMLCollection to array */
-const blogTitleTextContentSmallScreenArray = Array.from(blogTitleTextContentSmallScreen);
+// /* convert blogTitleTextContent HTMLCollection to array */
+// const blogTitleTextContentSmallScreenArray = Array.from(blogTitleTextContentSmallScreen);
 
-const blogTitleTextContentLargeScreen = document.querySelector('#title-text-flex-container.lg-screen').children;
+// const blogTitleTextContentLargeScreen = document.querySelector('#title-text-flex-container.lg-screen').children;
 
-const blogTitleTextContentLargeScreenArray = Array.from(blogTitleTextContentLargeScreen);
+// const blogTitleTextContentLargeScreenArray = Array.from(blogTitleTextContentLargeScreen);
 
-// console.log(blogLgTitleArray)
+// // console.log(blogLgTitleArray)
 
-const blogImage = document.querySelectorAll('.blog img');
+// const blogImage = document.querySelectorAll('.blog img');
 
-const blogPostShortDescription = document.querySelectorAll('.blog p');
+// const blogPostShortDescription = document.querySelectorAll('.blog p');
 
-/* convert blogPostShortDescriptions nodelist to array */
-const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
+// /* convert blogPostShortDescriptions nodelist to array */
+// const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
 
 const workExperienceImagesNodelist = document.querySelectorAll('.experience-flex-container img');
 
@@ -70,7 +72,7 @@ const testimonialsHeader = document.querySelectorAll('.testimonials h1');
 
 const skillBarsNodelist = document.querySelectorAll('.skillbars');
 
-const headerHighlights = document.querySelectorAll('.bio-span');
+const headerDescription = document.querySelectorAll('p');
 
 /* convert skillsBarsNodelist to array */
 const skillBarsArray = Array.from(skillBarsNodelist);
@@ -81,11 +83,9 @@ const screenWidth = document.documentElement.clientWidth;
 
 /* header highlights animation */
 
-headerHighlights.forEach((highlight) => { 
+headerDescription.forEach((item) => { 
     setTimeout(() => {
-        highlight.classList.add('animate__pulse');
-        highlight.style.color = "#2f80ed";
-        highlight.style.fontWeight = 600;
+        item.classList.add('animate__headShake')
     }, 3000);
 });
 
@@ -94,7 +94,7 @@ let projectsArray = [];
 
    /* add click event listener to every type filter button and call showHideProjects function on click */
 typeFilterButtons.forEach(button => {
-    button.addEventListener("click", (event) => {
+    button.addEventListener("pointerdown", (event) => {
        showHideProjects(event);
     });
 });
@@ -121,7 +121,7 @@ if(typeFilterAllTag.classList.contains('active')){
 }; 
 
 /* show all projects when all type tag clicked */
-typeFilterAllTag.addEventListener('click', () => {
+typeFilterAllTag.addEventListener('pointerdown', () => {
     showAllProjects();
 
     /* display tag counter as 9 when all tag clicked */
@@ -174,8 +174,29 @@ const showHideProjects = (event) => {
 };
 
 //add & remove active class for type filter tags
+// typeFilterTags.forEach(typeFilterTag => {
+//     typeFilterTag.onclick = function() {
+//         if(typeFilterAllTag.classList.contains('active')){
+//             typeFilterAllTag.classList.remove('active')
+//             typeFilterTag.classList.toggle('active')
+//         }
+           
+//         else if (!typeFilterAllTag.classList.contains('active') && typeFilterTag.innerHTML === typeFilterAllTag.innerHTML) {
+//             typeFilterTags.forEach(tag => {
+//                 tag.classList.remove('active')
+//             });
+
+//             typeFilterAllTag.classList.add('active');
+//         }
+        
+//         else if (!typeFilterAllTag.classList.contains('active')) {
+//             typeFilterTag.classList.toggle('active')
+//         }; 
+//     };
+// });
+
 typeFilterTags.forEach(typeFilterTag => {
-    typeFilterTag.onclick = function() {
+    typeFilterTag.onpointerup = function() {
         if(typeFilterAllTag.classList.contains('active')){
             typeFilterAllTag.classList.remove('active')
             typeFilterTag.classList.toggle('active')
@@ -208,23 +229,6 @@ setTimeout(() => {
     nameContactContainer.style.opacity = 1;
     bioContainer.classList.add('animate__fadeInUp')
 }, 1400);
-
-
-/* scroll animations */
-
-/* tag counter slide in left */
-// const tagCounterHeaderObserver = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if(entry.isIntersecting){
-//         entry.target.style.opacity = 1;
-//         entry.target.classList.add('animate__slideInLeft'); 
-//         tagCounterHeaderObserver.unobserve(tagCounterHeader);
-//         };
-//     });
-// }, {
-//     threshold: 1,
-//     rootMargin: '32px'
-// });
 
 const tagCounterHeaderObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -453,63 +457,6 @@ const hobbyItemTextContentOddObserver = new IntersectionObserver(entries => {
 hobbyItemTextContentOddObserver.observe(hobbyItemTextContentOdd);
 
 
-/* blog title text content intersection observer scroll animation */
-
-const blogTitleTextContentSmallScreenObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('animate__fadeInUp');//blogTitleTextContentObserver.unobserve(entry);
-        };
-        
-    });
-    
-});
-
-blogTitleTextContentSmallScreenArray.forEach(item => blogTitleTextContentSmallScreenObserver.observe(item));
-
-const blogTitleTextContentLargeScreenObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('animate__fadeInUp');
-            blogTitleTextContentLargeScreenObserver.unobserve(entry.target);
-        }
-    })
-})
-
-blogTitleTextContentLargeScreenArray.forEach(item => {
-    blogTitleTextContentLargeScreenObserver.observe(item);
-});
-
-const blogImageObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('animate__flipInY');
-            entry.target.style.opacity = 1;
-            blogImageObserver.unobserve(blogImage);
-        };
-    });
-}, {
-    threshold: 0.5
-});
-
-blogImage.forEach(item => {
-    blogImageObserver.observe(item);
-});
-
-
-
-const blogPostShortDescriptionObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.classList.add('animate__fadeInUp')
-            blogPostShortDescriptionObserver.unobserve(blogPostShortDescriptionArray);
-        };
-    });
-});
-
-blogPostShortDescriptionArray.forEach(item => blogPostShortDescriptionObserver.observe(item));
-
-
 const experienceItemHeaderInfoObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -523,7 +470,6 @@ experienceItemHeaderInfoArray.forEach(item => experienceItemHeaderInfoObserver.o
 );
 
 /* testimonials intersection oberserver */
-
 const testimonialsCarouselObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
@@ -607,9 +553,7 @@ list.forEach(item => {
 });
 
 
-
 /* owl carousel */
-
 $(document).ready(function(){
     $('.carousel-container').owlCarousel({
         loop:true,
@@ -632,7 +576,6 @@ $(document).ready(function(){
 })
 
 /* show mobile nav when page scrolled down */
-
 window.onscroll = function(){
     scroll();
 };
@@ -646,5 +589,58 @@ function scroll() {
 }
 
 
+/* call once a week - change value of randomCategory */
+
+const randomCategory = () => {
+    // let newRandomCategory = ''; 
+    // let previousRandomCategory = newRandomCategory;   
+    // let currentDay = new Date().getDay();
+
+    // if(newRandomCategory === ''){
+    //     newRandomCategory = (categories[Math.floor(Math.random() * categeories.length)]);
+    // } 
+    // else if (newRandomCategory !== ''){
+    //     previousRandomCategory = newRandomCategory;
+    // }
+    // console.log(newRandomCategory)
+
+    // console.log(previousRandomCategory)
+    
+    
+    // if(currentDay === 7){
+    //     return newRandomCategory = (categories[Math.floor(Math.random() * categeories.length)]);
+    // } 
+    // return previousRandomCategory;
+}
+
+
+const quotesContainers = document.querySelectorAll('#quotes');
+
+let category = (categories[Math.floor(Math.random() * categeories.length)]);
+/* call every time page is reloaded */
+const displayQuote = () => {
+    // console.log(c)
+    $.ajax({
+    method: 'GET',
+    url: `https://api.api-ninjas.com/v1/quotes?category=${category}`,
+    headers: { 'X-Api-Key': 'ZfbIMrJw+PzBWtEP4PEODg==AgbCsJCapOOD8PMZ'},
+    contentType: 'application/json',
+    success: function(results) {
+        results.forEach(result => {
+            quotesContainers.forEach(quoteContainer => {
+                quoteContainer.innerHTML += `
+                <h1>Quote of the Day</h1>
+                <p id="quote-text">${result.quote}</p>
+                <p id="author"> - ${result.author} - </p>
+            `;
+            })
+        });
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+}
+displayQuote();
 
 

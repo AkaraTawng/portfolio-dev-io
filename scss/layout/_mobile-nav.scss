@@ -20,6 +20,7 @@
         @include mobile-m {
             width: 380px; 
             top: 94.7vh;
+            top: 91vh;
         };
         @include mobile-l {
             width: 450px; 
@@ -27,7 +28,7 @@
         @include tablet {
             width: 600px;
             height: 85px;
-            top: 93.7vh;
+            top: 88vh;
         }
         height: 70px;
         background-color: $accent-blue;

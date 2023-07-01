@@ -1,0 +1,45 @@
+#quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem;
+    height: 91%;
+    margin-bottom: 5rem;
+   &.quote-lg-screen {
+    display: none;
+   }
+    @include tablet {
+        padding: 4rem;
+    }
+    @include laptop {
+        display: none;
+        &.quote-lg-screen {
+            display: flex;
+        }
+    }
+  
+    h1 {
+        color: $dark-grey1;
+        font-weight: 500;
+        font-size: 1.2rem;
+        align-self: center;
+        @include tablet {
+            font-size: 1.5rem;
+            align-self: center;
+        }
+    }
+
+    p {
+        color: $light-grey1;
+        text-align: center;
+        
+        &#quote-text {
+            margin: 4rem 0;
+            line-height: 2rem;
+        }
+
+        &#author {
+            text-align: center;
+        }
+    }
+}
