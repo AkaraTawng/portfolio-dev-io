@@ -19,7 +19,17 @@
         margin: 2rem 0 2rem 0;
     }
 
-    .project-item-description {
+
+
+    .project-item-description, a {
+
+        a {
+            cursor: pointer;
+            &:visited {
+                color: $light-grey1;
+            }
+        }
+        
         color: $light-grey1;
         font-weight: 500;
         font-size: .8rem;

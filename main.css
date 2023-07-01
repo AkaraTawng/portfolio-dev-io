@@ -841,10 +841,16 @@ body {
   color: #333333;
   margin: 2rem 0 2rem 0;
 }
-#project-items .project-item-description {
+#project-items .project-item-description, #project-items a {
   color: #828282;
   font-weight: 500;
   font-size: 0.8rem;
+}
+#project-items .project-item-description a, #project-items a a {
+  cursor: pointer;
+}
+#project-items .project-item-description a:visited, #project-items a a:visited {
+  color: #828282;
 }
 #project-items .project-item-filter-tags-list {
   color: #828282;
