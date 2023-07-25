@@ -9,7 +9,7 @@ const typeFilterTags = document.querySelectorAll('#type-filter-tags-container bu
 const typeFilterAllTag = document.querySelector('#type-all-tag');
 const typeFilterButtons = document.querySelectorAll('#type-filter-tags-container button');
 
-let projectItems = document.querySelectorAll('.project-item-flex-container');
+let allProjectItems = document.querySelectorAll('.project-item-flex-container');
 let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
 let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter-tags-list.type");
 let tagCounter = document.querySelector('#tag-counter');
@@ -38,7 +38,7 @@ const hobbyItemsTextContentEven = document.querySelectorAll('.hobby-item-text-co
 
 const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
 
-const projecItems = document.querySelectorAll('#project-items div.project-item-flex-container'); 
+const projectItems = document.querySelectorAll('#project-items div.project-item-flex-container'); 
 
 const workExperienceImagesNodelist = document.querySelectorAll('.experience-flex-container img');
 
@@ -100,16 +100,16 @@ const hideAllProjects = () => {
 if(typeFilterAllTag.classList.contains('active')){
     showAllProjects();
     
-    /* display tag counter as 9 on initial page load */
-    tagCounter.innerHTML = `(${projecItems.length})`
+    /* display tag counter as length of project items nodelist on initial page load */
+    tagCounter.innerHTML = `(${allProjectItems.length})`
 }; 
 
 /* show all projects when all type tag clicked */
 typeFilterAllTag.addEventListener('pointerdown', () => {
     showAllProjects();
 
-    /* display tag counter as 9 when all tag clicked */
-    tagCounter.innerHTML = '(9)'; 
+    /* display tag counter as length of project items nodelist when all tag clicked */
+    tagCounter.innerHTML = `(${allProjectItems.length})`; 
 });
 
 const showHideProjects = (event) => {
