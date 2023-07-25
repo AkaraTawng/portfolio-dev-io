@@ -9,7 +9,7 @@ const typeFilterTags = document.querySelectorAll('#type-filter-tags-container bu
 const typeFilterAllTag = document.querySelector('#type-all-tag');
 const typeFilterButtons = document.querySelectorAll('#type-filter-tags-container button');
 
-let projectItems = document.querySelectorAll('.project-item-flex-container');
+let allProjectItems = document.querySelectorAll('.project-item-flex-container');
 let projectItemsTechnologyFilterTags = document.querySelectorAll(".project-item-filter-tags-list.technology");
 let projectItemsTypeFilterTags = document.querySelectorAll(".project-item-filter-tags-list.type");
 let tagCounter = document.querySelector('#tag-counter');
@@ -38,23 +38,7 @@ const hobbyItemsTextContentEven = document.querySelectorAll('.hobby-item-text-co
 
 const hobbyItemTextContentOdd = document.querySelector('.hobby-item-text-content-odd');
 
-// const blogTitleTextContentSmallScreen = document.querySelector('.title-text-flex-container.small-screen').children;
-
-// /* convert blogTitleTextContent HTMLCollection to array */
-// const blogTitleTextContentSmallScreenArray = Array.from(blogTitleTextContentSmallScreen);
-
-// const blogTitleTextContentLargeScreen = document.querySelector('#title-text-flex-container.lg-screen').children;
-
-// const blogTitleTextContentLargeScreenArray = Array.from(blogTitleTextContentLargeScreen);
-
-// // console.log(blogLgTitleArray)
-
-// const blogImage = document.querySelectorAll('.blog img');
-
-// const blogPostShortDescription = document.querySelectorAll('.blog p');
-
-// /* convert blogPostShortDescriptions nodelist to array */
-// const blogPostShortDescriptionArray = Array.from(blogPostShortDescription);
+const projectItems = document.querySelectorAll('#project-items div.project-item-flex-container'); 
 
 const workExperienceImagesNodelist = document.querySelectorAll('.experience-flex-container img');
 
@@ -116,16 +100,16 @@ const hideAllProjects = () => {
 if(typeFilterAllTag.classList.contains('active')){
     showAllProjects();
     
-    /* display tag counter as 9 on initial page load */
-    tagCounter.innerHTML = '(9)'
+    /* display tag counter as length of project items nodelist on initial page load */
+    tagCounter.innerHTML = `(${allProjectItems.length})`
 }; 
 
 /* show all projects when all type tag clicked */
 typeFilterAllTag.addEventListener('pointerdown', () => {
     showAllProjects();
 
-    /* display tag counter as 9 when all tag clicked */
-    tagCounter.innerHTML = '(9)'; 
+    /* display tag counter as length of project items nodelist when all tag clicked */
+    tagCounter.innerHTML = `(${allProjectItems.length})`; 
 });
 
 const showHideProjects = (event) => {
@@ -172,28 +156,6 @@ const showHideProjects = (event) => {
     /* update tag counter to show number of currently visible projects and set default value when no projects are visible */
     projectsArray.length < 1 ? tagCounter.innerHTML = '(0)' : tagCounter.innerHTML = `(${projectsArray.length})`
 };
-
-//add & remove active class for type filter tags
-// typeFilterTags.forEach(typeFilterTag => {
-//     typeFilterTag.onclick = function() {
-//         if(typeFilterAllTag.classList.contains('active')){
-//             typeFilterAllTag.classList.remove('active')
-//             typeFilterTag.classList.toggle('active')
-//         }
-           
-//         else if (!typeFilterAllTag.classList.contains('active') && typeFilterTag.innerHTML === typeFilterAllTag.innerHTML) {
-//             typeFilterTags.forEach(tag => {
-//                 tag.classList.remove('active')
-//             });
-
-//             typeFilterAllTag.classList.add('active');
-//         }
-        
-//         else if (!typeFilterAllTag.classList.contains('active')) {
-//             typeFilterTag.classList.toggle('active')
-//         }; 
-//     };
-// });
 
 typeFilterTags.forEach(typeFilterTag => {
     typeFilterTag.onpointerup = function() {
@@ -619,7 +581,6 @@ const quotesContainers = document.querySelectorAll('#quotes');
 let category = (categories[Math.floor(Math.random() * categeories.length)]);
 /* call every time page is reloaded */
 const displayQuote = () => {
-    // console.log(c)
     $.ajax({
     method: 'GET',
     url: `https://api.api-ninjas.com/v1/quotes?category=${category}`,
